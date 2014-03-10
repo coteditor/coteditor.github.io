@@ -52,3 +52,9 @@ footer {
 	font: bold 64px/1.0 'Lucida Grande', serif;
 	margin: 10px 0 5px;
 }
+
+
+aside.sns li {
+	display: inline-block;
+	max-width: 85px;
+}
