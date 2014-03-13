@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 1.4 の変更点 - CotEditor</title>
+
+	<meta name="description"  content="Text Editor for OS X"/>
+
+	<meta property="og:type"        content="article"/>
+	<meta property="og:url"         content="http://coteditor.github.io/ja/new"/>
+	<meta property="og:title"       content="CotEditor"/>
+	<meta property="og:description" content="CotEditor 1.4 の変更点"/>
+	<meta property="og:image"       content="http://coteditor.github.io/_img/appicon/512@2x.png"/>
+	<meta property="og:site_name"   content="CotEditor"/>
+	<meta property="og:locale"      content="ja_JP"/>
+	<meta property="twitter:card"   content="summary"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="../en/new" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/changelog.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<header>
+	<h1>CotEditor 1.4 の変更点</h1>
+	<p>リリース: <time>2014-03-xx</time></p>
+</header>
+
+<section>
+<h2>新機能</h2>
+<ul>
+	<li class="none">（なし）</li>
+</ul>
+</section>
+
+<section>
+<h2>追加／修正／変更</h2>
+
+<ul>
+	<li>対応するOSをOS X 10.7以上に変更</li>
+	<li>64-bitに対応</li>
+	<li>Retinaディスプレイに対応</li>
+	<li>アプリケーションアイコン・書類アイコン・ツールバーアイコンを調整</li>
+	<li>ツールバーアイコンに小さいサイズを追加</li>
+	<li>「Apache」「Markdown」「Scala」「XML」のシンタックス定義を追加<a href="#fnote1"><sup>1</sup></a>
+	<li>「PHP」シンタックス定義を更新 <a href="#fnote1"><sup>1</sup></a>
+	<ul>
+		<li>PHP5.5まで対応</li>
+		<li>プロパティ・数値をカラーリング</li>
+		<li>アウトラインメニューの改善</li>
+	</ul></li>
+	<li>「Python」シンタックス定義を更新 <a href="#fnote1"><sup>1</sup></a>
+	<ul>
+		<li>Python3系に対応 (>= 3.3)</li>
+		<li>デコレータのカラーリング</li>
+		<li>複素数や新8進数記法を含む数値カラーリングの改善</li>
+		<li>文字列カラーリングの改善</li>
+		<li>print文とprint式の塗り分け</li>
+	</ul></li>
+	<li>「LaTeX」シンタックス定義を更新
+	<ul>
+		<li><code>{}</code> 記号が正しくエスケープできていなかったのを修正</li>
+	</ul></li>
+	<li>拡張子 py および markdown, md, xml, scala, conf をドキュメントタイプに追加</li>
+	<li>「環境設定」「保存」「別名で保存」「ページ設定」「透明度パネル」の5つのアイコンをツールバーから削除</li>
+	<li>スクリプトフォルダ内のドットから始まる隠しファイルはメニューに表示しないよう変更</li>
+	<li>アラートの文面を推敲</li>
+	<li>ウインドウやパネル類の見た目を調整</li>
+	<li>カラーコードエディタの英名 HexColorCode Editor を Color Code Editor に改名</li>
+	<li>ドキュメントの更新</li>
+</ul>
+</section>
+
+<section>
+<h2>バグフィックス</h2>
+
+<ul>
+	<li>変更がないのに不意に「別のプロセスによって変更されました。」というアラートが出る問題を修正</li>
+	<li>Lion用バイナリでフルスクリーン時にツールバーの背景が透けてしまう不具合を修正</li>
+	<li>Lion用バイナリでテキストビューのみを透明化できなかった不具合を修正</li>
+	<li>Lion以降印刷時にヘッダとフッタのマージンがひっくり返っていたのを修正</li>
+	<li>書類を開いた時点にステータスバーが非表示だと、ステータスバーの書き込み不可アイコンが正しく反映されなかった不具合を修正</li>
+	<li>言語がEnglishのときのツールバーラベルの単語間ブランクを修正</li>
+	<li>環境設定の「ヘッダの上に区切り線を印字」という誤記を修正</li>
+	<li>CotEditor 1.1で4.0に更新されたはずのRegexKitLiteが実際には更新されていなかったのを修正</li>
+</ul>
+</section>
+
+<footer>
+	<ol>
+		<li id="fnote1"><a href="http://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" title="CotEditor用シンタックス定義 //ヴォルフロッシュ">wolfrosch.com</a>で配布していたものと同一</li>
+	</ol>
+</footer>
+</main>
+
+
+<nav>
+	<a href="../">back</a>
+</nav>
+
+
+<footer>
+	<p class="copyright">©2014 CotEditor Project</p>
+</footer>
+</body>
+</html>

@@ -10,51 +10,152 @@
   ////////////////////////////////////// */
 
 
+/*___0.universal_reset_______________________________________________________*/
+
 * {
-	margin: 0;
+	margin:  0;
 	padding: 0;
-	font-style: inherit;
+	line-height: 1.0;
+	font-weight: inherit;
+	font-style:  inherit;
+}
+img {
+	border: none;
+}
+a {
+	text-decoration: none;
 }
 ul li {
 	list-style: none;
 }
 
-body {
-	background: hsl(0,0%,100%);
-	
-	font-family: 'Lucida Grande', sans-serif;
-	color: hsl(0,0%,40%);
-	text-align: center;
-	padding: 20px 100px;
-	
+
+/* HTML5 */
+main, nav, header, footer, section, article, aside, figure {
+	display: block;
 }
 
-a {
-	color: hsl(90,40%,50%);
+
+
+/*___1.common rule___________________________________________________________*/
+
+/* anchors */
+a:link,
+a:visited {
+	color: hsl(90,50%,40%);
 }
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
-p {
-	margin: 1em;
-}
-main > section {
-	margin: 2em;
+a:not([href]) {
+	color: inherit;
 }
 
-footer {
+a > sup {
+	font-size: 70%;
+	margin: 0 1px;
+}
+
+/* basic spacing */
+main p,
+main dd,
+main li {
+	line-height: 1.7;
+}
+main h1,
+main h2,
+main h3,
+main h4 {
+	line-height: 1.4;
+}
+
+section {
+	margin: 2em 0;
+}
+section > section {
+	margin: 1em 0;
+}
+
+
+/* list marker */
+main ul li::before {
+	content: '–';
+	font: normal 100% 'Myriad';
+	color: black;
+	opacity: 0.5;
+	
+	margin-right: 0.4em;
+}
+main ul li {
+	text-indent: -0.9em;
+	padding-left: 0.9em;
+}
+main li+li {
+	margin-top: 0.2em;
+}
+main ul > ul {
+	padding-left: 4em !important;
+}
+
+
+/*___2.layout________________________________________________________________*/
+
+/* body */
+body {
+	font: 14px 'Lucida Grande', sans-serif;
+	color: hsl(0,0%,10%);
+	
+	background: hsl(0,0%,100%);
+	padding: 15px 20px;
+}
+
+
+/* header */
+body > header {
+	font: 28px/1.0 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	letter-spacing: 0.5px;
+	color: hsl(0,0%,33%);
+}
+body > header a {
+	color: inherit !important;
+	transition: -webkit-filter 0.5s;
+}
+body > header a:hover {
+	-webkit-filter: blur(1.5px);
+}
+body > header:before {
+	display: inline-block;
+	content: '';
+	width: 48px;
+	height: 48px;
+	background:url(../img/appicon/64@2x.png);
+	background-size: 48px;
+	margin-right: 10px;
+	vertical-align: -14px;
+}
+
+
+/* main */
+main {
+	margin: 30px 10px;
+}
+
+
+/* nav */
+body > nav a {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+body > nav a[href="../"]:before {
+	content: '«';
+	color: black;
+	opacity: 0.67;
+	margin-right: 3px;
+}
+
+
+/* footer */
+body > footer {
 	font-size: 13px;
 	margin-top: 50px;
-}
-
-
-#top > h1 {
-	font: bold 64px/1.0 'Lucida Grande', serif;
-	margin: 10px 0 5px;
-}
-
-
-aside.sns li {
-	display: inline-block;
-	max-width: 85px;
 }

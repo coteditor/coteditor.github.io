@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////
+   CotEditor Top Page Style Sheet
+   
+   author  : 1024jp <wolfrosch.com>
+   site    : coteditor.github.io
+   target  : top page
+   lastMod : 2014-03
+  ////////////////////////////////////// */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-style: inherit;
+}
+ul li {
+	list-style: none;
+}
+ 
+body {
+	background: hsl(0,0%,100%);
+
+	font-family: 'Lucida Grande', sans-serif;
+	color: hsl(0,0%,40%);
+	text-align: center;
+	padding: 20px 100px;
+}
+
+a {
+	color: hsl(90,40%,50%);
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 1em;
+}
+main > section {
+	margin: 2em;
+}
+
+footer {
+	font-size: 13px;
+	margin-top: 50px;
+}
+
+
+#top > h1 {
+	font: bold 64px/1.0 'Lucida Grande', serif;
+	margin: 10px 0 5px;
+}
+
+
+aside.sns li {
+	display: inline-block;
+	max-width: 85px;
+}
+
+
+/* download button */
+a.download {
+	font-size: 14px;
+	padding: 5px 0.6em;
+	margin:  1px;
+	
+	font-weight: bold;
+	line-height: 1.2;
+	color: white;
+	text-decoration: none;
+	text-indent: 0;
+	white-space: nowrap;
+	text-shadow: 0 1px 2px hsla(0,0%,0%,.33);
+	
+	display: inline-block;
+	border-radius: 3px;
+	border: none !important;
+	background: url(../gfx/textures/noise.png),
+	    -webkit-linear-gradient(hsla(0,0%,100%,.07), hsla(0,0%,0%,.07));
+	background: url(../gfx/textures/noise.png),
+	            linear-gradient(hsla(0,0%,100%,.07), hsla(0,0%,0%,.07));
+	background-color: hsl(196,70%,60%);
+	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.25) inset,
+	            0 1px 0 1px hsla(0,0%,100%,.20) inset,
+	            0 1px 2px   hsla(0,0%,  0%,.30);
+	-webkit-transition: background 0.3s;
+	        transition: background 0.3s;
+}
+a.download:hover {
+	background-color: hsl(196,75%,50%);
+}
+
+a.download.large {
+	font-size: 17px;
+	padding: 13px 16px 10px;
+	
+	border-radius: 4px;
+	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.25) inset,
+	            0 1px 0 1px hsla(0,0%,100%,.20) inset,
+	            0 1px 2px   hsla(0,0%,  0%,.40),
+	            0 0   0 6px hsla(0,0%,  0%,.05);
+}
+a.download.large::before {
+	content: url(../gfx/glyphs/download.svgz);
+	opacity: .5;
+	display: inline-block;
+	float: left;
+	height: 35px;
+	width:  46px;
+	margin-left: -3px;
+	margin-right: 9px;
+	padding: 3px 0 2px;
+}
