@@ -24,6 +24,7 @@ img {
 }
 a {
 	text-decoration: none;
+	transition: -webkit-filter 0.3s;
 }
 ul li {
 	list-style: none;
@@ -44,7 +45,7 @@ a:link,
 a:visited {
 	color: hsl(90,50%,40%);
 }
-a:hover {
+main a:hover {
 	text-decoration: underline;
 }
 a:not([href]) {
@@ -118,7 +119,6 @@ body > header {
 }
 body > header a {
 	color: inherit !important;
-	transition: -webkit-filter 0.5s;
 }
 body > header a:hover {
 	-webkit-filter: blur(1.5px);
@@ -151,6 +151,9 @@ body > nav a[href="../"]:before {
 	color: black;
 	opacity: 0.67;
 	margin-right: 3px;
+}
+body > nav a:hover {
+	-webkit-filter: blur(0.5px);
 }
 
 

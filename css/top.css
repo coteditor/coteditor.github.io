@@ -29,6 +29,7 @@ body {
 
 a {
 	color: hsl(90,40%,50%);
+	text-decoration: none;
 }
 a:hover {
 	text-decoration: none;
@@ -37,7 +38,7 @@ p {
 	margin: 1em;
 }
 main > section {
-	margin: 2em;
+	margin: 2em auto;
 }
 
 footer {
@@ -52,37 +53,59 @@ footer {
 }
 
 
+/* sns buttons */
+aside.sns {
+	margin: 30px 0 -20px;
+}
 aside.sns li {
 	display: inline-block;
 	max-width: 85px;
 }
 
 
+main > section#latest:before,
+main > section#latest:after {
+	content: '';
+	display: block;
+	width:360px;
+	margin: 20px auto;
+	border-bottom: 1px solid hsla(0,0%,0%,.1);
+}
+
+main > section > h1 {
+	font-size: 120%;
+	margin: 0.5em;
+}
+main > section > h1 time {
+	font-size: 80%;
+	font-weight: normal;
+	color: hsla(0,0%,0%,.5);
+}
+
 /* download button */
 a.download {
-	font-size: 14px;
-	padding: 5px 0.6em;
+	font-size: 17px;
+	padding: 0.5em 1em;
 	margin:  1px;
 	
 	font-weight: bold;
 	line-height: 1.2;
+	letter-spacing: 1px;
 	color: white;
 	text-decoration: none;
 	text-indent: 0;
 	white-space: nowrap;
-	text-shadow: 0 1px 2px hsla(0,0%,0%,.33);
+	text-shadow: 0 1px 2px hsla(0,0%,0%,.4);
 	
 	display: inline-block;
-	border-radius: 3px;
+	border-radius: 4px;
 	border: none !important;
-	background: url(../gfx/textures/noise.png),
-	    -webkit-linear-gradient(hsla(0,0%,100%,.07), hsla(0,0%,0%,.07));
-	background: url(../gfx/textures/noise.png),
-	            linear-gradient(hsla(0,0%,100%,.07), hsla(0,0%,0%,.07));
+	background: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
+	background:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
 	background-color: hsl(196,70%,60%);
-	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.25) inset,
-	            0 1px 0 1px hsla(0,0%,100%,.20) inset,
-	            0 1px 2px   hsla(0,0%,  0%,.30);
+	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.2) inset,
+	            0 1px 0 1px hsla(0,0%,100%,.1) inset,
+	            0 1px 2px   hsla(0,0%,  0%,.2);
 	-webkit-transition: background 0.3s;
 	        transition: background 0.3s;
 }
@@ -90,24 +113,39 @@ a.download:hover {
 	background-color: hsl(196,75%,50%);
 }
 
-a.download.large {
-	font-size: 17px;
-	padding: 13px 16px 10px;
-	
-	border-radius: 4px;
-	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.25) inset,
-	            0 1px 0 1px hsla(0,0%,100%,.20) inset,
-	            0 1px 2px   hsla(0,0%,  0%,.40),
-	            0 0   0 6px hsla(0,0%,  0%,.05);
+
+/* changelog */
+.info {
+	margin: 10px;
+	font-size:13px;
 }
-a.download.large::before {
-	content: url(../gfx/glyphs/download.svgz);
-	opacity: .5;
+.info > * {
 	display: inline-block;
-	float: left;
-	height: 35px;
-	width:  46px;
-	margin-left: -3px;
-	margin-right: 9px;
-	padding: 3px 0 2px;
+}
+.info dt {
+	font-size: 110%;
+	font-weight: bold;
+}
+.info dt:after {
+	content: ':';
+	font-weight: normal;
+	pading: 1px 0;
+}
+.info dd {
+	display: inline-block;
+}
+.info dd+dd:before {
+	content: ' | ';
+	opacity: 0.5;
+	font-size: 90%;
+}
+.info dd+dt {
+	margin-left: 1em;
+}
+
+
+/* develop */
+#develop a.github {
+	font-size:110%;
+	margin: 10px;
 }
