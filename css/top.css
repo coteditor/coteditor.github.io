@@ -72,19 +72,19 @@ main > section#latest:after {
 	border-bottom: 1px solid hsla(0,0%,0%,.1);
 }
 
-main > section > h1 {
+main > section > h2 {
 	font-size: 120%;
-	margin: 0.5em;
+	margin: 10px;
 }
-main > section > h1 time {
+main > section > h2 time {
 	font-size: 80%;
 	font-weight: normal;
 	color: hsla(0,0%,0%,.5);
 }
 
 /* download button */
-a.download {
-	font-size: 17px;
+a[href="download"] {
+	font-size: 19px;
 	padding: 0.5em 1em;
 	margin:  1px;
 	
@@ -92,7 +92,6 @@ a.download {
 	line-height: 1.2;
 	letter-spacing: 1px;
 	color: white;
-	text-decoration: none;
 	text-indent: 0;
 	white-space: nowrap;
 	text-shadow: 0 1px 2px hsla(0,0%,0%,.4);
@@ -109,12 +108,12 @@ a.download {
 	-webkit-transition: background 0.3s;
 	        transition: background 0.3s;
 }
-a.download:hover {
+a[href="download"]:hover {
 	background-color: hsl(196,75%,50%);
 }
 
 
-/* changelog */
+/* version data */
 .info {
 	margin: 10px;
 	font-size:13px;
