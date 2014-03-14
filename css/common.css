@@ -13,7 +13,7 @@
 /*___0.universal_reset_______________________________________________________*/
 
 * {
-	margin:  0;
+	margin: 0;
 	padding: 0;
 	line-height: 1.0;
 	font-weight: inherit;
@@ -45,14 +45,12 @@ a:link,
 a:visited {
 	color: hsl(90,45%,45%);
 }
-main a[href]:hover,
-nav a[href]:hover {
+a:link:hover {
 	background: hsla(90,45%,45%,.2);
 }
 a:not([href]) {
 	color: inherit;
 }
-
 a > sup {
 	font-size: 70%;
 	margin: 0 1px;
@@ -67,17 +65,20 @@ main li {
 main h1,
 main h2,
 main h3,
-main h4 {
+main h4,
+main dt {
 	line-height: 1.4;
 }
 
+p {
+	margin: 1em;
+}
 section {
 	margin: 2em 0;
 }
 section > section {
 	margin: 1em 0;
 }
-
 
 /* list marker */
 main ul li::before {
@@ -95,8 +96,8 @@ main ul li {
 main li+li {
 	margin-top: 0.2em;
 }
-main ul > ul {
-	padding-left: 4em !important;
+main ul ul {
+	margin-left: 1em;
 }
 
 
@@ -107,53 +108,14 @@ body {
 	font: 14px 'Lucida Grande', sans-serif;
 	color: hsl(0,0%,10%);
 	
-	background: hsl(0,0%,100%);
+	background: white;
 	padding: 15px 20px;
 }
-
-
-/* header */
-body > header {
-	font: 28px/1.0 'Lucida Grande', 'Helvetica Neue', sans-serif;
-	letter-spacing: 0.5px;
-	color: hsl(0,0%,33%);
-}
-body > header a {
-	color: inherit !important;
-}
-body > header a:hover {
-	-webkit-filter: blur(1.5px);
-}
-body > header:before {
-	display: inline-block;
-	content: '';
-	width: 48px;
-	height: 48px;
-	background:url(../img/appicon/64@2x.png);
-	background-size: 48px;
-	margin-right: 10px;
-	vertical-align: -14px;
-}
-
 
 /* main */
 main {
 	margin: 30px 10px;
 }
-
-
-/* nav */
-body > nav a {
-	text-transform: uppercase;
-	font-size: 12px;
-}
-body > nav a[href="../"]:before {
-	content: '«';
-	color: black;
-	opacity: 0.67;
-	margin-right: 3px;
-}
-
 
 /* footer */
 body > footer {
@@ -162,7 +124,7 @@ body > footer {
 }
 
 
-/*___3.Ajax__________________________________________________________________*/
+/*___3.scripts_______________________________________________________________*/
 
 /* tooltip */
 [role=tooltip]  { display:none; position:absolute; z-index:20; padding:0.3em 0.6em;
@@ -180,7 +142,6 @@ body > footer {
                       word-wrap:break-word; margin-top:1px }
 [role=tooltip] p:before  { opacity:0.6; margin-right:5px }
 
-/* tooltip options */ 
 [role=tooltip].note p {
 	font-size: 90%;
 	line-height: 1.4;

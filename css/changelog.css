@@ -10,6 +10,47 @@
   ////////////////////////////////////// */
 
 
+/*___page____________________________________________________________________*/
+
+/* header */
+body > header {
+	font: 28px/1.0 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	letter-spacing: 0.5px;
+	color: hsl(0,0%,33%);
+}
+body > header a {
+	color: inherit !important;
+	background: inherit !important;
+}
+body > header a:hover {
+	-webkit-filter: blur(1.5px);
+}
+body > header:before {
+	display: inline-block;
+	content: '';
+	width: 48px;
+	height: 48px;
+	background:url(../img/appicon/64@2x.png);
+	background-size: 48px;
+	margin-right: 10px;
+	vertical-align: -14px;
+}
+
+/* nav */
+body > nav a {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+body > nav a[href="../"]:before {
+	content: '«';
+	color: black;
+	opacity: 0.67;
+	margin-right: 3px;
+}
+
+
+/*___changelog_______________________________________________________________*/
+
 main > header h1 {
 	font-size: 22px;
 }

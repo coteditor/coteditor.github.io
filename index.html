@@ -18,23 +18,24 @@
 
 	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
 	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="stylesheet"    href="css/common.css"/>
 	<link rel="stylesheet"    href="css/top.css"/>
-	
+
 	<script defer="defer" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script defer="defer" src="js/common.js"></script>
-	<script defer="defer" async="async" src="http://b.st-hatena.com/js/bookmark_button.js"></script>
-	<script defer="defer" async="async" src="http://platform.twitter.com/widgets.js"></script>
+	<script async="async" src="http://b.st-hatena.com/js/bookmark_button.js"></script>
+	<script async="async" src="http://platform.twitter.com/widgets.js"></script>
 </head>
 
 
 <body>
+<header>
+	<img src="img/appicon/256@2x.png" width="256" alt="[appIcon]"/>
+	<h1>CotEditor</h1>
+	<p>The Plain-Text Editor for OS X</p>
+</header>
+
 <main>
-	<section id="top">
-		<img src="img/appicon/256@2x.png" width="256" alt="[appIcon]"/>
-		<h1>CotEditor</h1>
-		<p>The Plain-Text Editor for OS X</p>
-	</section>
-	
 	<section id="latest">
 		<h2>CotEditor 1.4 <time datetime="2014-03-00">(2014-03-00)</time></h2>
 		
@@ -42,11 +43,11 @@
 			download
 		</a>
 		
-		<dl class="info">
+		<dl>
 			<dt>require</dt>
 			<dd>OS X Lion or later</dd>
 			
-			<dt>changelog</dt>
+			<dt>release notes</dt>
 			<dd><a href="en/new" hreflang="en">en</a></dd>
 			<dd><a href="ja/new" hreflang="ja">ja</a></dd>
 		</dl>
@@ -63,27 +64,20 @@
 </main>
 
 
-	
-	
-	<aside class="sns">
-		<ul>
-			<li><iframe src="http://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=watch&amp;count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
-			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://coteditor.github.io/">Tweet</a></li>
-			<li><a href="http://b.hatena.ne.jp/entry/coteditor.github.io" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"/></a></li>
-		</ul>
-	</aside>
-
+<aside class="sns">
+	<ul>
+		<li><iframe src="http://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=watch&amp;count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+		<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://coteditor.github.io/">Tweet</a></li>
+		<li><a href="http://b.hatena.ne.jp/entry/coteditor.github.io" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="Add this entry to Hatena Bookmark"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="Hatena Bookmark!" width="20" height="20"/></a></li>
+	</ul>
+</aside>
 
 
 <footer>
-	<p class="copyright">
-		©2014 CotEditor Project
-	</p>
 	<p>CotEditor was originally made by <a href="http://www.aynimac.com" rel="external">nakamuxu</a>, and now is developed by <a href="http://about.me/usami.kosuke" rel="external">usami-k</a> and <a href="http://wolfrosch.com" rel="external">1024jp</a>.</p>
-
+	
+	<p class="copyright">©2014 CotEditor Project</p>
 </footer>
-
-
 </body>
 </html>

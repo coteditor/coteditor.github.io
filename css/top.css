@@ -9,80 +9,44 @@
    lastMod : 2014-03
   ////////////////////////////////////// */
 
-* {
-	margin: 0;
-	padding: 0;
-	font-style: inherit;
-}
-ul li {
-	list-style: none;
-}
- 
 body {
-	background: hsl(0,0%,100%);
-
-	font-family: 'Lucida Grande', sans-serif;
 	color: hsl(0,0%,40%);
 	text-align: center;
-	padding: 20px 100px;
-}
-
-a {
-	color: hsl(90,45%,45%);
-	text-decoration: none;
-}
-a:hover {
-	background: hsla(90,45%,45%,.2);
-}
-p {
-	margin: 1em;
+	font-size: 16px;
 }
 main > section {
 	margin: 2em auto;
 }
-
-footer {
-	font-size: 13px;
-	margin-top: 50px;
-}
-
-
-#top > h1 {
-	font: bold 64px/1.0 'Lucida Grande', serif;
-	margin: 10px 0 5px;
-}
-
-
-/* sns buttons */
-aside.sns {
-	margin: 30px 0 -20px;
-}
-aside.sns li {
-	display: inline-block;
-	max-width: 85px;
-}
-
-
-main > section#latest:before,
-main > section#latest:after {
+main > section::before {
 	content: '';
 	display: block;
 	width:360px;
 	margin: 20px auto;
 	border-bottom: 1px solid hsla(0,0%,0%,.1);
 }
-
 main > section > h2 {
+	font-weight: bold;
 	font-size: 120%;
 	margin: 10px;
 }
+
+
+/* title */
+body > header {
+	margin: 20px;
+}
+body > header h1 {
+	font: bold 64px/1.0 'Lucida Grande', serif;
+	margin: 10px 0 5px;
+}
+
+
+/* download latest */
 main > section > h2 time {
 	font-size: 80%;
 	font-weight: normal;
 	color: hsla(0,0%,0%,.5);
 }
-
-/* download button */
 a[href="download"] {
 	font-size: 19px;
 	padding: 0.5em 1em;
@@ -91,6 +55,7 @@ a[href="download"] {
 	font-weight: bold;
 	line-height: 1.2;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 	color: white;
 	text-indent: 0;
 	white-space: nowrap;
@@ -112,42 +77,58 @@ a[href="download"]:hover {
 	background-color: hsl(196,75%,50%);
 }
 
-
-/* version data */
-.info {
-	margin: 10px;
-	font-size:13px;
+#latest dl {
+	margin: 10px auto;
+	font-size: 80%;
+	width: 15em;
 }
-.info > * {
+#latest dl > * {
 	display: inline-block;
+	white-space: nowrap;
 }
-.info dt {
+#latest dl dt {
 	font-size: 110%;
 	font-weight: bold;
 }
-.info dt:after {
+#latest dl dt:after {
 	content: ':';
 	font-weight: normal;
-	pading: 1px 0;
+	margin-left: 1px;
 }
-.info dd {
+#latest dl dd {
 	display: inline-block;
 }
-.info dd+dd:before {
+#latest dl dd+dd:before {
 	content: ' | ';
 	opacity: 0.5;
 	font-size: 90%;
 }
-.info dd+dt {
+#latest dl dd+dt {
 	margin-left: 1em;
+}
+#latest dl dd+dt::before {
+	content: "\a";
+}
+
+/* develop */
+a.github {
+	display: inline-block;
+	color: white;
+	background: hsl(0,0%,20%);
+	border-radius: 4px;
+	padding: 5px 10px;
+	margin: 20px;
+}
+a.github:hover {
+	background: hsl(0,0%,50%);
 }
 
 
-/* develop */
-#develop a.github {
-	font-size:100%;
-	margin: 10px;
-	border: 1px solid hsla(0,0%,0%,.2);
-	border-radius: 6px;
-	padding: 5px 10px;
+/* sns buttons */
+aside.sns {
+	margin: 30px 0 -20px;
+}
+aside.sns li {
+	display: inline-block;
+	max-width: 85px;
 }
