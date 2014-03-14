@@ -20,6 +20,8 @@
 	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
 	<link rel="stylesheet"    href="css/top.css"/>
 	
+	<script defer="defer" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script defer="defer" src="js/common.js"></script>
 	<script defer="defer" async="async" src="http://b.st-hatena.com/js/bookmark_button.js"></script>
 	<script defer="defer" async="async" src="http://platform.twitter.com/widgets.js"></script>
 </head>
@@ -36,7 +38,9 @@
 	<section id="latest">
 		<h1>CotEditor 1.4 <time datetime="2014-03-00">(2014-03-00)</time></h1>
 		
-		<a href="https://github.com/coteditor/CotEditor/releases/download/1.4/CotEditor_1.4.dmg" class="download">download</a>
+		<a href="https://github.com/coteditor/CotEditor/releases/download/1.4/CotEditor_1.4.dmg"
+			onclick="ga('send', 'event', 'Downloads', 'click', 'latest CotEditor');"
+			class="download">download</a>
 		
 		<dl class="info">
 			<dt>require</dt>

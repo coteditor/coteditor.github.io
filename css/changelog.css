@@ -28,6 +28,9 @@ main h2 {
 
 
 /* footnote */
+main a sup {
+	color: hsl(0,0%,50%);
+}
 main > footer > ol {
 	font-size: 85%;
 	margin-left: 1em;

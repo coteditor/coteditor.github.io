@@ -45,8 +45,8 @@ a:link,
 a:visited {
 	color: hsl(90,45%,45%);
 }
-main a:hover,
-nav a:hover {
+main a[href]:hover,
+nav a[href]:hover {
 	background: hsla(90,45%,45%,.2);
 }
 a:not([href]) {
@@ -159,4 +159,34 @@ body > nav a[href="../"]:before {
 body > footer {
 	font-size: 13px;
 	margin-top: 50px;
+}
+
+
+/*___3.Ajax__________________________________________________________________*/
+
+/* tooltip */
+[role=tooltip]  { display:none; position:absolute; z-index:20; padding:0.3em 0.6em;
+                  box-shadow:0 2px 5px hsla(0,0%,  0%,.4);
+                  background:-webkit-linear-gradient(hsla(0,0%,100%,.06), transparent);
+                  background:        linear-gradient(hsla(0,0%,100%,.06), transparent);
+                  background-color:hsl(0,0%,15%); opacity:0.95; border-radius:3px }
+[role=tooltip] div  { height:0; width:0; position:absolute; left:40px; bottom:-17px;
+                      border:9px solid transparent; border-top-color:hsl(0,0%,15%);
+                      filter:url(filters.svg#dropshadow);
+              -webkit-filter:drop-shadow(0px 2px 3px hsla(0,0%,0%,.2)) }
+[role=tooltip] p    { color:#eee; text-shadow:0 1px 2px black; line-height:1.2 }
+[role=tooltip] span { color:#aaa; text-shadow:none; font-size:92% }
+[role=tooltip] p+p  { color:#aaa; text-shadow:none; font-size:85% ;
+                      word-wrap:break-word; margin-top:1px }
+[role=tooltip] p:before  { opacity:0.6; margin-right:5px }
+
+/* tooltip options */ 
+[role=tooltip].note p {
+	font-size: 90%;
+	line-height: 1.4;
+	text-align: justify;
+	text-shadow: none;
+	
+	width: 280px;
+	padding: 2px 2px 3px;
 }
