@@ -43,10 +43,11 @@ main, nav, header, footer, section, article, aside, figure {
 /* anchors */
 a:link,
 a:visited {
-	color: hsl(90,50%,40%);
+	color: hsl(90,45%,45%);
 }
-main a:hover {
-	text-decoration: underline;
+main a:hover,
+nav a:hover {
+	background: hsla(90,45%,45%,.2);
 }
 a:not([href]) {
 	color: inherit;
@@ -151,9 +152,6 @@ body > nav a[href="../"]:before {
 	color: black;
 	opacity: 0.67;
 	margin-right: 3px;
-}
-body > nav a:hover {
-	-webkit-filter: blur(0.5px);
 }
 
 
