@@ -52,9 +52,11 @@ a:not([href]) {
 	color: inherit;
 }
 a > sup {
+	color: hsl(0,0%,50%);
 	font-size: 70%;
 	margin: 0 1px;
 }
+
 
 /* basic spacing */
 main p,
@@ -71,7 +73,7 @@ main dt {
 }
 
 p {
-	margin: 1em;
+	margin: 1em 0;
 }
 section {
 	margin: 2em 0;
@@ -98,6 +100,12 @@ main li+li {
 }
 main ul ul {
 	margin-left: 1em;
+}
+
+/* footnote */
+main > footer > ol {
+	font-size: 85%;
+	margin-left: 20px;
 }
 
 
