@@ -29,6 +29,8 @@
 
 
 <body>
+<div id="fb-root"></div>
+
 <header>
 	<img src="img/appicon/256@2x.png" width="256" alt="[appIcon]"/>
 	<h1>CotEditor</h1>
@@ -69,8 +71,18 @@
 		<li><iframe src="http://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=watch&amp;count=true"
 allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
 		<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://coteditor.github.io/">Tweet</a></li>
+		<li><div class="fb-like" data-href="http://coteditor.github.io" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
 		<li><a href="http://b.hatena.ne.jp/entry/coteditor.github.io" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="Add this entry to Hatena Bookmark"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="Hatena Bookmark!" width="20" height="20"/></a></li>
 	</ul>
+	<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 </aside>
 
 

@@ -130,5 +130,7 @@ aside.sns {
 }
 aside.sns li {
 	display: inline-block;
-	max-width: 85px;
+	max-width: 80px;
+	vertical-align: top;
+	margin: 0 5px;
 }
