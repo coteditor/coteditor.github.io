@@ -10,7 +10,7 @@
   ////////////////////////////////////// */
 
 body {
-	color: hsl(0,0%,40%);
+	color: hsl(0,0%,33%);
 	text-align: center;
 	font-size: 16px;
 }
@@ -108,6 +108,37 @@ a[href="download"]:hover {
 }
 #latest dl dd+dt::before {
 	content: "\a";
+}
+
+/* features */
+#features {
+	max-width: 680px;
+}
+#features dl {
+	text-align:left;
+	
+	-webkit-columns: 2;
+	   -moz-columns: 2;
+	        columns: 2;
+	-webkit-column-gap:  1.5em;
+	   -moz-column-gap:  1.5em;
+	        column-gap:  1.5em;
+}
+#features dl > * {
+	-webkit-column-break-inside: avoid;
+	               break-inside: avoid;
+	display: table;  /* hack for column break */
+}
+#features dt {
+	-webkit-column-break-inside: avoid;
+	               break-inside: avoid;
+	font-weight: bold;
+}
+#features dd {
+	-webkit-column-break-inside: avoid;
+	               break-inside: avoid;
+	font-size: 90%;
+	margin-bottom: 0.8em;
 }
 
 /* develop */
