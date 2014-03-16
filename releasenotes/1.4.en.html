@@ -51,16 +51,20 @@
 	<li>Change support OS: OS X 10.7 and later.</li>
 	<li>Support 64-bit.</li>
 	<li>Support Retina display.</li>
+	<li>Update regular expression library used on sarch & leplase feature from Oniguruma to Onigmo.<a href="#fnote1"><sup>1</sup></a>
+	<ul>
+		<li>Now the most regular expression synax defined on Perl 5.10+ like look-behind/look-ahead can also be used.</li>
+	</ul></li>
 	<li>Update application, document and toolbar icons.</li>
 	<li>Add small size toolbar icons.</li>
-	<li>Add new &quot;Apache&quot;, &quot;Markdown&quot;, &quot;Scala&quot; and &quot;XML&quot; syntax coloring defintions.<a href="#fnote1"><sup>1</sup></a></li>
-	<li>Update &quot;PHP&quot; syntax coloring definition.<a href="#fnote1"><sup>1</sup></a>
+	<li>Add new &quot;Apache&quot;, &quot;Markdown&quot;, &quot;Scala&quot; and &quot;XML&quot; syntax coloring defintions.<a href="#fnote2"><sup>2</sup></a></li>
+	<li>Update &quot;PHP&quot; syntax coloring definition.<a href="#fnote2"><sup>2</sup></a>
 	<ul>
 		<li>Support until PHP5.5.</li>
 		<li>Color properties and numbers.</li>
 		<li>Improve outline menu.</li>
 	</ul></li>
-	<li>Update &quot;Python&quot; syntax coloring definition.<a href="#fnote1"><sup>1</sup></a>
+	<li>Update &quot;Python&quot; syntax coloring definition.<a href="#fnote2"><sup>2</sup></a>
 	<ul>
 		<li>Support Python3. (>=3.3)</li>
 		<li>Color decorators.</li>
@@ -87,7 +91,8 @@
 <section>
 <h2>Fixes</h2>
 <ul>
-	<li>Fixed an issue that unexpected "Update by external process" alert comes up even file is actually not updated.</li>
+	<li>Fixed an issue that unexpected &quot;Update by external process&quot; alert comes up even file is actually not updated.</li>
+	<li>Fixed  &quot;from an unidentified developer&quot; alert on the first launch.</li>
 	<li>Fixed an issue that toolbar background becomes transparent on fullscreen mode (Lion binary).</li>
 	<li>Fixed an issue that text view doesn't become transparent (Lion binary).</li>
 	<li>Fixed an issue that top and bottom margin are flipped on printing since OS X Lion.</li>
@@ -101,7 +106,8 @@
 
 <footer>
 	<ol>
-		<li id="fnote1">same as ones that were distributed on <a href="http://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
+		<li id="fnote1">The regular expression match on the syntax coloring has no effect by this change, since ICU library is used for it.</li>
+		<li id="fnote2">same as ones that were distributed on <a href="http://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
 	</ol>
 </footer>
 </main>

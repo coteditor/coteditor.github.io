@@ -52,16 +52,19 @@
 	<li>対応するOSをOS X 10.7以上に変更</li>
 	<li>64-bitに対応</li>
 	<li>Retinaディスプレイに対応</li>
+	<li>検索／置換機能で使用される正規表現ライブラリが鬼車のフォークである鬼雲に変更<a href="#fnote1"><sup>1</sup></a>
+		<li>先読み/戻り読みを始めとするPerl 5.10+で定義される多くの正規表現記法が使用可能に</li>
+	</ul></li>
 	<li>アプリケーションアイコン・書類アイコン・ツールバーアイコンを調整</li>
 	<li>ツールバーアイコンに小さいサイズを追加</li>
-	<li>「Apache」「Markdown」「Scala」「XML」のシンタックス定義を追加<a href="#fnote1"><sup>1</sup></a>
-	<li>「PHP」シンタックス定義を更新 <a href="#fnote1"><sup>1</sup></a>
+	<li>「Apache」「Markdown」「Scala」「XML」のシンタックス定義を追加<a href="#fnote2"><sup>2</sup></a>
+	<li>「PHP」シンタックス定義を更新 <a href="#fnote2"><sup>2</sup></a>
 	<ul>
 		<li>PHP5.5まで対応</li>
 		<li>プロパティ・数値をカラーリング</li>
 		<li>アウトラインメニューの改善</li>
 	</ul></li>
-	<li>「Python」シンタックス定義を更新 <a href="#fnote1"><sup>1</sup></a>
+	<li>「Python」シンタックス定義を更新 <a href="#fnote2"><sup>2</sup></a>
 	<ul>
 		<li>Python3系に対応 (>= 3.3)</li>
 		<li>デコレータのカラーリング</li>
@@ -89,6 +92,7 @@
 
 <ul>
 	<li>変更がないのに不意に「別のプロセスによって変更されました。」というアラートが出る問題を修正</li>
+	<li>初回起動時に「開発元が未確認」というアラートが出ていたのを修正</li>
 	<li>Lion用バイナリでフルスクリーン時にツールバーの背景が透けてしまう不具合を修正</li>
 	<li>Lion用バイナリでテキストビューのみを透明化できなかった不具合を修正</li>
 	<li>Lion以降印刷時にヘッダとフッタのマージンがひっくり返っていたのを修正</li>
@@ -101,7 +105,8 @@
 
 <footer>
 	<ol>
-		<li id="fnote1"><a href="http://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" title="CotEditor用シンタックス定義 //ヴォルフロッシュ">wolfrosch.com</a>で配布していたものと同一</li>
+		<li id="fnote1">シンタックスカラーリングの正規表現はICUライブラリを使用しているため影響はありません</li>
+		<li id="fnote2"><a href="http://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" title="CotEditor用シンタックス定義 //ヴォルフロッシュ">wolfrosch.com</a>で配布していたものと同一</li>
 	</ol>
 </footer>
 </main>
