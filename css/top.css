@@ -36,7 +36,7 @@ body > header {
 	margin: 20px;
 }
 body > header h1 {
-	font: bold 64px/1.0 'Lucida Grande', serif;
+	font: bold 64px/1.0 'Lucida Grande', sans-serif;
 	margin: 10px 0 5px;
 }
 
@@ -164,4 +164,10 @@ aside.sns li {
 	max-width: 80px;
 	vertical-align: top;
 	margin: 0 5px;
+}
+
+
+/* footer */
+body > footer p {
+	margin: 1em;
 }
