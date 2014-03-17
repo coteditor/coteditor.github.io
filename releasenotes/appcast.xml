@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>CotEditor update information</title>
+		<link>http://coteditor.sourceforge.jp/appcast.xml</link>
+		<description>CotEditor update information</description>
+		<item>
+			<title>Version 1.3.1</title>
+			<sparkle:releaseNotesLink>http://coteditor.sourceforge.jp/1.3.1_en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.sourceforge.jp/1.3.1_ja.html</sparkle:releaseNotesLink>
+			<pubDate>12 Feb 2012 02:31 +0900</pubDate>
+			<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+			<enclosure url="http://osdn.dl.sourceforge.jp/coteditor/54872/CotEditor_1.3.1_For10.7.dmg"
+			           sparkle:version="1.3.1"
+			           sparkle:dsaSignature="MC0CFQCdq1ouFFcrDgcRn2j52aUkHnOI1AIUJZQYKwovca8VIEFaLAAyyueZVrI="
+			           length="3362673"
+			           type="application/octet-stream" />
+		</item>
+		<item>
+			<title>Version 1.3.1</title>
+			<sparkle:releaseNotesLink>http://coteditor.sourceforge.jp/1.3.1_en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.sourceforge.jp/1.3.1_ja.html</sparkle:releaseNotesLink>
+			<pubDate>12 Feb 2012 02:31 +0900</pubDate>
+			<sparkle:minimumSystemVersion>10.4</sparkle:minimumSystemVersion>
+			<enclosure url="http://osdn.dl.sourceforge.jp/coteditor/54872/CotEditor_1.3.1.dmg"
+			           sparkle:version="1.3.1"
+			           sparkle:dsaSignature="MC0CFC5/cyyxQ0O48LiMdtxWV3NZlta5AhUAiw6ZZJL9c53Y6WOgiEZfcbQRaLo="
+			           length="3519208"
+			           type="application/octet-stream" />
+		</item>
+		<item>
+			<title>Version 1.3</title>
+			<sparkle:releaseNotesLink>http://coteditor.sourceforge.jp/1.3_en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.sourceforge.jp/1.3_ja.html</sparkle:releaseNotesLink>
+			<pubDate>10 Feb 2012 02:16 +0900</pubDate>
+			<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+			<enclosure url="http://osdn.dl.sourceforge.jp/coteditor/54829/CotEditor_1.3_For10.7.dmg"
+			           sparkle:version="1.3"
+			           sparkle:dsaSignature="MC4CFQCty/mxj466rZqMsGMAZkEq56CLhwIVALD3WLV8OEDvGkoaWPWcC2CoqnBx"
+			           length="3171443"
+			           type="application/octet-stream" />
+		</item>
+		<item>
+			<title>Version 1.3</title>
+			<sparkle:releaseNotesLink>http://coteditor.sourceforge.jp/1.3_en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.sourceforge.jp/1.3_ja.html</sparkle:releaseNotesLink>
+			<pubDate>10 Feb 2012 02:16 +0900</pubDate>
+			<sparkle:minimumSystemVersion>10.4</sparkle:minimumSystemVersion>
+			<enclosure url="http://osdn.dl.sourceforge.jp/coteditor/54829/CotEditor_1.3.dmg"
+			           sparkle:version="1.3"
+			           sparkle:dsaSignature="MC0CFAVRf1s3CMkG8OECs5MVsodcHN9sAhUA2aInWczlewJ9QXruWkmeF1WudM8="
+			           length="3522659"
+			           type="application/octet-stream" />
+		</item>
+	</channel>
+</rss>
