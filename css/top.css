@@ -47,7 +47,7 @@ main > section > h2 time {
 	font-weight: normal;
 	color: hsla(0,0%,0%,.5);
 }
-a[href^="download"] {
+a.download {
 	font-size: 19px;
 	padding: 0.5em 1em;
 	margin:  1px;
@@ -73,7 +73,7 @@ a[href^="download"] {
 	-webkit-transition: background 0.3s;
 	        transition: background 0.3s;
 }
-a[href^="download"]:hover {
+a.download:hover {
 	background-color: hsl(196,75%,50%);
 }
 
