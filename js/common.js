@@ -13,6 +13,18 @@ var isiPhone = navigator.userAgent.match(/iPhone|iPod/i);
 var isRetina = window.devicePixelRatio > 1;
 
 
+// replace @2x images ---------------------------------------------------------
+//     require: jQuery
+
+jQuery(function ($) {
+	if (isRetina && !isiPhone) {
+		$('[srcset]').each(function () {
+			$(this).attr('src', $(this).attr('srcset').replace(/([^ ]+) 2x/, '$1'));
+		});
+	}
+});
+
+
 // footnote to title ----------------------------------------------------------
 //     version: v1.0 2013-10
 //     require: jQuery
