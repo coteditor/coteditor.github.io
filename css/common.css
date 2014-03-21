@@ -103,9 +103,21 @@ main ul ul {
 }
 
 /* footnote */
+section > footer > ol,
+article > footer > ol,
 main > footer > ol {
 	font-size: 85%;
 	margin-left: 20px;
+}
+
+/* code */
+code {
+	font: 94% Menlo, monospace;
+	color: hsla(0,0%,0%,.8);
+	background-color: hsl(0,0%,96%);
+	border: 1px solid hsl(0,0%,80%);
+	border-radius:2px;
+	padding:0.1em 0.3em;
 }
 
 
