@@ -142,6 +142,13 @@ a.download:hover {
 }
 
 /* develop */
+#develop section h3 {
+	font-size: 105%;
+}
+#develop section p {
+	font-size: 90%;
+	margin: 0;
+}
 a.github {
 	display: inline-block;
 	color: white;
