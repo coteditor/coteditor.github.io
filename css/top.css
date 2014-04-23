@@ -178,3 +178,36 @@ aside.sns li {
 body > footer p {
 	margin: 1em;
 }
+
+
+/* beta */
+a[href="beta"] {
+	position:absolute;
+	top:-55px;
+	left:-100px;
+	font-weight: bold;
+	-webkit-transform: rotate(-20deg);
+	        transform: rotate(-20deg);
+	text-indent: -0.5em;
+	background-color: hsl(90,40%,85%);
+	padding:50px 120px 10px;
+	font-size: 21px;
+	line-height: 1.1;
+	text-align: left;
+	
+	-webkit-animation:  fadeIn backwards 0.8s 0.5s;
+	        animation:  fadeIn backwards 0.8s 0.5s;
+}
+a[href="beta"]:first-line {
+	font-weight: normal;
+	font-size: 80%;
+}
+a[href="beta"]:hover {
+	background-color: hsl(90, 50%,75%);
+}
+@-webkit-keyframes fadeIn {
+	from { opacity:0 }
+}
+@keyframes fadeIn {
+	from { opacity:0 }
+}

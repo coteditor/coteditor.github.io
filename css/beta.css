@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////
+   CotEditor Beta Distribution Page Style Sheet
+   
+   author  : 1024jp <wolfrosch.com>
+   site    : coteditor.github.io
+   target  : beta page
+   lastMod : 2014-04
+  ////////////////////////////////////// */
+
+body {
+	color: hsla(0,0%,100%,.67);
+	background-color: hsl(203,3%,30%);
+	text-align: center;
+	font-size: 14px;
+}
+
+ a[href] {
+	text-decoration: underline;
+	color: hsla(0,0%,100%,.9);
+}
+
+main > h2 {
+	font-size: 120%;
+	margin: 10px;
+}
+
+body:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: url(safaty_stripes);
+}
+
+/* title */
+body > header {
+	margin: 20px;
+	position: relative;
+}
+body > header h1 {
+	font: bold 64px/1.0 'Lucida Grande', sans-serif;
+	color: hsla(0,0%,100%,.25);
+	margin: 10px;
+}
+body > header h1 span {
+	font-family: 'Noteworthy';
+	line-height: 0.8;
+	font-weight: normal;
+	display: inline-block;
+	border-radius: 4px;
+	border: 2px solid hsla(0,0%,100%,.2);
+	padding:0 0.14em;
+	margin-left: -0.1em;
+}
+
+
+/* download */
+a.download {
+	font-size: 19px;
+	padding: 0.5em 1em;
+	margin:  1px;
+	
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	text-indent: 0;
+	white-space: nowrap;
+	text-shadow: 0 1px 2px hsla(0,0%,0%,.4);
+	
+	display: inline-block;
+	border-radius: 4px;
+	border: none !important;
+	background: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
+	background:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
+	background-color: hsl(87,55%,55%);
+	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.2) inset,
+	            0 1px 0 1px hsla(0,0%,100%,.1) inset,
+	            0 1px 2px   hsla(0,0%,  0%,.2);
+	-webkit-transition: background 0.3s;
+	        transition: background 0.3s;
+}
+a.download:hover {
+	background-color: hsl(87,70%,40%);
+}
+a.download span {
+	font-size:95%;
+	font-weight: normal;
+	text-transform: lowercase;
+	text-shadow: 0 0 2px hsla(0,0%,0%,.3);
+}
+
+a.download + ul {
+	margin:0.5em;
+}
+a.download + ul li {
+	display: inline;
+	padding: 0;
+}
+a.download + ul li:before {
+	content: ' | ';
+	margin: 0;
+}
+a.download + ul li:first-child:before {
+	display: none;
+}
+
+span.note {
+	color: #aaa;
+}
+[role="separator"] {
+	color: hsla(0,0%,0%,.2);
+}
+
+p#issues {
+	font-size:120%;
+	margin: 2em;
+}
+p#issues:before {
+	content: '📃 ';
+}
+
+/* sns buttons */
+aside.sns {
+	margin: 30px 0 -20px;
+}
+aside.sns li {
+	display: inline-block;
+	max-width: 80px;
+	vertical-align: top;
+	margin: 0 5px;
+}
