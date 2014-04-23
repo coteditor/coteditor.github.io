@@ -16,9 +16,13 @@ body {
 	font-size: 14px;
 }
 
- a[href] {
+a[href] {
 	text-decoration: underline;
 	color: hsla(0,0%,100%,.9);
+}
+a[href]:hover {
+	text-decoration: none;
+	background: hsla(0,0%,100%,.2);
 }
 
 main > h2 {
@@ -34,6 +38,7 @@ body:before {
 	right: 0;
 	height: 8px;
 	background: url(safaty_stripes);
+	box-shadow: 0 1px 3px hsla(0,0%,0%,.16);
 }
 
 /* title */
