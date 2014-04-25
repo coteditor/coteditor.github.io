@@ -1,0 +1,7 @@
+
+# content negotiation
+<IfModule mod_negotiation.c>
+	LanguagePriority en jp
+</IfModule>
+
+Options +MultiViews
