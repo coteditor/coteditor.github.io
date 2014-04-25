@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8"/>
-	<meta name="description"  content="Text Editor for OS X"/>
+	<meta name="description" content="Text Editor for OS X"/>
+	<meta name="robots"      content="noindex"/>
 
 	<title>CotEditor -Text Editor for OS X</title>
 
@@ -16,6 +17,7 @@
 	<meta property="og:locale:alternate" content="en_US"/>
 	<meta property="twitter:card"   content="summary"/>
 
+	<link rel="canonical"     href="http://coteditor.github.io"/>
 	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
 	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
 	<link rel="stylesheet"    href="css/common.css"/>
@@ -34,7 +36,7 @@
 <header>
 	<img src="img/appicon/256@2x.png" width="256" alt="[appIcon]"/>
 	<h1>CotEditor</h1>
-	<p>The Plain-Text Editor for OS X</p>
+	<p>OS X専用 プレーンテキストエディタ</p>
 </header>
 
 <main>
@@ -42,51 +44,56 @@
 		<h2>CotEditor 1.4.1 <time datetime="2014-03-22">(2014-03-22)</time></h2>
 		
 		<a href="https://github.com/coteditor/CotEditor/releases/download/1.4.1/CotEditor_1.4.1.dmg" class="download" onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor');">
-			download
+			ダウンロード
 		</a>
 		
 		<dl>
-			<dt>require</dt>
-			<dd>OS X Lion or later</dd>
+			<dt>システム条件</dt>
+			<dd>OS X Lion以降</dd>
 			
-			<dt>release notes</dt>
-			<dd><a href="releasenotes/1.4.1.en" hreflang="en">en</a></dd>
-			<dd><a href="releasenotes/1.4.1.ja" hreflang="ja">ja</a></dd>
+			<dt>リリースノート</dt>
+			<dd><a href="releasenotes/1.4.1.ja" hreflang="ja">日本語</a></dd>
 		</dl>
 	</section>
 	
 	<section id="screenshot">
-		<h2>screenshot</h2>
-		<img src="img/screenshot.png" srcset="img/screenshot@2x.png 2x" width="590" alt="[screenshot]"/>
+		<h2>スクリーンショット</h2>
+		<img src="img/screenshot.png" srcset="img/screenshot@2x.png 2x" width="590" alt="[スクリーンショット]"/>
 	</section>
 	
 	<section id="features">
-		<h2>features</h2>
+		<h2>主な機能</h2>
 		<p>CotEditorはOS X専用の軽量なプレーンテキストエディタです。</p>
 		<dl>
+			<dt>OS X専用</dt>
+			<dd>CotEditorはOS Xのために作られました。OS Xのアプリケーションがあるべきように振る舞い、見た目も手を抜きません。</dd>
+			
 			<dt>シンタックスカラーリング</dt>
 			<dd>HTMLやPHP, Python, Ruby, Markdownなど、17のメジャーな言語にあらかじめ対応。自分で新たな定義を作成することもできます。</dd>
 			
 			<dt>パワフルな検索と置換</dt>
-			<dd>OgreKitフレームワークを</dd>
+			<dd>OgreKitフレームワークを用いた強力な検索／置換パネルを備えています。</dd>
+			
+			<dt>瞬時に起動</dt>
+			<dd>すぐに立ち上がるので、思い立ったときにすぐに書き始めることができます。</dd>
 			
 			<dt>アウトラインメニュー</dt>
-			<dd>あらかじめシンタックスに沿って定義された行を抽出し</dd>
+			<dd>書類から定められたルールに適合した行を抽出しメニューとして表示します。メニューを選択すれば、該当箇所に移動します。</dd>
 			
 			<dt>ビューの分割</dt>
-			<dd>Split a window into multiple panes to see different parts of your document at the same time.</dd>
+			<dd>エディタを分割し、文書の異なる部分を一度に表示できます。</dd>
 			
 			<dt>スクリプト</dt>
-			<dd>Make your own macro in your favorite language, whether it is Python, Ruby, Perl, PHP, UNIX shell or AppleScript.</dd>
+			<dd>AppleScriptにPython, Ruby, Perl, PHP, UNIX shell、あなたの好きな言語でマクロを書くことができます。</dd>
 			
-			<dt>incompatible characters</dt>
-			<dd>Check and list-up the characters in your document that cannot be converted into the desired encoding.</dd>
+			<dt>非互換文字の検出</dt>
+			<dd>エンコーディングを変換する際には変換できない文字をリストアップします。</dd>
 			
-			<dt>キーバインディング</dt>
-			<dd>Fully customizable keybindings.</dd>
+			<dt>キーバインド</dt>
+			<dd>Cocoaキーバインドに準拠し、さらに独自のキーバインドも設定できます。</dd>
 			
 			<dt>日本語フレンドリー</dt>
-			<dd>Estimate various file encodings accurately and handle its line height correctly.</dd>
+			<dd>日本語ローカライズはもちろん、エンコーディング判定を丁寧に行い、また和英混ざった文書でも行高をきちんと一定に保ちます。</dd>
 		</dl>
 	</section>
 	
@@ -117,7 +124,7 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
 
 
 <footer>
-	<p>CotEditor was originally made by <a href="http://www.aynimac.com" rel="external">nakamuxu</a>, and now is developed by <a href="http://about.me/usami.kosuke" rel="external">usami-k</a> and <a href="http://wolfrosch.com" rel="external">1024jp</a>.</p>
+	<p>CotEditorは<a href="http://www.aynimac.com" rel="external">nakamuxu</a>によって生み出され、現在は<a href="http://about.me/usami.kosuke" rel="external">usami-k</a>と<a href="http://wolfrosch.com" rel="external">1024jp</a>によって開発されています。</p>
 	
 	<p class="copyright">©2014 CotEditor Project</p>
 </footer>
