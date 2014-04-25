@@ -1,9 +1,0 @@
-
-# content negotiation
-<IfModule mod_negotiation.c>
-	AddLanguage en .en
-	AddLanguage ja .ja
-	LanguagePriority en ja
-</IfModule>
-
-Options +MultiViews
