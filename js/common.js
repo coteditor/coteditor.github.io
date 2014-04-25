@@ -120,6 +120,10 @@ jQuery(function ($) {
 				$(this).tooltip({displayUrl: false});
 			} else if ($(this).is('.fnote')) {
 				$(this).tooltip({displayUrl: false, class: 'note'});
+			} else if ($(this).is('[href*="//twitter.com/"]')) {
+				$(this).tooltip({'class': 'twitter'});
+			} else if ($(this).is('[href*="//github.com/"]')) {
+				$(this).tooltip({'class': 'github'});
 			} else {
 				$(this).tooltip();
 			}
