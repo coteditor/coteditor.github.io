@@ -10,37 +10,10 @@
   ////////////////////////////////////// */
 
 
-/*___header__________________________________________________________________*/
-
-body > header {
-	font: 26px/1.0 'Lucida Grande', sans-serif;
-	letter-spacing: 0.5px;
-	color: hsl(0,0%,33%);
-}
-body > header a {
-	color: inherit !important;
-	background: inherit !important;
-}
-body > header a:hover {
-	-webkit-filter: blur(1.5px);
-}
-body > header:before {
-	display: inline-block;
-	content: '';
-	width: 48px;
-	height: 48px;
-	background:url(../img/appicon/64@2x.png);
-	background-size: 48px;
-	margin-right: 4px;
-	vertical-align: -14px;
-}
-
 p.attention strong {
     color: hsl(16,70%,50%);
     font-size: 116%;
 }
-
-/*___changelog_______________________________________________________________*/
 
 article {
 	font-size: 13px;

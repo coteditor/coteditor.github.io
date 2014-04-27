@@ -46,6 +46,9 @@ body > header {
 	margin: 20px;
 	position: relative;
 }
+body > header:before {
+	display: none;
+}
 body > header h1 {
 	font: bold 64px/1.0 'Lucida Grande', sans-serif;
 	color: hsla(0,0%,100%,.25);

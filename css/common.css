@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.github.io
    target  : all pages
-   lastMod : 2014-03
+   lastMod : 2014-04
   ////////////////////////////////////// */
 
 
@@ -132,6 +132,30 @@ body {
 	padding: 15px 20px;
 }
 
+/* header */
+body > header {
+	font: 26px/1.0 'Lucida Grande', sans-serif;
+	letter-spacing: 0.5px;
+	color: hsl(0,0%,33%);
+}
+body > header a {
+	color: inherit !important;
+	background: inherit !important;
+}
+body > header a:hover {
+	-webkit-filter: blur(1.5px);
+}
+body > header:before {
+	display: inline-block;
+	content: '';
+	width: 48px;
+	height: 48px;
+	background:url(../img/appicon/64@2x.png);
+	background-size: 48px;
+	margin-right: 4px;
+	vertical-align: -14px;
+}
+
 /* main */
 main {
 	margin: 30px 10px;
@@ -141,6 +165,19 @@ main {
 body > footer {
 	font-size: 13px;
 	margin-top: 50px;
+}
+
+/* sns */
+aside.sns li {
+	display: inline-block;
+	max-width: 90px;
+	vertical-align: top;
+}
+aside.sns li+li {
+	margin-left: 10px;
+}
+aside.sns li:before {
+	display: none;
 }
 
 
