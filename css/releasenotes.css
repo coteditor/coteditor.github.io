@@ -14,6 +14,9 @@ p.attention strong {
     color: hsl(16,70%,50%);
     font-size: 116%;
 }
+p.note strong {
+	text-decoration: underline;
+}
 
 article {
 	font-size: 13px;

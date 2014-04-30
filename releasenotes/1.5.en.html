@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 1.5 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 1.5"/>
+
+	<meta property="og:type"        content="article"/>
+	<meta property="og:url"         content="http://coteditor.github.io/releasenotes/1.5.en"/>
+	<meta property="og:title"       content="CotEditor"/>
+	<meta property="og:description" content="What's new on CotEditor 1.5"/>
+	<meta property="og:image"       content="http://coteditor.github.io/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"   content="CotEditor"/>
+	<meta property="og:locale"      content="en_US"/>
+	<meta property="twitter:card"   content="summary"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="1.5.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<article>
+<header>
+	<h1>What's New on CotEditor 1.5</h1>
+	<p>release: <time>2014-05-0x</time></p>
+</header>
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>New color code panel.<ul>
+		<li>Support 3-digit Hex, CSS’s rgb(), rgba(), hsl() and hsla().</li>
+		<li>Fix an issue that the color selected in the color panel was applied also to texts in text view.</li>
+	</ul></li>
+	<li>Informations to display in status bar become selectable.</li>
+	<li>Add word count and file size to status bar info choices.</li>
+	<li>Add word count, file size and byte size to info drawer.</li>
+	<li>Tab format becomes settable via “Format” menu and toolbar to apply only to the current document.</li>
+	<li>On Auto-Indent mode, indent become automatically deeper when return key is pressed exact between <code>{</code> and <code>}</code> or just after <code>:</code> character.</li>
+	<li>Add new “CoffeeScript” <a href="#fnote1"><sup>1</sup></a>, “Dart”, “Diff”, “INI” <a href="#fnote1"><sup>1</sup></a>, “JSON”, “Makefile”, “reStructuredText” <a href="#fnote1"><sup>1</sup></a>, “Textile” <a href="#fnote1"><sup>1</sup></a> and “YAML” syntax style definitions.</li>
+	<li>Now, sscript/folder whose name begins with underscore (_) are not displayed in script menu.</li>
+	<li>[experimental] Add “Use Vertical Orientation” action to “Format” menu (Line numbers are always disabled while vertical orientation mode).</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Additions/Changes</h2>
+
+<ul>
+	<li>Add “Western (ASCII)” and “Chinese (GB 18030)” to encoding list.</li>
+	<li>Brush-up terms on UI.</li>
+	<li>Update “HTML” syntax coloring definition.<ul>
+		<li>Support HTML5 and HTML5.1</li>
+		<li>Better coloring.</li>
+	</ul></li>
+	<li>Update “Perl” syntax coloring definition.<ul>
+		<li>Color numbers and variables.</li>
+		<li>Add some keywords.</li>
+		<li>Improve comments coloring.</li>
+	</ul></li>
+	<li>Add “Speech” to “Edit” menu.</li>
+	<li>Add setting for smart quotes/dashes to preferences.</li>
+	<li>Regard numbers and underscore <code>_</code> as string is continuing in non-regex keywords on syntax coloring.</li>
+	<li>Force disable smart quotes/dashes expect the document view.</li>
+	<li>Change the default order of the encodings detection priority, and now “UTF-8” comes to the first position.<ul>
+		<li>You should perform “Set to Factory Default” to apply it. if you update CotEditor from previous version.</li>
+	</ul></li>
+	<li>Updates about window opaque:<ul>
+		<li>Remove the feature to make whole the window semi-transparent, and now opacity setting is applied always only to the view.</li>
+		<li>Now, line number view follows the text view’s opacity.</li>
+		<li>Now, opacity value need not be multiple of 5%</li>
+		<li>Fix term “transparency” to “opacity”.</li>
+		<li>Change “Apply to all Windows” button to “Set as Default”.</li>
+		<li>Update guide image for view opacity slider in preferences.</li>
+		<li>Fix window’s drop-shadow whose text view is full-opaque. </li>
+	</ul></li>
+	<li>Updates about window open behavior:<ul>
+		<li>Store last window’s position and locate new window to the place.</li>
+		<li>Remove the feature that unedited blank window closes automatically when another document is going to open.</li>
+	</ul></li>
+	<li>Updates about print:<ul>
+		<li>Implement print preview on print panel.</li>
+		<li>Apply the document name to the print job.</li>
+		<li>Add “Syntax Name” to the header/footer information choices.</li>
+		<li>Remove hyphens next to page number.</li>
+		<li>Adjust print panel layout.</li>
+	</ul></li>
+	<li>Toggle menu item names occasionally like “Show” / “Hide”, instead displaying checkmark.</li>
+	<li>Change syntax styles management method.<ul>
+		<li>Don’t to copy bundled styles to user’s “Application Support” area on launch.<ul>
+			<li>From this, bundled syntax styles follow updates after CotEditor 1.5 as long as the styles are not customized.<ul>
+				<li>This is not applied to the syntax styles that were copied previous.  To apply it to them, perform “Set to Factory Defaults” on style editing sheet of each bundled syntax style in Preferences >  Format pane > Installed styles.</li>
+			</ul></li>
+			<li>for advanced users:  “~/Application Support/CotEditor/SyntaxColorings (old)” will be created on the first launch of CotEditor 1.5, if you updated it from the previous version. This folder is just a backup data for this switching. you can generally remove it if you want.</li>
+		</ul></li>
+		<li>Handle files Sandbox level safety on style import/export.</li>
+	</ul></li>
+	<li>Updates about Preferences window:<ul>
+		<li>More compact window.</li>
+		<li>New grouping.<ul>
+			<li>Remove “Syntax” pane and move its settings to “Format” pane and “Appearance” pane.</li>
+			<li>Create a new “Edit” pane extracting settings about editing from “General” pane and “Format” pane.</li>
+			<li>Other several setting moves.</li>
+		</ul></li>
+		<li>Use More OS X-friendly terms for labels.</li>
+		<li>Apply selected font style to the font fields.</li>
+		<li>Use selected pane name for the preferences window title.</li>
+		<li>New syntax style management UI.</li>
+		<li>Update syntax style editing sheet.<ul>
+			<li>Change mode switching from popup button to list.</li>
+			<li>Now, multiple lines can be selected and removed at once.</li>
+			<li>Validate new syntax name immediately on editing and show an error message if it isn’t valid.</li>
+		</ul></li>
+		<li>Improve UI of the extension conflicts sheet.</li>
+		<li>Add stepper next to number field.</li>
+	</ul></li>
+	<li>Updates about AppleScript:<ul>
+		<li>Remove <code>transparency</code> and <code>alpha only textView</code> properties.</li>
+		<li>Add <code>view opacity</code> property to window object.</li>
+		<li>Remove <code>selection</code> object direct under the Application object.</li>
+	</ul></li>
+	<li>Updates about saving position of the script samples and documents:<ul>
+		<li>Now, documents for CotEditor scripting can be found in “Help” menu.</li>
+		<li>Now, sample scripts will be copied only on the first CotEditor launch.</li>
+		<li>Add hidden “Copy Sample to Scripts Folder” menu item that will be appeared only when option key is pressed.</li>
+	</ul></li>
+	<li>Remove unimportant settings.<ul>
+		<li>Remove setting about file Type/Creator that are used until OS X 10.5 to determine document type on system.</li>
+		<li>Remove setting about wrapped mark in the line number view and now wrapped marks are always shown.</li>
+		<li>Remove the coloring option setting “Include Input Method chars” and now they are always included.</li>
+	</ul></li>
+	<li>Updates about script error panel:<ul>
+		<li>Implement text search in error messages.</li>
+		<li>Increase text size and insert a blank line between error messages.</li>
+	</ul></li>
+	<li>Make matching brace highlight more noticeable.</li>
+	<li>Add “Report Bug…” menu item to “Help” menu.</li>
+	<li>Use light scroller style when background color is dark.</li>
+	<li>Change line/character selection on Go To panel from radio buttons to popup menu.</li>
+	<li>Improve inspector drawer layout.</li>
+	<li>Now line number view updates while window resizing.</li>
+	<li>Improve syntax coloring on text inputing.</li>
+	<li>Migrate memory management to ARC (Automatic Reference Counting).</li>
+	<li>Optimize processes on application launch.</li>
+	<li>Update Sparkle framework to version 1.6.0:<ul>
+		<li>Add Japanese localization.</li>
+		<li>Fix “Automatically download and install updates in the future.” checkbox.</li>
+	</ul></li>
+	<li>Many code and document changing.</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue that all print page number becomes “-1-”.</li>
+	<li>Fix an issue that check mark on line endings popup menu in toolbar was disappear.</li>
+	<li>Fix an issue that re-coloring didn’t proceed after the text replacement.</li>
+	<li>Fix an issue that the <code>close</code> command via AppleScript was ignored.</li>
+	<li>Fix an issue that unwanted window objects were visible and could be handled via AppleScript.</li>
+	<li>Fix an issue that <code>^</code> (beginning of a line) on AppleScript’s search/replacement was not recognized when the document’s line endings are set to CR.</li>
+	<li>Fix an issue that visual tab width didn’t follow new font when font is temporary changed via font panel.</li>
+	<li>Fix an issue that strings between quotes/dashes were not colored when comment coloring definition is not contained in the syntax coloring definition.</li>
+	<li>Fix an issue that invalid style name was accepted and the saving was failed on syntax style editing under the specific conditions.</li>
+	<li>Fix an issue that syntax style file override another existing one without alert on syntax style editing under the specific conditions.</li>
+	<li>Fix an issue that application freeze when one of the installed syntax styles contains an extension definition with the empty string.</li>
+	<li>Fix an issue that key-bindings contain back-slash didn’t work under the Japanese locale.</li>
+	<li>Fix an issue that encoding names in the encoding list on the preferences was editable.</li>
+	<li>Fix an issue that document saving is failed when the document that is set to “Non-lossy ASCII” contains non-ASCII characters.</li>
+	<li>Fix an issue that application didn’t terminate on quite even “Don’t Save and Close” button was selected when a document  whose Finder lock couldn’t be unlocked exists.</li>
+	<li>Fix PHP code on the application icon.</li>
+</ul>
+
+</section>
+
+<footer>
+	<ol>
+		<li id="fnote1">same as ones that were distributed on <a href="http://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
+	</ol>
+</footer>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">©2014 CotEditor Project</p>
+</footer>
+</body>
+</html>
