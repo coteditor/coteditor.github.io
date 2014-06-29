@@ -8,12 +8,12 @@
 			<title>CotEditor 1.5.4</title>
 			<sparkle:releaseNotesLink>http://coteditor.github.io/releasenotes/1.5.4.en.html</sparkle:releaseNotesLink>
 			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.github.io/releasenotes/1.5.4.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Wed, 25 Jun 2014 23:26:24 +0900</pubDate>
+			<pubDate>Sun, 29 Jun 2014 23:05:27 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/coteditor/CotEditor/releases/download/1.5.4/CotEditor_1.5.4.dmg"
 			           sparkle:version="1.5.4"
-			           sparkle:dsaSignature="MC0CFATbC3pvVtAl7DvY5zAUBsz2/RtUAhUAlxSam4Uib/x93/4oaWh7IQ5UsDo="
-			           length="5579508"
+			           sparkle:dsaSignature="MC4CFQCE/5D3T7N3JzKnhjm4FbFZE2MROwIVAKtiYnSdhVUYmxq5ZEO7777aTmYF"
+			           length="5557649"
 			           type="application/octet-stream" />
 		</item>
 	</channel>
