@@ -133,7 +133,7 @@ jQuery(function ($) {
 
 
 // google analytics tracking --------------------------------------------------
-//     lastMod: 2014-03
+//     lastMod: 2014-08
 
 if (location.hostname == 'coteditor.github.io') {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -142,5 +142,6 @@ if (location.hostname == 'coteditor.github.io') {
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	
 	ga('create', 'UA-2404158-10', 'coteditor.github.io');
+	ga('require', 'displayfeatures');
 	ga('send', 'pageview');
 }
