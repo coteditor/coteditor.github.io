@@ -43,3 +43,30 @@ article h2 {
 .none {
 	color: hsl(0,0%,50%);
 }
+
+/* highlights */
+.highlights {
+	font: 'Helvetica Neue';
+	border-top: 2px solid hsl(203,20%,90%);
+	border-bottom: 2px solid hsl(203,20%,90%);
+	padding: 1em 0;
+}
+.highlights h1 {
+	color: hsl(203,20%,50%);
+	font-weight: normal;
+	font-size: 160%;
+	margin-bottom: 0.5em;
+}
+.highlights dt:before {
+	content: '✔︎';
+	color: hsl(90,50%,50%);
+	font-size:140%;
+	vertical-align: -0.05em;
+	margin-right: 0.3em;
+}
+.highlights dt {
+	font-weight: bold;
+}
+.highlights dd {
+	margin-bottom: 1em;
+}
