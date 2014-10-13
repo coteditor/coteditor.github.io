@@ -4,14 +4,14 @@
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8"/>
 
-	<title>What's new on CotEditor 2.0β1 - CotEditor</title>
+	<title>What’s new on CotEditor 2.0β1 - CotEditor</title>
 
 	<meta name="description"  content="Text Editor for OS X"/>
 
 	<meta property="og:type"        content="article"/>
 	<meta property="og:url"         content="http://coteditor.github.io/releasenotes/1.4.ja"/>
 	<meta property="og:title"       content="CotEditor"/>
-	<meta property="og:description" content="What's new on CotEditor 2.0β1"/>
+	<meta property="og:description" content="What’s new on CotEditor 2.0β1"/>
 	<meta property="og:image"       content="http://coteditor.github.io/img/appicon2/512@2x.png"/>
 	<meta property="og:site_name"   content="CotEditor"/>
 	<meta property="og:locale"      content="en_US"/>
@@ -42,11 +42,11 @@
 <dl>
 	<dt>Coloring theme feature</dt>
 	<dd>You can now store your color settings in themes and switch them easily.
-	  You can also export & distribute your own themes.</dd>
+	  You can also export &amp; distribute your own themes.</dd>
 	
 	<dt>Drastic performance improvements</dt>
 	<dd>In this change, we made efforts to identify bunch of performance bottle
-	  necks and to resolve them. You don't get frustrated anymore on typing or
+	  necks and to resolve them. You don’t get frustrated anymore on typing or
 	  opening files in particular with large files. Hanging on opening large
 	  files is also resolved.</dd>
 	
@@ -58,10 +58,10 @@
 	<dd>New “Types”, “Attributes” and “Variables” keywords were added to syntax
 	  highlighting colors.</dd>
 	
-<!-- 	<dt>New syntax style file format in YAML</dt>
+	<dt>New syntax style file format in YAML</dt>
 	<dd>The syntax style file format was changed from plist to YAML. It makes
 	  style file ca. 60% smaller and helps to make your syntax via your own
-	  script.</dd> -->
+	  script.</dd>
 	
 	<dt>Yosemite support</dt>
 	<dd>CotEditor works well on OS X Yosemite. The new application icon is also in
@@ -76,7 +76,7 @@
 
 <article>
 <header>
-	<h1>What's New on CotEditor 2.0β1</h1>
+	<h1>What’s New on CotEditor 2.0β1</h1>
 	<p>release: <time>2014-10-0x</time></p>
 </header>
 
@@ -129,7 +129,7 @@
 	</ul></li>
 	<li>Change syntax style file format from plist (XML) to YAML.<ul>
 		<li>Legacy user styles will be migrated automatically on the first launch of CotEditor 2.0.</li>
-		<li>New user syntax style files are stored in <code>~/Library/Application Support/CotEditor/Syntaxes/</code>. The old styles are kept in <code>SyntaxColorings/</code>, since CotEditor 2.0 doesn't use </li>
+		<li>New user syntax style files are stored in <code>~/Library/Application Support/CotEditor/Syntaxes/</code>. The old styles are kept in <code>SyntaxColorings/</code>, since CotEditor 2.0 doesn’t use </li>
 	</ul></li>
 	<li>Now, IC (ignore case) can be set even RE (regular expression) is set in syntax style editing.</li>
 	<li>Change regular expression engine to extract outline form OniGmo (OgreKit) to ICU (NSRegularExpression).<ul>
@@ -190,7 +190,8 @@
 	<li>Separate “DTD” (Document Type Declaration) syntax style from “XML”.<ul>
 		<li>From this, coloring performance with “XML” syntax style was improved.</li>
 	</ul></li>
-	<li>Migrate AppleScript API definition file to sdef format.<ul>
+	<li>Updates about scripting support:<ul>
+		<li>Migrate AppleScript API definition file to sdef format.</li>
 		<li>Rename <code>unicode normalization</code> command to <code>normalize unicode</code>.</li>
 		<li>Update internal code for <code>range</code> property of <code>text selection</code> object.<ul>
 			<li>From this, your <em>compiled</em> AppleScripts (.scpt) that contain <code>selection</code> handling need to be updated manually. See “Scripting with AppleScript” document in “Help” menu for details.</li>
@@ -211,7 +212,7 @@
 	<li>Improve application icon so as not to react with dropped folders.</li>
 	<li>Improve cancellation behavior of word completion.</li>
 	<li>Rename “Inspect Glyph” to “Inspect Character”.</li>
-	<li>Delay timing to store user's menu key bindings.<ul>
+	<li>Delay timing to store user’s menu key bindings.<ul>
 		<li>You may need to perform “Restore Defaults” in key bindings preferences if you want to reset the key bindings setting.</li>
 	</ul></li>
 	<li>Change line hight value to line height based, that includes the hight of line itself.</li>
@@ -238,8 +239,8 @@
 <h2>Fixes</h2>
 
 <ul>
-	<li>Fix an issue that “Share find strings with other applications” option didn't work.</li>
-	<li>Fix an issue that comments weren't highlighted correctly if another comment delimiter is contained in string that is enclosed in quotes before the comment delimiter.</li>
+	<li>Fix an issue that “Share find strings with other applications” option didn’t work.</li>
+	<li>Fix an issue that comments weren’t highlighted correctly if another comment delimiter is contained in string that is enclosed in quotes before the comment delimiter.</li>
 	<li>Fix an issue that variation selectors, kind of invisible characters, disappeared occasionally.</li>
 	<li>Fix an issue that encoding selection in toolbar was reset after changing of encoding list order.</li>
 	<li>Fix over-wrapped text in status bar to truncate with “…”.</li>
@@ -248,14 +249,14 @@
 	<li>Fix to highlight current line only in focused view of split views.</li>
 	<li>Fix an issue that text lines vibrated during moving caret if text orientation is vertical and line hight is fixed.</li>
 	<li>Fix an issue that line numbers in unfocused views were not updated.</li>
-	<li>Fix an issue that lately added toolbar icons didn't represent the state at the moment.</li>
+	<li>Fix an issue that lately added toolbar icons didn’t represent the state at the moment.</li>
 	<li>Fix an issue that an error was output in console if blank area in incompatible chars table was clicked.</li>
-	<li>Fix an issue that editors didn't change to transparent if the opacity setting in preferences window was changed from 100%.</li>
-	<li>Fix an issue that change in custom line height panel wasn't applied immediately.</li>
-	<li>Fix an issue that “Same as Document” selection for invisible chars in print panel didn't work correctly.</li>
+	<li>Fix an issue that editors didn’t change to transparent if the opacity setting in preferences window was changed from 100%.</li>
+	<li>Fix an issue that change in custom line height panel wasn’t applied immediately.</li>
+	<li>Fix an issue that “Same as Document” selection for invisible chars in print panel didn’t work correctly.</li>
 	<li>Fix an issue that line count got one more extra if selection contains return at the end.</li>
 	<li>Fix an issue that <code>range</code> property of <code>text selection</code> object displayed as wrong <code>character range</code> on AppleScript Editor.</li>
-	<li>Fix some sample scripts which didn't run correctly.</li> 
+	<li>Fix some sample scripts which didn’t run correctly.</li> 
 </ul>
 </section>
 </article>
