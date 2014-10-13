@@ -190,6 +190,13 @@
 	<li>Separate “DTD” (Document Type Declaration) syntax style from “XML”.<ul>
 		<li>From this, coloring performance with “XML” syntax style was improved.</li>
 	</ul></li>
+	<li>Migrate AppleScript API definition file to sdef format.<ul>
+		<li>Rename <code>unicode normalization</code> command to <code>normalize unicode</code>.</li>
+		<li>Update internal code for <code>range</code> property of <code>text selection</code> object.<ul>
+			<li>From this, your <em>compiled</em> AppleScripts (.scpt) that contain <code>selection</code> handling need to be updated manually. See “Scripting with AppleScript” document in “Help” menu for details.</li>
+		</ul></li>
+		<li>Update documents about scripting with AppleScript.</li>
+	</ul></li>
 	<li>Count characters by composed character in status bar and info drawer.<ul>
 		<li>The previous count was actually the length of string in UTF-16 that is internal string expression on OS X (for example, a surrogate pair is counted previously as 2 and now as 1).</li>
 		<li>Rename previous “Char Count” to “Char Length” and add another “Char Count” with the new count method for status bar items.</li>
@@ -247,6 +254,8 @@
 	<li>Fix an issue that change in custom line height panel wasn't applied immediately.</li>
 	<li>Fix an issue that “Same as Document” selection for invisible chars in print panel didn't work correctly.</li>
 	<li>Fix an issue that line count got one more extra if selection contains return at the end.</li>
+	<li>Fix an issue that <code>range</code> property of <code>text selection</code> object displayed as wrong <code>character range</code> on AppleScript Editor.</li>
+	<li>Fix some sample scripts which didn't run correctly.</li> 
 </ul>
 </section>
 </article>
