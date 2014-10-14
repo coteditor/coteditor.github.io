@@ -92,7 +92,7 @@
 	<li>エディタを縦に分割するオプション</li>
 	<li>行番号をクリック／ドラッグして行を選択</li>
 	<li>「編集」に「行を選択」コマンドを追加</li>
-	<li>“AppleScript”, “C#”, “Go”, “Lisp”, “Lua”, “CocoaPods”, “R”, “Scheme”, “SQL”, “Strings”, “SVG”, “Swift” シンタックス定義を追加</li>
+	<li>“AppleScript”, “C#”, “Go”, “Lisp”, “Lua”, “R”, “Scheme”, “SQL”, “SVG”, “Swift” シンタックス定義を追加</li>
 	<li>自動補完機能を追加（実験的実装, デフォルトはオフ）</li>
 </ul>
 
@@ -181,7 +181,7 @@
 		<li>これにより、“XML” シンタックス定義のカラーリングパフォーマンスを改善</li>
 	</ul></li>
 	<li>AppleScript 対応に関する変更：<ul>
-		<li>AppleScript コマンドの定義ファイルを sdef 形式に移行<li>
+		<li>AppleScript コマンドの定義ファイルを sdef 形式に移行</li>
 		<li>コマンド <code>unicode normalization</code> を <code>normalize unicode</code> に変更</li>
 		<li><code>selection</code> オブジェクトの <code>range</code> プロパティのための内部コードを変更<ul>
 			<li>これにともない、selection の操作が含まれかつ <em>コンパイルされている</em> AppleScript (.scpt) は、修正が必要となります。詳しくはヘルプメニュー内の「AppleScript でのスクリプト作成」をご覧下さい。</li>
@@ -247,6 +247,15 @@
 	<li>選択範囲の最後に改行を含むとき、選択行数が1行多く表示される不具合を修正</li>
 	<li>AppleScript Editor から <code>selection</code> オブジェクトのプロパティを見たときに <code>range</code> プロパティの名前が <code>character range</code> と表示される不具合を修正</li>
 	<li>正しく実行できなかったいくつかのサンプルスクリプトを修正</li>
+</ul>
+</section>
+
+<section>
+<h2>その他</h2>
+
+<ul>
+	<li>CotEditor の Twitter アカウントができました：<a href="https://twitter.com/CotEditor">@CotEditor</a></li>
+	<li><a href="https://github.com/coteditor/CotEditor/wiki/Additional-Syntax-Styles" rel="external">GitHub Wiki</a> で追加インストールできるシンタックス定義を見つけることができます</li>
 </ul>
 </section>
 </article>
