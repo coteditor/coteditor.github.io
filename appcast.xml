@@ -6,8 +6,8 @@
 		<description>CotEditor update information</description>
 		<item>
 			<title>CotEditor 1.5.4</title>
-			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.github.io/releasenotes/1.5.4.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.github.io/releasenotes/1.5.4.ja.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.com/releasenotes/1.5.4.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.com/releasenotes/1.5.4.ja.html</sparkle:releaseNotesLink>
 			<pubDate>Sun, 29 Jun 2014 23:05:27 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/coteditor/CotEditor/releases/download/1.5.4/CotEditor_1.5.4.dmg"

@@ -2,7 +2,7 @@
    Common Scripts
 
    author  : 1024jp <wolfrosch.com>
-   site    : coteditor.github.io
+   site    : coteditor.com
    target  : all pages
    require : iQuery
    lastMod : 2014-03
@@ -135,13 +135,13 @@ jQuery(function ($) {
 // google analytics tracking --------------------------------------------------
 //     lastMod: 2014-08
 
-if (location.hostname == 'coteditor.github.io') {
+if (location.hostname == 'coteditor.com') {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	
-	ga('create', 'UA-2404158-10', 'coteditor.github.io');
+	ga('create', 'UA-2404158-10', 'coteditor.com');
 	ga('require', 'displayfeatures');
 	ga('send', 'pageview');
 }
