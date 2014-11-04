@@ -98,7 +98,7 @@ a.download:hover {
 a.download span {
 	font-size:95%;
 	font-weight: normal;
-	text-transform: lowercase;
+	text-transform: none;
 	text-shadow: 0 0 2px hsla(0,0%,0%,.3);
 }
 
