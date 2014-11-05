@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
 		<title>CotEditor update information</title>
-		<link>http://coteditor.github.io/releasenotes/appcast.xml</link>
+		<link>http://coteditor.com/appcast.xml</link>
 		<description>CotEditor update information</description>
 		<item>
 			<title>CotEditor 1.5.4</title>
@@ -14,7 +14,7 @@
 			           sparkle:version="1.5.4"
 			           sparkle:dsaSignature="MC4CFQCE/5D3T7N3JzKnhjm4FbFZE2MROwIVAKtiYnSdhVUYmxq5ZEO7777aTmYF"
 			           length="5557649"
-			           type="application/octet-stream" />
+			           type="application/octet-stream"/>
 		</item>
 	</channel>
 </rss>
