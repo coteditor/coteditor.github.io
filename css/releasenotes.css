@@ -5,7 +5,7 @@
    
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
-   target  : changelog pages
+   target  : release notes
    lastMod : 2014-04
   ////////////////////////////////////// */
 
@@ -46,10 +46,8 @@ article h2 {
 
 /* highlights */
 .highlights {
-	font: 'Helvetica Neue';
-	border-top: 2px solid hsl(203,20%,90%);
-	border-bottom: 2px solid hsl(203,20%,90%);
-	padding: 1em 0;
+	border-bottom: 1px solid hsl(203,20%,90%);
+	padding-bottom: 1em;
 }
 .highlights h1 {
 	margin-bottom: 0.5em;
@@ -58,6 +56,7 @@ article h2 {
 	content: '✔︎';
 	color: hsl(90,50%,50%);
 	font-size:140%;
+	font-weight: normal;
 	vertical-align: -0.05em;
 	margin-right: 0.3em;
 }
