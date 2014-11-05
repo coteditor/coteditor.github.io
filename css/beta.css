@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2014-08
+   lastMod : 2014-11
   ////////////////////////////////////// */
 
 body {
@@ -50,7 +50,7 @@ body > header:before {
 	display: none;
 }
 body > header h1 {
-	font: bold 64px/1.0 'Lucida Grande', sans-serif;
+	font: bold 64px/1.0 'Helvetica Neue', sans-serif;
 	color: hsla(0,0%,100%,.25);
 	margin: 10px;
 }

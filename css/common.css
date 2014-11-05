@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2014-04
+   lastMod : 2014-11
   ////////////////////////////////////// */
 
 
@@ -28,12 +28,6 @@ a {
 }
 ul li {
 	list-style: none;
-}
-
-
-/* HTML5 */
-main, nav, header, footer, section, article, aside, figure {
-	display: block;
 }
 
 
@@ -62,7 +56,7 @@ a > sup {
 main p,
 main dd,
 main li {
-	line-height: 1.7;
+	line-height: 1.6;
 }
 main h1,
 main h2,
@@ -83,23 +77,12 @@ section > section {
 }
 
 /* list marker */
-main ul li::before {
-	content: '–';
-	font: normal 100% 'Myriad';
-	color: black;
-	opacity: 0.5;
-	
-	margin-right: 0.4em;
-}
 main ul li {
-	text-indent: -0.9em;
-	padding-left: 0.9em;
+	list-style-type: circle;
+	margin-left: 1.5em;
 }
 main li+li {
 	margin-top: 0.2em;
-}
-main ul ul {
-	margin-left: 1em;
 }
 
 /* footnote */
@@ -125,7 +108,7 @@ code {
 
 /* body */
 body {
-	font: 14px 'Lucida Grande', sans-serif;
+	font: 14px 'Helvetica Neue', sans-serif;
 	color: hsl(0,0%,10%);
 	
 	background: white;
@@ -134,7 +117,7 @@ body {
 
 /* header */
 body > header {
-	font: 26px/1.0 'Lucida Grande', sans-serif;
+	font: 26px/1.0 'Helvetica Neue', sans-serif;
 	letter-spacing: 0.5px;
 	color: hsl(0,0%,33%);
 }
@@ -164,7 +147,7 @@ main {
 /* footer */
 body > footer {
 	font-size: 13px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 /* sns */
@@ -185,20 +168,17 @@ aside.sns li:before {
 
 /* tooltip */
 [role=tooltip]  { display:none; position:absolute; z-index:20; padding:0.3em 0.6em;
-                  box-shadow:0 2px 5px hsla(0,0%,  0%,.4);
-                  text-align:left;
-                  background:-webkit-linear-gradient(hsla(0,0%,100%,.06), transparent);
-                  background:        linear-gradient(hsla(0,0%,100%,.06), transparent);
-                  background-color:hsl(0,0%,15%); opacity:0.95; border-radius:3px }
+                  box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:left;
+                  background-color:hsl(0,0%,20%); opacity:0.95; border-radius:3px }
 [role=tooltip] div  { height:0; width:0; position:absolute; left:40px; bottom:-17px;
-                      border:9px solid transparent; border-top-color:hsl(0,0%,15%);
+                      border:9px solid transparent; border-top-color:hsl(0,0%,20%);
                       filter:url(filters.svg#dropshadow);
               -webkit-filter:drop-shadow(0px 2px 3px hsla(0,0%,0%,.2)) }
-[role=tooltip] p    { color:#eee; text-shadow:0 1px 2px black; line-height:1.2 }
-[role=tooltip] span { color:#aaa; text-shadow:none; font-size:92% }
-[role=tooltip] p+p  { color:#aaa; text-shadow:none; font-size:85% ;
+[role=tooltip] p    { color:hsl(0,0%,92%); line-height:1.2 }
+[role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
+[role=tooltip] p+p  { color:hsl(0,0%,67%); font-size:80%; font-weight:200;
                       word-wrap:break-word; margin-top:1px }
-[role=tooltip] p:before  { opacity:0.6; margin-right:5px; vertical-align:-1px; }
+[role=tooltip] p:before  { opacity:0.9; margin-right:5px; vertical-align:-1px; }
 
 [role=tooltip].github p:first-child:before {
 	content: url(w_sns_github.svg);

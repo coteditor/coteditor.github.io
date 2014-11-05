@@ -6,119 +6,179 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2014-04
+   lastMod : 2014-11
   ////////////////////////////////////// */
 
 body {
-	color: hsl(0,0%,33%);
-	text-align: center;
+	color: hsl(0,0%,30%);
 	font-size: 16px;
+	text-align: center;
+	
+	padding-left:0;
+	padding-right:0;
+	padding-bottom:0;
+}
+main {
+	margin:0;
 }
 main > section {
 	margin: 2em auto;
 }
-main > section::before {
-	content: '';
-	display: block;
-	width:360px;
-	margin: 20px auto;
-	border-bottom: 1px solid hsla(0,0%,0%,.1);
-}
 main > section > h2 {
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 120%;
 	margin: 10px;
 }
 
 
 /* title */
-body > header {
-	margin: 20px;
+main > header {
+	max-width: 600px;
+	min-height: 256px;
+	margin: 20px auto;
+	text-align:left;
+	padding: 10px 0 0 272px;
+	box-sizing: border-box;
+	position: relative;
 }
-body > header:before {
-	display: none;
+main > header > img:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-body > header h1 {
-	font: bold 64px/1.0 'Lucida Grande', sans-serif;
-	margin: 10px 0 5px;
+main > header h1 {
+	font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 1.0;
 }
-body > header p {
+main > header p {
 	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	
+	margin: 0 4px;
 }
 
 
 /* download latest */
-main > section > h2 time {
-	font-size: 80%;
-	font-weight: normal;
-	color: hsla(0,0%,0%,.5);
+#latest {
+	margin-top: 0;
+}
+.handwriting {
+	font: 16px/1.0 'HanziPen SC', 'Noteworthy', sans-serif;
+	color: hsl(198,10%,60%);
+	display: blcok;
+	-webkit-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	margin:0.5em 0.5em 1em;
 }
 a.download {
-	font-size: 19px;
-	padding: 0.5em 1em;
-	margin:  1px;
+	font-size: 24px;
+	padding: 0.3em 1em;
 	
-	font-weight: bold;
 	line-height: 1.2;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	color: white;
 	text-indent: 0;
 	white-space: nowrap;
-	text-shadow: 0 1px 2px hsla(0,0%,0%,.4);
+	text-shadow: 0 1px 2px hsla(0,0%,0%,.2);
 	
 	display: inline-block;
 	border-radius: 4px;
 	border: none !important;
-	background: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
-	background:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
-	background-color: hsl(196,70%,60%);
-	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.2) inset,
+	background: linear-gradient(hsla(0,0%,100%,.04), hsla(0,0%,0%,.04));
+	background-color: hsl(198,70%,60%);
+	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.1) inset,
 	            0 1px 0 1px hsla(0,0%,100%,.1) inset,
 	            0 1px 2px   hsla(0,0%,  0%,.2);
 	-webkit-transition: background 0.3s;
 	        transition: background 0.3s;
 }
 a.download:hover {
-	background-color: hsl(196,75%,50%);
+	background-color: hsl(198,75%,50%);
 }
-
 #latest dl {
-	margin: 10px auto;
-	font-size: 80%;
-	width: 15em;
+	font-size: 90%;
+	margin-top: 0.5em;
 }
 #latest dl > * {
-	display: inline-block;
-	white-space: nowrap;
+	display: inline;
+	line-height: 1.4;
 }
 #latest dl dt {
-	font-size: 110%;
-	font-weight: bold;
+	color: hsl(198,4%,50%);
+	margin-right: 0.2em;
 }
 #latest dl dt:after {
 	content: ':';
-	font-weight: normal;
 	margin-left: 1px;
-}
-#latest dl dd {
-	display: inline-block;
 }
 #latest dl dd+dd:before {
 	content: ' | ';
-	opacity: 0.5;
 	font-size: 90%;
-}
-#latest dl dd+dt {
-	margin-left: 1em;
+	opacity: 0.5;
+	padding: 0 0.2em;
 }
 #latest dl dd+dt::before {
-	content: "\a";
+	content: '\000A';  /* line break */
+	white-space: pre;
 }
+
+
+/* screen shot */
+#screenshots {
+	clear: both;
+	background: linear-gradient(hsl(70,70%,75%), hsl(90,50%,55%));
+	border-top: 1px solid hsl(70,20%,80%);
+	border-bottom: 1px solid hsl(90,30%,50%);
+	padding: 20px 0 0;
+	text-align: center;
+
+	/* for unslider */ 
+	position: relative;
+	overflow: auto;
+}
+#screenshots ul li {
+	float: left;
+	min-height: 660px;
+	list-style: none;
+	margin-left: 0;
+}
+#screenshots .dots {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+#screenshots .dots li {
+	border: 2px solid white;
+	opacity: 0.9;
+	cursor: pointer;
+	color: transparent;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 7px;
+	margin: 0 5px;
+}
+#screenshots .dots li.active {
+	background: white;
+}
+
 
 /* features */
 #features {
 	max-width: 680px;
+}
+#features h2 {
+	font-size: 32px;
+	font-weight: 200;
+	letter-spacing: 2px;
 }
 #features dl {
 	text-align:left;
@@ -138,76 +198,59 @@ a.download:hover {
 #features dt {
 	-webkit-column-break-inside: avoid;
 	               break-inside: avoid;
-	font-weight: bold;
+	font-size: 110%;
+	color: hsl(198,8%,50%);
 }
 #features dd {
 	-webkit-column-break-inside: avoid;
 	               break-inside: avoid;
 	font-size: 90%;
-	margin-bottom: 0.8em;
+	line-height: 1.5;
+	margin-bottom: 1em;
 }
 
+
+
 /* develop */
+#develop::before {
+	content: '';
+	display: block;
+	max-width:680px;
+	margin: 40px auto 25px;
+	border-bottom: 1px solid hsla(0,0%,0%,.1);
+}
 #develop section h3 {
 	font-size: 105%;
 }
 #develop section p {
 	font-size: 90%;
-	margin: 0;
+	margin: 0.2em;
 }
 a.github {
 	display: inline-block;
-	color: white;
-	background: hsl(0,0%,20%);
+	color: hsl(0,0%,33%);
+	border: 2px solid hsl(0,0%,33%);
 	border-radius: 4px;
+	letter-spacing: 1px;
 	padding: 5px 10px;
-	margin: 20px;
 }
 a.github:hover {
-	background: hsl(0,0%,50%);
-}
-
-
-/* sns buttons */
-aside.sns {
-	margin: 30px 0 -20px;
+	background: transparent;
+	color: hsl(90,45%,45%);
+	border-color: hsl(90,45%,45%);
 }
 
 
 /* footer */
+body > footer {
+	color: hsl(198,20%,40%);
+	background: hsl(198,20%,96%);
+	border-top: hsl(198,20%,90%) 1px solid;
+	padding-bottom: 1em;
+}
+aside.sns {
+	margin: 1.5em 0 2em;
+}
 body > footer p {
 	margin: 1em;
-}
-
-
-/* beta */
-a[href="beta"] {
-	position:absolute;
-	top:-55px;
-	left:-100px;
-	font-weight: bold;
-	-webkit-transform: rotate(-20deg);
-	        transform: rotate(-20deg);
-	text-indent: -0.5em;
-	background-color: hsl(90,40%,85%);
-	padding:50px 120px 10px;
-	font-size: 21px;
-	line-height: 1.1;
-	text-align: left;
-	
-	-webkit-animation:  fadeIn backwards 0.8s 0.5s;
-	        animation:  fadeIn backwards 0.8s 0.5s;
-}
-a[href="beta"]:first-line {
-	font-weight: normal;
-	font-size: 80%;
-}
-a[href="beta"]:hover {
-	background-color: hsl(90, 50%,75%);
-}
-@-webkit-keyframes fadeIn {
-	from { opacity:0 }
-}
-@keyframes fadeIn {
-	from { opacity:0 }
 }

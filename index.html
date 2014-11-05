@@ -26,8 +26,10 @@
 			window.location = 'index.ja';
 		}
 	</script>
-	<script defer="defer" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script defer="defer" src="js/common.js"></script>
+	<script defer="defer" src="js/unslider.min.js"></script>
+	<script defer="defer" src="js/top.js"></script>
 	<script async="async" src="http://b.st-hatena.com/js/bookmark_button.js"></script>
 	<script async="async" src="http://platform.twitter.com/widgets.js"></script>
 </head>
@@ -36,67 +38,74 @@
 <body>
 <div id="fb-root"></div>
 
-<header>
-	<img src="img/appicon/256@2x.png" width="256" alt="[appIcon]"/>
-	<h1>CotEditor</h1>
-	<p>The Plain-Text Editor for OS X</p>
-</header>
-
 <main>
-	<section id="latest">
-		<h2>CotEditor 2.0 <time datetime="2014-11-xx">(2014-11-xx)</time></h2>
+	<header>
+		<img src="img/appicon/128@2x.png" srcset="img/appicon/256@2x.png 2x" width="256" alt="[appIcon]"/>
 		
-		<a href="https://github.com/coteditor/CotEditor/releases/download/2.0.0/CotEditor_2.0.0.dmg" class="download" onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor');">
-			download
-		</a>
+		<h1>CotEditor</h1>
+		<p>The Plain-Text Editor for OS X</p>
 		
-		<dl>
-			<dt>require</dt>
-			<dd>OS X Lion or later</dd>
+		<section id="latest">
+			<p class="handwriting">↓ It's free!</p>
+			<a href="https://github.com/coteditor/CotEditor/releases/download/2.0.0/CotEditor_2.0.0.dmg" class="download" onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor');">
+				download
+			</a>
 			
-			<dt>release notes</dt>
-			<dd><a href="releasenotes/2.0.0.en" hreflang="en">en</a></dd>
-			<dd><a href="releasenotes/2.0.0.ja" hreflang="ja">ja</a></dd>
-		</dl>
-	</section>
+			<dl>
+				<dt>version</dt>
+				<dd>2.0.0</dd>
+				
+				<dt>release notes</dt>
+				<dd><a href="releasenotes/2.0.0.en" hreflang="en">en</a></dd>
+				<dd><a href="releasenotes/2.0.0.ja" hreflang="ja">ja</a></dd>
+				
+				<dt>require</dt>
+				<dd>OS X Lion or later</dd>
+			</dl>
+		</section>
+	</header>
 	
-	<section id="screenshot">
-		<h2>screenshot</h2>
-		<img src="img/screenshot.png" srcset="img/screenshot@2x.png 2x" width="590" alt="[screenshot]"/>
+	<section id="screenshots">
+		<ul>
+			<li><img src="img/screenshots/screenshot.png" alt="[screenshot]"/></li>
+			<li><img src="img/screenshots/tools.png" alt="[screenshot: tools]"/></li>
+			<li><img src="img/screenshots/verticalOrientation.png" alt="[screenshot: vertical orientation]"/></li>
+			<li><img src="img/screenshots/preferences.png" alt="[screenshot: preferences window]"/></li>
+		</ul>
 	</section>
 	
 	<section id="features">
 		<h2>features</h2>
 		<p>CotEditor is a lightweight plain-text editor for OS X with the following major features:</p>
 		<dl>
-			<dt>just for OS X</dt>
+			<dt>Just for OS X</dt>
 			<dd>CotEditor is exactly made for OS X. It behaves just like OS X softwares should be. And it is also aesthetic clean and nice.</dd>
 			
-			<dt>syntax coloring</dt>
-			<dd>Colorize 26 pre-installed major languages like HTML, PHP, Python, Ruby or Markdown. You can also create your own settings.</dd>
+			<dt>Syntax Coloring</dt>
+			<dd>Colorize 40 pre-installed major languages like HTML, PHP, Python, Ruby or Markdown. You can also create your own settings.</dd>
 			
-			<dt>powerful find and replace</dt>
+			<dt>Powerful Find and Replace</dt>
 			<dd>Super powerful find and replace using OgreKit framework. Regular expression search is of course supported.</dd>
 			
-			<dt>rapid launch</dt>
+			<dt>Rapid Launch</dt>
 			<dd>CotEditor launches so quick that you can write your text immediately when you want to.</dd>
 			
-			<dt>outline menu</dt>
+			<dt>Outline Menu</dt>
 			<dd>Extract specified lines with the predefined syntax and you can jump to the corresponding line.</dd>
 			
-			<dt>glyph inspector</dt>
+			<dt>Character Inspector</dt>
 			<dd>Inspect unicode character data of each selected glyph in your document and display them in a popover.</dd>
 			
-			<dt>split view</dt>
+			<dt>Split View</dt>
 			<dd>Split a window into multiple panes to see different parts of your document at the same time.</dd>
 			
-			<dt>scriptable</dt>
+			<dt>Scriptable</dt>
 			<dd>Make your own macro in your favorite language, whether it is Python, Ruby, Perl, PHP, UNIX shell or AppleScript.</dd>
 			
-			<dt>incompatible characters</dt>
+			<dt>Incompatible Characters</dt>
 			<dd>Check and list-up the characters in your document that cannot be converted into the desired encoding.</dd>
 			
-			<dt><abbr title="Chinese, Japanese and Korean">CJK</abbr> language friendly</dt>
+			<dt><abbr title="Chinese, Japanese and Korean">CJK</abbr> Language Friendly</dt>
 			<dd>Estimate various file encodings accurately and handle its line height correctly.</dd>
 		</dl>
 	</section>
@@ -108,34 +117,34 @@
 		</section>
 		
 		<a href="http://github.com/coteditor/" title="CotEditor Project" class="github">Project Page on GitHub</a>
-		
-	<p><a href="https://twitter.com/CotEditor" class="twitter-follow-button" data-show-count="false">Follow @CotEditor</a></p>
 	</section>
 </main>
 
 
-<aside class="sns">
-	<ul>
-		<li><iframe src="http://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=watch&amp;count=true"
-allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
-		<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://coteditor.com/">Tweet</a></li>
-		<li><div class="fb-like" data-href="http://coteditor.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
-		<li><a href="http://b.hatena.ne.jp/entry/coteditor.com" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="Add this entry to Hatena Bookmark"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="Hatena Bookmark!" width="20" height="20"/></a></li>
-	</ul>
-	<script>
-		(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-</aside>
-
 
 <footer>
-	<p>CotEditor was originally made by <a href="http://www.aynimac.com" rel="external">nakamuxu</a>, and now is developed by <a href="http://about.me/usami.kosuke" rel="external">usami-k</a> and <a href="http://wolfrosch.com" rel="external">1024jp</a>.</p>
+	<aside class="sns">
+		<p><a href="https://twitter.com/CotEditor" class="twitter-follow-button" data-show-count="false">Follow @CotEditor</a></p>
+		
+		<ul>
+			<li><iframe src="http://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=watch&amp;count=true"
+	allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://coteditor.com/">Tweet</a></li>
+			<li><div class="fb-like" data-href="http://coteditor.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+			<li><a href="http://b.hatena.ne.jp/entry/coteditor.com" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="Add this entry to Hatena Bookmark"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="Hatena Bookmark!" width="20" height="20"/></a></li>
+		</ul>
+		<script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+	</aside>
+	
+	<p>CotEditor was originally made by <a href="http://www.aynimac.com" rel="external" title="AYNiMac">nakamuxu</a>, and now is developed by <a href="http://about.me/usami.kosuke" rel="external" title="Kosuke USAMI | about.me">usami-k</a> and <a href="http://wolfrosch.com" rel="external" title="Wolfrosch">1024jp</a>.</p>
 	
 	<p class="copyright">©2014 CotEditor Project</p>
 </footer>
