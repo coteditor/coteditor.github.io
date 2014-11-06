@@ -26,7 +26,7 @@
 			window.location = 'index.ja';
 		}
 	</script>
-	<script defer="defer" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script defer="defer" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script defer="defer" src="js/common.js"></script>
 	<script defer="defer" src="js/unslider.min.js"></script>
 	<script defer="defer" src="js/top.js"></script>
@@ -38,32 +38,34 @@
 <body>
 <div id="fb-root"></div>
 
+<aside>
+	<a href="https://twitter.com/CotEditor" rel="external" class="twitter">Twitter</a>
+</aside>
+
 <main>
-	<header>
+	<section id="top">
 		<img src="img/appicon/128@2x.png" srcset="img/appicon/256@2x.png 2x" width="256" alt="[appIcon]"/>
 		
-		<h1>CotEditor</h1>
+		<h1>CotEditor <span>2.0</span></h1>
 		<p>The Plain-Text Editor for OS X</p>
 		
 		<section id="latest">
-			<p class="handwriting">↓ It's free!</p>
+			<p class="handwriting">It's free!</p>
 			<a href="https://github.com/coteditor/CotEditor/releases/download/2.0.0/CotEditor_2.0.0.dmg" class="download" onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor');">
 				download
 			</a>
 			
 			<dl>
 				<dt>version</dt>
-				<dd>2.0.0</dd>
+				<dd class="ver">2.0.0 <time datetime="2014-11-xx">(2014-11-xx)</time></dd>
 				
 				<dt>release notes</dt>
 				<dd><a href="releasenotes/2.0.0.en" hreflang="en">en</a></dd>
 				<dd><a href="releasenotes/2.0.0.ja" hreflang="ja">ja</a></dd>
-				
-				<dt>require</dt>
-				<dd>OS X Lion or later</dd>
 			</dl>
+			<p>Requires OS X Lion or later</p>
 		</section>
-	</header>
+	</section>
 	
 	<section id="screenshots">
 		<ul>
@@ -81,10 +83,10 @@
 			<dt>Just for OS X</dt>
 			<dd>CotEditor is exactly made for OS X. It behaves just like OS X softwares should be. And it is also aesthetic clean and nice.</dd>
 			
-			<dt>Syntax Coloring</dt>
+			<dt>Syntax Highlighting</dt>
 			<dd>Colorize 40 pre-installed major languages like HTML, PHP, Python, Ruby or Markdown. You can also create your own settings.</dd>
 			
-			<dt>Powerful Find and Replace</dt>
+			<dt>Powerful Find &amp; Replace</dt>
 			<dd>Super powerful find and replace using OgreKit framework. Regular expression search is of course supported.</dd>
 			
 			<dt>Rapid Launch</dt>
@@ -124,8 +126,6 @@
 
 <footer>
 	<aside class="sns">
-		<p><a href="https://twitter.com/CotEditor" class="twitter-follow-button" data-show-count="false">Follow @CotEditor</a></p>
-		
 		<ul>
 			<li><iframe src="http://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=watch&amp;count=true"
 	allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
@@ -146,7 +146,7 @@
 	
 	<p>CotEditor was originally made by <a href="http://www.aynimac.com" rel="external" title="AYNiMac">nakamuxu</a>, and now is developed by <a href="http://about.me/usami.kosuke" rel="external" title="Kosuke USAMI | about.me">usami-k</a> and <a href="http://wolfrosch.com" rel="external" title="Wolfrosch">1024jp</a>.</p>
 	
-	<p class="copyright">©2014 CotEditor Project</p>
+	<p class="copyright">© 2014 CotEditor Project</p>
 </footer>
 </body>
 </html>

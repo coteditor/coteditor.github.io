@@ -3,12 +3,12 @@
                      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-	 width="15px" height="12px" viewBox="0 0 15 12">
+	 width="25px" height="20px" viewBox="0 0 15 12">
 	 
 <title>Twitter</title>
 	 
 <style type="text/css"><![CDATA[
-	.glyph { fill:white }
+	.glyph { fill:hsl(198,40%,45%); }
 ]]></style>
 
 <path class="glyph" d="M14.88,1.42c-0.54,0.24-1.13,0.4-1.74,0.48c0.62-0.38,1.11
