@@ -13,9 +13,10 @@
 //     require: jQuery
 
 jQuery(function ($) {
-	var infoTip = $('#latest dl');
+	var region = $('#latest');
+	var infoTip = region.find('dl');
 	
-	$('#latest a.download, #latest dl').hover(function(event) {
+	region.find('a.download, dl').hover(function(event) {
 		infoTip.stop(true, false).fadeIn();
 	}, function(event) {
 		infoTip.stop(true, false).delay(200).fadeOut();
@@ -27,9 +28,24 @@ jQuery(function ($) {
 //     require: jQuery, unslider
 
 jQuery(function() {
-	$('#screenshots').unslider({
+	var region = $('#screenshots');
+	var unslider = region.unslider({
 		delay: 6000,
 		dots: true,
 		fluid: true 
+	});
+	var data = unslider.data('unslider');
+	
+	region.append('<a class="arrow prev"></a>');
+	region.append('<a class="arrow next"></a>');
+	
+	region.find('.arrow').click(function(event) {
+		event.preventDefault();
+		
+		if ($(this).hasClass('prev')) {
+			data.prev();
+		} else {
+			data.next();
+		};
 	});
 });

@@ -229,6 +229,27 @@ a.download:hover {
 #screenshots .dots li.active {
 	background: white;
 }
+#screenshots .arrow {
+	opacity: 0.6;
+	background: url(arrow_left.svg);
+	
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 300px;
+	z-index: 2;
+}
+#screenshots .arrow:hover {
+	opacity: 1.0;
+}
+#screenshots .arrow.prev {
+	left: 48px;
+}
+#screenshots .arrow.next {
+	right: 48px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 
 
 /* features */
