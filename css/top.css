@@ -45,7 +45,7 @@ body > aside a.twitter {
 	color: hsl(198,40%,45%);
 }
 body > aside a.twitter::before {
-	content: url(twitter_large.svg);
+	content: url(parts/twitter_large.svg);
 	margin-right: 4px;
 	vertical-align: -2px;
 }
@@ -231,7 +231,7 @@ a.download:hover {
 }
 #screenshots .arrow {
 	opacity: 0.6;
-	background: url(arrow_left.svg);
+	background: url(parts/arrow_left.svg);
 	
 	width: 48px;
 	height: 48px;

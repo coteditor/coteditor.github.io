@@ -179,10 +179,10 @@ aside.sns li:before {
 [role=tooltip] p:before  { opacity:0.9; margin-right:5px; vertical-align:-1px; }
 
 [role=tooltip].github p:first-child:before {
-	content: url(w_sns_github.svg);
+	content: url(parts/w_sns_github.svg);
 }
 [role=tooltip].twitter p:first-child:before {
-	content: url(w_sns_twitter.svg);
+	content: url(parts/w_sns_twitter.svg);
 }
 [role=tooltip].note p {
 	font-size: 90%;
