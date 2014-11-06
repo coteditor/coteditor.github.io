@@ -117,8 +117,7 @@ body {
 
 /* header */
 body > header {
-	font: 26px/1.0 'Helvetica Neue', sans-serif;
-	letter-spacing: 0.5px;
+	font: 26px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
 	color: hsl(0,0%,33%);
 }
 body > header a {
@@ -135,7 +134,6 @@ body > header:before {
 	height: 48px;
 	background:url(../img/appicon/64@2x.png);
 	background-size: 48px;
-	margin-right: 4px;
 	vertical-align: -14px;
 }
 

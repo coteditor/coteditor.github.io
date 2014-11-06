@@ -35,7 +35,7 @@ main > section > h2 {
 main > header {
 	max-width: 600px;
 	min-height: 256px;
-	margin: 20px auto;
+	margin: 30px auto;
 	text-align:left;
 	padding: 10px 0 0 272px;
 	box-sizing: border-box;
