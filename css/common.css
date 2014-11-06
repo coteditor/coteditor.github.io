@@ -127,7 +127,7 @@ body > header a {
 body > header a:hover {
 	-webkit-filter: blur(1.5px);
 }
-body > header:before {
+body > header::before {
 	display: inline-block;
 	content: '';
 	width: 48px;
@@ -157,9 +157,6 @@ aside.sns li {
 aside.sns li+li {
 	margin-left: 10px;
 }
-aside.sns li:before {
-	display: none;
-}
 
 
 /*___3.scripts_______________________________________________________________*/
@@ -176,12 +173,12 @@ aside.sns li:before {
 [role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
 [role=tooltip] p+p  { color:hsl(0,0%,67%); font-size:80%; font-weight:200;
                       word-wrap:break-word; margin-top:1px }
-[role=tooltip] p:before  { opacity:0.9; margin-right:5px; vertical-align:-1px; }
+[role=tooltip] p::before  { opacity:0.9; margin-right:5px; vertical-align:-1px; }
 
-[role=tooltip].github p:first-child:before {
+[role=tooltip].github p:first-child::before {
 	content: url(parts/w_sns_github.svg);
 }
-[role=tooltip].twitter p:first-child:before {
+[role=tooltip].twitter p:first-child::before {
 	content: url(parts/w_sns_twitter.svg);
 }
 [role=tooltip].note p {

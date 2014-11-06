@@ -30,7 +30,7 @@ main > h2 {
 	margin: 10px;
 }
 
-body:before {
+body::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -46,7 +46,7 @@ body > header {
 	margin: 20px;
 	position: relative;
 }
-body > header:before {
+body > header::before {
 	display: none;
 }
 body > header h1 {
@@ -108,13 +108,12 @@ a.download + ul {
 a.download + ul li {
 	display: inline;
 	padding: 0;
-}
-a.download + ul li:before {
-	content: ' | ';
 	margin: 0;
 }
-a.download + ul li:first-child:before {
-	display: none;
+a.download + ul li+li::before {
+	content: ' | ';
+	margin: 0;
+	opacity: 0.5;
 }
 
 span.note {
@@ -128,9 +127,7 @@ p#issues {
 	font-size:120%;
 	margin: 2em;
 }
-p#issues:before {
-	content: '📃 ';
-}
+
 
 /* sns buttons */
 aside.sns {

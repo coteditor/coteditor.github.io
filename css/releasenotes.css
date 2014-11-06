@@ -52,7 +52,7 @@ article h2 {
 .highlights h1 {
 	margin-bottom: 0.5em;
 }
-.highlights dt:before {
+.highlights dt::before {
 	content: '✔︎';
 	color: hsl(90,50%,50%);
 	font-size:140%;

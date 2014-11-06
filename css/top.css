@@ -170,7 +170,7 @@ a.download:hover {
 	color: hsl(198,4%,60%);
 	margin-left: 0.2em;
 }
-#latest dl dd+dd:before {
+#latest dl dd+dd::before {
 	content: ' | ';
 	font-size: 90%;
 	opacity: 0.3;
