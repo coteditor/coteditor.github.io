@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+                     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                     
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="540px" height="120px" viewBox="0 0 540 120">
+
+<style type="text/css"><![CDATA[
+	svg  { opacity:.16 }
+	*    { fill:none; stroke:black;
+           stroke-width:2; stroke-linecap:round; stroke-linejoin:round }
+	
+	line, path  { stroke-dasharray:6 }
+]]></style>
+
+<path id="branch" d="M1,1c0,0,0,5.2,0,11.5S6.4,24,13,24h245c6.6,0,12,5.2,12,11.5"/>
+<use xlink:href="#branch" transform="translate(540,0) scale(-1,1)"/>
+
+<g transform="translate(270,119)">
+	<line y2="-118"/>
+	<polyline points="-10,-10 0,0 10,-10"/>
+</g>
+</svg>

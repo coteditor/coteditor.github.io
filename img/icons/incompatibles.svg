@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+                     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 32 32">
+
+<style type="text/css"><![CDATA[
+	* { fill:transparent; stroke:hsl(90,50%,50%);
+	    stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	circle { fill:hsl(90,50%,50%); stroke:transparent }
+]]></style>
+
+<g transform="translate(1,8)">
+	<path d="M3.5,20c-1.6,0-2.3-1.2-1.5-2.6l8.5-14.8c0.8-1.4,2.2-1.4,3,0L22,17.4
+		c0.8,1.4,0.2,2.6-1.5,2.6H3.5z"/>
+	
+	<line x1="12" x2="12" y1="7" y2="13"/>
+	<circle cx="12" cy="16.5" r="1.2"/>
+</g>
+
+<polyline points="19,12 23,4 31,22"/>
+<line x1="22" x2="27" y1="16" y2="16"/>
+
+</svg>

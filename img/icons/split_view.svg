@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+                     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 32 32">
+
+<style type="text/css"><![CDATA[
+	* { fill:transparent; stroke:hsl(90,50%,50%);
+	    stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	line.sub { stroke-width:1 }
+]]></style>
+
+<rect x="3" y="5" width="26" height="22" rx="3"/>
+<line x2="26" transform="translate(3,11)"/>
+
+<line y2="16" transform="translate(16.5,11)" class="sub"/>
+
+</svg>

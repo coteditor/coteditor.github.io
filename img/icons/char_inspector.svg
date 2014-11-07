@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+                     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 32 32">
+
+<style type="text/css"><![CDATA[
+	line,path { fill:transparent; stroke:hsl(90,50%,50%);
+	       stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	text { fill:hsl(90,50%,50%); font-size:14px; font-family:sans-serif }
+	.sub { stroke-width:1 }
+]]></style>
+
+<path d="M28,4H4C2.9,4,2,4.9,2,6v16c0,1.1,0.9,2,2,2h5.2l3.8,5l3.8-5H28c1.1,0,
+	2-0.9,2-2V6C30,4.9,29.1,4,28,4z"/>
+<text x="6" y="19">C</text>
+
+<line class="sub" x2="6" transform="translate(19,11.5)"/>
+<line class="sub" x2="6" transform="translate(19,15.5)"/>
+</svg>
