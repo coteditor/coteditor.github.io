@@ -7,7 +7,7 @@
 
 <style type="text/css"><![CDATA[
 	*      { fill:transparent; stroke:hsl(90,50%,50%);
-	         stroke-width:1; troke-linecap:round }
+	         stroke-width:1.2; troke-linecap:round }
 	.grip  { fill:hsl(90,50%,50%); stroke:transparent }
 ]]></style>
 
