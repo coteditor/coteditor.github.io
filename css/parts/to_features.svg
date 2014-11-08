@@ -7,18 +7,17 @@
 	width="540px" height="120px" viewBox="0 0 540 120">
 
 <style type="text/css"><![CDATA[
-	svg  { opacity:.16 }
+	svg  { opacity:.12 }
 	*    { fill:none; stroke:black;
            stroke-width:2; stroke-linecap:round; stroke-linejoin:round }
 	
-	line, path  { stroke-dasharray:6 }
 ]]></style>
 
 <path id="branch" d="M1,1c0,0,0,5.2,0,11.5S6.4,24,13,24h245c6.6,0,12,5.2,12,11.5"/>
 <use xlink:href="#branch" transform="translate(540,0) scale(-1,1)"/>
 
 <g transform="translate(270,119)">
-	<line y2="-118"/>
-	<polyline points="-10,-10 0,0 10,-10"/>
+	<line y2="-85"/>
+	<polyline points="-8,-8 0,0 8,-8"/>
 </g>
 </svg>
