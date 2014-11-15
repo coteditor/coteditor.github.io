@@ -70,7 +70,7 @@ main p {
 	margin: 1em 0;
 }
 section {
-	margin: 2em 0;
+	margin: 2em 0 3em;
 }
 section > section {
 	margin: 1em 0;
@@ -101,6 +101,11 @@ code {
 	border: 1px solid hsl(0,0%,80%);
 	border-radius:2px;
 	padding:0.1em 0.3em;
+}
+
+/* other styles */
+dfn {
+	font-style: italic;
 }
 
 

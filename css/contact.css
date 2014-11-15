@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////
+   CotEditor Contact Page Style Sheet
+   
+   author  : 1024jp <wolfrosch.com>
+   site    : coteditor.com
+   target  : contact page
+   lastMod : 2014-11
+  ////////////////////////////////////// */
+
+
+figure img {
+	box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+	            0 0 0 1px hsla(0,0%,0%,.2);
+}
+
+#team ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+#team .position {
+	font-size: 120%;
+	color: hsl(0,0%,40%);
+	text-transform: capitalize;
+	
+	display: block;
+	margin-bottom: 0.5em;
+}
