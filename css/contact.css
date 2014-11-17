@@ -17,7 +17,12 @@ figure img {
 
 #team ul li {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 20px;
+}
+#team .github-card {
+	width: 280px;
+	height: 150px;
 }
 #team .position {
 	font-size: 120%;
