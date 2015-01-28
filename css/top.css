@@ -31,6 +31,42 @@ main > section > h2 {
 }
 
 
+/* beta link */
+a#beta {
+	font-weight: 300;
+	border: 2px solid hsl(90,50%,50%);
+	text-transform: capitalize;
+	font-size: 24px;
+	text-align: right;
+	
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	border-radius: 80px;
+	top: -64px;
+	left: -32px;
+	z-index: 5;
+	width: 160px;
+	height: 160px;
+	padding: 88px 20px 32px;
+}
+a#beta:before {
+	border: 2px solid hsla(90,50%,50%,.5);
+	content: '';
+	
+	display:block;
+	position: absolute;
+	border-radius: 92px;
+	top: 16px;
+	left: -4px;
+	bottom: -10px;
+	right: 4px;
+}
+a#beta strong {
+	font-weight: 500;
+}
+
+
 /* Twitter */
 body > aside {
 	position: absolute;
