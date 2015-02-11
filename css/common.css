@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2014-11
+   lastMod : 2015-02
   ////////////////////////////////////// */
 
 
@@ -97,8 +97,8 @@ main > footer > ol {
 code {
 	font: 94% Menlo, monospace;
 	color: hsla(0,0%,0%,.8);
-	background-color: hsl(0,0%,96%);
-	border: 1px solid hsl(0,0%,80%);
+	background-color: hsl(0,0%,98%);
+	border: 1px solid hsl(0,0%,88%);
 	border-radius:2px;
 	padding:0.1em 0.3em;
 }
