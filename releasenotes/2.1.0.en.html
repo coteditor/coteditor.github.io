@@ -38,6 +38,11 @@
 <h1>Highlights on CotEditor 2.1</h1>
 
 <dl>
+	<dt>Auto-Backup</dt>
+	<dd>You don't need to lost your unsaved data any more. CotEditor automatically
+	  backups your documents while editing, so that you can resume your editing
+	  at the next session, even after force quitting.</dd>
+	
 	<dt><code>cot</code> command-line tool</dt>
 	<dd>The new <code>cot</code> command-line tool lets you open documents in CotEditor from
 	  the command line. You can install it from Integration pane in Preferences.</dd>
@@ -65,13 +70,14 @@
 </header>
 
 
-<p class="note">cf. <a href="2.1.0_from_rc.en">Changes from 2.1RC</a>.</p>
-
-
 <section>
 <h2>New Features</h2>
 
 <ul>
+	<li>Now your documents are automatically backuped while editing and and will be resumed at the next session, even after force quitting.
+	<ul>
+		<li>This feature doesn't modify your actual files. You still need to perform “Save” manually to apply changes to your files.</li>
+	</ul></li>
 	<li><code>cot</code> command-line tool.</li>
 	<li>New AppleScript property <code>tab width</code> for document object.</li>
 	<li>Now, CotEditor script receives the absolute file path of the frontmost document as an argument if available.</li>
