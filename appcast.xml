@@ -9,11 +9,23 @@
 			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.com/releasenotes/2.1.0.en.html</sparkle:releaseNotesLink>
 			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.com/releasenotes/2.1.0.ja.html</sparkle:releaseNotesLink>
 			<pubDate>Thu, 19 Feb 2015 21:04:58 +0900</pubDate>
-			<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+			<sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/coteditor/CotEditor/releases/download/2.1.0/CotEditor_2.1.0.dmg"
 			           sparkle:version="2.1.0"
 			           sparkle:dsaSignature="MC4CFQC7r+7p+fwr+mkhzBx9+VqBk1GxowIVAITGnNmHhwmyy4q3q8SRM8krgYzz"
 			           length="14084677"
+			           type="application/octet-stream" />
+		</item>
+		<item>
+			<title>CotEditor 2.0.3</title>
+			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.com/releasenotes/2.0.3.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.com/releasenotes/2.0.3.ja.html</sparkle:releaseNotesLink>
+			<pubDate>Sun, 14 Dec 2014 21:19:19 +0900</pubDate>
+			<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+			<enclosure url="https://github.com/coteditor/CotEditor/releases/download/2.0.3/CotEditor_2.0.3.dmg"
+			           sparkle:version="2.0.3"
+			           sparkle:dsaSignature="MC0CFQC/u3nS+yqNHrr1+EghgQksnBlF2AIUfJ5SyL10uO1jSK01ZQgXM3xBE5s="
+			           length="14414610"
 			           type="application/octet-stream" />
 		</item>
 	</channel>
