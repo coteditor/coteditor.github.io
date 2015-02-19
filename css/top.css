@@ -221,6 +221,10 @@ a.download:hover {
 	color: hsl(198,4%,40%);
 	margin-top: 0.4em;
 }
+#latest p small:before {  /* link to older versions */
+	content:'> ';
+	color: hsl(0,0%,67%);
+}
 
 
 /* screen shot */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 2.1 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 2.1"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.1.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 2.1"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.1.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="highlights">
+<h1>Highlights on CotEditor 2.1</h1>
+
+<dl>
+	<dt>Auto-Backup</dt>
+	<dd>You don't need to lost your unsaved data any more. CotEditor automatically
+	  backups your documents while editing, so that you can resume your editing
+	  at the next session, even after force quitting.</dd>
+	
+	<dt><code>cot</code> command-line tool</dt>
+	<dd>The new <code>cot</code> command-line tool lets you open documents in CotEditor from
+	  the command line. You can install it from Integration pane in Preferences.</dd>
+	
+	<dt>Brand-new Find &amp; Replace panel</dt>
+	<dd>The Find and Replace panel was totally re-designed with more modern and
+	  organized looking.</dd>
+	
+	<dt>New document inspector view</dt>
+	<dd>The legacy document information drawer was now migrated to a side panel
+	  style. This change allows you to see document information even on the
+	  full-screen mode.</dd>
+	
+	<dt>Dropping support for OS X 10.7 Lion</dt>
+	<dd>CotEditor now requires OS X Mountain Lion or higher.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 2.1</h1>
+	<p>release: <time>2015-02-19</time></p>
+</header>
+
+
+<p class="note">cf. <a href="2.1.0_from_rc.en">Changes from 2.1RC2</a>.</p>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Now your documents are automatically backuped while editing and will be resumed at the next session, even after force quitting.
+	<ul>
+		<li>This feature doesn't modify your actual files. You still need to perform “Save” manually to apply changes to your files.</li>
+	</ul></li>
+	<li><code>cot</code> command-line tool.</li>
+	<li>New AppleScript property <code>tab width</code> for document object.</li>
+	<li>Now, CotEditor script receives the absolute file path of the frontmost document as an argument if available.</li>
+	<li>Add “New CotEditor Document with Selection” and “Open File in CotEditor” Services.</li>
+	<li>Add syntax styles for “Erlang” and “Julia”.</li>
+</ul>
+
+</section>
+
+
+<section>
+<h2>Additions/Changes</h2>
+
+<ul>
+	<li>Drop support for <strong>OS X Lion.</strong></li>
+	<li>Migrate document drawer to sidebar style.
+	<ul>
+		<li>Add “show document inspector” option to preferences.</li>
+		<li>Improve document information display.</li>
+	</ul></li>
+	<li>Introduce brand-new find panel with more organized UI.
+	<ul>
+		<li>OniGmo is still be using for the regular expression engine as before.</li>
+		<li>Settings for find panel has been once reset. You can set them again from the gear button in the find panel.</li>
+	</ul></li>
+	<li>Enable to change multiple checkboxes in syntax style editor at once.</li>
+	<li>Improve to display gear icon in menu bar while executing a script.</li>
+	<li>Improve auto-outdent behavior with <code>}</code> input.</li>
+	<li>Improve auto-tab-expand behavior with intent that tab characters and spaces are mixed.</li>
+	<li>Add hidden “Reveal in Finder” menu item to syntax style action menu in Preferences (visible with <kbd>Option</kbd> key).</li>
+	<li>Improve CotEditor Script to apply the result to the document that was frontmost when the script was launched.</li>
+	<li>Close Preferences window with <kbd>esc</kbd> key.</li>
+	<li>Character inspector popover becomes detachable (on Yosemite and later).</li>
+	<li>Update about Console Panel:
+	<ul>
+		<li>Rename “Script Error Panel” to “Console Panel.”</li>
+		<li>Change toolbar style.</li>
+	</ul></li>
+	<li>Prefer using user custom syntax style if the file mapping conflicts with other bundled style.</li>
+	<li>Make key bindings for panel windows customizable.</li>
+	<li>Change to save <code>com.apple.TextEncoding</code> xattr only if the file already has the encoding xattr or it's a new document.</li>
+	<li>Move removed themes/styles to Trash instead delete them immediately.</li>
+	<li>Now, Utility actions perform with multiple selection.</li>
+	<li>Avoid showing not-writable alert on Resume again.</li>
+	<li>Delay timing to save text key bindings setting.</li>
+	<li>Localize document types.</li>
+	<li>Improve text rendering with non-opaque view.</li>
+	<li>Update “Markdown” syntax style:
+		<ul>
+		<li>Add horizontal rules to outline menu.</li>
+	</ul></li>
+	<li>Tweak text view drawing performance.</li>
+	<li>Update Sparkle framework to version 1.9.0.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue that the preferred file encoding for encoding detection could be set wrong after running file open panel.</li>
+	<li>Fix an issue that incompatible character markup positions were wrong by CR/LF line endings.</li>
+	<li>Fix duplication check in key bindings editor.</li>
+	<li>Fix “Restore Defaults” button enability on text key bindings edit sheet.</li>
+	<li>Fix possible crashes on input.</li>
+	<li>Fix an issue that application could crash after closing split view.</li>
+	<li>Fix an issue that application could crash after switching theme in preferences.</li>
+	<li>Fix an issue where tab width on printing didn't reflect user indent setting.</li>
+	<li>Fix an issue where tab width didn't update on font size change.</li>
+	<li>Fix an issue where the help button on Edit pane and Format pane didn't show correct help page.</li>
+	<li>Fix an issue that application couldn't open file that is not Unicode, has more than 4,096 characters and consists only of 2 byte characters.</li>
+	<li>Fix an issue that text font could occasionally change after pasting or inputting text from other application.</li>
+	<li>Fix an issue that number of selected lines displayed less than actual count if last selected lines are blank.</li>
+	<li>Fix an issue that Unicode character insertion was occasionally failed.</li>
+	<li>Fix an issue that syntax highlights were removed after perform Unhighlight.</li>
+	<li>Fix timing to display sheets on file open.</li>
+	<li>Fix an issue that selection of line endings menu and encoding menu in toolbar did not update on undo/redo.</li>
+	<li>Fix an issue that checkmark in line height menu was not displayed.</li>
+	<li>Fix an issue where some document icons were not applied under the specific environments.</li>
+	<li>Fix some missing localizations in simplified Chinese. (Thanks to Wei Wang!)</li>
+	<li>Fix an issue that an alert message was not localized.</li>
+	<li>And other trivial UI fixes and enhancements.</li>
+</ul>
+</section>
+
+<p><a href="2.0.3.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2014-2015 CotEditor Project</p>
+</footer>
+</body>
+</html>
