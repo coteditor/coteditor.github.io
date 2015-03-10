@@ -5,15 +5,15 @@
 		<link>http://coteditor.com/releasenotes/appcast.xml</link>
 		<description>CotEditor update information</description>
 		<item>
-			<title>CotEditor 2.1.1</title>
-			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.com/releasenotes/2.1.1.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.com/releasenotes/2.1.1.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Sun, 01 Mar 2015 22:39:50 +0900</pubDate>
+			<title>CotEditor 2.1.2</title>
+			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.com/releasenotes/2.1.2.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.com/releasenotes/2.1.2.ja.html</sparkle:releaseNotesLink>
+			<pubDate>Tue, 10 Mar 2015 21:38:31 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-			<enclosure url="https://github.com/coteditor/CotEditor/releases/download/2.1.1/CotEditor_2.1.1.dmg"
-			           sparkle:version="2.1.1"
-			           sparkle:dsaSignature="MCwCFAwwjqaQjlKIeTd+H6IB22mFlc27AhQ8USLWHX6/a4qRmwtuXr5pCLG8ng=="
-			           length="13076267"
+			<enclosure url="https://github.com/coteditor/CotEditor/releases/download/2.1.2/CotEditor_2.1.2.dmg"
+			           sparkle:version="2.1.2"
+			           sparkle:dsaSignature="MC0CFQCZcbWODmbwXtkVPzemr2STV1c13QIULbakYxVR3NYcXmAt+VzPW/oO2DE="
+			           length="13124350"
 			           type="application/octet-stream" />
 		</item>
 		<item>
