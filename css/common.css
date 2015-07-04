@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2015-02
+   lastMod : 2015-07
   ////////////////////////////////////// */
 
 
@@ -104,6 +104,9 @@ code {
 }
 
 /* other styles */
+strong {
+	font-weight: bold;
+}
 dfn {
 	font-style: italic;
 }

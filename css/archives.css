@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////
+   CotEditor Archives Page Style Sheet
+   
+   author  : 1024jp <wolfrosch.com>
+   site    : coteditor.com
+   target  : archives page
+   lastMod : 2015-07
+  ////////////////////////////////////// */
+
+
+#older_versions dt::after {
+	content: ':';
+}
+#older_versions dd {
+	margin: 0 2em 1em;
+}
+#older_versions dd img {
+	vertical-align: middle;
+	margin-right: 4px;
+}
