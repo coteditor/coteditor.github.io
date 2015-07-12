@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 2.1.4 の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 2.1.4 の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.1.4.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 2.1.4 の変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.1.4.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<article>
+<header>
+	<h1>CotEditor 2.1.4 の変更点</h1>
+	<p>リリース: <time>2015-07-xx</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>環境設定のテーマリストにファイルをドラッグ&amp;ドロップしてテーマを読み込み</li>
+</ul>
+</section>
+
+
+<section>
+<h2>機能改善／仕様変更</h2>
+
+<ul>
+	<li>文字情報の表示で Unicode 8.0 のスキントーンに対応</li>
+	<li>自動終了に対応（開いているウインドウが1つないとき、状況に応じアプリケーションが自動的に終了されます）</li>
+	<li>「その他の不可視文字を表示」する設定のとき、垂直タブ (<code>U+000B</code>) を <code>␋</code> シンボルで描画</li>
+	<li>エンコーディングリスト編集シートに各種アニメーションを追加</li>
+	<li>IANA文字セットコンフリクトの表示を抑止するボタンをアラートに追加</li>
+	<li>書類中に出現する単語の補完を改善</li>
+	<li>環境設定の「一般」ペインを再配置</li>
+	<li>検索パネルのコントロールにツールチップヒントを追加</li>
+	<li>リソース画像を最適化</li>
+	<li>Sparkle framework を 1.10.0 に更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>バグフィックス</h2>
+
+<ul>
+	<li>書類保存時にアプリケーションがハングすることがある不具合を改善</li>
+	<li>自動保存がスケジュール通り行われないことがあった不具合を修正</li>
+	<li>検索パネルのフィールドのレイアウトが稀に崩れることがあった不具合を修正</li>
+	<li>自動更新通知が特定のβバージョンナンバーから安定版のアップデートを認識できなかった不具合を修正</li>
+	<li>サードパーティ製の OS X 用テキストエディタが CotEditor で作成したファイルを解釈できないことがある不具合を修正</li>
+	<li>書類更新後の初回の保存で不要なアラートが出現していた不具合を修正</li>
+	<li>シンタックススタイル編集シートで、拡張子の優先順位を変更した後の選択項目が誤っていた不具合を修正</li>
+	<li>2回目の起動時にメニューバーの「ヘルプ」メニュー項目が2重に表示された不具合を修正</li>
+	<li>簡体中国語のローカライズが一部抜けていた不具合を修正 (Wei Wangさんに感謝!)</li>
+</ul>
+</section>
+
+<p><a href="2.1.3.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2014-2015 CotEditor Project</p>
+</footer>
+</body>
+</html>
