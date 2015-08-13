@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2015-01
+   lastMod : 2015-08
   ////////////////////////////////////// */
 
 body {
@@ -120,6 +120,9 @@ span.note {
 }
 [role="separator"] {
 	color: hsla(0,0%,0%,.2);
+}
+p strong {
+	border-bottom: 3px double;
 }
 
 p#issues {
