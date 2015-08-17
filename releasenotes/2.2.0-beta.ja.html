@@ -90,6 +90,10 @@
 <h2>機能改善／仕様変更</h2>
 
 <ul>
+	<li>[非 AppStore 版のみ] 自動更新機能の廃止
+	<li><ul>
+		<li>CotEditor の自動更新に使われている Sparkle というフレームワークがまだサンドボックスに対応していないため、CotEditor 内での自動更新機能は一旦廃止されました。今後は：（以前と同様に）新しいバージョンがリリースされたときは通知ウインドウが表示されるので、その後サイトから新しいバージョンをダウンロードして手動でアップデートを行ってください。もしくは、 CotEditor 2.2.0 安定版がリリースした際に Mac App Store 版に切り替えてください。</li>
+	</ul></li>
 	<li>サンドボックス化にともない、ユーザにパーミッションがないファイルでもオープン／上書きができる機能 (authopen) を廃止</li>
 	<li>サイドインスペクタのユーザインターフェイスを改善</li>
 	<li>シンタックスハイライトの改善：
@@ -134,6 +138,15 @@
 	<li>書類ファイルが移動されたときに書類情報のフルパス表示が更新されなかった不具合を修正</li>
 	<li>検索文字列に CR および CR/LF の改行コードが含まれるとき検索ができなかった不具合を修正</li>
 	<li>OS X 10.8 で、スクロールバーを常に表示する設定にしているときに行番号表示が乱れることがあった不具合を修正</li>
+</ul>
+</section>
+
+
+<section>
+<h2>その他</h2>
+
+<ul>
+	<li><a href="https://kapeli.com/dash" rel="external" title="Dash for OS X - API Documentation Browser, Snippet Manager - Kapeli">Dash</a> API ドキュメントブラウザとの連携のための CotEditor スクリプトがリリースされました: <a href="https://github.com/coteditor/Dash-CotEditor-Plugin" rel="external" title="Dash CotEditor Plugin - GitHub">Dash CotEditor Plugin/GitHub</a>.</li>
 </ul>
 </section>
 

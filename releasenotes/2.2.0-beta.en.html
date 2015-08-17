@@ -91,6 +91,10 @@
 <h2>Additions/Changes</h2>
 
 <ul>
+	<li>[non-AppStore ver.] Disable auto-update feature.
+	<li><ul>
+		<li>Since the Sparkle framework which is a software update framework we use doesn't support Sandboxed apps yet, the auto-update feature within CotEditor should be once disabled. The new behavior is: a nofitication window will be shown when a new release is available (as before), then you need to update CotEditor manually getting the new version from our web-site. Or, just migrate to the Mac App Store version when the stable CotEditor 2.2.0 is released.</li>
+	</ul></li>
 	<li>Deprecate the feature opening/saving files that user doesn't have the permission, due to Sandbox requirement.</li>
 	<li>Improve side inspector UI.</li>
 	<li>Improve syntax highlighting:
@@ -138,6 +142,14 @@
 	<li>Fix an issue where the find panel could not find matched strings when the find string includes CR or CR/LF line endings.</li>
 	<li>Fix an issue where line numbers were not drawn completely on OS X 10.8 when scroll bars are set as always shown.</li>
 	<li>Improve general stability.</li>
+</ul>
+</section>
+
+<section>
+<h2>Misc.</h2>
+
+<ul>
+	<li>A CotEditor plugin-script for <a href="https://kapeli.com/dash" rel="external" title="Dash for OS X - API Documentation Browser, Snippet Manager - Kapeli">Dash</a> API documentation browser has been released at <a href="https://github.com/coteditor/Dash-CotEditor-Plugin" rel="external" title="Dash CotEditor Plugin - GitHub">Dash CotEditor Plugin/GitHub</a>.</li>
 </ul>
 </section>
 
