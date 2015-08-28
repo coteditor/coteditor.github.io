@@ -198,3 +198,32 @@ aside.sns li+li {
 	width: 280px;
 	padding: 2px 2px 3px;
 }
+
+
+
+/*___4.classes_______________________________________________________________*/
+
+/* FQA */
+
+dl.fqa {
+	margin: 1em 0;
+}
+dl.fqa dt {
+	font-size: 120%;
+}
+dl.fqa > * {
+	text-indent: -1.8em;
+	margin-left: 1.8em;
+	margin-bottom: 0.2em;
+}
+dl.fqa > ::before {
+	color: hsl(50,75%,45%);
+	font: lighter 20px/1.0 'Helvetica Neue', sans-serif;
+	margin-right: 0.3em;
+}
+dl.fqa > dt::before {
+	content: 'Q.';
+}
+dl.fqa > dd::before {
+	content: 'A.';
+}
