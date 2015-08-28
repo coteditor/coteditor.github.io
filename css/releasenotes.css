@@ -102,12 +102,13 @@ article h2 {
 
 /* App Store migration */
 .appstore {
-    margin-top: -20px;
+    margin-top: -28px;
+    margin: -28px -10px 3em;
     
 	background: linear-gradient(hsl(70,60%,70%), hsl(90,60%,45%));
 	border: 1px solid hsl(70,20%,75%);
 	border-radius: 4px;
-	padding: 32px;
+	padding: 28px 0;
 	
 	color:white;
 	font-size: 21px;
