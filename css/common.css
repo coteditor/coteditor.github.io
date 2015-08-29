@@ -128,7 +128,7 @@ body {
 body > header {
 	font: 200 18px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
 	color: hsl(0,0%,33%);
-	min-height: 24px;
+	min-height: 16px;
 }
 body > header a {
 	color: inherit !important;
