@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2015-03
+   lastMod : 2015-08
   ////////////////////////////////////// */
 
 body {
@@ -64,30 +64,6 @@ a#beta:before {
 }
 a#beta strong {
 	font-weight: 500;
-}
-
-
-/* Twitter */
-body > aside {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	text-align: right;
-	padding: 1em 2em;
-}
-body > aside a.twitter {
-	font-size: 18px;
-	color: hsl(198,40%,45%);
-}
-body > aside a.twitter::before {
-	content: url(parts/twitter_large.svg);
-	margin-right: 4px;
-	vertical-align: -2px;
-}
-body > aside a.twitter:hover {
-	opacity: 0.8;
-	background: none;
 }
 
 
@@ -332,25 +308,6 @@ a.download img {
 	background: transparent;
 	color: hsl(90,45%,45%);
 	border-color: hsl(90,45%,45%);
-}
-
-
-
-/* previous versions */
-#prevVersion {
-	color: hsl(0,0%,50%);
-	font-size: 90%;
-}
-#prevVersion p:before,
-#prevVersion p:after {
-	opacity: 0.6;
-	padding: 0.3em;
-}
-#prevVersion p:before {
-	content: '(';
-}
-#prevVersion p:after {
-	content: ')';
 }
 
 

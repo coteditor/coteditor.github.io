@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2015-07
+   lastMod : 2015-08
   ////////////////////////////////////// */
 
 
@@ -123,19 +123,27 @@ body {
 	padding: 15px 20px;
 }
 
+
 /* header */
 body > header {
-	font: 26px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
+	font: 200 18px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
 	color: hsl(0,0%,33%);
+	min-height: 24px;
 }
 body > header a {
 	color: inherit !important;
-	background: inherit !important;
+	background: transparent !important;
+	
+	position: relative;
+	transition: all 0.3s ease;
 }
 body > header a:hover {
-	-webkit-filter: blur(1.5px);
+	bottom: 3px;
 }
-body > header::before {
+body > header > a:first-child {
+	font-size: 26px;
+}
+body > header > a:first-child::before {
 	display: inline-block;
 	content: '';
 	width: 48px;
@@ -143,7 +151,37 @@ body > header::before {
 	background:url(../img/appicon/64@2x.png);
 	background-size: 48px;
 	vertical-align: -14px;
+	margin-right: 4px;
 }
+body > header > a:first-child:hover::before {
+	transform: rotate(-360deg);
+	transition: transform 0.67s ease;
+}
+body > header > nav {
+	text-align: right;
+	
+	position: absolute;
+	top: 8px;
+	right: 0;
+	text-align: right;
+	padding: 1em 2em;
+}
+body > header > nav li {
+	display: inline;
+	margin: 0 0.4em;
+}
+body > header > nav a[href*=twitter] {
+	color: hsl(198,40%,45%) !important;
+}
+body > header > nav a[href*=twitter]::before {
+	content: url('parts/twitter_large.svg');
+	margin-right: 3px;
+	vertical-align: -1px;
+}
+body > header > nav a:lang(ja):not([rel=external]) {
+	font-size:92%;  /* adjust Japanes font size */
+}
+
 
 /* main */
 main {
