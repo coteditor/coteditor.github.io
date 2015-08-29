@@ -137,7 +137,7 @@ body > header a {
 	position: relative;
 	transition: all 0.3s ease;
 }
-body > header a:hover {
+body > header a:link:hover {
 	bottom: 3px;
 }
 body > header > a:first-child {
