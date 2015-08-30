@@ -179,7 +179,7 @@ body > header > nav a[href*=twitter]::before {
 	vertical-align: -1px;
 }
 body > header > nav a:lang(ja):not([rel=external]) {
-	font-size:92%;  /* adjust Japanes font size */
+	font-size:90%;  /* adjust Japanes font size */
 }
 
 
@@ -253,6 +253,9 @@ dl.fqa > * {
 	text-indent: -1.8em;
 	margin-left: 1.8em;
 	margin-bottom: 0.2em;
+}
+dl.fqa > dd + dt {
+	margin-top: 1.5em;
 }
 dl.fqa > ::before {
 	color: hsl(50,75%,45%);
