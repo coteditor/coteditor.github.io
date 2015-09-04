@@ -246,7 +246,7 @@ aside.sns li+li {
 dl.fqa {
 	margin: 1em 0;
 }
-dl.fqa dt {
+dl.fqa > dt {
 	font-size: 120%;
 }
 dl.fqa > * {
@@ -267,4 +267,18 @@ dl.fqa > dt::before {
 }
 dl.fqa > dd::before {
 	content: 'A.';
+}
+dl.fqa > dd > ul,
+dl.fqa > dd > ol,
+dl.fqa > dd > dl {
+	margin: 0.5em 3em;
+}
+dl.fqa > dd > dl dt {
+	font-weight: 500;
+	display: list-item;
+	list-style: circle inside;
+	margin-left: -1em;
+}
+dl.fqa > dd > dl dd {
+	margin-bottom: 0.5em;
 }
