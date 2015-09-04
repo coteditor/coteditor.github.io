@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2015-08
+   lastMod : 2015-09
   ////////////////////////////////////// */
 
 body {
@@ -125,6 +125,14 @@ a.download:hover {
 a.download img {
 	width: 200px;
 	margin:0;
+}
+#latest a.download + * {  /* link to the FQA */
+	display:block;
+	margin-top:1em;
+}
+#latest a.download + *::before {
+	content:'> ';
+	color: hsl(0,0%,67%);
 }
 
 
