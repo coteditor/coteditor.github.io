@@ -44,6 +44,10 @@
 <h2>New Features</h2>
 
 <ul>
+	<li>Hanging indentation that enables inserting extra indent to wrapped lines.
+	<ul>
+		<li>You can change the bahavior in Preferences > Edit.</li>
+	</ul></li>
 	<li>Add new normalization form “NFKC Casefold” to the Unicode normalization action in Utility menu (Thanks to doraTeX!)<ul>
 		<li>It is also added to the AppleScript terms.
 	</ul></li>
@@ -57,7 +61,13 @@
 <ul>
 	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
 	<ul>
-		<li>The migration will be done at the first launch automatically.</li>
+		<li>Uses who have already installed `cot` command need re-install it manually. Go to “Integration” pane in the Preferences and just press “Uninstall/Install” button twice.</li>
+	</ul></li>
+	<li>Improve Color Code Editor:
+	<ul>
+		<li>Add stylesheet keyword to color code type.</li>
+		<li>Add stylesheet keyword color list to editor panel.</li>
+		<li>Make editor panel resizable.</li>
 	</ul></li>
 	<li>Update word completion list setting in Edit pane in Preferences (The previous setting has been reset).</li>
 	<li>Adjust highlight color for find panel.</li>
@@ -78,6 +88,7 @@
 <ul>
 	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
 	<li>Fix an issue where application crashed by clicking header of empty table in syntax editor sheet.</li>
+	<li>Fix an issue where application could crash after when closing multiple split views.</li>
 	<li>Fix an issue where warning on Integration pane didn't disappear even after the problem resolved.</li>
 	<li>Add some missing localized strings in Japanese.</li>
 	<li><span class="label">beta</span>: Fix an issue where the strings that were inserted via script or tools could be styled wrong.</li>

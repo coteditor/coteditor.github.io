@@ -81,6 +81,10 @@
 
 <ul>
 	<li>CotEditor is now <strong>Sandboxed</strong>.</li>
+	<li>Hanging indentation that enables inserting extra indent to wrapped lines.
+	<ul>
+		<li>You can change the bahavior in Preferences > Edit.</li>
+	</ul></li>
 	<li>New setting option for the behavior on document modification by external process (in General pane).</li>
 	<li>Share button in toolbar (Customize toolbar to use it).</li>
 	<li>Save text orientation state to the file and restore it when the file is opened.
@@ -107,7 +111,10 @@
 
 <ul>
 	<li>Deprecate the feature opening/saving files that user doesn't have the permission, due to Sandbox requirement.</li>
-	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.</li>
+	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
+	<ul>
+		<li>Uses who have already installed `cot` command need re-install it manually. Go to “Integration” pane in the Preferences and just press “Uninstall/Install” button twice.</li>
+	</ul></li>
 	<li>Improve side inspector UI.</li>
 	<li>Improve syntax highlighting:
 	<ul>
@@ -125,6 +132,12 @@
 		<li>Update header/footer layout to conform to the standard system header/footer design.</li>
 		<li>Add page setup options to the print panel.</li>
 		<li>Print settings preset can be stored in the print panel.</li>
+	</ul></li>
+	<li>Improve Color Code Editor:
+	<ul>
+		<li>Add stylesheet keyword to color code type.</li>
+		<li>Add stylesheet keyword color list to editor panel.</li>
+		<li>Make editor panel resizable.</li>
 	</ul></li>
 	<li>Better file encoding handling on revert action.</li>
 	<li>Update word completion list setting in Edit pane in Preferences (The previous setting has been reset).</li>
@@ -168,6 +181,7 @@
 	<li>Fix an issue where application crashed by clicking header of empty table in syntax editor sheet.</li>
 	<li>Fix an issue where line numbers were not drawn completely on OS X 10.8 when scroll bars are set as always shown.</li>
 	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
+	<li>Fix an issue where application could crash after when closing multiple split views.</li>
 	<li>Fix an issue where some ligatured characters were drawn at a wrong position when the line height for composite font is fixed.</li>
 	<li>Add some missing localized strings in Japanese.</li>
 	<li>Improve general stability.</li>
