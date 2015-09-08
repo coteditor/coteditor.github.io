@@ -59,6 +59,77 @@
 
 <article>
 <header>
+	<h1>What's New on CotEditor 2.2.0-rc</h1>
+	<p>release: <time>2015-09-xx</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Hanging indentation that enables inserting extra indent to wrapped lines.
+	<ul>
+		<li>You can change the behavior in Preferences > Edit.</li>
+	</ul></li>
+	<li>Add new normalization form “NFKC Casefold” to the Unicode normalization action in Utility menu (Thanks to doraTeX!)<ul>
+		<li>It is also added to the AppleScript terms.
+	</ul></li>
+	<li>Add German localization.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Additions/Changes</h2>
+
+<ul>
+	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
+	<ul>
+		<li>Users who have already installed `cot` command need re-install it manually. You can re-install it running the command below on Terminal:<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+      You may need to modify paths in this command depending on where you've installed CotEditor/cot.</li>	</ul></li>
+	<li>Improve Color Code Editor:
+	<ul>
+		<li>Add stylesheet keyword to color code type.</li>
+		<li>Add stylesheet keyword color list to editor panel.</li>
+		<li>Make editor panel resizable.</li>
+	</ul></li>
+	<li>Update word completion list setting in Edit pane in Preferences (The previous setting has been reset).</li>
+	<li>Adjust highlight color for find panel.</li>
+	<li>Tweak some message terms.</li>
+	<li>Update documents.</li>
+	<li><span class="label">non-AppStore ver.</span>: Update Sparkle framework to version 1.11.0.</li>
+	<li><span class="label">beta</span> <span class="label">non-AppStore ver.</span>: Change to not check pre-release versions on default.
+	<ul>
+		<li>New pre-releases are always subject of the update check no matter the user setting if the current running CotEditor is a pre-release version.</li>
+	</ul></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
+	<li>Fix an issue where application could crash after when closing multiple split views.</li>
+	<li>Fix an issue where application crashed by clicking header of empty table in syntax editor sheet.</li>
+	<li>Fix an issue where warning on Integration pane didn't disappear even after the problem resolved.</li>
+	<li>Fix an issue where unwanted invisible character mark were drawn when tab drawing is turned off and other invisibles drawing is turned on. </li>
+	<li>Add some missing localized strings in Japanese.</li>
+	<li><span class="label">El Capitan</span> Fix an issue where color code view did not display on El Capitan.</li>
+	<li><span class="label">beta</span>: Fix an issue where the strings that were inserted via script or tools could be styled wrong.</li>
+	<li><span class="label">beta</span>: ix an issue where no preferred extension was appended on the document save panel.</li>
+	<li><span class="label">beta</span>: Fix an issue where the bug report template was not syntax highlighted.</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
 	<h1>What's New on CotEditor 2.2β</h1>
 	<p>release: <time>2015-08-20</time></p>
 </header>
@@ -77,10 +148,10 @@
 	</ul></li>
 	<li>Line number view for vertical text orientation.</li>
 	<li>Print with vertical text orientation.</li>
-	<li>Add interpreter name list to the syntax style definition to determine syntax style from the shebang in the file content for in case when syntax style cannot be determined from the file name.</li>
+	<li>Add interpreter name list to the syntax style definition to determine syntax style from the shebang in the file content for in case when syntax style cannot be determined from the file name.
 	<ul>
 		<li>From this change, some of the bundled syntax styles are also updated.</li>
-	</ul>
+	</ul></li>
 	<li>Add <code>encoding:</code> and <code>coding:</code> to the encoding declaration keywords which will be used on encoding auto-detection (interpreting priorities are: <code>charset=</code> &gt; <code>encoding=</code> &gt; <code>@charset</code> &gt; <code>encoding:</code> &gt; <code>coding:</code>).</li>
 </ul>
 
@@ -141,7 +212,7 @@
 	<li>Fix an issue where the full path display in the document inspector did not update after the document file moved.</li>
 	<li>Fix an issue where the find panel could not find matched strings when the find string includes CR or CR/LF line endings.</li>
 	<li>Fix an issue where line numbers were not drawn completely on OS X 10.8 when scroll bars are set as always shown.</li>
-	<li>Fix an issue where some legatured characters were drawn at a wrong position when the line height for composite font is fixed.</li>
+	<li>Fix an issue where some ligatured characters were drawn at a wrong position when the line height for composite font is fixed.</li>
 	<li>Improve general stability.</li>
 </ul>
 </section>
