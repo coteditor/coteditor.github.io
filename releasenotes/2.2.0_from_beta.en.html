@@ -46,11 +46,12 @@
 <ul>
 	<li>Hanging indentation that enables inserting extra indent to wrapped lines.
 	<ul>
-		<li>You can change the bahavior in Preferences > Edit.</li>
+		<li>You can change the behavior in Preferences > Edit.</li>
 	</ul></li>
 	<li>Add new normalization form “NFKC Casefold” to the Unicode normalization action in Utility menu (Thanks to doraTeX!)<ul>
 		<li>It is also added to the AppleScript terms.
 	</ul></li>
+	<li>Add German localization.</li>
 </ul>
 </section>
 
@@ -61,8 +62,9 @@
 <ul>
 	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
 	<ul>
-		<li>Uses who have already installed `cot` command need re-install it manually. Go to “Integration” pane in the Preferences and just press “Uninstall/Install” button twice.</li>
-	</ul></li>
+		<li>Users who have already installed `cot` command need re-install it manually. You can re-install it running the command below on Terminal:<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+      You may need to modify paths in this command depending on where you've installed CotEditor/cot.</li>	</ul></li>
 	<li>Improve Color Code Editor:
 	<ul>
 		<li>Add stylesheet keyword to color code type.</li>
@@ -87,12 +89,14 @@
 
 <ul>
 	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
-	<li>Fix an issue where application crashed by clicking header of empty table in syntax editor sheet.</li>
 	<li>Fix an issue where application could crash after when closing multiple split views.</li>
+	<li>Fix an issue where application crashed by clicking header of empty table in syntax editor sheet.</li>
 	<li>Fix an issue where warning on Integration pane didn't disappear even after the problem resolved.</li>
+	<li>Fix an issue where unwanted invisible character mark were drawn when tab drawing is turned off and other invisibles drawing is turned on. </li>
 	<li>Add some missing localized strings in Japanese.</li>
+	<li><span class="label">El Capitan</span> Fix an issue where color code view did not display on El Capitan.</li>
 	<li><span class="label">beta</span>: Fix an issue where the strings that were inserted via script or tools could be styled wrong.</li>
-	<li><span class="label">beta</span>: ix an issue where no preffered extension was appended on the document save panel.</li>
+	<li><span class="label">beta</span>: ix an issue where no preferred extension was appended on the document save panel.</li>
 	<li><span class="label">beta</span>: Fix an issue where the bug report template was not syntax highlighted.</li>
 </ul>
 

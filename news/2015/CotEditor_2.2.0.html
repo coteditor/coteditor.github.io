@@ -70,6 +70,11 @@
 	<dl>
 		<dt>If you have scripts in the Scripts menu</dt>
 		<dd>The location of the scripts folder moved from <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> to <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code>. Just move the whole scripts in the previous location to the new location.</dd>
+		
+		<dt>If you've already installed <code>cot</code> command-line tool</dt>
+		<dd>The <code>cot</code> command should be re-installed, since the location where <code>cot</code> command-line tool is bundled did change from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement. You can re-install it running the command below on Terminal:<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+      You may need to modify paths in this command depending on where you've installed CotEditor/cot.</dd>
 	</dl></dd>
 	
 	<dt>Where has the feature to write to files even I don't have the permission gone? It was my “must-feature”…</dt>

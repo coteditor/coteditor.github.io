@@ -102,6 +102,7 @@
 		<li>It is also added to the AppleScript terms.</li>
 	</ul></li>
 	<li>Add <code>encoding:</code> and <code>coding:</code> to the encoding declaration keywords which will be used on encoding auto-detection (interpreting priorities are: <code>charset=</code> &gt; <code>encoding=</code> &gt; <code>@charset</code> &gt; <code>encoding:</code> &gt; <code>coding:</code>).</li>
+	<li>Add German localization.</li>
 </ul>
 </section>
 
@@ -113,7 +114,9 @@
 	<li>Deprecate the feature opening/saving files that user doesn't have the permission, due to Sandbox requirement.</li>
 	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
 	<ul>
-		<li>Uses who have already installed `cot` command need re-install it manually. Go to “Integration” pane in the Preferences and just press “Uninstall/Install” button twice.</li>
+		<li>Users who have already installed `cot` command need re-install it manually. You can re-install it running the command below on Therminal:<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+      You may need to modify paths in this command depending on where you've installed CotEditor/cot.</li>
 	</ul></li>
 	<li>Improve side inspector UI.</li>
 	<li>Improve syntax highlighting:
@@ -153,8 +156,8 @@
 		<li>Faster launch.</li>
 	</ul></li>
 	<li>Optimize saving process.</li>
-	<li>Improve compatibility with OS X 10.11 El Capitan.</li>
 	<li>Adjust highlight color for find panel.</li>
+	<li>Improve compatibility with OS X 10.11 El Capitan.</li>
 	<li>Tweak message terms.</li>
 	<li>Update documents.</li>
 	<li>Change source code license from the GNU General Public License version 2 to the Apache License version 2.0.</li>
@@ -183,6 +186,7 @@
 	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
 	<li>Fix an issue where application could crash after when closing multiple split views.</li>
 	<li>Fix an issue where some ligatured characters were drawn at a wrong position when the line height for composite font is fixed.</li>
+	<li>Fix an issue where unwanted invisible chracter mark were dwawn when tab drawing is turned off and other invisibles drawing is truned on.</li>
 	<li>Add some missing localized strings in Japanese.</li>
 	<li>Improve general stability.</li>
 </ul>
