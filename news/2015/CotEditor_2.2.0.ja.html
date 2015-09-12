@@ -71,7 +71,7 @@
 		<dd>スクリプトフォルダーの位置が <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> から <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code> に変更されました。すべてのスクリプトファイルを以前の場所から新しい場所に移動させてください。</dd>
 		<dt>もし既に cot コマンドをインストールしている場合</dt>
 		<dd>cot コマンドのバンドルされている場所が <code>CotEditor.app/Contents/MacOS/</code> から <code>CotEditor.app/Contents/SharedSupport/bin/</code> に変更されたため、cot コマンドは再インストールする必要があります。ターミナルから以下のコマンドを実行することで、cot コマンドを再インストールすることができます。<br/>
-          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+          <code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
 		CotEditor/cot をインストールしている場所に合わせて、再インストールコマンドのパスは適宜変更してください。</dd>
 	</dl></dd>
 	

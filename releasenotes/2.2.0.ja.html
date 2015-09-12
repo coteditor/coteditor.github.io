@@ -58,6 +58,9 @@
 	
 	<dt>印刷機能の強化</dt>
 	<dd>縦書きの印刷のほか、プリントパネルでもページ設定が設定できるようになる、CotEditor 独自のプリント設定もプリントプリセットに保存されるようになる、など印刷機能が全面的に強化されました。</dd>
+	
+	<dt>El Capitan 対応</dt>
+	<dd>CotEditor 2.2.0 は El Capitan 上でもしっかり動きます。</dd>
 </dl>
 </section>
 
@@ -111,11 +114,12 @@
 <h2>機能改善／仕様変更</h2>
 
 <ul>
+	<li>OS X 10.11 El Capitan に対応</li>
 	<li>サンドボックス化にともない、ユーザにパーミッションがないファイルでもオープン／上書きができる機能 (authopen) を廃止</li>
 	<li>サンドボックス化にともない、cot コマンドラインツールのバンドル場所を <code>CotEditor.app/Contents/MacOS/</code> から <code>CotEditor.app/Contents/SharedSupport/bin/</code> に変更。
 	<ul>
-		<li>cot コマンドをすでにインストールしているユーザは、手動で再インストールを行う必要があります。ターミナルから以下のコマンドを実行することで、cot コマンドを再インストールすることができます。<br/>
-          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+		<li>cot コマンドをすでにインストールしているユーザは、手動で再インストールを行う必要があります。ターミナルから以下のコマンドを実行することで、コマンドを再インストールすることができます。<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
           CotEditor/cot をインストールしている場所に合わせて、再インストールコマンドのパスは適宜変更してください。</li>
 	</ul></li>
 	<li>サイドインスペクタのユーザインターフェイスを改良</li>
@@ -142,22 +146,25 @@
 		<li>スタイルシートのキーワードのカラーリストをエディタパネルに追加</li>
 		<li>パネルをリサイズ可能に</li>
 	</ul></li>
+	<li>ファイルオープン時、適切なシンタックススタイルが見つからなかったけどファイル内容が XML 宣言から始まっていた場合、自動的に “XML” がシンタックススタイルに設定されるように改良</li>
 	<li>書類復帰時の文字エンコーディングの扱いを改善</li>
 	<li>入力補完候補リストの設定インターフェイスの刷新（以前の設定はリセットされます）</li>
 	<li>CotEditor のスクリプト定義に アクセスグループ (access-group) <code>com.coteditor.CotEditor.edit</code> を追加</li>
 	<li>ウインドウ復帰に関する改善：
 	<ul>
-	<li>スクロール位置とカーソル位置も復帰の対象に</li>
-	<li>未保存書類のシンタックススタイルも復帰可能に</li>
+		<li>スクロール位置とカーソル位置も復帰の対象に</li>
+		<li>未保存書類のシンタックススタイルも復帰可能に</li>
 	</ul></li>
 	<li>cot コマンドラインツールを全面書き直し：
 	<ul>
-	<li>起動時間の短縮</li>
+		<li>起動時間の短縮</li>
 	</ul></li>
+	<li>El Capitan のスワイプして削除を環境設定上のいくつかの表／リストで対応</li>
+	<li>環境設定内のテーマリストのコンテクストメニューを改良</li>
 	<li>検索時のハイライト色の調整</li>
-	<li>OS X 10.11 El Capitan 対応の強化</li>
 	<li>表記の調整</li>
 	<li>ドキュメントの更新</li>
+	<li>ビルド環境を OS X El Capitan + Xcode 7 (SDK 10.11) に変更</li>
 	<li>ソースコードのライセンスを GNU General Public License version 2 から Apache Lisence version 2.0 に変更</li>
 	<li><span class="label">非 AppStore 版のみ</span>: 自動更新機能の廃止
 	<ul>

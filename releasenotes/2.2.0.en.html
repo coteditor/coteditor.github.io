@@ -58,6 +58,9 @@
 	
 	<dt>Print feature improvement</dt>
 	<dd>Other than the vertical text print, the print feature has been improved, for instance, to change page settings in the print panel, to store CotEditor's own print settings to the system print preset.</dd>
+	
+	<dt>El Capitan support</dt>
+	<dd>CotEditor 2.2.0 works well on OS X El Capitan.</dd>
 </dl>
 </section>
 
@@ -83,7 +86,7 @@
 	<li>CotEditor is now <strong>Sandboxed</strong>.</li>
 	<li>Hanging indentation that enables inserting extra indent to wrapped lines.
 	<ul>
-		<li>You can change the bahavior in Preferences > Edit.</li>
+		<li>You can change the behavior in Preferences > Edit.</li>
 	</ul></li>
 	<li>New setting option for the behavior on document modification by external process (in General pane).</li>
 	<li>Share button in toolbar (Customize toolbar to use it).</li>
@@ -93,10 +96,10 @@
 	</ul></li>
 	<li>Line number view for vertical text orientation.</li>
 	<li>Print with vertical text orientation.</li>
-	<li>Add interpreter name list to the syntax style definition to determine syntax style from the shebang in the file content for in case when syntax style cannot be determined from the file name.
+	<li>Add interpreter name list to the syntax style definition to determine syntax style from the shebang in the file content for in case when syntax style cannot be determined from the file name.</li>
 	<ul>
 		<li>From this change, some of the bundled syntax styles are also updated.</li>
-	</ul></li>
+	</ul>
 	<li>Add new normalization form “NFKC Casefold” to the Unicode normalization action in the Utility menu. (Thanks to doraTeX!)
 	<ul>
 		<li>It is also added to the AppleScript terms.</li>
@@ -111,11 +114,14 @@
 <h2>Additions/Changes</h2>
 
 <ul>
+	<li>Support OS X 10.11 El Capitan.</li>
 	<li>Deprecate the feature opening/saving files that user doesn't have the permission, due to Sandbox requirement.</li>
 	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
 	<ul>
-		<li>Users who have already installed `cot` command need re-install it manually. You can re-install it running the command below on Therminal:<br/>
-          <code>unlink /usr/local/bin/cot; ln -s /usr/local/bin/cot /Applications/CotEditor.app/Contents/SharedSupport/bin/cot</code><br/>
+		<li>Users who have already installed `cot` command need re-install it manually. You can re-install it running the command below on Terminal:<br/>
+
+          <code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
+
       You may need to modify paths in this command depending on where you've installed CotEditor/cot.</li>
 	</ul></li>
 	<li>Improve side inspector UI.</li>
@@ -142,6 +148,7 @@
 		<li>Add stylesheet keyword color list to editor panel.</li>
 		<li>Make editor panel resizable.</li>
 	</ul></li>
+	<li>Now syntax style is automatically set to “XML” on file opening if no appropriate style can be found but the file content starts with a XML declaration.</li>
 	<li>Better file encoding handling on revert action.</li>
 	<li>Update word completion list setting in Edit pane in Preferences (The previous setting has been reset).</li>
 	<li>Set access-group <code>com.coteditor.CotEditor.edit</code> to CotEditor's script definition.</li>
@@ -155,11 +162,13 @@
 	<ul>
 		<li>Faster launch.</li>
 	</ul></li>
+	<li>Support “swipe to delete” for some tables in Preferences on El Capitan.</li>
+	<li>Improve contexutal menu for theme list on preferences.</li>
 	<li>Optimize saving process.</li>
 	<li>Adjust highlight color for find panel.</li>
-	<li>Improve compatibility with OS X 10.11 El Capitan.</li>
 	<li>Tweak message terms.</li>
 	<li>Update documents.</li>
+	<li>Update build environment to OS X El Capitan +  Xcode 7 (SDK 10.11).</li>
 	<li>Change source code license from the GNU General Public License version 2 to the Apache License version 2.0.</li>
 	<li><span class="label">non-AppStore ver.</span>: Disable auto-update feature.
 	<ul>
@@ -186,7 +195,7 @@
 	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
 	<li>Fix an issue where application could crash after when closing multiple split views.</li>
 	<li>Fix an issue where some ligatured characters were drawn at a wrong position when the line height for composite font is fixed.</li>
-	<li>Fix an issue where unwanted invisible chracter mark were dwawn when tab drawing is turned off and other invisibles drawing is truned on.</li>
+	<li>Fix an issue where unwanted invisible character mark were drawn when tab drawing is turned off and other invisibles drawing is turned on.</li>
 	<li>Add some missing localized strings in Japanese.</li>
 	<li>Improve general stability.</li>
 </ul>
