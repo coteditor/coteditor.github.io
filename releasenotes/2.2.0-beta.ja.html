@@ -52,8 +52,88 @@
 	
 	<dt>印刷機能の強化</dt>
 	<dd>縦書きの印刷のほか、プリントパネルでもページ設定が設定できるようになる、CotEditor 独自のプリント設定もプリントプリセットに保存されるようになる、など印刷機能が全面的に強化されました。</dd>
+	
+	<dt>El Capitan 対応</dt>
+	<dd>CotEditor 2.2.0 は El Capitan 上でもしっかり動きます。</dd>
 </dl>
 </section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 2.2.0-rc の変更点</h1>
+	<p>リリース: <time>2015-09-xx</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>折り返し行のインデント
+	<ul>
+		<li>環境設定の編集ペインで振る舞いを設定できます</li>
+	</ul></li>
+	<li>新しい Unicode 正規化形式「NFKC Casefold」をユーティリティメニューの 「Unicode 正規化」に追加 (doraTeX さんに感謝!)
+	<ul>
+		<li>AppleScript 辞書にもこの NFKC Casefold は追加されれています。</li>
+	</ul></li>
+	<li>ドイツ語ローカライズを追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>機能改善／仕様変更</h2>
+
+<ul>
+	<li>サンドボックス化にともない、cot コマンドラインツールのバンドル場所を <code>CotEditor.app/Contents/MacOS/</code> から <code>CotEditor.app/Contents/SharedSupport/bin/</code> に変更。
+	<ul>
+		<li>cot コマンドをすでにインストールしているユーザは、手動で再インストールを行う必要があります。ターミナルから以下のコマンドを実行することで、cot コマンドを再インストールすることができます。<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
+          CotEditor/cot をインストールしている場所に合わせて、再インストールコマンドのパスは適宜変更してください。</li>
+	</ul></li>
+	<li>カラーコードエディタの改良：
+	<ul>
+		<li>スタイルシートのキーワードをカラーコードタイプに追加</li>
+		<li>スタイルシートのキーワードのカラーリストをエディタパネルに追加</li>
+		<li>パネルをリサイズ可能に</li>
+	</ul></li>
+	<li>ファイルオープン時、適切なシンタックススタイルが見つからなかったけどファイル内容が XML 宣言から始まっていた場合、自動的に “XML” がシンタックススタイルに設定されるように改良</li>
+	<li>入力補完候補リストの設定インターフェイスの刷新（以前の設定はリセットされます）</li>
+	<li>El Capitan のスワイプして削除を環境設定上のいくつかの表／リストで対応</li>
+	<li>表記の調整</li>
+	<li>環境設定内のテーマリストのコンテクストメニューを改良</li>
+	<li>検索時のハイライト色の調整</li>
+	<li>ドキュメントの更新</li>
+	<li>ビルド環境を El Capitan + Xcode 7 (SDK 10.11) に変更</li>
+	<li><span class="label">非 AppStore 版のみ</span>: Sparkle framework を 1.11.0 に更新</li>
+	<li><span class="label">beta</span> <span class="label">非 AppStore 版のみ</span>: デフォルトではプレリリース版をチェックしないように変更
+	<ul>
+		<li>なお、プレリリース版使用中は、設定に関わらず新しいプレリリース版が対象に含まれようになります。</li>
+</ul>
+</section>
+
+
+<section>
+<h2>バグフィックス</h2>
+
+<ul>
+	<li>連携ペインでのコマンドラインツールのインストールが稀にできないことがあった不具合を修正</li>
+	<li>シンタックス編集シートで、空の表のヘッダをクリックするとアプリケーションがクラッシュした不具合を修正</li>
+	<li>複数の分割エディタを閉じた後にアプリケーションがクラッシュすることがあった不具合を修正</li>
+	<li>連携ペインの警告が、問題解決後も消えなかった不具合を修正</li>
+	<li>不可視文字の表示で「タブ」がオフで「その他の不可視文字」がオンのとき、不要な不可視文字マークが表示されていた不具合を修正</li>
+	<li>日本語のローカライズが一部抜けていた不具合を修正</li>
+	<li><span class="label">El Capitan</span>: カラーコードパネル内のカラーコードビューが El Capitan で非表示になっていた不具合を修正</li>
+	<li><span class="label">beta</span>: スクリプトやツールから挿入された文字列のスタイルが誤っていた不具合を修正</li>
+	<li><span class="label">beta</span>:書類セーブパネルでシンタックスに合わせた拡張子が追加されなかった不具合を修正</li>
+	<li><span class="label">beta</span>: 不具合レポートテンプレートのカラーリングがされなかった不具合を修正</li>
+	<li><span class="label">beta</span>: 不具合レポートテンプレートのカラーリングがされなかった不具合を修正</il>
+</ul>
+</section>
+</article>
 
 
 
@@ -80,7 +160,7 @@
 	<li>インタープリタ名リストをシンタックス定義に追加し、ファイル名からシンタックス名が推定できないときにファイル内のシェバンからもシンタックスを決定できるように
 	<ul>
 		<li>これにともない、いくつかのバンドルされているシンタックス定義を更新</li>
-	</ul>
+	</ul></li>
 	<li>文字エンコーディングの自動認識で参照するエンコーディング宣言に <code>encoding:</code> と <code>coding:</code> を追加 (解釈は <code>charset=</code> &gt; <code>encoding=</code> &gt; <code>@charset</code> &gt; <code>encoding:</code> &gt; <code>coding:</code> の順で行われます)</li>
 </ul>
 </section>
@@ -120,7 +200,7 @@
 	<li>スクロール位置とカーソル位置も復帰の対象に</li>
 	<li>未保存書類のシンタックススタイルも復帰可能に</li>
 	</ul></li>
-	<li><code>cot</code> コマンドラインツールを全面書き直し：
+	<li>cot コマンドラインツールを全面書き直し：
 	<ul>
 	<li>より早い起動</li>
 	</ul></li>
