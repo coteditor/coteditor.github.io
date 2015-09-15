@@ -52,8 +52,87 @@
 	
 	<dt>Print feature improvement</dt>
 	<dd>Other than the vertical text print, the print feature has been improved, for instance, to change page settings in the print panel, to store CotEditor's own print settings to the system print preset.</dd>
+	
+	<dt>El Capitan support</dt>
+	<dd>CotEditor 2.2.0 works well on OS X El Capitan.</dd>
 </dl>
 </section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 2.2.0-rc</h1>
+	<p>release: <time>2015-09-14</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Hanging indentation that enables inserting extra indent to wrapped lines.
+	<ul>
+		<li>You can change the behavior in Preferences > Edit.</li>
+	</ul></li>
+	<li>Add new normalization form “NFKC Casefold” to the Unicode normalization action in Utility menu (Thanks to doraTeX!)<ul>
+		<li>It is also added to the AppleScript terms.
+	</ul></li>
+	<li>Add German localization.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Additions/Changes</h2>
+
+<ul>
+	<li>Change the location where <code>cot</code> command-line tool is bundled from <code>CotEditor.app/Contents/MacOS/</code> to <code>CotEditor.app/Contents/SharedSupport/bin/</code>, due to Sandbox requirement.
+	<ul>
+		<li>Users who have already installed `cot` command need re-install it manually. You can re-install it running the command below on Terminal:<br/>
+          <code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
+      You may need to modify paths in this command depending on where you've installed CotEditor/cot.</li>	</ul></li>
+	<li>Improve Color Code Editor:
+	<ul>
+		<li>Add stylesheet keyword to color code type.</li>
+		<li>Add stylesheet keyword color list to editor panel.</li>
+		<li>Make editor panel resizable.</li>
+	</ul></li>
+	<li>Now syntax style is automatically set to “XML” on file opening if no appropriate style can be found but the file content starts with a XML declaration.</li>
+	<li>Update word completion list setting in Edit pane in Preferences (The previous setting has been reset).</li>
+	<li>Support “swipe to delete” for some tables in Preferences on El Capitan.</li>
+	<li>Improve contexutal menu for theme list on preferences.</li>
+	<li>Adjust highlight color for find panel.</li>
+	<li>Tweak some message terms.</li>
+	<li>Update documents.</li>
+	<li>Update build environment to El Capitan + Xcode 7 (SDK 10.11).</li>
+	<li><span class="label">non-AppStore ver.</span>: Update Sparkle framework to version 1.11.0.</li>
+	<li><span class="label">beta</span> <span class="label">non-AppStore ver.</span>: Change to not check pre-release versions on default.
+	<ul>
+		<li>New pre-releases are always subject of the update check no matter the user setting if the current running CotEditor is a pre-release version.</li>
+	</ul></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the command-line tool could rarely not be installed from Integration pane.</li>
+	<li>Fix an issue where application could crash after when closing multiple split views.</li>
+	<li>Fix an issue where application crashed by clicking header of empty table in syntax editor sheet.</li>
+	<li>Fix an issue where warning on Integration pane didn't disappear even after the problem resolved.</li>
+	<li>Fix an issue where unwanted invisible character mark were drawn when tab drawing is turned off and other invisibles drawing is turned on. </li>
+	<li>Add some missing localized strings in Japanese.</li>
+	<li><span class="label">El Capitan</span>: Fix an issue where color code view did not display on El Capitan.</li>
+	<li><span class="label">beta</span>: Fix an issue where the strings that were inserted via script or tools could be styled wrong.</li>
+	<li><span class="label">beta</span>: ix an issue where no preferred extension was appended on the document save panel.</li>
+	<li><span class="label">beta</span>: Fix an issue where the bug report template was not syntax highlighted.</li>
+	<li><span class="label">beta</span>: Fix some trivial drawing issues on El Capitan.</li>
+</ul>
+</section>
+</article>
 
 
 
