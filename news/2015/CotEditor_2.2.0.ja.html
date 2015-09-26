@@ -73,9 +73,7 @@
 		<dt>もしスクリプトメニューで使用していたスクリプトがある場合</dt>
 		<dd>スクリプトフォルダーの位置が <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> から <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code> に変更されました。すべてのスクリプトファイルを以前の場所から新しい場所に移動させてください。</dd>
 		<dt>もし既に cot コマンドをインストールしている場合</dt>
-		<dd>cot コマンドのバンドルされている場所が <code>CotEditor.app/Contents/MacOS/</code> から <code>CotEditor.app/Contents/SharedSupport/bin/</code> に変更されたため、cot コマンドは再インストールする必要があります。ターミナルから以下のコマンドを実行することで、cot コマンドを再インストールすることができます。<br/>
-          <code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
-		CotEditor/cot をインストールしている場所に合わせて、再インストールコマンドのパスは適宜変更してください。</dd>
+		<dd>Mac App Store の要請で cot コマンド実行ファイルが CotEditor.app 本体から削除されたため、cot コマンドは再インストールする必要があります。新しいバージョンの cot を <a href="/cot">coteditor.com/cot</a> からダウンロードして、手動でインストールをしてください。過去にインストールした cot コマンドは CotEditor 2.2.0 とは互換性がありません。</dd>
 	</dl></dd>
 	
 	<dt>パーミッションのないファイルに上書きできる機能はどこへいったんですか？ あれ、必須の機能なんですが...</dt>
