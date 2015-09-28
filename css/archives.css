@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : archives page
-   lastMod : 2015-08
+   lastMod : 2015-09
   ////////////////////////////////////// */
 
 
@@ -21,7 +21,7 @@
 	margin-right: 10px;
 }
 #non-AppStore > a span {
-	font-weight: lighter;
+	font-weight: 200;
 }
 #non-AppStore > a img {
 	vertical-align: middle;

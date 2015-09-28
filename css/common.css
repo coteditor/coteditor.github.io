@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2015-08
+   lastMod : 2015-09
   ////////////////////////////////////// */
 
 
@@ -259,7 +259,7 @@ dl.fqa > dd + dt {
 }
 dl.fqa > ::before {
 	color: hsl(50,75%,45%);
-	font: lighter 20px/1.0 'Helvetica Neue', sans-serif;
+	font: 200 20px/1.0 'Helvetica Neue', sans-serif;
 	margin-right: 0.3em;
 }
 dl.fqa > dt::before {
