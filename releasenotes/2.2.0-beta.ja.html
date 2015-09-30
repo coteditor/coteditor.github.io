@@ -62,6 +62,67 @@
 
 <article>
 <header>
+	<h1>CotEditor 2.2.0-rc.2 の変更点</h1>
+	<p>リリース: <time>2015-09-30</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>新しいテーマ “Anura” と “Note” を追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>機能改善／仕様変更</h2>
+
+<ul>
+	<li>Mac App Store ガイドラインに沿うため、<code>cot</code> コマンドラインツールの同梱の廃止
+	<ul>
+		<li>CotEditor 2.2.0 およびそれ以降で <code>cot</code> コマンドを使うためには、新しいコマンドラインツールを <a href="http://coteditor.com/cot">http://coteditor.com/cot</a> からダウンロードして、手動でインストールを行ってください。過去のコマンドラインツールは CotEditor 2.2.0 に対応していません。</li>
+	</ul></li>
+	<li>環境設定内のテーマとシンタックススタイルリストのコンテキストメニューを改良</li>
+	<li>“Swift” シンタックススタイルの更新
+	<ul>
+		<li>Swift 2.0 で追加された語句の追加</li>
+	</ul></li>
+	<li><code>&lt;</code><code>&gt;</code> のハイライトが有効な時にも 対応していない <code>&gt;</code> が入力された時にビープ音が鳴るのを抑止</li>
+	<li>保存エラーダイアログがより詳細なエラー理由を表示するよう改良</li>
+	<li>シンタックススタイル編集シートのレイアウトを調整</li>
+	<li>サンプルスクリプトを削除<ul>
+		<li>今後はオンラインの <a href="http://coteditor.com/archives.ja">アーカイブ</a> ページで入手することができます。</li>
+	</ul></li>
+	<li>ドキュメントの更新</li>
+	<li><span class="label">beta</span>: サイドパネルのタブボタンを改良</li>
+</ul>
+</section>
+
+
+<section>
+<h2>バグフィックス</h2>
+
+<ul>
+	<li>プリントプレビューでテーマカラーが反映されなかったことがあった不具合を修正</li>
+	<li>サロゲートペアの部分を入力した時にアプリケーションがクラッシュした不具合を修正</li>
+	<li>サロゲートペアの不可視文字が描画されないことがあった不具合を修正</li>
+	<li>ウインドウ復帰時にツールバーの縦書きボタンが実際の状態を反映していなかった不具合を修正</li>
+	<li>ヘルプのレイアウトを修正</li>
+	<li><span class="label">rc</span>: Yosemite およびそれ以前で、表ヘッダの周りに不要なスペースが付加されていることがあった不具合を修正</li>
+	<li><span class="label">rc</span>: 折り返し行のインデントのインデント幅計算が誤っていることがあった不具合を修正</li>
+	<li><span class="label">beta</span>: 移行するデータがないのに初起動時に CotEditor 1.x 系からの移行処理ウインドウが表示された不具合を修正</li>
+	<li><span class="label">beta</span>: ウインドウ復帰時にアプリケーションがクラッシュする可能性があった不具合を修正</li>
+	<li><span class="label">beta</span> <span class="label">non-AppStore ver</span>: OS X Mountan Lion と Mavericks で、「一般」ペインのアップデータの設定項目が非表示になっていた不具合を修正。</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
 	<h1>CotEditor 2.2.0-rc の変更点</h1>
 	<p>リリース: <time>2015-09-14</time></p>
 </header>

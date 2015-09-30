@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
 		<title>CotEditor update information</title>
-		<link>http://coteditor.com/releasenotes/appcast.xml</link>
+		<link>http://coteditor.com/releasenotes/appcast-beta.xml</link>
 		<description>CotEditor update information</description>
 		<item>
 			<title>CotEditor 2.2.0</title>
