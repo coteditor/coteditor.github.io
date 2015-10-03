@@ -6,9 +6,9 @@
 		<description>CotEditor update information</description>
 		<item>
 			<title>CotEditor 2.2.0</title>
-			<sparkle:releaseNotesLink xml:lang="en">http://coteditor.com/releasenotes/2.2.0.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">http://coteditor.com/releasenotes/2.2.0.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Thu, 01 Oct 2015 07:59:43 +0900</pubDate>
+			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.2.0.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.2.0.ja.html</sparkle:releaseNotesLink>
+			<pubDate>Sat, 03 Oct 2015 16:00:00 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
 			<sparkle:version>74</sparkle:version>
             <link>http://coteditor.com/</link>
