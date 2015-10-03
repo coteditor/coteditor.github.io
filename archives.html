@@ -32,19 +32,57 @@
 <body>
 <header>
 	<a href="/">CotEditor</a>
+	
+	<nav><ul>
+		<li><a>Archives</a></li>
+		<li><a href="contact">Contact</a></li>
+		<li><a href="https://twitter.com/CotEditor" rel="external">Twitter</a></li>
+	</ul></nav>
 </header>
+
 
 <main>
 <h1>Archives</h1>
 
 
-<section id="older_versions">
+<section id="non-AppStore">
+<h2>CotEditor non-AppStore version</h2>
+
+<p>CotEditor is distributed on the <a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store">Mac App Store</a>. However, there is also a non-AppStore version just for in case.</p>
+
+<a href="https://github.com/coteditor/CotEditor/releases/download/2.2.0/CotEditor_2.2.0.dmg"
+		download="CotEditor_2.2.0.dmg"
+		title="Download | CotEditor_2.2.0.dmg"
+		onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor 2.2.0');">
+		<img src="./img/appIcon/64@2x.png" width="64" alt=""/>
+		CotEditor <span>2.2.0</span>
+</a>
+<dl>
+	<dt>released on</dt>
+	<dd><time>2015-10-03</time></dd>
+	
+	<dt>release notes</dt>
+	<dd><a href="releasenotes/2.2.0.en" hreflang="en">en</a></dd>
+	<dd><a href="releasenotes/2.2.0.ja" hreflang="ja">ja</a></dd>
+	
+	<dt>requirements</dt>
+	<dd>OS X 10.8 or higher</dd>
+</dl>
+
+<dl class="fqa">
+	<dt>What is the difference between the <strong>Mac App Store version</strong> and <strong>non-AppStore version</strong>?</dt>
+	<dd>There is no difference on the software itself except the updater. The non-AppStore version has an updater framework <a href="http://sparkle-project.org" rel="external" title="Sparkle Project">Sparkle</a> to notify new releases while the OS X system manages versions of the Mac App Store version. Other things are exactly the same. Both versions are Sandboxed.</dd>
+</dl>
+</section>
+
+
+<section>
 <h2>CotEditor for earlier OS X</h2>
 
 <p>The followings are the latest releases for the OS X which are no more supported on the current CotEditor.<br/>
 	The project team doesn't provide any support for the earlier versions.</p>
 
-<dl>
+<dl class="download">
 	<dt>for <strong>OS X 10.7</strong> Lion</dt>
 	<dd><a href="https://github.com/coteditor/CotEditor/releases/download/1.5.4/CotEditor_1.5.4.dmg"
 		download="CotEditor_1.5.4.dmg"
@@ -78,19 +116,36 @@
 
 
 <section>
+<h2>Sample Scripts</h2>
+
+<p>A set of sample scripts to demonstrate how CotEditor scripts work.</p>
+
+<dl class="download">
+	<dt>Sample Scripts</dt>
+	<dd><a href="https://github.com/coteditor/SampleScripts/archive/master.zip"
+		download="SampleScripts.zip"
+		title="Download | SampleScripts.zip"
+		onclick="ga('send', 'event', 'Downloads', 'click', 'Sample Scripts');">
+		<img src="./img/archives/zipicon@2x.png" width="32" alt=""/>
+		SampleScripts.zip</a></dd>
+</dl>
+<p><small>-&gt; <a href="https://github.com/coteditor/SampleScripts" rel="external" title="GitHub | coteditor/SampleScripts">Repository on GitHub</a>.</small></p>
+</section>
+
+
+<section>
 <h2>Additional Syntax Styles</h2>
 
-<p>See <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Syntax-Styles" rel="external" title="Additional Syntax Styles · coteditor/CotEditor Wiki
-">Additional Syntax Styles</a> page on the wiki.</p>
+<p>See <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Syntax-Styles" rel="external" title="Additional Syntax Styles · coteditor/CotEditor Wiki">Additional Syntax Styles</a> page on the wiki.</p>
 </section>
 
 
 <section>
 <h2>Additional Themes</h2>
 
-<p>See <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Themes" rel="external" title="Additional Themes · coteditor/CotEditor Wiki
-">Additional Themes</a> page on the wiki.</p>
+<p>See <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Themes" rel="external" title="Additional Themes · coteditor/CotEditor Wiki">Additional Themes</a> page on the wiki.</p>
 </section>
+</main>
 
 
 <footer>

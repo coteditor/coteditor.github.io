@@ -6,17 +6,62 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : archives page
-   lastMod : 2015-07
+   lastMod : 2015-09
   ////////////////////////////////////// */
 
 
-#older_versions dt::after {
+/* non-AppStore version */
+
+#non-AppStore > a {
+	font-size: 140%;
+	
+	float:left;
+	border-right: 1px solid hsla(0,0%,0%,.1);
+	padding-right: 20px;
+	margin-right: 10px;
+}
+#non-AppStore > a span {
+	font-weight: 200;
+}
+#non-AppStore > a img {
+	vertical-align: middle;
+}
+#non-AppStore dl:not(.fqa) {
+}
+#non-AppStore dl:not(.fqa) > * {
+	display: inline;
+	line-height: 1.4;
+	font-size: 90%;
+}
+#non-AppStore dl:not(.fqa) dd+dd::before {
+	content: ' | ';
+	font-size: 90%;
+	opacity: 0.3;
+	padding: 0 0.2em;
+}
+#non-AppStore dl:not(.fqa) dd+dt::before {
+	content: '\000A';  /* line break */
+	white-space: pre;
+}
+#non-AppStore dl:not(.fqa) dt:after {
+	content: ':';
+	margin-right: 0.5em;
+}
+#non-AppStore dl.fqa {
+	clear: both;
+	margin-top: 2em;
+}
+
+
+/* older versions */
+
+dl.download dt::after {
 	content: ':';
 }
-#older_versions dd {
-	margin: 0 2em 1em;
+dl.download dd {
+	margin: 0.4em 2em 1em;
 }
-#older_versions dd img {
+dl.download dd img {
 	vertical-align: middle;
 	margin-right: 4px;
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Frequently asked questions about the release on the Mac App Store and Sandboxing in CotEditor 2.2.0."/>
+
+	<title>FQA about CotEditor 2.2.0 - CotEditor</title>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/news/2015/CotEditor_2.2.0"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="quently asked questions about the release on the Mac App Store and Sandboxing in CotEditor 2.2.0."/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="og:locale:alternate" content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="CotEditor_2.2.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../../css/common.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../../js/common.js"></script>
+</head>
+
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+	
+	<nav><ul>
+		<li><a href="/archives">Archives</a></li>
+		<li><a href="/contact">Contact</a></li>
+		<li><a href="https://twitter.com/CotEditor" rel="external">Twitter</a></li>
+	</ul></nav>
+</header>
+
+
+<main>
+<h1>Frequently Asked Questions about CotEditor 2.2.0</h1>
+
+
+<p>In September 2015, We finally released CotEditor on the Mac App Store. At the same time, CotEditor is also Sandboxed in order to satisfy with Apple's App Store requirements. This is one of the largest changes since it became open source. It may contain some changes that would make users confused. So, we wrote some FAQs for users who already use CotEditor.</p>
+
+<p><a href="/releasenotes/2.2.0.en">Whole Release Notes for CotEditor 2.2.0</a></p>
+
+<section>
+<h2>Mac App Store</h2>
+<dl class="fqa">
+	<dt>How can I upgrade to the Mac App Store version?</dt>
+	<dd>Just remove the previous CotEditor (normally in the Applications folder) to the Trash and install the new one on the App store.</dd>
+	
+	<dt>I don't wanna use apps on the Mac App Store because of some reasons. Is there any way to get CotEditor somewhere else?</dt>
+	<dd>Yes. You can still get a non-AppStore version at the <a href="../../archives">archives</a>.</dd>
+	
+	<dt>Does it mean CotEditor is available on the App Store for a fee?</dt>
+	<dd>Nope. CotEditor is a true freeware and we don't have any plans with that also for the future.</dd>
+	
+	<dt>What is the difference between the Mac App Store version and non-AppStore version?</dt>
+	<dd>There is no difference on the software itself except the updater. The non-AppStore version has an updater framework <a href="http://sparkle-project.org" rel="external" title="Sparkle Project">Sparkle</a> to notify new releases while the OS X system manages versions of the Mac App Store version. Other things are exactly the same. Both versions are Sandboxed.</dd>
+</dl>
+</section>
+
+<section>
+<h2>Sandbox</h2>
+<dl class="fqa">
+	<dt>You said, I may need some manual migration for CotEditor 2.2.0. What do I need to do?</dt>
+	<dd>CotEditor has been Sandboxed since version 2.2.0. It includes some specification change in the file structure from previous versions in order to conform to the Apple's Sandbox rules. The migration is basically done automatically, however some not, since Sandboxed CotEditor cannot touch user's data like before. If you've used the legacy version before, you may need the following manual migration.
+	<dl>
+		<dt>If you have scripts in the Scripts menu</dt>
+		<dd>The location of the scripts folder moved from <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> to <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code>. Just move the whole scripts in the previous location to the new location.</dd>
+		
+		<dt>If you've already installed <code>cot</code> command-line tool</dt>
+		<dd>The command-line tool should be re-installed, since the cot command executable is no more bundled to CotEditor.app, due to the Mac App Store requirement. So we release it separately. Please download the new one from <a href="/cot">coteditor.com/cot</a> and install it manually. Note that the previously installed cot is not compatible with CotEditor 2.2.0. </dd>
+	</dl></dd>
+	
+	<dt>Where has the feature to write to files even I don't have the permission gone? It was my “must-feature”…</dt>
+	<dd>It's..., it's died 😫. Writing to files that user does not have the permission is strongly denied by Sandboxed applications. There is no workaround as long as Apple doesn't change its Sandbox policy. We're sorry, but you need to give the feature up.</dd>
+	
+	<dt>Then why don't you release a non-Sandboxed version? The non-AppStore version does not need to be Sandboxed at all.</dt>
+	<dd>Just because it's our decision. Sandboxing is not only for the MAS release but also for implementing other modern OS X features like the autosaving and so on. We are certain that Sandboxing is one of the requirements for a good modern OS X application. We also don't have enough resources to maintain two totally different versions of core behavior.</dd>
+</dl>
+</section>
+
+<section>
+<h2>Misc.</h2>
+<dl class="fqa">
+	<dt>Is CotEditor 2.2.0 compatible with El Capitan?</dt>
+	<dd>Yes. By CotEditor 2.2.0, we also set a goal to support El Capitan, expect the following issue...</dd>
+	
+	<dt>Hey, CotEditor 2.2.0 crashes when I type Japanese text on El Capitan.</dt>
+	<dd>Sorry for that. We've submit the next 2.2.1 including the fixion for this stupid bug. It should be accepted and released in the next days. Please turn off the option “wrapped lines indentation” temporaly if you need edit Japanese text until that.</dd>
+</dl>
+</section>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2015 CotEditor Project</p>
+</footer>
+</body>
+</html>

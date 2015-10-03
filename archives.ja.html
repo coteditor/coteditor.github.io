@@ -32,19 +32,57 @@
 <body>
 <header>
 	<a href="/">CotEditor</a>
+	
+	<nav><ul>
+		<li><a>アーカイブ</a></li>
+		<li><a href="contact.ja">コンタクト</a></li>
+		<li><a href="https://twitter.com/CotEditor" rel="external">Twitter</a></li>
+	</ul></nav>
 </header>
+
 
 <main>
 <h1>アーカイブ</h1>
 
 
-<section id="older_versions">
+<section id="non-AppStore">
+<h2>CotEditor non-AppStore 版</h2>
+
+<p>CotEditor は <a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store">Mac App Store</a> で配布されていますが、直接ダウンロードできる non-AppStore 版も用意されています。</p>
+
+<a href="https://github.com/coteditor/CotEditor/releases/download/2.2.0/CotEditor_2.2.0.dmg"
+		download="CotEditor_2.2.0.dmg"
+		title="Download | CotEditor_2.2.0.dmg"
+		onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor 2.2.0');">
+		<img src="./img/appIcon/64@2x.png" width="64" alt=""/>
+		CotEditor <span>2.2.0</span>
+</a>
+<dl>
+	<dt>リリース日</dt>
+	<dd><time>2015-10-03</time></dd>
+	
+	<dt>リリースノート</dt>
+	<dd><a href="releasenotes/2.2.0.en" hreflang="en">英語</a></dd>
+	<dd><a href="releasenotes/2.2.0.ja" hreflang="ja">日本語</a></dd>
+	
+	<dt>システム条件</dt>
+	<dd>OS X 10.8 以降</dd>
+</dl>
+
+<dl class="fqa">
+	<dt><strong>Mac App Store 版</strong> と <strong>non-AppStore 版</strong>に違いはありますか？</dt>
+	<dd>バージョンの管理方法を除いて、ソフトウェア自体に違いは違いはありません。Mac App Store 版はシステムがバージョンの管理するのに対して、non-AppStore 版は、新しいバージョンがリリースされた時に通知を行うフレームワーク <a href="http://sparkle-project.org" rel="external" title="Sparkle Project">Sparkle</a> が組み込まれています。それ以外の機能は全く同じです。両者ともサンドボックス化されています。</dd>
+</dl>
+</section>
+
+
+<section>
 <h2>古い OS X 向け CotEditor</h2>
 
 <p>以下は、現在の CotEditor では対応してない古い OS X で動く最終バージョンです。<br/>
 	プロジェクトチームは過去のバージョンについてのサポートは提供していません。</p>
 
-<dl>
+<dl class="download">
 	<dt><strong>OS X 10.7</strong> Lion 向け</dt>
 	<dd><a href="https://github.com/coteditor/CotEditor/releases/download/1.5.4/CotEditor_1.5.4.dmg"
 		download="CotEditor_1.5.4.dmg"
@@ -78,6 +116,24 @@
 
 
 <section>
+<h2>サンプルスクリプト</h2>
+
+<p>CotEditor スクリプトの使い方の例を示すサンプルスクリプトのセット</p>
+
+<dl class="download">
+	<dt>サンプルスクリプト</dt>
+	<dd><a href="https://github.com/coteditor/SampleScripts/archive/master.zip"
+		download="SampleScripts.zip"
+		title="Download | SampleScripts.zip"
+		onclick="ga('send', 'event', 'Downloads', 'click', 'Sample Scripts');">
+		<img src="./img/archives/zipicon@2x.png" width="32" alt=""/>
+		SampleScripts.zip</a></dd>
+</dl>
+<p><small>-&gt; <a href="https://github.com/coteditor/SampleScripts" rel="external" title="GitHub | coteditor/SampleScripts">GitHub 上のリポジトリ</a></small></p>
+</section>
+
+
+<section>
 <h2>追加シンタックススタイル</h2>
 
 <p>Wiki の <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Syntax-Styles" rel="external" title="Additional Syntax Styles · coteditor/CotEditor Wiki
@@ -91,6 +147,7 @@
 <p>Wiki の <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Themes" rel="external" title="Additional Themes · coteditor/CotEditor Wiki
 " hreflang="en">Additional Themes</a> を参照してください。</p>
 </section>
+</main>
 
 
 <footer>

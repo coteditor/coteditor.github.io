@@ -5,23 +5,8 @@
    site    : coteditor.com
    target  : top page
    require : iQuery, unslider.js
-   lastMod : 2014-11
+   lastMod : 2015-04
   /////////////////////////////////////// */
-
-
-// download info tooltip -----------------------------------------------------
-//     require: jQuery
-
-jQuery(function ($) {
-	var region = $('#latest');
-	var infoTip = region.find('dl');
-	
-	region.find('a.download, dl').hover(function(event) {
-		infoTip.stop(true, false).fadeIn();
-	}, function(event) {
-		infoTip.stop(true, false).delay(200).fadeOut();
-	});
-});
 
 
 // init slideshow -------------------------------------------------------------

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+	<meta name="description" content="CotEitor 2.2.0 での Mac App Store 対応とサンドボックス化に関するよくある質問"/>
+
+	<title>CotEditor 2.2.0 に関するよくある質問 - CotEditor</title>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/news/2015/CotEditor_2.2.0.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEitor 2.2.0 での Mac App Store 対応とサンドボックス化に関するよくある質問"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="og:locale:alternate" content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="../../favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="../../favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="CotEditor_2.2.0" hreflang="en"/>
+	<link rel="stylesheet"    href="../../css/common.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../../js/common.js"></script>
+</head>
+
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+	
+	<nav><ul>
+		<li><a href="/archives.ja">アーカイブ</a></li>
+		<li><a href="/contact.ja">コンタクト</a></li>
+		<li><a href="https://twitter.com/CotEditor" rel="external">Twitter</a></li>
+	</ul></nav>
+</header>
+
+
+<main>
+<h1>CotEditor 2.2.0 に関するよくある質問</h1>
+
+<p>2015 年 9 月、バージョン 2.2.0 から、CotEditor はついに Mac App Store でリリースされることになりました。また同時に、Apple の App Store の要件を満たすため CotEditor はサンドボックス化されました。これは CotEditor がオープンソース化されて以来もっとも大きな変更の一つです。この変更にはユーザが当惑する変更も含まれている可能性があります。そのため、いままで CotEditor を利用していたユーザに向けて FQA をまとめました。</p>
+
+<p><a href="/releasenotes/2.2.0.ja">CotEditor 2.2.0 のリリースノート</a></p>
+
+<section>
+<h2>Mac App Store</h2>
+<dl class="fqa">
+	<dt>Mac App Store 版にアップデートするにはどうすればよいですか？</dt>
+	<dd>単純に、（一般的には「アプリケーション」フォルダ内にある）以前の CotEditor をゴミ箱に捨てた後、新しい CotEditor を App Store からインストールしてください。</dd>
+	
+	<dt>一身上の理由で Mac App Store は使用したくありません。他に CotEditor を入手する方法はありますか？</dt>
+	<dd>はい、あります。非 AppStore 版は<a href="../../archives.ja">アーカイブ</a>で入手することができます。</dd>
+	
+	<dt>それは CotEditor が有料になるということですか？</dt>
+	<dd>いいえ。CotEditor は完全なるフリーウェアであり、今後も有料で配布する予定はありません。</dd>
+	
+	<dt>Mac App Store 版 と non-AppStore 版に違いはありますか？</dt>
+	<dd>バージョンの管理方法を除いて、ソフトウェア自体に違いは違いはありません。Mac App Store 版はシステムがバージョンの管理するのに対して、non-AppStore 版は、新しいバージョンがリリースされた時に通知を行うフレームワーク <a href="http://sparkle-project.org" rel="external" title="Sparkle Project">Sparkle</a> が組み込まれています。それ以外の機能は全く同じです。両者ともサンドボックス化されています。</dd>
+</dl>
+</section>
+
+<section>
+<h2>サンドボックス</h2>
+<dl class="fqa">
+	<dt>CotEditor 2.2.0 はユーザによる移行処理が必要だとのことですが、何をすれば良いのですか？</dt>
+	<dd>CotEditor はバージョン 2.2.0 でサンドボックス化されました。その際 Apple のサンドボックスに関するルールに準拠するために、ファイル構造についても一部仕様を変更しました。この仕様変更に付随する移行処理は基本的に初回起動時に自動で行われますが、ある部分については CotEditor が手を出せないためユーザによる手動の処理が必要となります。もし以前の CotEditor を使用していた場合は、状況に応じて以下の移行処理を行ってください。
+	<dl>
+		<dt>もしスクリプトメニューで使用していたスクリプトがある場合</dt>
+		<dd>スクリプトフォルダーの位置が <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> から <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code> に変更されました。すべてのスクリプトファイルを以前の場所から新しい場所に移動させてください。</dd>
+		<dt>もし既に cot コマンドをインストールしている場合</dt>
+		<dd>Mac App Store の要請で cot コマンド実行ファイルが CotEditor.app 本体から削除されたため、cot コマンドは再インストールする必要があります。新しいバージョンの cot を <a href="/cot">coteditor.com/cot</a> からダウンロードして、手動でインストールをしてください。過去にインストールした cot コマンドは CotEditor 2.2.0 とは互換性がありません。</dd>
+	</dl></dd>
+	
+	<dt>パーミッションのないファイルに上書きできる機能はどこへいったんですか？ あれ、必須の機能なんですが...</dt>
+	<dd>authopen は犠牲となったのだ...。サンドボックス化されたアプリケーションでは、ユーザが権限を持っていないファイルを操作することが禁じられています。Apple がサンドボックスポリシーを変更しない限り、この機能が今後復活する予定もありません。残念ですが諦めてください。</dd>
+	
+	<dt>じゃあなんで非サンドボックス版を出さないんですか？ 非 App Store 版はサンドボックス化する必要ないじゃないのでは？</dt>
+	<dd>それはそういう決定をしたためです。サンドボックス化は App Store のためだけでなく、今後 Versions のようなモダンな OS X の機能の実装をスムーズに行うためでもあります。サンドボックス化は善い OS X アプリケーションのための必須条件の一つであると我々は信じています。またコアの振る舞いが大きく異なる2つのバージョンを並行してメンテナンスすることは、CotEditor プロジェクトのような規模では効率的でありません。</dd>
+</dl>
+</section>
+
+<section>
+<h2>その他</h2>
+<dl class="fqa">
+	<dt>CotEditor 2.2.0 は El Capitan に対応してますか？</dt>
+	<dd>はい。CotEditor 2.2.0 は El Capitan への対応も含んでいます（ただし以下項目の問題を除く。</dd>
+	
+	<dt>El Capitan で日本語を入力するとクラッシュするのですが...</dt>
+	<dd>申し訳ないです。このバグを修正する 2.2.1 を現在 Apple に申請中です。1,2日中にリリースされるかとは思いますが、それまでは環境設定 &gt; 「編集」ペインの「折り返し行のインデント」を一時的に無効にすることでこの問題を回避できます。</dd>
+</dl>
+</section>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2015 CotEditor Project</p>
+</footer>
+</body>
+</html>

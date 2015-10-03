@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2014-11
+   lastMod : 2015-09
   ////////////////////////////////////// */
 
 body {
@@ -67,37 +67,13 @@ a#beta strong {
 }
 
 
-/* Twitter */
-body > aside {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	text-align: right;
-	padding: 1em 2em;
-}
-body > aside a.twitter {
-	font-size: 18px;
-	color: hsl(198,40%,45%);
-}
-body > aside a.twitter::before {
-	content: url(parts/twitter_large.svg);
-	margin-right: 4px;
-	vertical-align: -2px;
-}
-body > aside a.twitter:hover {
-	opacity: 0.8;
-	background: none;
-}
-
-
 /* title */
 #top {
 	max-width: 680px;
 	min-height: 256px;
 	margin: 30px auto 50px;
 	text-align:left;
-	padding: 24px 0 0 264px;
+	padding: 24px 0 0 288px;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -112,10 +88,6 @@ body > aside a.twitter:hover {
 	font-weight: 400;
 	line-height: 1.0;
 }
-#top h1 span {
-	font:100 98% 'Helvetica Neue', sans-serif;
-	color: hsl(0,0%,60%);
-}
 #top p {
 	font-size: 16px;
 	font-weight: 300;
@@ -125,103 +97,40 @@ body > aside a.twitter:hover {
 }
 
 
-/* download latest */
+/* download */
 #latest {
 	position: relative;
 	margin-top: 28px;
 }
 #latest .handwriting {
-	font: 18px/1.0 'HanziPen SC', 'Noteworthy', sans-serif;
+	font: 17px/1.0 'HanziPen SC', 'Noteworthy', sans-serif;
 	color: hsl(198,10%,60%);
 	display: block;
 	-webkit-transform: rotate(-3deg);
 	transform: rotate(-3deg);
-	margin:0.5em 1em 1em;
+	margin:0.5em 1em 0.9em;
 }
 a.download {
-	font-size: 26px;
-	padding: 0.3em 1em;
-	
-	line-height: 1.2;
-	letter-spacing: 1px;
-	text-transform: lowercase;
-	color: white;
-	text-indent: 0;
-	white-space: nowrap;
-	text-shadow: 0 1px 2px hsla(0,0%,0%,.2);
-	
+	background: hsla(198,65%,50%,0.06);
+	border: 2px solid hsl(198,65%,50%);
+	border-radius: 6px;
 	display: inline-block;
-	border-radius: 4px;
-	border: none !important;
-	background: linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
-	background-color: hsl(198,70%,60%);
-	box-shadow: 0 0   0 1px hsla(0,0%,  0%,.1) inset,
-	            0 1px 0 1px hsla(0,0%,100%,.1) inset,
-	            0 1px 2px   hsla(0,0%,  0%,.25);
+	line-height: 0;
 	-webkit-transition: background 0.3s;
 	        transition: background 0.3s;
 }
 a.download:hover {
-	background-color: hsl(198,75%,50%);
+	background: hsla(198,65%,50%,0.2);
 }
-#latest dl {
-	font-size: 14px;
-	background: hsla(198,30%,96%,.92);
-	border-radius: 4px;
-	padding: 8px 20px 10px 15px;
-	
-	position: absolute;
-	top: -36px;
-	left: -5px;
-	z-index: 2;
-	display: none;
-	
-	box-shadow: 0 4px 8px hsla(0,0%,0%,.33);
+a.download img {
+	width: 200px;
+	margin:0;
 }
-#latest dl::after {
-	content: '';
-	height: 0;
-	width: 0;
-	position: absolute;
-	left: 32px;
-	bottom: -20px;
-	border: 10px solid transparent;
-	border-top-color: hsl(198,30%,96%);
-	filter: url(filters.svg#dropshadow);
-	-webkit-filter: drop-shadow(0 4px 5px hsla(0,0%,0%,.2));
+#latest a.download + * {  /* link to the FQA */
+	display:block;
+	margin-top:1em;
 }
-#latest dl > * {
-	display: inline;
-	line-height: 1.4;
-}
-#latest dl dt {
-	color: hsl(198,4%,60%);
-	margin-right: 0.2em;
-}
-#latest .ver {  /* version number */
-	font-size: 18px;
-}
-#latest .ver time {
-	font-size: 13px;
-	color: hsl(198,4%,60%);
-	margin-left: 0.2em;
-}
-#latest dl dd+dd::before {
-	content: ' | ';
-	font-size: 90%;
-	opacity: 0.3;
-	padding: 0 0.2em;
-}
-#latest dl dd+dt::before {
-	content: '\000A';  /* line break */
-	white-space: pre;
-}
-#latest dl+p {
-	font-size: 82%;
-	color: hsl(198,4%,40%);
-	margin-top: 0.4em;
-}
-#latest p small:before {  /* link to older versions */
+#latest a.download + *::before {
 	content:'> ';
 	color: hsl(0,0%,67%);
 }
