@@ -10,6 +10,7 @@
 			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.2.0.ja.html</sparkle:releaseNotesLink>
 			<pubDate>Sat, 03 Oct 2015 16:00:00 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
+			<sparkle:shortVersionString>2.2.0</sparkle:shortVersionString>
 			<sparkle:version>74</sparkle:version>
             <link>http://coteditor.com/</link>
 		</item>
