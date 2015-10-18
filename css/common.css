@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2015-09
+   lastMod : 2015-10
   ////////////////////////////////////// */
 
 
@@ -101,6 +101,12 @@ code {
 	border: 1px solid hsl(0,0%,88%);
 	border-radius:2px;
 	padding:0.1em 0.3em;
+}
+pre code {
+	display: block;
+	width: 80%;
+	padding: 0.3em 1em;
+	line-height: 1.6;
 }
 
 /* other styles */
