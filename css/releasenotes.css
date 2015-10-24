@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : release notes
-   lastMod : 2015-08
+   lastMod : 2015-10
   ////////////////////////////////////// */
 
 
@@ -28,8 +28,9 @@ body > header::before {
 /* general */
 
 p.attention strong {
-    color: hsl(16,70%,50%);
     font-size: 116%;
+    background-color: hsl(50,100%,75%);
+    padding: 0 0.3em;
 }
 p.note strong {
 	text-decoration: underline;
@@ -100,7 +101,23 @@ article h2 {
 	margin-bottom: 1em;
 }
 
+
+/* pre-release */
+
+body.prerelease::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: url(parts/safaty_stripes.svg);
+	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
+}
+
+
 /* App Store migration */
+
 .appstore {
     margin-top: -28px;
     margin: -28px -10px 3em;
@@ -121,4 +138,8 @@ article h2 {
 	border: 1px solid hsla(0,0%,100%,.8);
 	padding: 0 0.2em;
 	border-radius: 3px;
+}
+.appstore.s {
+	font-size: 18px;
+	padding: 4px 0;
 }
