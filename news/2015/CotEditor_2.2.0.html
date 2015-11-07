@@ -75,7 +75,11 @@
 		<dd>The location of the scripts folder moved from <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> to <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code>. Just move the whole scripts in the previous location to the new location.</dd>
 		
 		<dt>If you've already installed <code>cot</code> command-line tool</dt>
-		<dd>The command-line tool should be re-installed, since the cot command executable is no more bundled to CotEditor.app, due to the Mac App Store requirement. So we release it separately. Please download the new one from <a href="/cot">coteditor.com/cot</a> and install it manually. Note that the previously installed cot is not compatible with CotEditor 2.2. </dd>
+		<dd><del>The command-line tool should be re-installed, since the cot command executable is no more bundled to CotEditor.app, due to the Mac App Store requirement. So we release it separately. Please download the new one from <a href="/cot">coteditor.com/cot</a> and install it manually. Note that the previously installed cot is not compatible with CotEditor 2.2.</del></dd>
+		<dd><strong>cot command has been re-bundled on CotEditor 2.3.0</strong>. However, since there is no installer anymore and the location has been changed, user need re-install it manually. Run the following command on Terminal.app to re-install the cot command.<br/>
+			<code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
+			You may need to modify paths in this command depending on where you've installed CotEditor/cot.<br/>
+			We also continue distributing cot command via homebrew.</dd>
 	</dl></dd>
 	
 	<dt>Where has the feature to write to files even I don't have the permission gone? It was my “must-feature”…</dt>

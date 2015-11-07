@@ -46,16 +46,19 @@
 
 <p>The `cot` command-line tool allows you to control CotEditor from the command-line.</p>
 
-<section>
-<p style="color:hsl(0,0%,50%)">The new <code>cot</code> command-line tool installer for CotEditor 2.2.0 will be released soon on this page. Please bear with us.</p>
-	
-<a href="https://github.com/coteditor/cot">cot's repo on GitHub</a>
-</section>
-
 
 <section>
-<h2>Install via homebrew</h2>
-<p>Run the following lines in Terminal.app.</p>
+<h2>Installation</h2>
+
+<p>The cot command is bundled in CotEditor.app. So, run the following line on your Terminal.app to create a symlink to the cot command.</p>
+
+<pre><code>$ ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code></pre>
+
+<p>You may need to modify paths in this command depending on where you've installed CotEditor/cot.</p>
+
+
+<h3>via homebrew</h3>
+<p>You can also install cot command via homebrew.</p>
 
 <pre><code>$ brew tap coteditor/coteditor
 $ brew install cot
@@ -84,6 +87,11 @@ optional arguments:
   -c COLUMN, --column COLUMN
                         Jump to specific column in opened document.
 </code></pre>
+</section>
+
+
+<section>
+<a href="https://github.com/coteditor/cot">cot's repo on GitHub</a>
 </section>
 </main>
 
