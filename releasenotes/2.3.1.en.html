@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 2.3.1 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 2.3.1"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.3.1.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 2.3.1"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.3.1.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="appstore s">
+	<p>CotEditor has been moved to the <strong><a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store"> Mac App Store</a></strong>.</p>
+</section>
+
+
+<section class="highlights">
+<h1>Highlights on CotEditor 2.3</h1>
+
+<dl>
+	<dt>Auto Save and Versions</dt>
+	<dd>CotEditor implemented now the modern document features: Auto Save and Versions. It saves changes automatically as you edit and enable roll-back to the previous versions. Of course, you can still use the classic saving only manually with ⌘S if you want. Choose your favorite way in the General pane.</dd>
+	  
+	<dt>Various line editing actions</dt>
+	<dd>Move selected lines, remove duplicate lines and more. The various handy line editing actions enable document editing more smoothly and easier.</dd>
+	
+	<dt>Auto indent style detection</dt>
+	<dd>No more tab option switching for different source codes. CotEditor detects document's indent style and sets the corresponding tab expansion behavior automatically for you.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 2.3.1</h1>
+	<p>release: <time>2015-11-xx</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Add “Duplicate Line” action to Text &gt; Lines menu.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Additions/Changes</h2>
+
+<ul>
+	<li>Update Python syntax style:<ul>
+		<li>Add terms added in Python 3.5.</li>
+	</ul></li>
+	<li>Update R syntax style:<ul>
+		<li>Fix boolean values were not highlighted correctly.</li>
+	</ul></li>
+	<li>Update Shell Script syntax style:<ul>
+		<li>Add “command” to extension list.</li>
+	</ul></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where some type of script file cannot be opened because of “unidentified developer” alert even it was made on CotEditor.</li>
+	<li>Fix an issue where unwanted completion list was displayed by auto-completion when after typing a symbol character.</li>
+	<li>Fix an issue where application could crash if the width of line number view will change.</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 2.3.0</h1>
+	<p>release: <time>2015-11-07</time></p>
+</header>
+
+
+<p class="note">cf. <a href="2.3.0_from_beta.en">Changes from 2.3.0-beta</a>.</p>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Introduce Auto Save and Versions as an option (in General pane).</li>
+	<li>Add new actions handling selected lines to the new Text menu &gt; Lines.
+		<ul>
+		<li>They are also added to the AppleScript terms.</li>
+	</ul></li>
+	<li>Add “Copy as Rich Text” action to the Edit menu.</li>
+	<li>Detect indent style on file opening and set tab expand automatically.</li>
+	<li>Add “Spell Check” button to toolbar icon choices.
+		<ul>
+		<li>Customize toolbar to add it to your toolbar.</li>
+	</ul></li>
+	<li>Add syntax styles for “D”, “iCalendar” and “Rich Text Format”.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Additions/Changes</h2>
+
+<ul>
+	<li>Reconstitute main menu.</li>
+	<li>Embed key bindings editor to Key Bindings pane.</li>
+	<li>Update “Shell Script” syntax style:
+		<ul>
+		<li>Completely rewrite.</li>
+	</ul></li>
+	<li>Update “INI” syntax style:<ul>
+		<li>Add “url” to extension list.</li>
+	</ul></li>
+	<li>Update “JavaScript” syntax style:<ul>
+		<li>Add “z” to attributes.</li>
+	</ul></li>
+	<li>Update “R” syntax style:<ul>
+		<li>Add “Rscript” to interpreters.</li>
+	</ul></li>
+	<li>Temporary hide the “Live Update” checkbox in the find panel since this feature by OgreKit framework has actually not worked correctly in the latest versions.</li>
+	<li>Bundle cot command to <code>CotEditor.app/Contents/SharedSupport/bin/</code> again.</li>
+	<li>Update Onigmo regular expression engine to 5.15.0.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where no file path was inserted if file type of the dropped file was not registered to the file drop setting.</li>
+	<li>Fix an issue where application could be launched on unsupported system versions.</li>
+	<li>Fix an issue where the baseline of new line invisible characters was wrong if line is empty.</li>
+	<li>Fix syntax highlighting issue with multiple lines.</li>
+	<li>Fix an issue where text view drawing was distorted while resizing window.</li>
+	<li>Fix an issue where application could crash on window restoration.</li>
+	<li>Fix some typos in syntax styles “Julia” and “SQL”.</li>
+	<li>Address an issue where syntax highlighted control character was sometime not colored in the invisible color.</li>
+</ul>
+</section>
+</article>
+
+<p><a href="2.2.2.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2014-2015 CotEditor Project</p>
+</footer>
+</body>
+</html>
