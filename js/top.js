@@ -5,7 +5,7 @@
    site    : coteditor.com
    target  : top page
    require : iQuery, unslider.js
-   lastMod : 2015-04
+   lastMod : 2015-11
   /////////////////////////////////////// */
 
 
@@ -13,25 +13,8 @@
 //     require: jQuery, unslider
 
 jQuery(function() {
-	var region = $('#screenshots');
-	var unslider = region.unslider({
-		delay: 6000,
-		dots: true,
-		fluid: true 
-	});
-	var data = unslider.data('unslider');
-	
-	region.append('<a class="arrow prev"></a>');
-	region.append('<a class="arrow next"></a>');
-	
-	region.find('.arrow').click(function(event) {
-		event.preventDefault();
-		
-		if ($(this).hasClass('prev')) {
-			data.prev();
-		} else {
-			data.next();
-		};
+	$('.slider').unslider({
+		delay: 6000
 	});
 });
 

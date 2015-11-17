@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2015-09
+   lastMod : 2015-11
   ////////////////////////////////////// */
 
 body {
@@ -136,32 +136,34 @@ a.download img {
 }
 
 
-/* screen shot */
+/* screen shots */
 #screenshots {
-	clear: both;
 	background: linear-gradient(hsl(70,70%,75%), hsl(90,50%,55%));
 	border-top: 1px solid hsl(70,20%,80%);
 	border-bottom: 1px solid hsl(90,30%,50%);
 	padding: 20px 0 0;
-	text-align: center;
-
-	/* for unslider */ 
+}
+.unslider {
 	position: relative;
 	overflow: auto;
 }
+.unslider .unslider-wrap {
+	position: relative;
+}
+
 #screenshots ul li {
 	float: left;
 	min-height: 660px;
 	list-style: none;
 	margin-left: 0;
 }
-#screenshots .dots {
+#screenshots .unslider-nav {
 	position: absolute;
 	bottom: 20px;
 	left: 0;
 	right: 0;
 }
-#screenshots .dots li {
+#screenshots .unslider-nav li {
 	border: 2px solid white;
 	opacity: 0.9;
 	cursor: pointer;
@@ -175,12 +177,13 @@ a.download img {
 	border-radius: 7px;
 	margin: 0 5px;
 }
-#screenshots .dots li.active {
+#screenshots .unslider-nav li.unslider-active {
 	background: white;
 }
-#screenshots .arrow {
+#screenshots .unslider-arrow {
 	opacity: 0.6;
-	background: url(parts/arrow_left.svg);
+	background: url('parts/arrow_left.svg');
+	color: transparent;
 	
 	width: 48px;
 	height: 48px;
@@ -188,13 +191,13 @@ a.download img {
 	top: 300px;
 	z-index: 2;
 }
-#screenshots .arrow:hover {
+#screenshots .unslider-arrow:hover {
 	opacity: 1.0;
 }
-#screenshots .arrow.prev {
+#screenshots .unslider-arrow.prev {
 	left: 48px;
 }
-#screenshots .arrow.next {
+#screenshots .unslider-arrow.next {
 	right: 48px;
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
