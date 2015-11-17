@@ -16,16 +16,6 @@ jQuery(function() {
 	$('.slider').unslider({
 		delay: 6000
 	});
-	
-	// support swipe asynchronically
-	var scripts = [
-		'http://stephband.info/jquery.event.move/js/jquery.event.move.js',
-		'http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js'
-	];
-	$.getScript(scripts[0]);
-	$.getScript(scripts[1], function() {
-		$('.sliderman').unslider('initSwipe');
-	});
 });
 
 
