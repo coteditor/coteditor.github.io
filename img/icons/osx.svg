@@ -6,13 +6,18 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	*    { fill:transparent; stroke:hsl(90,50%,50%); stroke-width:2 }
-	.sub { stroke-width: 1 }
+	:root { stroke:hsl(90,50%,50%); fill:transparent;
+	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	.thin { stroke-width:1 }
+	
+	*     { stroke-linecap:butt }
 ]]></style>
 
-	<rect x="2" y="5" width="28" height="22" rx="2"/>
-	<line x1="22" x2="22" y1="11" y2="15"/>
-	<line x1= "9" x2= "9" y1="11" y2="15"/>
-	<path class="sub" d="M8,20c0,0,2.7,2.5,8,2.5s8-2.5,8-2.5"/>
-	<path class="sub" d="M16,5c0,0-2,6-2,12.5h4c0,4,1,9.5,1,9.5"/>
+
+<rect x="2" y="5" width="28" height="22" rx="2"/>
+<line x1="22" x2="22" y1="11" y2="15"/>
+<line x1= "9" x2= "9" y1="11" y2="15"/>
+<path class="thin" d="M8,20c0,0,2.7,2.5,8,2.5s8-2.5,8-2.5"/>
+<path class="thin" d="M16,5c0,0-2,6-2,12.5h4c0,4,1,9.5,1,9.5"/>
+
 </svg>

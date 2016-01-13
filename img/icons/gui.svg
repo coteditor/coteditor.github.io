@@ -6,16 +6,18 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	* { fill:transparent; stroke:hsl(90,50%,50%);
-	    stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	:root { stroke:hsl(90,50%,50%); fill:transparent;
+	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	.thin { stroke-width:1 }
+	
 	.cursor { fill:hsl(90,50%,50%); stroke-width:1; }
-	.sub    { stroke-width:1 }
 ]]></style>
+
 
 <path d="M17,24H6c-1.104,0-2-0.896-2-2V7c0-1.104,0.896-2,2-2h16c1.104,0,2,0.896,
 	2,2v7"/>
-<rect x="12" y="11" width="4" height="7" class="sub"/>
-<line x2="4" transform="translate(12,12.5)" class="sub"/>
+<rect x="12" y="11" width="4" height="7" class="thin"/>
+<line x2="4" transform="translate(12,12.5)" class="thin"/>
 
 <polyline transform="translate(20,16) rotate(-30) scale(1.2)" class="cursor"
 	points="0,0 -3,7 -0.4,5.5 -0.6,11 0.6,11 0.4,5.5 3,7 0,0"/>

@@ -6,10 +6,13 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	* { fill:transparent; stroke:hsl(90,50%,50%);
-	    stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
-	line { stroke-width: 2.4 }
+	:root { stroke:hsl(90,50%,50%); fill:transparent;
+	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	.thin { stroke-width:1 }
+	
+	line  { stroke-width:2.4 }
 ]]></style>
+
 
 <line x1="20" x2="12" y1="7" y2="25"/>
 <polyline points="8,8 2,16 7,22"/>

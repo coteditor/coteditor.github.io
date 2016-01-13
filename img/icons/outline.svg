@@ -6,9 +6,11 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	* { fill:transparent; stroke:hsl(90,50%,50%);
-	    stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	:root { stroke:hsl(90,50%,50%); fill:transparent;
+	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	.thin { stroke-width:1 }
 ]]></style>
+
 
 <line x2="24" transform="translate(4,9)"/>
 <line x2="24" transform="translate(4,16)"/>
