@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 2.4.1 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 2.4.1"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.4.1.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 2.4.1"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.4.1.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="appstore s">
+	<p>CotEditor has been moved to the <strong><a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store"> Mac App Store</a></strong>.</p>
+</section>
+
+
+<section class="highlights">
+<h1>Highlights on CotEditor 2.4.0</h1>
+
+<dl>
+	<dt>Improve text finder</dt>
+	<dd>CotEditor re-implemented text find actions by own code. More sophisticated and integrated UI makes your text search process much more intuitive.</dd>
+	
+	<dt>Brackets and quotes balancing</dt>
+	<dd>For instance, typing <code>{</code> inserts the corresponding <code>}</code> then moves the cursor into the brackets automatically. The feature helps reduce bothering cursor movement and contributes to your smart coding.</dd>
+	
+	<dt>Clickable URL links in documents</dt>
+	<dd>This new option detects URL strings in your documents and provide them as clickable &amp; quick-lookable links.</dd>
+	
+	<dt>Better detection on the file opening</dt>
+	<dd>We reviewed the previous file detection code and improved the precision of the encoding detection. Furthermore, CotEditor 2.4 alerts about file that isn't obviously a text file in order to avoid unwanted hang-up.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 2.4.1</h1>
+	<p>release: <time>2016-02-12</time></p>
+</header>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Update JSON syntax style:<ul>
+		<li>Fix float number highlight.</li>
+	</ul></li>
+	<li>Avoid displaying <code>NULL</code> on the status bar until the first calculation is finished.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the text finder's “ignore case” option was ignored on CotEditor 2.4.0.</li>
+	<li>Fix an issue where the current line number display was wrong if the cursor is in the last empty line.</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 2.4.0</h1>
+	<p>release: <time>2016-02-09</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>New option balancing brackets and quotes (in “Edit” pane).</li>
+	<li>New option making URL in document clickable link (in “General” pane).</li>
+	<li>On El Capitan, hidden file visibility can be toggled via checkbox in the document open panel.</li>
+	<li>Add the following encodings to the encoding list:
+	<ul>
+		<li>Arabic (ISO 8859-6)</li>
+		<li>Hebrew (ISO 8859-8)</li>
+		<li>Nordic (ISO Latin 6)</li>
+		<li>Baltic (ISO Latin 7)</li>
+		<li>Celtic (ISO Latin 8)</li>
+		<li>Western (ISO Latin 9)</li>
+		<li>Romanian (ISO Latin 10)</li>
+	</ul></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Improve text finder:
+	<ul>
+		<li>Now, “Find All” action also highlights all matched strings in the editor, and thereby “Highlight” action is removed.</li>
+		<li>Change advanced find option setting from popup menu to popover.</li>
+		<li>On Yosemite and later, a visual feedback is shown when the search wrapped.</li>
+		<li>Keep selected range after “Replace All” with in-selection option.</li>
+		<li>Display total number of found in find panel on simple find actions.</li>
+		<li>Now, “Find All” and “Replace All” actions are able to process multiple selections.</li>
+		<li>Add Python syntax to the regular expression syntax options.</li>
+		<li>Revert “Use selection for Replace” action to allow using an empty string.</li>
+		<li>Update layout and style.</li>
+	</ul></li>
+	<li><code>cot</code> command now opens symbolic link target rather than the link itself.</li>
+	<li>On El Capitan, make option control of the document open panel visible.</li>
+	<li>Improve syntax highlighting for quoted strings and comment.</li>
+	<li>Display alert if file to open seems to be a kind of a media (binary) file.</li>
+	<li>Improve file encoding detection.</li>
+	<li>Update default priority order of encoding detection.</li>
+	<li>Improve character compatibility check.</li>
+	<li>Better error message on file opening.</li>
+	<li>Increase the number of significant digits in file size display.</li>
+	<li>Update Shell Script syntax style:
+	<ul>
+		<li>Fix variable highlight with <code>_</code>.</li>
+	</ul></li>
+	<li>Take a safety measure for in case the key binding setting file is corrupt.</li>
+	<li>Truncate outline label in the navigation bar by appending ellipsis if it overflows.</li>
+	<li>Move some options position within “General” pane and “Edit” pane in preferences window.</li>
+	<li>Rename the main text input area in window from “View” to “Editor”.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix cursor location after moving lines with empty selection.</li>
+	<li>Fix line-wrapping behavior when the line contains a long unbreakable word.</li>
+	<li>Fix an issue where the application crashed by an invalid find regular expression option combination.</li>
+	<li>Fix an issue where the application could crash just after starting dictation.</li>
+	<li>Fix an issue where keybinding setting could fail.</li>
+	<li>Fix an issue where the scroll bar style didn't change to light color on dark background theme.</li>
+	<li>Fix an issue where the character inspector didn't show up on Mavericks and earlier.</li>
+	<li>Fix an issue where split orientation setting wasn't applied.</li>
+	<li>Fix an issue where “Jump to Selection” action didn't jump to selection in editor if other text box is focused.</li>
+	<li>Fix an issue where some table cells didn't change their text color when selected.</li>
+	<li>Fix tiny memory leaks.</li>
+</ul>
+</section>
+</article>
+
+<p><a href="2.3.4.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2016 CotEditor Project</p>
+</footer>
+</body>
+</html>
