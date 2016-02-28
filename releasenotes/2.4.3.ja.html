@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 2.4.3 の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 2.4.3 の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.4.3.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 2.4.3 の変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.4.3.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="appstore s">
+	<p>CotEditor は <strong><a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store"> Mac App Store</a></strong> に移動しました。</p>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 2.4.3</h1>
+	<p>リリース: <time>2016-03-xx</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>選択部分を検索に使用したとき、自動的に正規表現オプションをオフに</li>
+	<li><code>cot</code> コマンドラインツールを更新：
+	<ul>
+		<li>新しく開いたウインドウが閉じるまでコマンド終了を待つ <code>--wait</code> (<code>-w</code>) オプションを追加</li>
+		<li>パフォーマンスを最適化</li>
+		<li>日本語などの非 ASCII 文字をパスに含むファイルをうまく開けない不具合を修正</li>
+		<li>特定の環境下で <code>--line</code> オプションがエラーになる不具合を修正</li>
+		<li>ファイル末尾に空行があるとき <code>--line</code> および <code>--column</code> オプションが指定した位置にカーソルを移動できないことがある不具合を修正</li>
+	</ul></li>
+	<li>「書類内の URL をリンク」オプションの変更が開いているウインドウにすぐに反映されるように</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>「書類内の URL をリンク」オプションがオンのとき、ファイルを開いた直後に、書類が「編集済み」扱いになる不具合を修正</li>
+	<li>ペーストされたテキストに含まれる URL がリンク化されない不具合を修正</li>
+	<li>検索パネルを検索結果ビューよりも先に閉じた時に、「すべてを検索」のハイライトが解除されない不具合を修正</li>
+	<li>不可視文字の表示切り替えが正常に動いていなかった不具合を修正</li>
+	<li>ファイル開いたとき、カーソルがファイル末尾にあった不具合を修正</li>
+	<li>特定の環境下で、書類情報に桁区切り文字が追加されない不具合を修正</li>
+	<li>特定の環境下で、まれにペーストに失敗する不具合を改善</li>
+</ul>
+</section>
+
+<p><a href="2.4.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2016 CotEditor Project</p>
+</footer>
+</body>
+</html>
