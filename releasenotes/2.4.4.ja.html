@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 2.4.4 の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 2.4.4 の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.4.4.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 2.4.4 の変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.4.4.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script defer="defer" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script defer="defer" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="appstore s">
+	<p>CotEditor は <strong><a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store"> Mac App Store</a></strong> に移動しました。</p>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 2.4.4</h1>
+	<p>リリース: <time>2016-03-xx</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>「行末の空白を削除」アクションを「テキスト」メニューに追加</li>
+	<li>保存時に自動的に行末の空白を削除するオプションを追加（「一般」ペイン）</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>検索時に捕獲したグループを異なった色でハイライトする機能を再実装</li>
+	<li>BibTeX シンタックス定義を更新
+	<ul>
+		<li>拡張子に“bibtex”を追加</li>
+		<li>いくつかのフィールド名を追加</li>
+	</ul></li>
+	<li>Python シンタックス定義を更新
+	<ul>
+		<li>重複していた語句を削除</li>
+	</ul></li>
+	<li>ページガイドの描画位置設定の変更が開いている書類ウインドウにリアルタイムで反映されるよう改良</li>
+	<li>環境設定の文言を調整</li>
+	<li>ヘルプを更新</li>
+	<li><span class="label">非 AppStore 版のみ</span>: Sparkle フレームワークを 1.14.0 に更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>テキスト検索の「空白で区切る」オプションが機能していなかった不具合を修正</li>
+	<li>書類を保存するとその後いくつかの書類情報が誤って表示された不具合を修正</li>
+	<li>折り返しが有効な時、行番号ビューの行が1行ずれて表示されることがあった不具合を修正</li>
+	<li>プリント時にカラー設定を「白黒」に変更できなかった不具合を修正</li>
+	<li>用紙サイズが変更された時にプリントパネルのプレビューレイアウトが崩れた不具合を修正</li>
+	<li>シンタックス定義の大文字小文字を無視するオプション（IC）が実際には大文字小文字を無視していなかった不具合を修正</li>
+	<li>「別名で保存...」時に保存パネルで提示される新しいファイル名から拡張子が抜け落ちていた不具合を修正</li>
+	<li>ドイツ語ローカライズのタイポを修正（Chris Eidhof さんに感謝!）</li>
+</ul>
+</section>
+
+<p><a href="2.4.3.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2016 CotEditor Project</p>
+</footer>
+</body>
+</html>
