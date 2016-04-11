@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2015-10
+   lastMod : 2016-04
   ////////////////////////////////////// */
 
 
@@ -98,7 +98,7 @@ code {
 	font: 94% Menlo, monospace;
 	color: hsla(0,0%,0%,.8);
 	background-color: hsl(0,0%,98%);
-	border: 1px solid hsl(0,0%,88%);
+	border: 1px solid hsl(0,0%,93%);
 	border-radius:2px;
 	padding:0.1em 0.3em;
 }
@@ -264,15 +264,16 @@ dl.fqa > dd + dt {
 	margin-top: 1.5em;
 }
 dl.fqa > ::before {
-	color: hsl(50,75%,45%);
 	font: 200 20px/1.0 'Helvetica Neue', sans-serif;
 	margin-right: 0.3em;
 }
 dl.fqa > dt::before {
 	content: 'Q.';
+	color: hsl(200,60%,45%);
 }
 dl.fqa > dd::before {
 	content: 'A.';
+	color: hsl(30,75%,45%);
 }
 dl.fqa > dd > ul,
 dl.fqa > dd > ol,
