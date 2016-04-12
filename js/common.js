@@ -44,9 +44,7 @@ Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'),
 // Tooltip --------------------------------------------------------------------
 //     version: v3.0.0 2016-04
 
-// init tooltip
-
-function toTooltip(el, options) {
+function initTooltip(el, options) {
 	var tooltip;
 	var defaults = {
 		displaysUrl: true,
@@ -134,7 +132,7 @@ if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
 			opt = {'class': 'github'};
 		}
 		
-		toTooltip(el, opt);
+		initTooltip(el, opt);
 	});
 }
 
