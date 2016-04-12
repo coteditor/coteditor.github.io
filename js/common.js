@@ -60,7 +60,7 @@ function initTooltip(el, options) {
 		el.setAttribute('data-tooltip', title);
 		el.removeAttribute('title');
 		
-		document.querySelector('body').insertAdjacentHTML('beforeend',
+		document.body.insertAdjacentHTML('beforeend',
 			'<dialog role="tooltip"></dialog>');
 		tooltip = document.querySelector('body > dialog[role=tooltip]');
 		
@@ -104,7 +104,7 @@ function initTooltip(el, options) {
 			leftPos = e.pageX - (tooltipWidth / 2);
 		} else if (tooltipWidth + e.pageX > windowWidth - 5) {  // left edge
 			leftPos = windowWidth - tooltipWidth - 30;
-		} else {  // normal
+		} else {
 			leftPos = e.pageX - 30;
 		}
 		
