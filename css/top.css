@@ -208,7 +208,7 @@ a.download img {
 #highlights {
 	max-width: 800px;
 	
-	background: url(parts/to_features.svg) no-repeat center bottom;
+	background: url('parts/to_features.svg') no-repeat center bottom;
 	padding-bottom: 130px;
 	margin-bottom: -1em;
 }
