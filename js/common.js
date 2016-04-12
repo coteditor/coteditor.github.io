@@ -4,8 +4,8 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   require : iQuery
-   lastMod : 2014-03
+   require : jQuery
+   lastMod : 2016-04
   /////////////////////////////////////// */
 
 
@@ -14,122 +14,129 @@ var isRetina = window.devicePixelRatio > 1;
 
 
 // replace @2x images ---------------------------------------------------------
-//     require: jQuery
+//     version: v2.0.0 2016-04
 
-jQuery(function ($) {
-	if (isRetina && !isiPhone) {
-		$('[srcset]').each(function () {
-			$(this).attr('src', $(this).attr('srcset').replace(/([^ ]+) 2x/, '$1'));
-		});
-	}
-});
-
-
-// footnote to title ----------------------------------------------------------
-//     version: v1.0 2013-10
-//     require: jQuery
-
-jQuery.fn.fnoteTip = function() {
-	return this.each(function () {
-		var note = $($(this).attr('href')).text();
+if (isRetina && !isiPhone) {
+	Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'),
+	                             function(img)
+	{
+		var src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
 		
-		$(this).attr('title', $(this).text() + ') ' + note)
-		       .css('cursor', 'help')
-		       .removeAttr('href');
+		img.setAttribute('src', src);
 	});
 }
 
-// init fnoteTip
-jQuery(function ($) {
-	$('a[href^="#fnote"]').fnoteTip();
+
+// footnote to title ----------------------------------------------------------
+//     version: v2.0.0 2016-04
+
+Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'),
+                             function(a)
+{
+	var note = document.querySelector(a.getAttribute('href')).textContent;
+	
+	a.setAttribute('title', a.textContent + ') ' + note)
+	a.removeAttribute('href');
+	a.style.cursor = 'help';
 });
 
 
 // Tooltip --------------------------------------------------------------------
-//     version: v2.0.1 2013-10
-//     require: jQuery
+//     version: v3.0.0 2016-04
 
-jQuery.fn.tooltip = function(options) {
+// init tooltip
+
+function toTooltip(el, options) {
 	var tooltip;
 	var defaults = {
-		displayUrl: true,
+		displaysUrl: true,
 		class: false
 	};
-	var setting = $.extend(defaults, options);
+	var setting = Object.assign(defaults, options);
 	
-	return this.hover(function () {
-		var title = this.title;
-		var url   = this.href;
+	// hover
+	el.addEventListener('mouseover', function() {
+		var title = el.getAttribute('title');
+		var url = el.getAttribute('href');
 		
-		$(this).attr('data-tooltip', this.title).removeAttr('title');
-		$('body').append('<dialog role="tooltip"></dialog>');
-		tooltip = $('body > dialog[role=tooltip]');
+		el.setAttribute('data-tooltip', title);
+		el.removeAttribute('title');
+		
+		document.querySelector('body').insertAdjacentHTML('beforeend',
+			'<dialog role="tooltip"></dialog>');
+		tooltip = document.querySelector('body > dialog[role=tooltip]');
 		
 		// title
 		title = title.replace(/ \(([^()]+?)\)$/gi, ' <span>($1)</span>')
 		             .replace(' | ', ' <span>|</span> ');
-		
-		tooltip.html('<p>' + title + '</p>');
+		tooltip.innerHTML = '<p>' + title + '</p>';
 		
 		// url
-		if (url && setting['displayUrl']) {
-			tooltip.append('<p>' + decodeURIComponent(url) + '</p>');
+		if (url && setting['displaysUrl']) {
+			tooltip.insertAdjacentHTML('beforeend',
+				'<p>' + decodeURIComponent(url) + '</p>');
 		}
 		
 		// class
 		if (setting['class']) {
-			tooltip.attr('class', setting['class']);
+			tooltip.setAttribute('class', setting['class']);
 		}
 		
 		// fukidashi
-		tooltip.append('<div role="presentation"></div>');
-		
+		tooltip.insertAdjacentHTML('beforeend',
+			'<div role="presentation"></div>');
+
 		// display
-		tooltip.stop(true, false).delay(400).fadeIn();
-		
+		tooltip.style.opacity = '1';
+	}, false);
+	
 	// remove tooltip
-	}, function () {
-		tooltip.remove();
-		$(this).attr('title', $(this).attr('data-tooltip'));
+	el.addEventListener('mouseout', function() {
+		tooltip.parentNode.removeChild(tooltip);
+		el.setAttribute('title', el.getAttribute('data-tooltip'));
+	}, false);
 	
 	// set tooltip position
-	}).mousemove(function (e) {
-		var offset = $('body').offset();
-		var topPos = e.pageY - tooltip.height() - 30;
+	el.addEventListener('mousemove', function(e) {
+		var windowWidth = window.innerWidth;
+		var tooltipWidth = tooltip.clientWidth;
+		
 		var leftPos;
-
-		if        (tooltip.width() < 80) {	// short tip
-			leftPos = e.pageX - (tooltip.width() / 2);
-		} else if (tooltip.width() + e.pageX < $(window).width() - 5) {  // normal
+		if (tooltipWidth < 80) {  // short tip
+			leftPos = e.pageX - (tooltipWidth / 2);
+		} else if (tooltipWidth + e.pageX > windowWidth - 5) {  // left edge
+			leftPos = windowWidth - tooltipWidth - 30;
+		} else {  // normal
 			leftPos = e.pageX - 30;
-		} else {  // left edge
-			leftPos = $(window).width() - tooltip.width() - 30;
 		}
-		tooltip.css({left:leftPos - 8, top:topPos})
-			.find('div').css({left:e.pageX - leftPos});  // fukidashi position
-	});
+		
+		tooltip.style.top = (e.pageY - tooltip.clientHeight - 30) + 'px';
+		tooltip.style.left = (leftPos - 8) + 'px';
+		
+		// fukidashi position
+		tooltip.querySelector('div').style.left = (e.pageX - leftPos) + 'px';
+	}, false);
 }
 
 // init tooltip
-jQuery(function ($) {
-	if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-		$('[title]').each(function () {
-			if ($(this).is('a[type="application/rss+xml"]')) {
-				$(this).tooltip({class: 'feed'});
-			} else if ($(this).is('nav a')) {
-				$(this).tooltip({displayUrl: false});
-			} else if ($(this).is('.fnote')) {
-				$(this).tooltip({displayUrl: false, class: 'note'});
-			} else if ($(this).is('[href*="//twitter.com/"]')) {
-				$(this).tooltip({'class': 'twitter'});
-			} else if ($(this).is('[href*="//github.com/"]')) {
-				$(this).tooltip({'class': 'github'});
-			} else {
-				$(this).tooltip();
-			}
-		});
-	}
-});
+if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+	Array.prototype.forEach.call(document.querySelectorAll('[title]'),
+	                             function(el)
+	{
+		var opt = {};
+		if (el.matches('nav a')) {
+			opt = {displaysUrl: false};
+		} else if (el.matches('.fnote')) {
+			opt = {displaysUrl: false, class: 'note'};
+		} else if (el.matches('[href*="//twitter.com/"]')) {
+			opt = {'class': 'twitter'};
+		} else if (el.matches('[href*="//github.com/"]')) {
+			opt = {'class': 'github'};
+		}
+		
+		toTooltip(el, opt);
+	});
+}
 
 
 // google analytics tracking --------------------------------------------------
