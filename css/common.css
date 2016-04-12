@@ -216,8 +216,8 @@ aside.sns li+li {
 /* tooltip */
 [role=tooltip]  { position:absolute; z-index:20; padding:0.3em 0.6em;
                   box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:left;
-                  background-color:hsl(0,0%,20%); opacity:0.95; border-radius:3px;
-                  transition: opacity 3s }
+                  background-color:hsla(0,0%,20%,0.96); border-radius:3px;
+                  opacity:0; transition: opacity 0.3s }
 [role=tooltip] div  { height:0; width:0; position:absolute; left:40px; bottom:-17px;
                       border:9px solid transparent; border-top-color:hsl(0,0%,20%);
                       filter:url('filters.svg#dropshadow');

@@ -84,8 +84,10 @@ function initTooltip(el, options) {
 		tooltip.insertAdjacentHTML('beforeend',
 			'<div role="presentation"></div>');
 
-		// display
-		tooltip.style.opacity = '1';
+		// fade-in (on the next loop)
+		setTimeout(function() {
+			tooltip.style.opacity = '1';
+		}, 0)
 	}, false);
 	
 	// remove tooltip
