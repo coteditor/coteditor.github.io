@@ -204,6 +204,14 @@ a.download img {
 }
 
 
+/* lead */
+#lead {
+	font: italic 200 32px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
+	letter-spacing: 1px;
+	color: hsl(198,20%,40%);
+}
+
+
 /* highlights */
 #highlights {
 	max-width: 800px;
@@ -235,7 +243,7 @@ a.download img {
 }
 #highlights section h3 {
 	font-size: 120%;
-	font-weight: 500;
+	font-weight: 400;
 	
 	margin: 0 0 0.2em;
 }
