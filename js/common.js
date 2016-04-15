@@ -14,35 +14,38 @@ var isRetina = window.devicePixelRatio > 1;
 
 
 // replace @2x images ---------------------------------------------------------
-//     version: v2.0.0 2016-04
-
+//     version: v2.0.1 2016-04
 if (isRetina && !isiPhone) {
-	Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'),
-	                             function(img)
-	{
-		var src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
-		
-		img.setAttribute('src', src);
+	document.addEventListener('DOMContentLoaded', function(event) {
+		Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'),
+		                             function(img)
+		{
+			var src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
+			
+			img.setAttribute('src', src);
+		});
 	});
 }
 
 
 // footnote to title ----------------------------------------------------------
-//     version: v2.0.0 2016-04
+//     version: v2.0.1 2016-04
 
-Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'),
-                             function(a)
-{
-	var note = document.querySelector(a.getAttribute('href')).textContent;
-	
-	a.setAttribute('title', a.textContent + ') ' + note)
-	a.removeAttribute('href');
-	a.style.cursor = 'help';
+document.addEventListener('DOMContentLoaded', function(event) {
+	Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'),
+	                             function(a)
+	{
+		var note = document.querySelector(a.getAttribute('href')).textContent;
+		
+		a.setAttribute('title', a.textContent + ') ' + note)
+		a.removeAttribute('href');
+		a.style.cursor = 'help';
+	});
 });
 
 
 // Tooltip --------------------------------------------------------------------
-//     version: v3.0.0 2016-04
+//     version: v3.0.1 2016-04
 
 function initTooltip(el, options) {
 	var tooltip;
@@ -120,21 +123,23 @@ function initTooltip(el, options) {
 
 // init tooltip
 if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-	Array.prototype.forEach.call(document.querySelectorAll('[title]'),
-	                             function(el)
-	{
-		var opt = {};
-		if (el.matches('nav a')) {
-			opt = {displaysUrl: false};
-		} else if (el.matches('.fnote')) {
-			opt = {displaysUrl: false, class: 'note'};
-		} else if (el.matches('[href*="//twitter.com/"]')) {
-			opt = {'class': 'twitter'};
-		} else if (el.matches('[href*="//github.com/"]')) {
-			opt = {'class': 'github'};
-		}
-		
-		initTooltip(el, opt);
+	document.addEventListener('DOMContentLoaded', function(event) {
+		Array.prototype.forEach.call(document.querySelectorAll('[title]'),
+		                             function(el)
+		{
+			var opt = {};
+			if (el.matches('nav a')) {
+				opt = {displaysUrl: false};
+			} else if (el.matches('.fnote')) {
+				opt = {displaysUrl: false, class: 'note'};
+			} else if (el.matches('[href*="//twitter.com/"]')) {
+				opt = {'class': 'twitter'};
+			} else if (el.matches('[href*="//github.com/"]')) {
+				opt = {'class': 'github'};
+			}
+			
+			initTooltip(el, opt);
+		});
 	});
 }
 
