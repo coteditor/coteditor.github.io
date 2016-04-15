@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : archives page
-   lastMod : 2015-09
+   lastMod : 2016-04
   ////////////////////////////////////// */
 
 
@@ -50,6 +50,14 @@
 #non-AppStore dl.fqa {
 	clear: both;
 	margin-top: 2em;
+}
+#non-AppStore p:last-child {  /* link to the FQA */
+	display:block;
+	margin-top:1em;
+}
+#non-AppStore p:last-child::before {
+	content:'> ';
+	color: hsl(0,0%,67%);
 }
 
 
