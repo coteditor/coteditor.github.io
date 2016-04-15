@@ -88,13 +88,13 @@ function initTooltip(el, options) {
 		setTimeout(function() {
 			tooltip.style.opacity = '1';
 		}, 0)
-	}, false);
+	});
 	
 	// remove tooltip
 	el.addEventListener('mouseout', function() {
 		tooltip.parentNode.removeChild(tooltip);
 		el.setAttribute('title', el.getAttribute('data-tooltip'));
-	}, false);
+	});
 	
 	// set tooltip position
 	el.addEventListener('mousemove', function(e) {
@@ -115,7 +115,7 @@ function initTooltip(el, options) {
 		
 		// fukidashi position
 		tooltip.querySelector('div').style.left = (e.pageX - leftPos) + 'px';
-	}, false);
+	});
 }
 
 // init tooltip
