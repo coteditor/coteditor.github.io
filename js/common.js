@@ -8,31 +8,49 @@
   /////////////////////////////////////// */
 
 
-const isiPhone = navigator.userAgent.match(/iPhone|iPod/i);
 const isRetina = window.devicePixelRatio > 1;
+const isiPhone = navigator.userAgent.match(/iPhone|iPod/i);
+const isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints);
+
+
+// fire functions on load
+if (document.readyState === 'interactive' ||
+    document.readyState === 'complete')
+{
+  didLoadPage();
+} else {
+    document.addEventListener('DOMContentLoaded', didLoadPage);
+}
+
+function didLoadPage() {
+	if (isRetina && !isiPhone) {
+		replace2xImages();
+	}
+	footnotesToTitle();
+	if (!isTouchDevice) {
+		initTooltips();
+	}
+}
 
 
 // replace @2x images ---------------------------------------------------------
-//     version: v2.0.1 2016-04
-if (isRetina && !isiPhone) {
-	document.addEventListener('DOMContentLoaded', function(event) {
-		Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'),
-		                             function(img)
-		{
-			const src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
-			
-			img.setAttribute('src', src);
-		});
+//     version: v2.1.0 2016-04
+
+function replace2xImages() {
+	Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'), function(img)
+	{
+		const src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
+		
+		img.setAttribute('src', src);
 	});
 }
 
 
 // footnote to title ----------------------------------------------------------
-//     version: v2.0.1 2016-04
+//     version: v2.1.0 2016-04
 
-document.addEventListener('DOMContentLoaded', function(event) {
-	Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'),
-	                             function(a)
+function footnotesToTitle() {
+	Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'), function(a)
 	{
 		const note = document.querySelector(a.getAttribute('href')).textContent;
 		
@@ -40,13 +58,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		a.removeAttribute('href');
 		a.style.cursor = 'help';
 	});
-});
+}
 
 
 // Tooltip --------------------------------------------------------------------
-//     version: v3.0.1 2016-04
+//     version: v3.1.0 2016-04
 
-function initTooltip(el, options) {
+function setupTooltip(el, options) {
 	const defaults = {
 		displaysUrl: true,
 		class: false
@@ -122,24 +140,21 @@ function initTooltip(el, options) {
 }
 
 // init tooltip
-if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-	document.addEventListener('DOMContentLoaded', function(event) {
-		Array.prototype.forEach.call(document.querySelectorAll('[title]'),
-		                             function(el)
-		{
-			var opt = {};
-			if (el.matches('nav a')) {
-				opt = {displaysUrl: false};
-			} else if (el.matches('.fnote')) {
-				opt = {displaysUrl: false, class: 'note'};
-			} else if (el.matches('[href*="//twitter.com/"]')) {
-				opt = {'class': 'twitter'};
-			} else if (el.matches('[href*="//github.com/"]')) {
-				opt = {'class': 'github'};
-			}
-			
-			initTooltip(el, opt);
-		});
+function initTooltips() {
+	Array.prototype.forEach.call(document.querySelectorAll('[title]'), function(el)
+	{
+		var opt = {};
+		if (el.matches('nav a')) {
+			opt = {displaysUrl: false};
+		} else if (el.matches('.fnote')) {
+			opt = {displaysUrl: false, class: 'note'};
+		} else if (el.matches('[href*="//twitter.com/"]')) {
+			opt = {'class': 'twitter'};
+		} else if (el.matches('[href*="//github.com/"]')) {
+			opt = {'class': 'github'};
+		}
+		
+		setupTooltip(el, opt);
 	});
 }
 
