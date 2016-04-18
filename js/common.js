@@ -4,13 +4,12 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   require : jQuery
    lastMod : 2016-04
   /////////////////////////////////////// */
 
 
-var isiPhone = navigator.userAgent.match(/iPhone|iPod/i);
-var isRetina = window.devicePixelRatio > 1;
+const isiPhone = navigator.userAgent.match(/iPhone|iPod/i);
+const isRetina = window.devicePixelRatio > 1;
 
 
 // replace @2x images ---------------------------------------------------------
@@ -20,7 +19,7 @@ if (isRetina && !isiPhone) {
 		Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'),
 		                             function(img)
 		{
-			var src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
+			const src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
 			
 			img.setAttribute('src', src);
 		});
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	Array.prototype.forEach.call(document.querySelectorAll('a[href^="#fnote"]'),
 	                             function(a)
 	{
-		var note = document.querySelector(a.getAttribute('href')).textContent;
+		const note = document.querySelector(a.getAttribute('href')).textContent;
 		
 		a.setAttribute('title', a.textContent + ') ' + note)
 		a.removeAttribute('href');
@@ -48,12 +47,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
 //     version: v3.0.1 2016-04
 
 function initTooltip(el, options) {
-	var tooltip;
-	var defaults = {
+	const defaults = {
 		displaysUrl: true,
 		class: false
 	};
-	var setting = Object.assign(defaults, options);
+	const setting = Object.assign(defaults, options);
+	
+	var tooltip;
 	
 	// hover
 	el.addEventListener('mouseover', function() {
@@ -101,8 +101,8 @@ function initTooltip(el, options) {
 	
 	// set tooltip position
 	el.addEventListener('mousemove', function(e) {
-		var windowWidth = window.innerWidth;
-		var tooltipWidth = tooltip.clientWidth;
+		const windowWidth = window.innerWidth;
+		const tooltipWidth = tooltip.clientWidth;
 		
 		var leftPos;
 		if (tooltipWidth < 80) {  // short tip
