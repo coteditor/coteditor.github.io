@@ -5,14 +5,14 @@
 		<link>https://coteditor.com/releasenotes/appcast.xml</link>
 		<description>CotEditor update information</description>
 		<item>
-			<title>CotEditor 2.5.0-beta</title>
-			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.5.0-beta.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.5.0-beta.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Wed, 13 Apr 2016 13:07:43 +0900</pubDate>
+			<title>CotEditor 2.5.0</title>
+			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.5.0.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.5.0.ja.html</sparkle:releaseNotesLink>
+			<pubDate>Sat, 23 Apr 2016 12:35:47 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-			<sparkle:shortVersionString>2.5.0-beta</sparkle:shortVersionString>
-			<sparkle:version>113</sparkle:version>
-            <link>https://coteditor.com/</link>
+			<sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
+			<sparkle:version>117</sparkle:version>
+			<link>https://coteditor.com/</link>
 		</item>
 
 		<item>
