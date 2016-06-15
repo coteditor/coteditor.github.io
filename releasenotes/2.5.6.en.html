@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 2.5.6 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 2.5.6"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/2.5.6.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 2.5.6"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="2.5.6.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="appstore s">
+	<p>CotEditor has been moved to the <strong><a href="http://appstore.com/mac/CotEditor" rel="external" title="CotEditor -Mac App Store"> Mac App Store</a></strong>.</p>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 2.5.6</h1>
+	<p>release: <time>2016-06-16</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Add newly rewritten syntax styles for “C” and “C++”.
+	<ul>
+		<li>From this change, previous  “C, C++, Objective-C” syntax style is deleted.</li>
+	</ul></li>
+	<li>Add syntax styles for “MATLAB” and “Verilog”.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Update “Markdown” syntax style:
+	<ul>
+		<li>Support strikethrough with <code>~~</code> that is defined in the GitHub favored Markdown.</li>
+		<li>Support emphasis with triple <code>*</code> and <code>_</code>.</li>
+	</ul></li>
+	<li>Focus back on the find panel after performing “Find All”, “Replace All” and  “Highlight”.</li>
+	<li>Change to use the body text color for line numbers on printing that was previously always black.</li>
+	<li>Improve scroll behavior with arrow keys.</li>
+	<li>Improve compatibility with macOS Sierra beta.</li>
+	<li>And some other trivial improvements.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix document counting as followings:
+	<ul>
+		<li>“Char Count” counts composite characters as well as CR/LF as single characters and omits counting line endings if “Count each line ending as one character” option is off.</li>
+		<li>“Length” counts bytes in UTF-16 literally and always counts line endings even if “Count each line ending as one character” option is off.</li>
+		<li>“Location” and “Column” count characters just like “Char Count”.</li>
+	</ul></li>
+	<li>Fix an issue where the selected marks of line height / tab width in the Format menu disappeared.</li>
+	<li>Fix an issue where unselected last line number could be highlighted if the text orientation is vertical.</li>
+	<li>Fix an issue where invisible characters were drawn off to the side if the text orientation is vertical.</li>
+	<li>Fix an issue where documents were marked as “Edited” just after document duplication if line ending is not the default one.</li>
+	<li>Fix an issue where detected indent style was applied not only on file opening but also every time when file reverted.</li>
+	<li>Fix an issue where “Find All” result view did not open on OS X Mountain Lion.</li>
+	<li>Fix an issue where incompatible character markup could broken if undo/redo lossy encoding change continuously.</li>
+	<li>Fix an issue where keybindings of some submenu containers were customizable.</li>
+	<li>Fix an issue where tab width could be set as <code>0</code>.</li>
+	<li>Fix an issue where tab width changing via AppleScript changes only the tab width in the focused editor rather than all split editors.</li>
+	<li>Fix an issue where byte length display did not update after changing file encoding.</li>
+</ul>
+</section>
+
+<p><a href="2.5.5.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2016 CotEditor Project</p>
+</footer>
+</body>
+</html>
