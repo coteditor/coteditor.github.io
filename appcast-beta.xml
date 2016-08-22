@@ -5,13 +5,13 @@
 		<link>https://coteditor.com/releasenotes/appcast.xml</link>
 		<description>CotEditor update information</description>
 		<item>
-			<title>CotEditor 2.5.6</title>
-			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.5.6.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.5.6.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Thu, 16 Jun 2016 19:57:34 +0900</pubDate>
+			<title>CotEditor 2.5.7</title>
+			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.5.7.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.5.7.ja.html</sparkle:releaseNotesLink>
+			<pubDate>Mon, 22 Aug 2016 20:37:38 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-			<sparkle:shortVersionString>2.5.6</sparkle:shortVersionString>
-			<sparkle:version>135</sparkle:version>
+			<sparkle:shortVersionString>2.5.7</sparkle:shortVersionString>
+			<sparkle:version>138</sparkle:version>
 			<link>https://coteditor.com/</link>
 		</item>
 
