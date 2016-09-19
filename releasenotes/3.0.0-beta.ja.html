@@ -57,7 +57,51 @@
 
 <article>
 <header>
-	<h1>CotEditor 3.0.0β の変更点</h1>
+	<h1>CotEditor 3.0.0 β2 の変更点</h1>
+	<p>リリース: <time>2016-09-xx</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>スクリプトとフォルダとスクリプトメニューを自動で同期
+	<ul>
+		<li>CotEditor 起動中にスクリプトフォルダを変更した時に手動でスクリプトメニューを更新する必要がなくなりました</li>
+	</ul></li>
+	<li>「すべて検索」でマッチがなかった時も検索文字フィールドに「見つかりません」と表示するように変更</li>
+	<li><span class="label">beta</span>: 検索パネルの詳細設定に「置換文字列のエスケープ文字を解釈」オプションを追加（デフォルトでオン）</li>
+	<li><span class="label">beta</span>: 環境設定のフォントフィールドの描画を改良</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+    <li>アプリケーション終了時に検索文字列が他のアプリケーションに渡されていなかった不具合を修正</li>
+    <li>文字情報ポップオーバーに表示される拡大文字の描画範囲を修正</li>
+	<li><span class="label">beta</span>: 行高が 1.0 のとき、現在行のハイライトが</li>
+	<li><span class="label">beta</span>: Yosemite 上で検索パネルのビュー同士が広がる優先順位が誤っていた不具合を修正</li>
+	<li><span class="label">beta</span>: 検索パネルの結果ビューを閉じた後に分割線が残ることがあった不具合を修正</li>
+	<li><span class="label">beta</span>: 日本語を入力中シンタックスカラーリングがちらついた不具合を修正</li>
+	<li><span class="label">beta</span>: スマートインデントが機能していなかった不具合を修正</li>
+	<li><span class="label">beta</span>: Unicode 16進数での文字入力ができなかった不具合を修正</li>
+	<li><span class="label">beta</span>: エディタを拡大した時に行番号ビューにエディタの描画が残ることがあった不具合を修正</li>
+	<li><span class="label">beta</span>: ウインドウの下側の角が丸まらないことがあった不具合を修正</li>
+	<li><span class="label">beta</span>: ウインドウ復帰時にいくつかの状態が復帰しなかった不具合を修正</li>
+	<li><span class="label">beta</span>: いくつかのメモリリークを修正</li>
+</ul>
+</section>
+<article>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.0.0 β の変更点</h1>
 	<p>リリース: <time>2016-09-13</time></p>
 </header>
 
@@ -77,7 +121,11 @@
 <h2>新機能</h2>
 
 <ul>
-	<li>macOS Sierra のタブウインドウに対応</li>
+	<li>macOS Sierra のタブウインドウに対応
+	<ul>
+		<li>「新規タブ」アクションを「ファイル」メニューに追加</li>
+		<li>同一ウインドウ内のタブ間でサイドバーの表示状況を同期</li>
+	</ul></li>
 	<li>ツールバーのシンタックスメニューで「最近使った項目」を上方にまとめて表示</li>
 	<li>独立した「ブロックコメント」「インラインコメント」「コメント解除」アクションをテキストメニューに追加</li>
 </ul>
