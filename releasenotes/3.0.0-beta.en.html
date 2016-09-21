@@ -57,6 +57,50 @@
 
 <article>
 <header>
+	<h1>What's New on CotEditor 3.0.0-beta.2</h1>
+	<p>release: <time>2016-09-21</time></p>
+</header>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Auto-sync Script menu with script folder.
+	<ul>
+		<li>Now, you don't need anymore to update script menu after script folder modification.</li>
+	</ul></li>
+	<li>Display “Not Found” in the find string field in the find panel also when “Find All” failed.</li>
+	<li><span class="label">beta</span>: Add option “Unescape replacement string” to find panel (On by default).</li>
+	<li><span class="label">beta</span>: Improve drawing of font fields in preferences.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue find string is not shared with other applications after quitting CotEditor.</li>
+	<li>Address an issue with drawing area of zoomed character view in character inspector popover.</li>
+	<li><span class="label">beta</span>: Fix an issue where current line highlight was occasionally too wide when line height is 1.0.</li>
+	<li><span class="label">beta</span>: Fix an issue where the result view in the find panel expands wrong way on Yosemite.</li>
+	<li><span class="label">beta</span>: Fix an issue where divider in the find panel remains after closing result view.</li>
+	<li><span class="label">beta</span>: Fix an issue where syntax highlighting flicked while inputting Japanese text.</li>
+	<li><span class="label">beta</span>: Fix an issue where smart indent didn't worked.</li>
+	<li><span class="label">beta</span>: Fix an issue where inputting character with unicode hex didn't work.</li>
+	<li><span class="label">beta</span>: Fix an issue where text view drawing remained in line number view when text view scaled up.</li>
+	<li><span class="label">beta</span>: Fix an issue where bottom window corners weren't rounded under the specific conditions.</li>
+	<li><span class="label">beta</span>: Fix an issue where some window states were not restored.</li>
+	<li><span class="label">beta</span>: Fix some memory leaks.</li>
+</ul>
+</section>
+<article>
+
+
+
+<article>
+<header>
 	<h1>What's New on CotEditor 3.0.0-beta</h1>
 	<p>release: <time>2016-09-13</time></p>
 </header>
@@ -76,7 +120,11 @@
 <h2>New Features</h2>
 
 <ul>
-	<li>Support window tabbing on macOS Sierra.</li>
+	<li>Support window tabbing on macOS Sierra:
+	<ul>
+		<li>Add “New Tab” action to File menu.</li>
+		<li>Sync sidebar visibility among tabs in a window.</li>
+	</ul></li>
 	<li>Display recent used syntax styles at the top of the toolbar syntax style popup list.</li>
 	<li>Add individual “Block Comment”, “Inline Comment” and “Uncomment” actions in Text menu unlike the “Comment Selection” action changes its behavior intelligently.</li>
 </ul>
