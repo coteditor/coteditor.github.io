@@ -6,8 +6,8 @@
 		
 		<item>
 			<title>CotEditor 3.0.0-beta.3</title>
-			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.0.0-beta.3.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.0.0-beta.3.ja.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.0.0-beta.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.0.0-beta.ja.html</sparkle:releaseNotesLink>
 			<pubDate>Fri, 23 Sep 2016 07:25:27 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
 			<sparkle:shortVersionString>3.0.0-beta.3</sparkle:shortVersionString>
