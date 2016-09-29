@@ -43,15 +43,68 @@
 	<dd>All of source codes for CotEditor was completely rewritten in Swift from Objective-C.</dd>
 	
 	<dt>Tabbed window</dt>
-	<dd>Finally, CotEditor now supports tabbing windows on Sierra.</dd>
+	<dd>Finally, CotEditor now supports tabbing windows on Sierra. On CotEditor 3.0, the tab behavior was improved from the standard Sierra implementation in order to let it behave more naturally.</dd>
 	
 	<dt>Brushed-up look</dt>
-	<dd>Graphic images like toolbar icons and application icon were also updated to get more modern look. </dd>
+	<dd>Graphic images like toolbar icons and application icon were also updated to get more modern look.</dd>
+	
+	<dt>New text search engine</dt>
+	<dd>The find panel's regular expression engine was changed from Onigmo (Oniguruma-mod) to the ICU library. Thanks to that, the line-up of text search is updated with new useful items and not only for the regex search but also for the normal texture search.</dd>
 	
 	<dt>Support macOS Sierra</dt>
-	<dd>Hello to Sierra and good-bye to Mountain Lion and Mavericks.</dd>
+	<dd>Hello to Sierra and good-bye to Mountain Lion and Mavericks. So, CotEditor now supports from OS X 10.10 to macOS 10.12.</dd>
 </dl>
 </section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.0.0-rc</h1>
+	<p>release: <time>2016-09-29</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Add Italian localization (thanks to Agostino Maiello!).</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Enable Autosave and Versions by default.</li>
+	<li><span class="label">beta</span>: Improve sideview behavior.
+	<ul>
+		<li>Open sideview outward also on Yosemite.</li>
+		<li>Sync states of sidebar among tabs in a window more correctly.</li>
+		<li>Fix some unwanted behavior around sidebar.</li>
+	</ul></li>
+	<li><span class="label">beta</span>: Update help contents.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li><span class="label">beta</span>: Fix an issue where application could crash on document file sync.</li>
+	<li><span class="label">beta</span>: Fix an issue where application could crash on termination.</li>
+	<li><span class="label">beta</span>: Fix an issue where document could silently updated by an external document file update even if user doesn't set to “Update to modified version”.</li>
+	<li><span class="label">beta</span>: Fix an issue where smart dashes substitution state could be set wrongly.</li>
+	<li><span class="label">beta</span>: Fix an issue where auto indent sytle detection didn't work.</li>
+	<li><span class="label">beta</span>: Fix an issue where file were treated as dropped-files instead of just inserting filenames when files are copied-and-pasted from Finder.</li>
+	<li><span class="label">beta</span>: Fix an issue where the find panel was occasionally collapsed.</li>
+	<li><span class="label">beta</span>: And some trivial fixes.</li>
+</ul>
+</section>
+<article>
 
 
 
