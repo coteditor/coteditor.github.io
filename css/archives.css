@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : archives page
-   lastMod : 2016-04
+   lastMod : 2016-12
   ////////////////////////////////////// */
 
 
@@ -63,13 +63,10 @@
 
 /* older versions */
 
-dl.download dt::after {
-	content: ':';
+table.download tbody tr > * {
+	height: 3em;
 }
-dl.download dd {
-	margin: 0.4em 2em 1em;
-}
-dl.download dd img {
+table.download img {
 	vertical-align: middle;
 	margin-right: 4px;
 }

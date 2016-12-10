@@ -85,6 +85,23 @@ main li+li {
 	margin-top: 0.2em;
 }
 
+/* table */
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+table tr > * {
+	padding: 0.2em 0.5em;
+	line-height: 1.5;
+}
+table thead tr > * {
+	font-weight: 500;
+	border-bottom: 0.5px solid hsla(0,0%,0%,.8);
+}
+table tbody tr > * {
+	border-bottom: 0.5px solid hsla(0,0%,0%,.08);
+}
+
 /* footnote */
 section > footer > ol,
 article > footer > ol,
