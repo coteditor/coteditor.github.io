@@ -43,7 +43,7 @@
 <h1>Frequently Asked Questions about CotEditor 2.2</h1>
 
 
-<p>In October 2015, We finally released CotEditor on the Mac App Store. At the same time, CotEditor is also Sandboxed in order to satisfy with Apple's App Store requirements. This is one of the largest changes since it became open source. It may contain some changes that would make users confused. So, we wrote some FAQs for users who already use CotEditor.</p>
+<p>In October 2015, We finally released CotEditor on the Mac App Store. At the same time, CotEditor is also Sandboxed to satisfy with Apple's App Store requirements. This is one of the largest changes since it became open source. It may contain some changes that would make users confused. So, we wrote some FAQs for users who already use CotEditor.</p>
 
 <p><a href="/releasenotes/2.2.2.en">Whole Release Notes for CotEditor 2.2.2</a></p>
 
@@ -57,25 +57,25 @@
 	<dd>Yes. You can still get a non-AppStore version at the <a href="../../archives">archives</a>.</dd>
 	
 	<dt>Does it mean CotEditor is available on the App Store for a fee?</dt>
-	<dd>Nope. CotEditor is a true freeware and we don't have any plans with that also for the future.</dd>
+	<dd>Nope. CotEditor is a true freeware, and we don't have any plans with that also for the future.</dd>
 	
 	<dt>What is the difference between the Mac App Store version and non-AppStore version?</dt>
-	<dd>There is no difference on the software itself except the updater. The non-AppStore version has an updater framework <a href="http://sparkle-project.org" rel="external" title="Sparkle Project">Sparkle</a> to notify new releases while the OS X system manages versions of the Mac App Store version. Other things are exactly the same. Both versions are Sandboxed.</dd>
+	<dd>There is no difference in the software itself except the updater. The non-AppStore version has an updater framework <a href="http://sparkle-project.org" rel="external" title="Sparkle Project">Sparkle</a> to notify new releases while the OS X system manages versions of the Mac App Store version. Other things are exactly the same. Both versions are Sandboxed.</dd>
 </dl>
 </section>
 
 <section>
 <h2>Sandbox</h2>
 <dl class="fqa">
-	<dt>You said, I may need some manual migration for CotEditor 2.2. What do I need to do?</dt>
-	<dd>CotEditor has been Sandboxed since version 2.2.0. It includes some specification change in the file structure from previous versions in order to conform to the Apple's Sandbox rules. The migration is basically done automatically, however some not, since Sandboxed CotEditor cannot touch user's data like before. If you've used the legacy version before, you may need the following manual migration.
+	<dt>You said I might need some manual migration for CotEditor 2.2. What do I need to do?</dt>
+	<dd>CotEditor has been Sandboxed since version 2.2.0. It includes some specification change in the file structure from previous versions to conform to the Apple's Sandbox rules. The migration is basically done automatically, however, some not, since Sandboxed CotEditor cannot touch user's data like before. If you've used the legacy version before, you may need the following manual migration.
 	<dl>
 		<dt>If you have scripts in the Scripts menu</dt>
 		<dd>The location of the scripts folder moved from <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> to <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code>. Just move the whole scripts in the previous location to the new location.</dd>
 		
 		<dt>If you've already installed <code>cot</code> command-line tool</dt>
 		<dd><del>The command-line tool should be re-installed, since the cot command executable is no more bundled to CotEditor.app, due to the Mac App Store requirement. So we release it separately. Please download the new one from <a href="/cot">coteditor.com/cot</a> and install it manually. Note that the previously installed cot is not compatible with CotEditor 2.2.</del></dd>
-		<dd><strong>cot command has been re-bundled on CotEditor 2.3.0</strong>. However, since there is no installer anymore and the location has been changed, user need re-install it manually. Run the following command on Terminal.app to re-install the cot command.<br/>
+		<dd><strong>cot command has been re-bundled on CotEditor 2.3.0</strong>. However, since there is no installer anymore and the location has changed, users need re-install it manually. Run the following command on Terminal.app to re-install the cot command.<br/>
 			<code>unlink /usr/local/bin/cot; ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code><br/>
 			You may need to modify paths in this command depending on where you've installed CotEditor/cot.<br/>
 			We also continue distributing cot command via homebrew.</dd>
