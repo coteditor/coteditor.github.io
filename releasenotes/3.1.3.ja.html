@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.1.3 の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.1.3 の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.1.3.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.1.3 の変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.1.3.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article>
+<header>
+	<h1>CotEditor 3.1.3 の変更点</h1>
+	<p>リリース: <time>2017-01</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>スクリプトメニューの更新パフォーマンスを改善</li>
+	<li>エンコーディングの変更をアンドゥしたときに、非互換文字リストを出現させないように変更</li>
+	<li>新規書類保存時に、シンタックススタイルを推定するためにシェバン (shebang) も評価するように変更</li>
+	<li>文字情報ポップオーバー内の文字表示をより拡大</li>
+	<li>不可視文字の描画位置改善のためにフォントを変更</li>
+	<li>JavaScript スタイルを更新</li>
+	<li>ヘルプコンテンツのスクリプトについての解説を追加</li>
+	<li>UI の更新頻度に関する隠し設定項目を廃止</li>
+	<li>ビルド環境を Xcode 8.2.1 (SDK macOS 10.12.2) に変更</li>
+	<li><span class="label">非 AppStore 版のみ</span>: Sparkle フレームワークを 1.16.0 に更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>非互換文字を含むエンコーディング変更でアプリケーションがクラッシュすることがあった不具合を修正</li>
+	<li>検索文字列が他のアプリケーションと共有できないことがあった不具合を修正</li>
+	<li>単純な「次を検索」「前を検索」において、特定の条件下で正規表現のアンカー <code>^</code> や <code>$</code> が誤ってマッチすることがあった不具合を修正</li>
+	<li>AppleScript で単発置換をしたとき、正規表現の後方参照がされなかった不具合を修正</li>
+	<li>改行コードが CR/LF のとき、非互換文字のハイライトがずれることがあった不具合を修正</li>
+	<li>タッチバーアイコンの描画がうまくないことがあった不具合を修正</li>
+	<li>「ヘルプ」メニューの「スクリプトについて」が機能していなかった不具合を修正</li>
+	<li>文字情報のポップオーバーを独立させたときに拡大された文字がひっくり返って描画された不具合を修正</li>
+	<li>AppleScript の <code>convert</code> コマンドのオプション <code>lossy</code> が実際には無視されていた不具合を修正</li>
+	<li>改行コードが LF 以外のとき、AppleScript の <code>range</code> プロパティがずれることがあった不具合を修正（Kaito Udagawa さんに感謝!）</li>
+	<li>エディタの不透明度が AppleScript で変更できなかった不具合を修正</li>
+	<li>微細なタイポを修正</li>
+</ul>
+</section>
+
+
+<p><a href="3.1.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2017 CotEditor Project</p>
+</footer>
+</body>
+</html>
