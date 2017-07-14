@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.2.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.2.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.2.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.2.0"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.2.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.2</h1>
+
+<dl>
+	<dt>File Drop feature improvements</dt>
+	<dd>The File Drop feature settings were renewed. You can set file drop settings only for an indivisual synatx style on the new File Drop pane in preferences.</dd>
+
+	<dt>Cursor position setting on snippet key bindings</dt>
+	<dd>You can now speficy the cursor positon after inserting a snippet text with a key binding.</dd>
+
+    <dt><code>write to console</code> command for scripting</dt>
+    <dd>A new AppleScript/JXA command inserting a custom string to the scripting console was added.</dd>
+
+	<dt>More performance optimizations</dt>
+	<dd>We reviewed performance bottlenecks on handling large size document (again), and tuned them up.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.2.0</h1>
+	<p>release: <time>2017-07-xx</time></p>
+</header>
+
+
+<p class="note">cf. <a href="3.2.0_from_beta.en">Changes from 3.2.0-rc.2</a>.</p>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Improve File Drop feature:
+	<ul>
+		<li>Now, you can add a file drop setting only for a specific syntax style.</li>
+		<li>Add description field to the setting table.</li>
+		<li>Draw capsule for variables in the insertion format setting field.</li>
+		<li>Update the default file drop settings.</li>
+	</ul></li>
+	<li>Now, key binding snippets can set cursor position.</li>
+	<li>Add “Surround Selection With” actions to “Text” menu.</li>
+	<li>Add a new AppleScript/JXA command <code>write to console</code> so that users can insert own message to the CotEditor's console.</li>
+	<li>Add syntax style for “Fortran”.</li>
+</ul>
+
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Change syntax style detection behavior to set to “None” style if no appropriate style can be found on file opening.</li>
+	<li>Significantly improve the performance of “Replace All” with a large document.</li>
+	<li>Avoid hiding console panel when CotEditor becomes not the frontmost application.</li>
+	<li>Reduce highlight parsing time with large size document.</li>
+	<li>Improve performance of closing large size document.</li>
+	<li>Improve drawing performance of a large size document with a non-opaque background (Not enough good as an opaque one but still better than before).</li>
+	<li>Add hidden “Reload All Themes/Styles” menu item to theme/syntax style action menus in Preferences (visible with <code>Option</code> key).</li>
+	<li>Enable changing text size with a single stroke by pressing and holding Touch Bar's Text Size button.</li>
+	<li>Improve invisible character drawing on a non-opaque view.</li>
+	<li>Improve auto-brackets/quotes insertion behavior with multiple selections.</li>
+	<li>Improve the setting file naming rule for when the name overwraps with an existing setting.</li>
+	<li>Improve condition to insert a closing quote automatically.</li>
+	<li>Improve the encoding declaration detection.</li>
+	<li>Update “Ruby” syntax style to fix commands highlight.</li>
+	<li>Update “MATLAB” syntax style to fix strings highlight.</li>
+	<li>Remove less useful “Inline script menu items into contextual menu” option.</li>
+	<li>Update German localization (Thanks to J-rg!).</li>
+	<li>And some minor improvements and fixes.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the application could hang up when lots of tabbed windows are about open.</li>
+	<li>Fix an issue where the selections after “Replace All” in selection shifted one character.</li>
+	<li>Fix an issue where the document syntax style could be back to the default if the current style was set manually and the document was modified by another process.</li>
+	<li>Fix an issue where the status bar stopped updating after toggling the inspector sidebar.</li>
+	<li>Fix an issue where the “Cancel” button in the dialog shown when changing the Auto Save setting in General pane didn't revert the actual setting state.</li>
+	<li>Fix an issue where author of a theme was not shown in the Appearance pane.</li>
+	<li>Fix an issue where width and height in the window size setting window were swapped.</li>
+	<li>Fix an issue where current line highlight occasionally blinked unwontedly.</li>
+	<li>Fix a possible crash on highlighting matching brace.</li>
+	<li>Fix few memory leaks.</li>
+</ul>
+</section>
+
+<p><a href="3.1.8.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2017 CotEditor Project</p>
+</footer>
+</body>
+</html>
