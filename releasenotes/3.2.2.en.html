@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.2.2 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.2.2"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.2.2.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.2.2"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.2.2.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+	
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.2.2</h1>
+	<p>release: <time>2017-10-01</time></p>
+</header>
+
+
+<section>
+<h3>New Features</h3>
+
+<ul>
+	<li>Add new <code>NewDocument</code> option to <code>CotEditorXOutput</code> for UNIX Scripting to put output string to a newly created document.</li>
+</ul>
+</section>
+
+
+<section>
+<h3>Improvements</h3>
+
+<ul>
+	<li>Improve Replace All action:
+	<ul>
+		<li>Avoid recoloring after Replace All if no text replaced.</li>
+		<li>Improve the progress indicator.</li>
+	</ul></li>
+	<li>Change to highlight matching braces just like Xcode.
+	<ul>
+		<li>No more beep for unbalanced braces.</li>
+	</ul></li>
+	<li>Update “JavaScript” syntax style:
+	<ul>
+		<li>Add “.pac” extension.</li>
+	</ul></li>
+	<li>Update build environment to Xcode 9 (SDK macOS 10.13).</li>
+</ul>
+</section>
+
+
+<section>
+<h3>Fixes</h3>
+
+<ul>
+	<li>Fix an issue where the Key Binding setting tables were empty on macOS 10.13 High Sierra.</li>
+	<li>Fix an issue where current line highlight was occasionally too wide when line height is 1.0.</li>
+	<li>Fix an issue where text selection highlight could remain between lines.</li>
+	<li>Fix an issue where the theme customization was not applied immediately.</li>
+	<li>Fix an issue where the hanging-indent was not updated in specific cases.</li>
+</ul>
+</section>
+
+
+<p><a href="3.2.1.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2017 CotEditor Project</p>
+</footer>
+</body>
+</html>
