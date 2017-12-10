@@ -5,13 +5,13 @@
 		<description>CotEditor update information</description>
 		
 		<item>
-			<title>CotEditor 3.2.5</title>
-			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.2.5.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.2.5.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Tue, 28 Nov 2017 9:00:00 +0900</pubDate>
+			<title>CotEditor 3.2.6</title>
+			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.2.6.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.2.6.ja.html</sparkle:releaseNotesLink>
+			<pubDate>Mon, 11 Dec 2017 10:00:00 +0900</pubDate>
 			<sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
-			<sparkle:shortVersionString>3.2.5</sparkle:shortVersionString>
-			<sparkle:version>208</sparkle:version>
+			<sparkle:shortVersionString>3.2.6</sparkle:shortVersionString>
+			<sparkle:version>Dec</sparkle:version>
 			<link>https://coteditor.com/</link>
 		</item>
 
