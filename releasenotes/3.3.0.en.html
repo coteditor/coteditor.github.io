@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.3.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.3.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.3.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.3.0"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.3.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.3</h1>
+
+<dl>
+	<dt>Handle documents on launch in more intelligent way</dt>
+	<dd>We improved various behaviors regarding document handling on launch for letting you start working with your documents more and more right away.</dd>
+	
+	<dt>Sort lines as you desire</dt>
+	<dd>New “Sort by pattern” enables you to sort selected lines by specific column or fully freely using the regular expression. Of course, through a neat user interface.</dd>
+	
+	<dt>iCloud document (finally)</dt>
+	<dd>We know it's kind of too late, but CotEditor now supports the iCloud document, so that CotEditor has a own space on iCloud, moves files to there easier, and can resolve a file modification conflict visually.</dd>
+	
+	<dt>Improvement on the Share featue</dt>
+	<dd>Document sharing in CotEditor gets more feature.</dd>
+	
+	<dt>More macOS native look &amp; feel</dt>
+	<dd>Added small tweaks to the user interface. You don't see any different? Then, that's good. It means it worked.</dd>
+	
+	<dt>More international</dt>
+	<dd>CotEditor now supports the RTL (right-to-left) writing direction for such as Arabic, Hebrew, Hindi and others. Furthermore, Portuguese localization is newly added.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.3.0</h1>
+	<p>release: <time>2018-02-07</time></p>
+</header>
+
+
+<p class="note">cf. <a href="3.3.0_from_beta.en">Changes from 3.3.0-beta.3</a>.</p>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>iCloud document.</li>
+	<li>Open a document in the existing Untitled window that was created automatically on an open/reopen event, if exists.</li>
+	<li>New feature “Sort by pattern,” which enables sort selected lines by specific column or fully freely using the regular expression.</li>
+	<li>Add new setting option “Reopen windows from the last session on launch” in General pane.</li>
+	<li>Add new setting option “including whitespace-only lines” for “trim trailing whitespace” command in General pane.</li>
+	<li>Introduce “Right to Left” writing direction by changing the direction from Format &gt; Writing Direction menu.</li>
+	<li>More integrated Share feature:<ul>
+		<li>Share documents with other people through iCloud drive with “Add People” command in the File &gt; Share menu.</li>
+		<li>Enable sharing a document that has not been saved yet.</li>
+		<li>Remove the feature that shares document content text from the File menu (You can still share selected text from the context menu).</li>
+		<li>Other small improvements.</li>
+	</ul></li>
+	<li>Add new commands “Half-width to Full-width” and “Full-width to Half-width” to Text &gt; Transformations menu.</li>
+	<li>Add Portuguese localization (thanks to BR Lingo!).</li>
+	<li>Add the following encodings to the encoding list (To activate new encodings, restore default once in Preferences &gt; Format &gt; Edit List.):<ul>
+		<li>Thai (Windows, DOS)</li>
+		<li>Thai (ISO 8859-11)</li>
+	</ul></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Change the system requirement to <strong>OS X 10.11 El Capitan and later</strong>.</li>
+	<li>Add clear button to the input fields in the find panel.</li>
+	<li>Gather the “open a new document” “on launch” and “when CotEditor becomes active” options and create new “When nothing else is open:” option.</li>
+	<li>Enable “shift right” and “shift left” commands to process multiple selections.</li>
+	<li>Scroll console view after getting a new message to make it visible.</li>
+	<li>Display sharing window within the target document window.</li>
+	<li>Swap position of “View” with “Format” menu to conform to the Apple's Human Interface Guidelines.</li>
+	<li>Move the menu item changing the text orientation into Format &gt; Writing Direction.</li>
+	<li>Display full encoding name in the status bar instead of the IANA charset name.</li>
+	<li>Add tooltips to the Unicode normalization forms in Text menu.</li>
+	<li>Append “Option-Command-T” shortcut to “Show/Hide Toolbar” menu item.</li>
+	<li>Remove “Color Code Panel” command from the “Window” menu (use “Edit Color Code…” command in “Text” menu instead).</li>
+	<li>Remove “share find text with other applications” option.</li>
+	<li>Restore the last viewed preference pane when Preferences is opened.</li>
+	<li>Add an input field for the editor opacity setting.</li>
+	<li>Adjust scroll after toggling line wrap.</li>
+	<li>Add scroll margin to the right side of find panel fields dynamically, so that entire inputs can be seen even when find/replacement result is shown.</li>
+	<li>Update Python syntax style:<ul>
+		<li>Fix highlight of string and bytes literals.</li>
+	</ul></li>
+	<li>Tweak acknowledgments window design.</li>
+	<li>Update Help contents style.</li>
+	<li>Some minor UI improvements and fixes.</li>
+	<li>Update Japanese localization to conform with the modern macOS localization rules.</li>
+	<li>Update the internal source code to Swift 4.</li>
+	<li><span class="label">non-AppStore ver.</span>: Now, the application updater (Sparkle) can download and update CotEditor automatically, as like before CotEditor was Sandboxed.<ul>
+		<li>This feature can actually be used first updating CotEditor 3.3.0 to CotEditor 3.3.1 or later.</li>
+	</ul></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the word suggestion in the Touch Bar cannot insert a word starts with a symbol correctly, and, therefore, a workaround was added on CotEditor 3.2.3.</li>
+	<li>Fix an issue where character inspector could expand vertically too much with some specific characters.</li>
+	<li>Fix an issue where invisible symbols for control characters were not drawn in input fields in find panel.</li>
+	<li>Fix scroll position in the help viewer on jumping to a help page from CotEditor.</li>
+	<li>Fix some unlocalized text.</li>
+</ul>
+</section>
+
+<p><a href="3.2.8.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>
