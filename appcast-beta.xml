@@ -3,17 +3,20 @@
 	<channel>
 		<title>CotEditor update information</title>
 		<description>CotEditor update information</description>
-		
-		<item>
-			<title>CotEditor 3.3.0-beta</title>
-			<sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.3.0-beta.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.3.0-beta.ja.html</sparkle:releaseNotesLink>
-			<pubDate>Wed, 24 Jan 2018 00:10:00 +0900</pubDate>
-			<sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-			<sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
-			<sparkle:version>216</sparkle:version>
-			<link>https://coteditor.com/</link>
-		</item>
+
+        <item>
+            <title>CotEditor 3.3.0-beta.2</title>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.3.0-beta.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.3.0-beta.ja.html</sparkle:releaseNotesLink>
+            <pubDate>Sat, 27 Jan 2018 01:00:00 +0900</pubDate>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.3.0-beta.2/CotEditor_3.3.0-beta.2.dmg"
+                       sparkle:shortVersionString="3.3.0-beta.2"
+                       sparkle:version="218"
+                       sparkle:dsaSignature="MCwCFDBj7aL+uZ1zDaaxdaePQkkNwm3QAhQ3dusBVHZt9Q0FpgjvO0Bw+RHKEA=="
+                       length="26005496"
+                       type="application/octet-stream"/>
+        </item>
 		
 		<item>
 			<title>CotEditor 3.2.8</title>

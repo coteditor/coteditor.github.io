@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : release notes
-   lastMod : 2015-10
+   lastMod : 2018-01
   ////////////////////////////////////// */
 
 
@@ -114,6 +114,27 @@ body.prerelease::before {
 	background: url('parts/safaty_stripes.svg');
 	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
 }
+
+
+/* warning */
+
+.block-info {
+	font-weight: 400;
+	border-radius: 0.3em;
+	border: 1px solid hsl(0, 0%, 80%);
+	padding: 0.5em 1em 0.5em 4em;
+	background: linear-gradient(hsl(0, 0%, 99%), hsl(0, 0%, 97%));
+	position: relative;
+}
+.block-info::before {
+	content: "💬";
+	font-size: 32px;
+	display: block;
+	position: absolute;
+	top: 0.2em;
+	left: 0.4em;
+}
+
 
 
 /* App Store migration */

@@ -25,6 +25,7 @@
 	<link rel="stylesheet"    href="../css/releasenotes.css"/>
 
 	<script async="async" src="../js/common.js"></script>
+	<script async="async" src="../js/sparkle.js"></script>
 </head>
 
 <body class="prerelease">
@@ -34,6 +35,9 @@
 
 <main>
 <p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<p id="sparkle-note" class="block-info" style="display:none">The “Install” button works only on <strong>CotEditor 3.3.0</strong> and later.<br/>
+To update from your version, download archive from <a href="https://coteditor.com/beta">coteditor.com/beta</a> and install it manually.</p>
 
 <section class="highlights">
 <h1>Highlights on CotEditor 3.3</h1>
@@ -58,6 +62,50 @@
 	<dd>CotEditor now supports the RTL (right-to-left) writing direction for such as Arabic, Hebrew, Hindi and others. Furthermore, Portuguese localization is newly added.</dd>
 </dl>
 </section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.3.0-beta.2</h1>
+	<p>release: <time>2018-01-27</time></p>
+</header>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Enable “shift right” and “shift left” commands to process multiple selections.</li>
+	<li><span class="label">beta</span>: Swap actions for “shift right” and “shift left” in the RTL writing mode so that the indentation direction matchs to the command name.</li>
+	<li><span class="label">beta</span>: Add “Keep the first line at the top” option to the pattern sort.</li>
+	<li><span class="label">beta</span>: Add toolbar item toggling writing direction.</li>
+	<li><span class="label">beta</span>: Update alignment icons in print pane.</li>
+	<li><span class="label">beta</span>: Adjust layout of preferences panes.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li><span class="label">beta</span>: Fix an issue where syntax style list became empty.</li>
+	<li><span class="label">beta</span>: Fix an issue where page guide was drawn at a wrong position if editor is scaled and the writing direction is RTL.</li>
+	<li><span class="label">beta</span>: Fix an issue where text did not changed to the RTL writing direction if lines are not wrapped.</li>
+	<li>Fix scroll position in the help viewer on jumping to a help page from CotEditor.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Known Issues</h2>
+
+<ul>
+	<li><span class="label">beta.2</span>: Some texts that were added/changed after CotEditor 3.3.0-beta have not been localized yet.</li>
+</ul>
+</section>
+<article>
 
 
 

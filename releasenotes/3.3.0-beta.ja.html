@@ -25,6 +25,7 @@
 	<link rel="stylesheet"    href="../css/releasenotes.css"/>
 
 	<script async="async" src="../js/common.js"></script>
+	<script async="async" src="../js/sparkle.js"></script>
 </head>
 
 <body class="prerelease">
@@ -34,6 +35,9 @@
 
 <main>
 <p class="attention">⚠️ <strong>これはプレリリース版です</strong>。</p>
+
+<p id="sparkle-note" class="block-info" style="display:none">“インストール”ボタンは<strong>CotEditor 3.3.0</strong>以降で使用できます。<br/>
+このバージョンからアップデートする場合は、従来通り<a href="https://coteditor.com/beta">coteditor.com/beta</a>からダウンロードして手動でインストールして下さい。</p>
 
 <section class="highlights">
 <h1>CotEditor 3.3のハイライト</h1>
@@ -58,6 +62,41 @@
 	<dd>アラビア語・ヘブライ語・ヒンズー語などで使われる右から左 (RTL) の文章方向に対応しました。また、新たにポルトガル語（ブラジル）ローカライズも追加されました。</dd>
 </dl>
 </section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.3.0-beta.2 の変更点</h1>
+	<p>リリース: <time>2018-01-27</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>“右にシフト”と“左にシフト”コマンドを複数選択範囲に対応</li>
+	<li><span class="label">beta</span>: 右から左の文章方向のときは“右にシフト”と“左にシフト”コマンドの操作を入れ替え、右・左の向きにインデントが合うように変更</li>
+	<li><span class="label">beta</span>: 条件で並び替えに“1行目をそのままにする”オプションを追加</li>
+	<li><span class="label">beta</span>: 文章の方向を切り替えるツールバーアイコンを追加</li>
+	<li><span class="label">beta</span>: プリントダイアログの行添えアイコンを更新</li>
+	<li><span class="label">beta</span>: 環境設定のレイアウトを調整</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li><span class="label">beta</span>: シンタックススタイルリストが空になることがあった不具合を修正</li>
+	<li><span class="label">beta</span>: 右から左の文章方向のとき、エディタを拡大/縮小するとページガイドが誤った場所に描画された不具合を修正</li>
+	<li><span class="label">beta</span>: 行を折り返さないとき、右から左の文章方向のとき行揃えが右側にならなかった不具合を修正</li>
+	<li>CotEditorからヘルプビューアに飛んだときのスクロール位置を修正</li>
+</ul>
+</section>
+<article>
 
 
 
