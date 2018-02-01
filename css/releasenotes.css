@@ -23,6 +23,9 @@ body > header::before {
 	background-size: 32px;
 	vertical-align: -8px;
 }
+main {
+	width: 100%;
+}
 
 
 /* general */
