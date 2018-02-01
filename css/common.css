@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2017-12
+   lastMod : 2018-02
   ////////////////////////////////////// */
 
 
@@ -209,7 +209,9 @@ body > header > nav a:lang(ja):not([rel=external]) {
 
 /* main */
 main {
-	margin: 30px 10px;
+	margin: 30px auto;
+	width: 80%;
+	max-width: 1000px;
 }
 
 /* footer */

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2017-05
+   lastMod : 2018-02
   ////////////////////////////////////// */
 
 body {
@@ -20,6 +20,8 @@ body {
 }
 main {
 	margin:0;
+	width: 100%;
+	max-width: 100%;
 }
 main > section {
 	margin: 2em auto;
