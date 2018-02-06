@@ -217,6 +217,7 @@ main {
 /* footer */
 body > footer {
 	font-size: 13px;
+	text-align: center;
 	margin-top: 40px;
 }
 
