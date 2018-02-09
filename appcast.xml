@@ -6,16 +6,19 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 3.3.0</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.3.0.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.3.0.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Fri, 09 Feb 2018 09:45:00 +0900</pubDate>
+            <title>CotEditor 3.3.1</title>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.3.1.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.3.1.ja.html</sparkle:releaseNotesLink>
+            <pubDate>Mon, 12 Feb 2018 10:00:00 +0900</pubDate>
             <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-            <sparkle:shortVersionString>3.3.0</sparkle:shortVersionString>
-            <sparkle:version>224</sparkle:version>
-            <link>https://coteditor.com/</link>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.3.1/CotEditor_3.3.1.dmg"
+                       sparkle:shortVersionString="3.3.1"
+                       sparkle:version="228"
+                       sparkle:dsaSignature="MC0CFQDJWSTKcpzcj1HtQbmwiq9/g5QSngIUf6nm9PRGAeA8SPezf0cfPcjTyyc="
+                       length="26206989"
+                       type="application/octet-stream"/>
         </item>
-
+        
         <item>
             <title>CotEditor 3.2.8</title>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.2.8.en.html</sparkle:releaseNotesLink>
@@ -37,7 +40,7 @@
             <sparkle:version>138</sparkle:version>
             <link>https://coteditor.com/</link>
         </item>
-        
+
         <item>
             <title>CotEditor 2.0.3</title>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.0.3.en.html</sparkle:releaseNotesLink>
