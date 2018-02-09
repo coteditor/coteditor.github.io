@@ -9,7 +9,7 @@
             <title>CotEditor 3.3.0</title>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.3.0.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.3.0.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Tue, 06 Feb 2018 22:42:23 +0900</pubDate>
+            <pubDate>Fri, 09 Feb 2018 09:45:00 +0900</pubDate>
             <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.3.0/CotEditor_3.3.0.dmg"
                        sparkle:shortVersionString="3.3.0"
