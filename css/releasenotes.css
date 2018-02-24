@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : release notes
-   lastMod : 2018-01
+   lastMod : 2018-02
   ////////////////////////////////////// */
 
 
@@ -38,11 +38,15 @@ p.attention strong {
 p.note strong {
 	text-decoration: underline;
 }
+.trivial,
 .label {
 	color: hsl(198,40%,45%);
 	border: 1px solid;
 	border-radius: 2px;
 	padding: 0 0.2em;
+}
+.trivial {
+	color: hsl(0, 0%, 60%);
 }
 p.important {
 	display: inline-block;
