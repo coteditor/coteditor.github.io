@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.3.3 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.3.3"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.3.3.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.3.3"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.3.3.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<p class="block-info">The updater's “Install” button works only on <strong>CotEditor 3.3.0</strong> and later.<br/>
+To update from an earlier version, download archive from <a href="https://coteditor.com/archives">coteditor.com/archives</a> and install it manually.</p>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.3.3</h1>
+	<p>release: <time>2018-02-25</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Add an option “Indent with Tab key” to the Edit pane in preferences.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Change the behavior of <code>⌘←</code> so that the cursor moves first to the beginning of the visual lines, then to the column right after indentation, and finally to the beginning of the line.</li>
+	<li>Display an open dialog on launch if so set even when iCloud storage is disabled.</li>
+	<li>Improve stability on text encoding change.</li>
+	<li>Refine dialog messages on text encoding change.</li>
+	<li>Change sidebar behavior to close inward when it was opened inward because of insufficient space.</li>
+	<li>Avoid requiring high power GPU use.</li>
+	<li><span class="trivial">trivial</span>: Hide insertion point in shortcut input fields in the Key Binding pane.</li>
+	<li><span class="trivial">trivial</span>: Set a spoken name of CotEditor.</li>
+	<li><span class="trivial">trivial</span>: Add <code>enablesAsynchronousSaving</code> hidden default key that enables asynchronous saving.</li>
+	<li><span class="label">non-AppStore ver.</span>: Update Sparkle framework.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix a long-standing issue where incompatible characters could not be detected when the length of converted document text is changed.</li>
+	<li>Fix an issue where key-binding setting field sometimes ignored user input.</li>
+	<li>Fix an issue where document files did not forget vertical orientation state when once set before.</li>
+	<li>Fix an issue where menu item title for “Horizontal” (in Format &gt; Writing Direction) was displayed as “Vertical” in Japanese localization.</li>
+</ul>
+</section>
+
+<p><a href="3.3.2.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>

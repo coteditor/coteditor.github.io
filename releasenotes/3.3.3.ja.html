@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.3.3の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.3.3の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.3.3.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.3.3の変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.3.3.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<p class="block-info">更新通知の“インストール”ボタンは<strong>CotEditor 3.3.0</strong>以降で使用できます。<br/>
+それ以前のバージョンからアップデートする場合は、従来通り<a href="https://coteditor.com/archives">coteditor.com/archives</a>からダウンロードして手動でインストールして下さい。</p>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.3.3の変更点</h1>
+	<p>リリース: <time>2018-02-25</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>“タブキーで選択範囲をインデント”する設定オプションを編集ペインに追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li><code>⌘←</code>キーを押したときのカーソルの挙動を以下のような順で移動するように変更：折り返し行の行頭→その前の折り返し行の行頭→インデントの手前→行頭</li>
+	<li>iCloudストレージを無効にしているときも、設定にしたがって必要であれば起動時に「開く」ダイアログを表示するように変更</li>
+	<li>エンコーディング変更の安定性を向上</li>
+	<li>エンコーディング変更のときのダイアログメッセージを改良</li>
+	<li>ウインドウ右側にスペースがないためにサイドバーが内側に開いたときは、閉じるのも内側になるように改良</li>
+	<li>ハイパワーGPUの使用を抑止</li>
+	<li><span class="trivial">trivial</span>: キーバインド設定のショートカット欄をカーソルを描画しないように変更</li>
+	<li><span class="trivial">trivial</span>: CotEditorの発音を設定</li>
+	<li><span class="trivial">trivial</span>: 書類の非同期保存を有効にする隠し設定<code>enablesAsynchronousSaving</code>を追加</li>
+	<li><span class="label">非 AppStore 版のみ</span>: Sparkle フレームワークを更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>エンコーディング後に文字数が変化するときには非互換文字が検出できなかった長年の不具合を修正</li>
+	<li>キーバインド設定での入力がしばしば無視された不具合を修正</li>
+	<li>一度縦書きで保存された書類がその後も縦書き設定を忘れられなかった不具合を修正</li>
+	<li>メニュー項目の フォーマット &gt; 文章の方向 &gt; 横書き が「縦書き」と日本語表記されていた不具合を修正</li>
+</ul>
+</section>
+
+<p><a href="3.3.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>
