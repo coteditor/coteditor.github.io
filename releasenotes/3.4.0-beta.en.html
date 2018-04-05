@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.4.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.4.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.4.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.4.0β"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.4.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+
+<p class="block-info">The updater's “Install” button works only on <strong>CotEditor 3.3.0</strong> and later.<br/>
+To update from an earlier version, download archive from <a href="https://coteditor.com/beta">coteditor.com/beta</a> and install it manually.</p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.4</h1>
+
+<dl>
+	<dt>Apply multiple replacement definitions at once</dt>
+	<dd>Using the new feature called “Set Replacement”, you can batch process text replacement with a preset definition containing multiple find strings. Those definitions can also be saved to reuse later.</dd>
+	
+	<dt>Document outilne at a glance</dt>
+	<dd>Now, you can look over the auto-extracted document outline, which you might see in the navigation bar above the editor, in the sidebar inspector.</dd>
+	
+	<dt>Much easier regular expression pattern editing in find panel</dt>
+	<dd>The new input fields in the find panel syntax-highlight their contents when the regular expression option is enabled. In addition, the input fields also recognize and handle brace pairs properly just like the main document editor does.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.4.0-beta</h1>
+	<p>release: <time>2018-04-07</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Replace matches with preset replacement definition (Find &gt; Show Replacement Set).</li>
+	<li>Add outline menu to side bar.</li>
+	<li>Select tabbed window with <code>⌘+number</code>.</li>
+	<li>Parse regular expression pattern in find string field in regular expression mode:<ul>
+		<li>Syntax highlight.</li>
+		<li>Highlight matching brace by moving cursor.</li>
+		<li>Select the range surrounded by a brace pair by double-clicking a brace.</li>
+	</ul></li>
+	<li>Add a new theme “Resinifictrix”.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Give haptic feedback on pinch zoom when the scale becomes 100%.</li>
+	<li>Adjust background color for selected range in inactive editor to avoid unreadable text, especially by a dark theme.</li>
+	<li>Make the current line highlight semi-transparent if editor opacity is not 100%.</li>
+	<li>Ignore brackets escaped with <code>\</code> on bracket pair highlight.</li>
+	<li>Restore selected inspector pane on window restoration.</li>
+	<li>Move “Get Info” and “Show Incompatible Characters” menu items into newly added View &gt; Inspector submenu.</li>
+	<li>Update highlight style of icons in the side inspector.</li>
+	<li>Delete the feature alerting inconsistent encoding declaration in document on saving.</li>
+	<li>Remove <code>⌘1</code> shortcut for Console from default key-binding settings.</li>
+	<li>Avoid switching to inactive tabbed window only to show a syntax highlighting indicator.</li>
+	<li>Remove the workaround for the issue of editor scrolling on early macOS High Sierra that was introduced on CotEditor 3.2.4.</li>
+	<li>Update “Java” syntax style by adding term <code>var</code> (Thanks to Marc Prud'hommeaux!)</li>
+	<li><span class="trivial">trivial</span> Use monospace digits where suitable.</li>
+	<li><span class="trivial">trivial</span> <span class="label">non-AppStore ver.</span>: Update Sparkle framework.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix a possible crash with continuous find/replacement.</li>
+	<li>Fix an issue where the font settings cannot be changed on macOS 10.12.</li>
+	<li>Fix an issue where the find result in the input field of the find panel did not clear when a new find string was set from the find history menu.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Known Issues</h2>
+
+<ul>
+	<li>The following tasks have not been completed on this version yet:<ul>
+		<li>Update help contents.</li>
+		<li>Localize newly added strings.</li>
+	</ul></li>
+</ul>
+</section>
+
+<p><a href="3.3.5.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>

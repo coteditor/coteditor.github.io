@@ -25,6 +25,7 @@ body > header::before {
 }
 main {
 	width: 100%;
+	max-width: 50em;
 }
 
 
