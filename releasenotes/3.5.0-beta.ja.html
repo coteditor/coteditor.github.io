@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.5.0βの変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.5.0βの変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.5.0-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.5.0βの変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.5.0-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>これはプレリリース版です。</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 3.5のハイライト</h1>
+
+<dl>
+	<dt>ツールバーを刷新</dt>
+	<dd>ツールバーが最新のmacOSにマッチするモダンな姿に生まれ変わりました。もちろんさらに使いやすく。</dd>
+	
+	<dt>カーソルを中心に</dt>
+	<dd>エディタが書類の最終行を超えてスクロールできるようになりました。</dd>
+	
+	<dt>選択した語句をハイライト</dt>
+	<dd>エディタが選択した文字列と同じ箇所を書類から自動で探し、ハイライトします。</dd>
+	
+	<dt>ウインドウ設定の整理</dt>
+	<dd>ウインドウに関する設定項目を削減して、ウインドウ環境設定をよりシンプルにしました。よりネイティブアプリケーションらしく、ウインドウを扱います。</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.5.0-betaの変更点</h1>
+	<p>リリース: <time>2018-07-30</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>新しいツールバーアイコン</li>
+	<li>選択範囲と同じ語を自動でハイライト（一般環境設定から設定）</li>
+	<li>文書の末尾を超えてスクロールが可能に（ウインドウ環境設定から設定）</li>
+	<li>開いている書類のタブ幅を自由な数に変更可能に</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>「すべての検索マッチを選択」するコマンドを検索メニューに追加</li>
+	<li>エディタのスクロール時、主となるスクロール方向に沿ってまっすぐスクロールするように挙動を改善</li>
+	<li>サイドバーインスペクタの表示/非表示を切り替えるメニュー項目を追加</li>
+	<li>ウインドウ環境設定のウインドウサイズや書類情報とステータスバーの表示/非表示設定などいくつかの設定項目を削除<ul>
+		<li>今後は他の一般的なCocoaアプリケーションと同様に、ウインドウに対する最後の変更が以降開くウインドウにも継承されます。</li>
+	</ul></li>
+	<li>ステータスバーの「文字長」表示を廃止</li>
+	<li>最前面のウインドウのエディタ不透明度を一時的に変更できる機能の廃止<ul>
+		<li>これに伴い、AppleScriptの<code>view opacity</code>プロパティも廃止</li>
+	</ul></li>
+	<li>ウインドウ環境設定のタブの振る舞い設定メニューに現在のユーザシステム設定を併記するように改良</li>
+	<li>文字数カウントのパフォーマンスを最適化</li>
+	<li>印刷時のパフォーマンスを最適化</li>
+	<li><span class="trivial">trivial</span> 不透明度スライダのサンプルボックスの描画を更新</li>
+	<li><span class="trivial">trivial</span> <span class="label">非AppStore版のみ</span>: Sparkleフレームワークを更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>ローカライズされていなかったテキストを修正</li>
+</ul>
+</section>
+
+
+<section>
+<h2>既知の問題</h2>
+
+<ul>
+	<li>以下の作業は現時点ではまだ完了していません:<ul>
+		<li>新しく追加されたテキストのローカライズ</li>
+	</ul></li>
+</ul>
+</section>
+
+<p><a href="3.4.4.ja">以前のリリースノート</a></p>
+</article>
+
+
+<p class="block-info">更新通知の“インストール”ボタンは<strong>CotEditor 3.3.0</strong>以降で使用できます。<br/>
+それ以前のバージョンからアップデートする場合は、従来通り<a href="https://coteditor.com/beta">coteditor.com/beta</a>からダウンロードして手動でインストールして下さい。</p>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>

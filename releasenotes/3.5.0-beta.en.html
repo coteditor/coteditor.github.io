@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.5.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.5.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.5.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.5.0β"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.5.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.5</h1>
+
+<dl>
+	<dt>Brand-new toolbar</dt>
+	<dd>CotEditor now has more modern toolbar buttons that match for the latest macOS.</dd>
+	
+	<dt>Bring your cursor up to the editor center</dt>
+	<dd>The overscrolling feature allows you to scroll past the bottom of the document.</dd>
+	
+	<dt>Highlight selected words</dt>
+	<dd>Editor finds the same words to the selected one in the document automatically and highlights them.</dd>
+	
+	<dt>Optimized Window preferences pane</dt>
+	<dd>Setting options in the Window pane were reduced to simplify the preferences and to let the application behave more properly for a macOS application.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.5.0-beta</h1>
+	<p>release: <time>2018-07-30</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>New toolbar icons.</li>
+	<li>Highlight the same substrings of the selection automatically (Customize the behavior in General preferences pane).</li>
+	<li>New option to allow overscrolling (Customize the behavior in Window preferences pane).</li>
+	<li>Enable to change the tab width of a specific document to a desired number.
+</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Add command “Select All Find Matches” in Find menu.</li>
+	<li>Improve the editor's scrolling behavior to scroll along the predominant axis.</li>
+	<li>Add menu item to toggle the visibility of the sidebar inspector.</li>
+	<li>Remove some setting options for windows such as window size and visibilities of document inspector and status bar from Window preferences pane.<ul>
+		<li>From now on, the latest change to a window will be inherited to future windows just like other standard Cocoa applications.</li>
+	</ul></li>
+	<li>Remove “length” display in the status bar.</li>
+	<li>Remove feature to change only the frontmost editor's opacity temporary.<ul>
+		<li>From this, <code>view opacity</code> property on AppleScript is also deprecated.</li>
+	</ul></li>
+	<li>Display current user's system-wide setting for window tabbing in the menu on the Window pane.</li>
+	<li>Optimize the performance of character counting.</li>
+	<li>Improve general stability of the print operation.</li>
+	<li><span class="trivial">trivial</span> Update editor opacity sample tips.</li>
+	<li><span class="trivial">trivial</span> <span class="label">non-AppStore ver.</span>: Update Sparkle framework.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an unlocalized text.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Known Issues</h2>
+
+<ul>
+	<li>The following tasks have not been completed on this version yet:<ul>
+		<li>Localize newly added strings.</li>
+	</ul></li>
+</ul>
+</section>
+
+<p><a href="3.4.4.en">previous release notes</a></p>
+</article>
+
+
+<p class="block-info">The updater's “Install” button works only on <strong>CotEditor 3.3.0</strong> and later.<br/>
+To update from an earlier version, download archive from <a href="https://coteditor.com/beta">coteditor.com/beta</a> and install it manually.</p>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>
