@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.6.0の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.6.0の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.6.0-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.6.0の変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.6.0-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>これはプレリリース版です。</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 3.6のハイライト</h1>
+
+<dl>
+	<dt>ダークモード</dt>
+	<dd>macOS 10.14 MojaveのダークモードがCotEditorにもやってきました! 標準テーマDendrobatesのダーク版も新たに搭載。</dd>
+
+	<dt>Mojaveサポート</dt>
+	<dd>最新のシステムでもいつもと変わらぬ使い心地。</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.6.0-betaの変更点</h1>
+	<p>リリース: <time>2018-09-23</time></p>
+</header>
+
+<p class="note"><strong>3.6.0-beta.3 からの変更点は<a href="3.6.0_from_beta.ja">こちら</a></strong></p>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>macOS 10.14 Mojaveのダークモードに対応</li>
+	<li>新テーマ“Dendrobates (Dark)”を追加</li>
+	<li>選択範囲をスネークケース・キャメルケース・パスカルケースに変換するコマンドを追加</li>
+	<li>新ツールバー項目「絵文字と記号」を追加</li>
+	<li>デフォルトの文章の方向を設定できるオプションを追加（ウインドウ環境設定ペインから変更）</li>
+	<li><span class="label">非AppStore版のみ</span>: 非AppStore版も、Appleにより事前のバイナリ安全証明(notarized)を受けるように</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>システム要件を<strong>macOS 10.12.2 Sierra以上</strong>に変更</li>
+	<li><code>cot</code>コマンドラインツールを更新し、<code>--wait</code>オプションのあとにフォーカスが呼び出し元のウインドウに戻るように</li>
+	<li>ODBエディタサポートを廃止</li>
+	<li><span class="trivial">trivial</span>: 高コントラストモードの対応を強化</li>
+	<li><span class="trivial">trivial</span>: 行番号の描画パフォーマンスを最適化</li>
+	<li><span class="trivial">開発</span>: 開発環境をXcode 10 (Swift 4.2, macOS 10.14 SDK)に更新</li>
+	<li><span class="label">非AppStore版のみ</span>: Enhanced Runtime protectionを導入</li>
+	<li><span class="label">非AppStore版のみ</span>: Sparkleフレームワークを更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>プリント用のテーマが「書類と同じ」設定のとき、書類のテーマがプリントに反映されなかった不具合を修正</li>
+	<li>「リッチテキストとしてコピー」コマンドで、Pagesなどの特定のアプリケーションにペーストしたときスタイル情報が失われた不具合を修正</li>
+	<li>ピンチズーム時に現在行のハイライトがチラチラすることがあった不具合を修正</li>
+</ul>
+</section>
+
+<p><a href="3.5.4.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2018 CotEditor Project</p>
+</footer>
+</body>
+</html>
