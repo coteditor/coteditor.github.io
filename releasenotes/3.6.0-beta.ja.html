@@ -51,6 +51,57 @@
 
 <article>
 <header>
+	<h1>CotEditor 3.6.0-beta.2の変更点</h1>
+	<p>リリース: <time>2018-09-16</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>デフォルトの文章の方向を設定できるオプションを追加（ウインドウ環境設定ペインから変更）</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>ODBエディタサポートを廃止</li>
+	<li><span class="label">beta</span> 新しく追加したテキストを中国語、ドイツ語、イタリア語にローカライズ</li>
+	<li><span class="label">非AppStore版のみ</span>: Sparkleフレームワークを更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li><span class="label">beta</span> ステータスバーの読み込み専用アイコンの表示が逆になっていてあ不具合を修正</li>
+	<li><span class="label">beta</span> ズーム時に文字が行番号表示部のうしろにめり込む不具合を修正</li>
+</ul>
+</section>
+
+
+<section>
+<h2>既知の問題</h2>
+
+<ul>
+	<li><span class="label">Mojave</span>: アプリケーション起動中にシステムテーマをきりかえたとき、ツールバーの色が正しく描画されない</li>
+	<li>以下の作業は現時点ではまだ完了していません:<ul>
+		<li>ポルトガル語のローカライズ</li>
+	</ul></li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
 	<h1>CotEditor 3.6.0-betaの変更点</h1>
 	<p>リリース: <time>2018-09-14</time></p>
 </header>
@@ -75,9 +126,9 @@
 <ul>
 	<li>システム要件を<strong>macOS 10.12.2 Sierra以上</strong>に変更</li>
 	<li><code>cot</code>コマンドラインツールを更新し、<code>--wait</code>オプションのあとにフォーカスが呼び出し元のウインドウに戻るように</li>
+	<li>Enhanced Runtime protectionを導入</li>
 	<li><span class="trivial">trivial</span>: 高コントラストモードの対応を強化</li>
 	<li><span class="trivial">trivial</span>: 行番号の描画パフォーマンスを最適化</li>
-	<li><span class="trivial">開発</span>: Enhanced Runtime protectionを導入</li>
 	<li><span class="trivial">開発</span>: 開発環境をXcode 10 (Swift 4.2, macOS 10.14 SDK)に更新</li>
 	<li><span class="label">非AppStore版のみ</span>: Sparkleフレームワークを更新</li>
 </ul>
