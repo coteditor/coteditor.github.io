@@ -20,16 +20,16 @@
         </item>
 
         <item>
-            <title>CotEditor 3.5.3</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.5.3.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.5.3.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Sat, 08 Sep 2018 10:30:45 +0900</pubDate>
+            <title>CotEditor 3.5.4</title>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.5.4.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.5.4.ja.html</sparkle:releaseNotesLink>
+            <pubDate>Tue, 18 Sep 2018 00:09:00 +0900</pubDate>
             <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.5.3/CotEditor_3.5.3.dmg"
-                       sparkle:shortVersionString="3.5.3"
-                       sparkle:version="274"
-                       sparkle:dsaSignature="MCwCFAz1Gekj1EcoE4dxvBGosgJ6+AmTAhQmefT3uyVM6g77+GdCL4A5a0IEmQ=="
-                       length="26906625"
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.5.4/CotEditor_3.5.4.dmg"
+                       sparkle:shortVersionString="3.5.4"
+                       sparkle:version="276"
+                       sparkle:dsaSignature="MC4CFQCtpPFG6yUr7HP9Oe5nDZqy56CulQIVAJcIC7HXjHCenlmeQ+iAsizXULCG"
+                       length="26928852"
                        type="application/octet-stream"/>
         </item>
 
