@@ -160,9 +160,10 @@ body > header a {
 	
 	position: relative;
 	transition: all 0.3s ease;
+	display: inline-block;
 }
 body > header a:link:hover {
-	bottom: 3px;
+	transform: translateY(-3px);
 }
 body > header > a:first-child {
 	font-size: 26px;
@@ -176,10 +177,10 @@ body > header > a:first-child::before {
 	background-size: 48px;
 	vertical-align: -14px;
 	margin-right: 4px;
+	transition: transform 0.67s ease;
 }
 body > header > a:first-child:hover::before {
 	transform: rotate(-360deg);
-	transition: transform 0.67s ease;
 }
 body > header > nav {
 	text-align: right;
