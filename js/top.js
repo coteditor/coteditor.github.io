@@ -4,19 +4,8 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   require : iQuery, unslider.js
-   lastMod : 2015-11
+   lastMod : 2018-10
   /////////////////////////////////////// */
-
-
-// init slideshow -------------------------------------------------------------
-//     require: jQuery, unslider
-
-jQuery(function() {
-	$('.slider').unslider({
-		delay: 6000
-	});
-});
 
 
 // Facebook SDK --------------------------------------------------------------
