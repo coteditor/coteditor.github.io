@@ -142,65 +142,42 @@ a.download img {
 	border-bottom: 1px solid hsl(90,30%,50%);
 	padding: 20px 0 0;
 }
-.unslider {
+.slider {
 	position: relative;
 	overflow: auto;
 }
-.unslider .unslider-wrap {
-	position: relative;
-}
 
-#screenshots ul li {
-	float: left;
-	min-height: 660px;
-	list-style: none;
-	margin-left: 0;
-}
-#screenshots .unslider-nav {
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-}
-#screenshots .unslider-nav li {
-	border: 2px solid white;
-	opacity: 0.9;
-	cursor: pointer;
-	color: transparent;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border-radius: 7px;
-	margin: 0 5px;
-}
-#screenshots .unslider-nav li.unslider-active {
-	background: white;
-}
-#screenshots .unslider-arrow {
+.slider .controls label {
 	opacity: 0.6;
 	background: url('parts/arrow_left.svg');
-	color: transparent;
-	
 	width: 48px;
 	height: 48px;
+	
 	position: absolute;
 	top: 300px;
 	z-index: 2;
 }
-#screenshots .unslider-arrow:hover {
+.slider .controls label:hover {
 	opacity: 1.0;
 }
-#screenshots .unslider-arrow.prev {
+#item1:checked ~ .controls label:nth-child(5),
+#item2:checked ~ .controls label:nth-child(1),
+#item3:checked ~ .controls label:nth-child(2),
+#item4:checked ~ .controls label:nth-child(3),
+#item5:checked ~ .controls label:nth-child(4) {
 	left: 48px;
 }
-#screenshots .unslider-arrow.next {
+
+#item1:checked ~ .controls label:nth-child(2),
+#item2:checked ~ .controls label:nth-child(3),
+#item3:checked ~ .controls label:nth-child(4),
+#item4:checked ~ .controls label:nth-child(5),
+#item5:checked ~ .controls label:nth-child(1) {
 	right: 48px;
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
+
 
 
 /* lead */
