@@ -1,3 +1,13 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////
+   CotEditor Slider Style Sheet
+   
+   author  : 1024jp <wolfrosch.com>
+   site    : coteditor.com
+   target  : -
+   lastMod : 2018-10
+  ////////////////////////////////////// */
 
 .slider {
 	position:relative;
