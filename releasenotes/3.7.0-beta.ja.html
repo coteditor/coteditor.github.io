@@ -48,6 +48,40 @@
 
 <article>
 <header>
+	<h1>CotEditor 3.7.0-rc.3の変更点</h1>
+	<p>リリース: <time>2019-02-09</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>行頭以外にある連続したスペースは「タブをスペースに自動的に展開」が有効でも1つずつ削除するよう変更</li>
+	<li><span class="label">beta</span>: 右から左書きおよび双方向テキストでマルチカーソルの移動に対応</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>「すべて置換」で、検索対象が合成可能な文字であったときに実際には置換が行われなかった不具合を修正</li>
+	<li>縦書きのときに行が正しく折り返されないことがあった不具合を修正</li>
+	<li>スクロールバーを常時表示にしていると、エディタを分割したときに行の折り返しが実際のエディタの幅よりも短くなることがあった不具合を修正</li>
+	<li>プリントヘッダやコンソールのプロンプトに表示される現在年がいくつかの特定の日に1つずれることがあった不具合を修正（Frédéric Blondiauさんに感謝!）</li>
+	<li><span class="label">beta</span>: <code>^⇧→</code>と<code>^⇧←</code>ショートカットの細部の動きを修正</li>
+	<li><span class="label">beta</span>: 右から左書きのテキストを選択した状態で<code>^⇧→</code>や<code>^⇧←</code>ショートカットを実行するとアプリケーションがクラッシュした不具合を修正</li>
+	<li><span class="label">rc.2</span>: エディタが端を超えてスクロールしたときの背景色を修正</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
 	<h1>CotEditor 3.7.0-rc.2の変更点</h1>
 	<p>リリース: <time>2019-02-02</time></p>
 </header>

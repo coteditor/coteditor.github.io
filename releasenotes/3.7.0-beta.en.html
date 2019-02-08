@@ -48,6 +48,40 @@
 
 <article>
 <header>
+	<h1>What's New on CotEditor 3.7.0-rc.3</h1>
+	<p>release: <time>2019-02-09</time></p>
+</header>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Delete sequential paces character by character when they are not located at the beginning of a line even if “Expand tabs to spaces” option is enabled.</li>
+	<li><span class="label">beta</span>: Support right-to-left and bidi text by moving multiple cursors.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where “Replace All” could fail when the text to find is a combining character such as a diacritical mark.</li>
+	<li>Fix an issue where lines did not wrap correctly with vertical text orientation.</li>
+	<li>Fix an issue where the line wrap width of a split view could be set shorter than the actual view if scroll bars are set to be always visible.</li>
+	<li>Fix an issue where the year in the print header or console prompt was displayed wrongly in specific days (Thanks to Frédéric Blondiau!).</li>
+	<li><span class="label">beta</span>: Fix detailed behaviors of <code>^⇧→</code> and <code>^⇧←</code> shortcuts.</li>
+	<li><span class="label">beta</span>: Fix an issue the application crashed by performing <code>^⇧→</code> or <code>^⇧←</code> shortcut when RTL text is selected.</li>
+	<li><span class="label">rc.2</span>: Fix background color when an editor was scrolled over a boundary.</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
 	<h1>What's New on CotEditor 3.7.0-rc.2</h1>
 	<p>release: <time>2019-02-02</time></p>
 </header>
