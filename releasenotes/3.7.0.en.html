@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.7.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.7.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/3.7.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.7.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.7.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.7</h1>
+
+<dl>
+	<dt>Multi-Cursor editing</dt>
+	<dd>The multi-cursor editing feature has finally come to CotEditor! Now you can insert the same text to multiple places at once.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.7.0</h1>
+	<p>release: <time>2019-02-14</time></p>
+</header>
+
+<p class="note">cf. <a href="3.7.0_from_beta.en">Changes from 3.7.0-rc.5</a>.</p>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Multi-cursor editing.</li>
+	<li>Add “Opacity” toolbar item to change editor's opacity.</li>
+	<li>Add “Surround Selection With” &gt; “Square Brackets” menu item.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Restore more UI state on window restoration.</li>
+	<li>Delete sequential paces character by character when they are not located at the beginning of a line even if “Expand tabs to spaces” option is enabled.</li>
+	<li>Keep selections after performing “Duplicate Lines.”</li>
+	<li>Remember the last used custom characters for “Surround Selection with Custom Characters” action.</li>
+	<li><span class="trivial">trivial</span>: Improve toolbar color.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where “Replace All” could fail when the text to find is a combining character such as a diacritical mark.</li>
+	<li>Fix an issue where lines did not wrap correctly with vertical text orientation.</li>
+	<li>Fix an issue where the last syntax style was not applied when an unsaved document was restored from the last session.</li>
+	<li>Fix an issue where auto-completion could cancel suddenly under a restricted condition.</li>
+	<li>Fix an issue where the line wrap width of a split view could be set shorter than the actual view if scroll bars are set to be always visible.</li>
+	<li>Fix an issue where the year in the print header or console prompt was displayed wrongly in specific days (Thanks to Frédéric Blondiau!).</li>
+	<li>Fix an issue where closed windows remained on the memory.</li>
+	<li>Address an issue where selected ranges were set wrongly after updating the document due to an external modification.</li>
+	<li>Fix a possible issue where word counting could be stuck.</li>
+</ul>
+</section>
+
+<p><a href="3.6.12.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2019 CotEditor Project</p>
+</footer>
+</body>
+</html>

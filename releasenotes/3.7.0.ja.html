@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.7.0の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.7.0の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/3.7.0.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.7.0の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.7.0.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>CotEditor 3.7のハイライト</h1>
+
+<dl>
+	<dt>マルチカーソル編集</dt>
+	<dd>ついにCotEditorにマルチカーソル編集がやってきました。これからは複数のカーソル位置に一度に文字を入力できます。</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.7.0の変更点</h1>
+	<p>リリース: <time>2019-02-14</time></p>
+</header>
+
+<p class="note"><strong>3.7.0-rc.5 からの変更点は<a href="3.7.0_from_beta.ja">こちら</a></strong></p>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>マルチカーソル編集</li>
+	<li>エディタの不透明度を変更するツールバーアイコンを追加</li>
+	<li>選択部分を角括弧で囲むメニュー項目を追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>ウインドウ復帰時により以前の状況を復帰可能に</li>
+	<li>行頭以外にある連続したスペースは「タブをスペースに自動的に展開」が有効でも1つずつ削除するよう変更</li>
+	<li>行を複製したあとに選択範囲を保持するように変更</li>
+	<li>カスタムの“選択部分を囲む”アクションの文字を記憶</li>
+	<li><span class="trivial">trivial</span>: ツールバーの色を改善</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>「すべて置換」で、検索対象が合成可能な文字であったときに実際には置換が行われなかった不具合を修正</li>
+	<li>縦書きのときに行が正しく折り返されないことがあった不具合を修正</li>
+	<li>保存がされていない書類のシンタックススタイルが最後のセッションから復帰されなかった不具合を修正</li>
+	<li>特定の条件下で自動補完が自動的に終了してしまう不具合を修正</li>
+	<li>スクロールバーを常時表示にしていると、エディタを分割したときに行の折り返しが実際のエディタの幅よりも短くなることがあった不具合を修正</li>
+	<li>プリントヘッダやコンソールのプロンプトに表示される現在年がいくつかの特定の日に1つずれることがあった不具合を修正（Frédéric Blondiauさんに感謝!）</li>
+	<li>閉じたウインドウがメモリ上に残っていた不具合を修正</li>
+	<li>外部プロセスの編集により書類がアップデートしたときに選択範囲がずれることがあった不具合を改善</li>
+	<li>単語カウントが詰まる可能性があった不具合を修正</li>
+</ul>
+</section>
+
+<p><a href="3.6.12.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2019 CotEditor Project</p>
+</footer>
+</body>
+</html>
