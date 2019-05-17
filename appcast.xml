@@ -6,16 +6,16 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 3.7.3</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.7.3.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.7.3.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Fri, 26 Apr 2019 09:00:00 +0900</pubDate>
+            <title>CotEditor 3.7.4</title>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.7.4.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.7.4.ja.html</sparkle:releaseNotesLink>
+            <pubDate>Sat, 18 May 2019 09:00:00 +0900</pubDate>
             <sparkle:minimumSystemVersion>10.12.2</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.7.3/CotEditor_3.7.3.dmg"
-                       sparkle:shortVersionString="3.7.3"
-                       sparkle:version="349"
-                       sparkle:dsaSignature="MC4CFQDiMFlrE7mI16Ql2eJ/RMw2wnQApgIVAOgYPprRXStoYznPSuRpj+D/FeKf"
-                       length="27777349"
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.7.4/CotEditor_3.7.4.dmg"
+                       sparkle:shortVersionString="3.7.4"
+                       sparkle:version="351"
+                       sparkle:dsaSignature="MC0CFFlnh+nW5CzYIHx8294P2HIkY+1WAhUA4adQ33kU29qCpYm2XVHReMJlmu8="
+                       length="28258063"
                        type="application/octet-stream"/>
         </item>
 
