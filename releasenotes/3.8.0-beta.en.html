@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.8.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.8.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.8.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.8.0β"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.8.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.8</h1>
+
+<dl>
+	<dt>Improve Dark Mode compatibility</dt>
+	<dd>Now, you can set Dark Mode to document windows regardless of the system setting.</dd>
+
+	<dt>Catalina support</dt>
+	<dd>Provide the usual confort even under the latest environment.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.8.0-beta</h1>
+	<p>release: <time>2019-01-06</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Add “Appearance” option in the Appearance preferences pane to change document window appearance whatever the system appearance is (only on macOS 10.14 and later).</li>
+	<li>Add a new theme “Anura (Dark)”.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Change the system requirement to __macOS 10.13 High Sierra and later__.</li>
+	<li>Improve the theme switching algorithm between light and dark appearances.</li>
+	<li>Keep multiple cursors after pasting multiple lines.</li>
+	<li>Update the result table of “Find All” even when no substring was found.</li>
+	<li>Adjust drawing of the alternative character for invisible control characters.</li>
+	<li>Adjust text baseline of input fields in the find panel when a fallback font is used.</li>
+	<li>Always enable Left to Right button in Writing Direction toolbar button.</li>
+	<li>Change the way to count words for stability.</li>
+	<li>Update “TOML” syntax style to support array of tables (Thanks to Takuto ASAKURA!)</li>
+	<li><span class="trivial">dev</span>: Update build environment to Xcode 11.1 (Swift 5.1, macOS 10.15 SDK).</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix the selection movement direction after <kbd>⌥⇧←</kbd> or <kbd>⌥⇧→</kbd> shortcut.</li>
+	<li>Fix an issue where scripting commands <code>convert</code> and <code>reinterpret</code> failed.</li>
+	<li>Fix an issue where the color panel for theme editing could occasionally not change.</li>
+	<li>Fix an issue where the appearance of Acknowledgements window was not updated when user changed the system appearance after the launch.</li>
+</ul>
+</section>
+
+<p><a href="3.7.8.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2019 CotEditor Project</p>
+</footer>
+</body>
+</html>
