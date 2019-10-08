@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.8.0の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.8.0の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/3.8.0.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.8.0の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.8.0.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>CotEditor 3.8のハイライト</h1>
+
+<dl>
+	<dt>Dark Modeサポート</dt>
+	<dd>システムの設定に関わらず書類ウインドウをダークモードにできるようになりました。</dd>
+
+	<dt>Catalinaサポート</dt>
+	<dd>最新のシステムでもいつもと変わらぬ使い心地。</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 3.8.0の変更点</h1>
+	<p>リリース: <time>2019-10-09</time></p>
+</header>
+
+<p class="note"><strong>3.8.0-beta.2からの変更点はありません</strong></p>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>システムの外観モードに関わらず書類ウインドウのモードを設定できる「外観モード」オプションを表示ペインに追加（macOS 10.14以降）</li>
+	<li>新しいテーマ“Anura (Dark)”を追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>システム要件を<strong>macOS 10.13 High Sierra以上</strong>に変更</li>
+	<li>外観モード切り替え時のテーマ切り替えアルゴリズムを改良</li>
+	<li>複数行をペースト後もマルチカーソルを保持</li>
+	<li>検索件数がゼロのときも「すべて検索」の検索結果表示を更新</li>
+	<li>コントロール不可視文字の描画を調整</li>
+	<li>検索パネルの入力欄でフォールバックフォントが使われたときに描画位置を調整</li>
+	<li>「文章の方向」ツールバーボタンの「左から右」ボタンをつねに有効に</li>
+	<li>安定性のために単語の数え方を変更</li>
+	<li>TMOLシンタックススタイルを更新しテーブルの配列に対応 （Takuto ASAKURAさんに感謝!）</li>
+	<li><span class="trivial">開発</span>: 開発環境をXcode 11.1 (Swift 5.1, macOS 10.15 SDK)に更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li><kbd>⌥⇧←</kbd>または<kbd>⌥⇧→</kbd>のあとの選択範囲移動方向を修正</li>
+	<li>AppleScriptコマンド<code>convert</code>と<code>reinterpret</code>が機能していなかった不具合を修正</li>
+	<li>テーマ編集時のカラーパネルで色が変更できなくなることがあった不具合を修正</li>
+	<li>起動後にシステムの外観モードが変更されたときに謝辞ウインドウの外観が更新されなかった不具合を修正</li>
+</ul>
+</section>
+
+<p><a href="3.7.8.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2019 CotEditor Project</p>
+</footer>
+</body>
+</html>
