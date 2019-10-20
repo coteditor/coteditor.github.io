@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.8.3の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.8.3の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/3.8.3.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.8.3の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.8.3.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article>
+<header>
+	<h1>CotEditor 3.8.3の変更点</h1>
+	<p>リリース: <time>2019-10-20</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>ウインドウ復元時にすべてのカーソル位置を復帰</li>
+	<li>すべてのカーソル位置に対応する括弧をハイライト</li>
+	<li>縦書きでプリントしたときの本文描画エリアを微調整</li>
+	<li>JSONシンタックススタイルに拡張子“.resolved”を追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>特にmacOS 10.15 Catalinaにおけるプリント時の描画エリアを修正</li>
+	<li>書類の末尾のスペースをdeleteキーで削除できないmacOS 10.14での不具合を修正</li>
+	<li>書類の最後にある開き括弧の直後で改行をしたときにアプリケーションがフリーズするmacOS 10.14での不具合を修正</li>
+	<li>アプリケーション起動後にシステムの外観モードを変更したとき、新しく開いたウインドウのエディタテーマがウインドウの外観モードと一致しなかった不具合を修正</li>
+	<li>閉じ括弧の直前で改行をしたときに誤った位置にハイライトが出現した不具合を修正</li>
+	<li><span class="trivial">trivial</span>: フランス語のローカライゼーションを修正</li>
+</ul>
+</section>
+
+<p><a href="3.8.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2019 CotEditor Project</p>
+</footer>
+</body>
+</html>
