@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.8.11の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.8.11の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/3.8.11.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.8.11の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.8.11.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article>
+<header>
+	<h1>CotEditor 3.8.11の変更点</h1>
+	<p>リリース: <time>2020-02-28</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>「書類中のURLをリンク」オプションが有効なときに大きな書類でURL探索のために出ていたレインボーカーソルおよびそれに伴う操作不能時間を抑止</li>
+	<li>「スネークケースにする」と「キャメルケースにする」コマンドでアクセント記号を伴う文字も正しく扱えるように改良</li>
+	<li>シンタックスハイライトの進捗メッセージを改良</li>
+	<li>描画のパフォーマンスと安定性の向上</li>
+	<li><span class="trivial">trivial</span>: 折り返し検索の視覚通知を調整</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>独立させた文字情報ポップオーバーが表示されている状況で元の書類ウインドウを閉じたとき、閉じたウインドウの残骸が表示された不具合を修正</li>
+	<li>シンタックスハイライトの分析中に書類が更新されると、空の進捗ダイアログがごくまれに残ってしまった不具合を修正</li>
+	<li>検索パネルなどの正規表現のハイライトで、文字表現パターン<code>\x{hhhh}</code>や<code>\0ooo</code>、<code>\$</code>などに正しくハイライトされない条件があった不具合を修正</li>
+	<li>書類プリント時にごくまれにクラッシュした不具合を修正</li>
+	<li>macOS 10.14またはそれ以前で書類オープン時にごくまれにクラッシュした不具合を修正</li>
+</ul>
+</section>
+
+<p><a href="3.8.10.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2020 CotEditor Project</p>
+</footer>
+</body>
+</html>
