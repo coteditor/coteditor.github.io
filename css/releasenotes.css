@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : release notes
-   lastMod : 2018-02
+   lastMod : 2020-03
   ////////////////////////////////////// */
 
 
@@ -107,6 +107,20 @@ article h2 {
 }
 .highlights dd {
 	margin-bottom: 1em;
+}
+
+
+/* footnote */
+section > footer > ol,
+article > footer > ol,
+main > footer > ol {
+	font-size: 90%;
+	margin-left: 20px;
+}
+
+footer ol li:target {
+	border-radius: 0.4em;
+	background-color: hsla(196,100%,10%,.06);
 }
 
 

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2018-02
+   lastMod : 2020-03
   ////////////////////////////////////// */
 
 
@@ -101,14 +101,6 @@ table thead tr > * {
 }
 table tbody tr > * {
 	border-bottom: 0.5px solid hsla(0,0%,0%,.08);
-}
-
-/* footnote */
-section > footer > ol,
-article > footer > ol,
-main > footer > ol {
-	font-size: 85%;
-	margin-left: 20px;
 }
 
 /* code */
