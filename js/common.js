@@ -4,12 +4,10 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2016-04
+   lastMod : 2020-03
   /////////////////////////////////////// */
 
 
-const isRetina = window.devicePixelRatio > 1;
-const isiPhone = navigator.userAgent.match(/iPhone|iPod/i);
 const isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints);
 
 
@@ -23,26 +21,10 @@ if (document.readyState === 'interactive' ||
 }
 
 function didLoadPage() {
-	if (isRetina && !isiPhone) {
-		replace2xImages();
-	}
 	footnotesToTitle();
 	if (!isTouchDevice) {
 		initTooltips();
 	}
-}
-
-
-// replace @2x images ---------------------------------------------------------
-//     version: v2.1.0 2016-04
-
-function replace2xImages() {
-	Array.prototype.forEach.call(document.querySelectorAll('img[srcset]'), function(img)
-	{
-		const src = img.getAttribute('srcset').replace(/([^ ]+) 2x/, '$1');
-		
-		img.setAttribute('src', src);
-	});
 }
 
 
