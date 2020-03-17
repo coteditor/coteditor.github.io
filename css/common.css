@@ -16,7 +16,7 @@
 	padding: 0;
 	line-height: 1.0;
 	font-weight: inherit;
-	font-style:  inherit;
+	font-style: inherit;
 	text-spacing: ideograph-alpha;  /* https://drafts.csswg.org/css-text-4/#text-spacing */
 }
 img {
