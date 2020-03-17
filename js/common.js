@@ -26,7 +26,7 @@ function didLoadPage() {
 
 
 // Tooltip --------------------------------------------------------------------
-//     version: v3.1.0 2016-04
+//     version: v3.2.0 2020-03
 
 function setupTooltip(el, options) {
 	const defaults = {
@@ -65,10 +65,6 @@ function setupTooltip(el, options) {
 			tooltip.setAttribute('class', setting['class']);
 		}
 		
-		// fukidashi
-		tooltip.insertAdjacentHTML('beforeend',
-			'<div role="presentation"></div>');
-
 		// fade-in (on the next loop)
 		setTimeout(function() {
 			tooltip.style.opacity = '1';

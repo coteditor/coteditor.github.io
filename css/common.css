@@ -225,18 +225,18 @@ aside.sns li+li {
 }
 
 
-/*___3.scripts_______________________________________________________________*/
+/*___3.tooltip_______________________________________________________________*/
 
-/* tooltip */
 [role=tooltip]  { position:absolute; z-index:20; padding:0.3em 0.6em;
                   box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:left;
                   background-color:hsla(0,0%,20%,0.96); border-radius:3px;
                   opacity:0; transition: opacity 0.3s;
                   font-family: -apple-system-font, sans-serif }
-[role=tooltip] div  { height:0; width:0; position:absolute; left:40px; bottom:-17px;
-                      border:9px solid transparent; border-top-color:hsl(0,0%,20%);
-                      filter:url('filters.svg#dropshadow');
-              -webkit-filter:drop-shadow(0px 2px 3px hsla(0,0%,0%,.2)) }
+[role=tooltip]::after { content: ''; height:0; width:0;
+                        position:absolute; left:40px; bottom:-17px;
+                        border:9px solid transparent;
+                        border-top-color:hsl(0,0%,20%);
+                        filter:drop-shadow(0px 2px 3px hsla(0,0%,0%,.2)) }
 [role=tooltip] p    { color:hsl(0,0%,92%); line-height:1.2 }
 [role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
 [role=tooltip] p+p  { color:hsl(0,0%,67%); font-size:80%;
