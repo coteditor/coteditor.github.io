@@ -108,8 +108,8 @@ code {
 	color: hsla(0,0%,0%,.8);
 	background-color: hsl(0,0%,98%);
 	border: 1px solid hsl(0,0%,93%);
-	border-radius:2px;
-	padding:0.1em 0.3em;
+	border-radius: 2px;
+	padding: 0.1em 0.3em;
 }
 pre code {
 	display: block;
@@ -164,7 +164,7 @@ body > header > a:first-child::before {
 	content: '';
 	width: 48px;
 	height: 48px;
-	background:url('../img/appicon/64@2x.png');
+	background: url('../img/appicon/64@2x.png');
 	background-size: 48px;
 	vertical-align: -14px;
 	margin-right: 4px;
@@ -195,7 +195,7 @@ body > header > nav a[href*=twitter]::before {
 	vertical-align: -1px;
 }
 body > header > nav a:lang(ja):not([rel=external]) {
-	font-size:90%;  /* adjust Japanes font size */
+	font-size: 90%;  /* adjust Japanese font size */
 }
 
 

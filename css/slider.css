@@ -10,7 +10,7 @@
   ////////////////////////////////////// */
 
 .slider {
-	position:relative;
+	position: relative;
 	overflow: hidden;
 	
 	text-align: center;
@@ -22,11 +22,11 @@
 	cursor: pointer;
 }
 
-.slider #item1:checked ~ .slides { margin-left:0; }
-.slider #item2:checked ~ .slides { margin-left:-100%; }
-.slider #item3:checked ~ .slides { margin-left:-200%; }
-.slider #item4:checked ~ .slides { margin-left:-300%; }
-.slider #item5:checked ~ .slides { margin-left:-400%; }
+.slider #item1:checked ~ .slides { margin-left: 0; }
+.slider #item2:checked ~ .slides { margin-left: -100%; }
+.slider #item3:checked ~ .slides { margin-left: -200%; }
+.slider #item4:checked ~ .slides { margin-left: -300%; }
+.slider #item5:checked ~ .slides { margin-left: -400%; }
 
 .slides {
 	width: 500%;

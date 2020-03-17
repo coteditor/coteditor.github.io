@@ -95,7 +95,7 @@ article h2 {
 .highlights dt::before {
 	content: '✔︎';
 	color: hsl(90,50%,50%);
-	font-size:140%;
+	font-size: 140%;
 	font-weight: normal;
 	vertical-align: -0.05em;
 	margin-right: 0.3em;
@@ -168,7 +168,7 @@ body.prerelease::before {
 	border-radius: 4px;
 	padding: 28px 0;
 	
-	color:white;
+	color: white;
 	font-size: 21px;
 	letter-spacing: 1px;
 	text-align: center;

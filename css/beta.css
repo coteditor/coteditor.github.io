@@ -61,7 +61,7 @@ body > header h1 span {
 	display: inline-block;
 	border-radius: 4px;
 	border: 2px solid hsla(0,0%,100%,.2);
-	padding:0 0.14em;
+	padding: 0 0.14em;
 	margin-left: -0.1em;
 }
 
@@ -93,14 +93,14 @@ a.download:hover {
 	background-color: hsl(87,70%,40%);
 }
 a.download span {
-	font-size:95%;
+	font-size: 95%;
 	font-weight: normal;
 	text-transform: none;
 	text-shadow: 0 0 2px hsla(0,0%,0%,.3);
 }
 
 a.download + ul {
-	margin:0.5em;
+	margin: 0.5em;
 }
 a.download + ul li {
 	display: inline;
