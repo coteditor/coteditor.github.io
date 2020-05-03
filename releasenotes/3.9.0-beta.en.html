@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 3.9.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 3.9.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/3.9.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 3.9.0β"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.9.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 3.9</h1>
+
+<dl>
+	<dt>Invisible characters with more accuracy</dt>
+	<dd>The drawing method for invisible characters has been revamped so that the symbols are displayed in accurate and natural positions under a variety of environments, such as proportional fonts, right-to-left writing direction, and vertical text orientation. In addition, more information about invisibles, such as the width of the tab characters and whether the space is kind of no-breaking spaces, can now be known at a glance.</dd>
+	
+	<dt>Faster, faster!</dt>
+	<dd>Since the latter updates of CotEditor 3.8.x series including this CotEditor 3.9.0, CotEditor made a bunch of performance optimizations in various areas.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 3.9.0-beta</h1>
+	<p>release: <time>2020-05-03</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Rewrite the invisible character drawing feature to draw alternative symbols more properly under various environments.</li>
+	<li>Display Unicode's general category in the character info popover.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Adjust the text baseline to draw characters vertically center in lines.</li>
+	<li>Optimize the performance of “Replace All” with a large number of matches.</li>
+	<li>Improve the performance when pasting a huge text.</li>
+	<li>Update the Unicode block table to the latest Unicode 13.0.0.</li>
+	<li>Duplicate lines more intelligently.</li>
+	<li>Make borders of line number views and opacity sample tips more distinct in the high-contrast mode.</li>
+	<li>Adjust the visible area after unwrapping lines in RTL text mode.</li>
+	<li><span class="trivial">trivial</span>: Display default values as the input field's placeholder for window size setting when empty.</li>
+	<li><span class="trivial">trivial</span>: Make the identifier for document autosaving longer.</li>
+	<li><span class="trivial">dev</span>: Update the build environment to Xcode 11.4 (Swift 5.2).</li>
+	<li><span class="trivial">dev</span>: Replace YAML.framework with Yams.</li>
+	<li><span class="trivial">dev</span>: Remove Carthage dependency.</li>
+	<li><span class="trivial">dev</span>: Migrate codesign-specific build settings to .xcconfig (thanks to Yoshimasa Niwa!).</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the application crashed when a hanging indent depth becomes larger than the editor area.</li>
+	<li>Fix an issue where the outline menu could select the wrong item while typing.</li>
+	<li>Fix an issue where the line numbers could be shifted when printing vertical text orientation documents.</li>
+	<li>Fix an issue where line endings could remain when deleting duplicate lines with multiple selections.</li>
+	<li>Fix an issue in the line number view where the line number of the selected line was not bolded under a specific condition.</li>
+	<li>Fix an issue in scripting with AppleScript/JXA where the application crashed by performing <code>string in ...</code> command.</li>
+	<li>Fix an issue in scripting with AppleScript/JXA where the contents of a document can rarely be overwritten with the contents of another document window under very specific conditions.</li>
+	<li>Fix an issue in the editor where lines were initially wrapped at the wrong position when the text orientation is vertical.</li>
+	<li>Fix an issue in the RTL text mode where the page guide disappeared when lines are unwrapped.</li>
+	<li>Fix an issue where the current line highlight did not update properly after changing some settings.</li>
+	<li>Fix an issue in the find panel's input fields where invisible control characters were drawn in the normal text color under specific conditions.</li>
+	<li>Fix an issue where the print font name in the Print pane was drawn in black even in the dark mode.</li>
+	<li>Fix an issue in the editor where the previous drawing could remain in a blank space after changing a display setting of the editor.</li>
+</ul>
+</section>
+</article>
+
+<p><a href="3.8.12.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2020 CotEditor Project</p>
+</footer>
+</body>
+</html>
