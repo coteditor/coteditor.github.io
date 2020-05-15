@@ -54,6 +54,49 @@
 
 <article>
 <header>
+	<h1>What's New on CotEditor 3.9.0-beta.3</h1>
+	<p>release: <time>2020-05-16</time></p>
+</header>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Remove the text encoding option for opened documents; instead, the encoding is always detected automatically when opening an existing file.</li>
+	<li>Improve the encodings list edit view.</li>
+	<li>Adjust the width of toolbar items.</li>
+	<li>Remove “vertical orientation” from the selections of the Writing Direction toolbar button.</li>
+	<li>Update help content.</li>
+	<li><span class="trivial">trivial</span>: Rename “Auto-Detect,” the option detecting the file encoding automatically, to “Automatic.”</li>
+	<li><span class="trivial">trivial</span>: Update some labels in the Format pane.</li>
+	<li><span class="label">beta</span>: Add menu item, toolbar item, and Touch Bar item to toggle visibility of indent guides in the current document.</li>
+	<li><span class="label">beta</span>: Adjust the vertical position of the line ending symbol.</li>
+	<li><span class="label">beta</span>: Make the indent guide drawing pixel-perfect.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue where the item “Automatic” (ex. Auto-Detect) was missing in the encoding selections in the open panel.</li>
+	<li>Fix an issue with multiple cursors where extra characters were deleted when performing forward delete with selection.</li>
+	<li>Fix an issue with multiple cursors where just a single UTF-16 character was deleted instead of the whole character when the character to delete consists of multiple UTF-16 characters.</li>
+	<li>Fix an issue with scripting with AppleScript/JXA where the <code>line range</code> command selected a wrong range when the line endings of the document are CRLF.</li>
+	<li>Fix an issue with scripting with AppleScript/JXA where selecting a single line by specifying a single integer argument to <code>line range</code> did not work.</li>
+	<li>Fix an issue where the theme color was not applied to the color of typed text in split view.</li>
+	<li>Fix missing localization.</li>
+	<li><span class="label">beta</span>: Fix an issue in the editor where lines were initially wrapped at the wrong position when the text orientation is vertical and overscrolling is enabled.</li>
+</ul>
+</section>
+</article>
+
+
+
+<article>
+<header>
 	<h1>What's New on CotEditor 3.9.0-beta.2</h1>
 	<p>release: <time>2020-05-11</time></p>
 </header>
@@ -63,7 +106,7 @@
 <h2>New Features</h2>
 
 <ul>
-	<li>Add option to draw indent guides.</li>
+	<li>Add an option to draw indent guides.</li>
 </ul>
 </section>
 
@@ -140,7 +183,7 @@
 	<li>Fix an issue where the outline menu could select the wrong item while typing.</li>
 	<li>Fix an issue where the line numbers could be shifted when printing vertical text orientation documents.</li>
 	<li>Fix an issue where line endings could remain when deleting duplicate lines with multiple selections.</li>
-	<li>Fix an issue in the line number view where the line number of the selected line was not bolded under a specific condition.</li>
+	<li>Fix an issue in the line number view where the line number of the current line was not bolded under a specific condition.</li>
 	<li>Fix an issue in scripting with AppleScript/JXA where the application crashed by performing <code>string in ...</code> command.</li>
 	<li>Fix an issue in scripting with AppleScript/JXA where the contents of a document can rarely be overwritten with the contents of another document window under very specific conditions.</li>
 	<li>Fix an issue in the editor where lines were initially wrapped at the wrong position when the text orientation is vertical.</li>

@@ -6,16 +6,16 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 3.9.0-beta.2</title>
+            <title>CotEditor 3.9.0-beta.3</title>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.9.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.9.0-beta.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Mon, 11 May 2020 18:26:41 +0900</pubDate>
+            <pubDate>Sat, 16 May 2020 11:04:09 +0900</pubDate>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.9.0-beta.2/CotEditor_3.9.0-beta.2.dmg"
-                       sparkle:shortVersionString="3.9.0-beta.2"
-                       sparkle:version="413"
-                       sparkle:dsaSignature="MC4CFQC9YlNLTR1gAyxv2SRc0lvasjifpAIVAIaz7iHz7JhKDPuMbWZf+6H5gVrq"
-                       length="17503016"
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.9.0-beta.3/CotEditor_3.9.0-beta.3.dmg"
+                       sparkle:shortVersionString="3.9.0-beta.3"
+                       sparkle:version="415"
+                       sparkle:dsaSignature="MC4CFQDdaOHA0DPEjQqFW6grnF/Fqd1XQQIVANXtEFDbK1TTbLFIky9oH5MRfYOQ"
+                       length="17687073"
                        type="application/octet-stream"/>
         </item>
 
