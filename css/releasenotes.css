@@ -80,6 +80,15 @@ article h2 {
 	margin: 0.4em 0;
 }
 
+
+kbd {
+	font-family: -apple-system, sans-serif;
+	padding: 0 0.2em;
+	margin: 0 0.1em;
+	border-radius: 0.2em;
+	border: 1px solid -apple-system-tertiary-label;
+	box-shadow: 0 1px 0 hsla(0, 0%, 0%, .05);
+}
 .none {
 	color: hsl(0,0%,50%);
 }
