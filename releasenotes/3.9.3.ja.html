@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 3.9.3の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 3.9.3の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/3.9.3.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 3.9.3の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="3.9.3.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article>
+<header>
+	<h1>CotEditor 3.9.3の変更点</h1>
+	<p>リリース: <time>2020-07-18</time></p>
+</header>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>比較的大きなテキストをペーストした時などの文字レイアウトのパフォーマンスを大幅に改善</li>
+	<li>JSONシンタックススタイルを更新</li>
+	<li><span class="trivial">trivial</span>: いくつかのUIスタイルを調整</li>
+	<li><span class="trivial">開発</span>: Yamsを3.0.1に更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li>選択したテキストのハイライトで選択したテキストが改行を含んでいるとハイライトの矩形が誤って伸びる不具合を修正</li>
+	<li><code>true</code>や<code>null</code>などYAMLのオブジェクトとして解釈可能な文字列をキーワードにすると、文字列として正しく保存されなかったシンタックススタイル編集の不具合を修正</li>
+</ul>
+</section>
+
+<p><a href="3.9.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2020 CotEditor Project</p>
+</footer>
+</body>
+</html>
