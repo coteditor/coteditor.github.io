@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 4.0.0βの変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 4.0.0βの変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/4.0.0-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.0.0βの変更点"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.0.0-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>これはプレリリース版です。</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 4.0のハイライト</h1>
+
+<dl>
+	<dt>Big Sur時代に合わせたまったく新しいデザイン</dt>
+	<dd>CotEditorが新しい見た目を手に入れました。書類ウインドウやアイコンから細部まで、macOS 11 Big Surに合わせて慎重に再デザインされています。</dd>
+	
+	<dt>Apple SiliconもOK</dt>
+	<dd>Universal BinaryになったCotEditor 4.0は、いままでのIntelベースのMacでも新しいApple SiliconのMacでもネイティブに動きます。</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>CotEditor 4.0.0-betaの変更点</h1>
+	<p>リリース: <time>2020-09-20</time></p>
+</header>
+
+
+<section>
+<h2>新機能</h2>
+
+<ul>
+	<li>macOS 11 Big Surに合わせたまったく新しいユーザインターフェイス<ul>
+		<li>アプrケーションアイコンをアップデート</li>
+		<li>書類ウインドウを再デザイン</li>
+	</ul></li>
+	<li>Apple Siliconをサポート</li>
+	<li>Dockerfileシンタックススタイルを追加</li>
+</ul>
+</section>
+
+
+<section>
+<h2>改良</h2>
+
+<ul>
+	<li>システム要件を<strong>macOS 10.15 Catalina以上</strong>に変更</li>
+	<li>書類ウインドウの改行コードおよびエンコーディングメニューをツールバーからステータスバーに移動</li>
+	<li>ツールバーおよびステータスバーのデフォルト表示項目を変更</li>
+	<li>デフォルトのテーマをDendrobatesからAnuraに変更</li>
+	<li>Unicodeコードポイントで文字入力をするときに入力UIがカーソルのすぐ上に出るように変更</li>
+	<li>「保存時に行末の空白を削除」オプションの空白を削除するタイミングを保存時から入力中（随時）に変更し、一般ペインにあった設定項目も編集ペインに移動</li>
+	<li>ナビゲーションバーにあるエディタを分割ボタンを右クリックするとエディタの分割方向が変更できるよう改良</li>
+	<li>エディタが分割されていなくても書類のエディタ分割方向が変更できるよう改良</li>
+	<li>環境設定の連携ペインを廃止し内容を一般ペインに移動</li>
+	<li>「前/次のアウトライン項目を選択」メニューコマンドがナビゲーションバーが隠れているときでも使えるよう改良</li>
+	<li>選択範囲を動かしている最中でも選択範囲をライブでカウント</li>
+	<li>行番号部分をスワイプしてもエディタをスクロールできるよう改良</li>
+	<li>RubyやPythonなどUnixスクリプトで書かれたCotEditorスクリプトが、以前はフォーマットペインで設定したファイルエンコーディング優先順位をもとに解釈されていたのをつねにUTF-8として解釈するよう変更</li>
+	<li>書類内容が空でウインドウを閉じる時確認ダイアログが表示されないときはウインドウの閉じるボタンに編集済みを示すドット記号が表示されないように変更</li>
+	<li>Swift, SVG, Rubyシンタックススタイルを更新</li>
+	<li>Shell Scriptシンタックススタイルを更新 (ansimitaさんに感謝!).</li>
+	<li>ページガイドの表示を切り替えるツールバーボタンを廃止</li>
+	<li>otEditor 1.xで使われていたplist形式の古いシンタックス定義ファイルを読み込む機能を廃止.</li>
+	<li><span class="trivial">trivial</span>: ツールバーアイコンのツールチップをより現状を表すように改良</li>
+	<li><span class="trivial">trivial</span>: 縦書きのときの行番号描画計算を最適化</li>
+	<li><span class="trivial">trivial</span>: 通常の横書きのときはnon-contiguous layoutをつねに有効に</li>
+	<li><span class="trivial">dev</span>: 開発環境をXcode 12.2 (Swift 5.3, macOS 11 SDK)に更新</li>
+	<li><span class="trivial">dev</span>: DifferenceKitパッケージをネイティブのCollectionDifferenceに置き換え</li>
+	<li><span class="trivial">dev</span>: Yamsを3.0.1から4.0.0に更新</li>
+</ul>
+</section>
+
+
+<section>
+<h2>修正</h2>
+
+<ul>
+	<li><span class="trivial">trivial</span>: 現在使われているシンタックス定義が削除されたときにツールバーのシンタックスメニューの選択状態を修正</li>
+</ul>
+</section>
+
+
+<section>
+<h2>既知の問題</h2>
+
+<ul>
+	<li>ヘルプの内容は一部まだ更新されていません</li>
+	<li>書類アイコンはまだBig Surスタイルに更新されてません</li>
+</ul>
+</section>
+
+<p><a href="3.9.6.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2020 CotEditor Project</p>
+</footer>
+</body>
+</html>

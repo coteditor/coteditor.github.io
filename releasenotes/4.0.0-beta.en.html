@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 4.0.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 4.0.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="http://coteditor.com/releasenotes/4.0.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.0.0β"/>
+	<meta property="og:image"        content="http://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.0.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 4.0</h1>
+
+<dl>
+	<dt>Brand-new user interface for the Big Sur era</dt>
+	<dd>CotEditor now has a new look. The document window, icons, and until details were delicately re-designed to be suitable for macOS 11 Big Sur.</dd>
+	
+	<dt>Ready for Apple silicon</dt>
+	<dd>CotEditor 4.0 is a universal binary and runs natively on both Apple silicon and Intel-based Mac computers.</dd>
+</dl>
+</section>
+
+
+
+<article>
+<header>
+	<h1>What's New on CotEditor 4.0.0-beta</h1>
+	<p>release: <time>2020-09-20</time></p>
+</header>
+
+
+<section>
+<h2>New Features</h2>
+
+<ul>
+	<li>Brand-new user interface designed to fit macOS 11 Big Sur.<ul>
+		<li>Update the application icon.</li>
+		<li>Redesign the document window.</li>
+	</ul></li>
+	<li>Support Apple Silicon.</li>
+	<li>Add syntax style for Dockerfile.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Change the system requirement to <strong>macOS 10.15 Catalina and later</strong>.</li>
+	<li>Move line endings/file encoding menus from the toolbar to the status bar.</li>
+	<li>Change default settings of items to display in the toolbar/status bar.</li>
+	<li>Change the default theme from Dendrobates to Anura.</li>
+	<li>Change the UI of the Unicode code point input to display the input field just above the insertion point.</li>
+	<li>Change the “trim trailing whitespace on save” option in the General pane to perform the trimming not on save but while typing with delay, and move the option to the Edit pane.</li>
+	<li>Enable toggling the editor split orientation by right-clicking the editor split button in the navigation bar.</li>
+	<li>Enable action to toggle editor split orientation even when no split editor is opened.</li>
+	<li>Remove the Integration preferences pane and move its contents to the General pane.</li>
+	<li>Enable “select previous/next outline item” commands even when the navigation bar is hidden.</li>
+	<li>Live update selection counts while moving the selection.</li>
+	<li>Scroll editor by swiping the line number area.</li>
+	<li>Previously, CotEditor scripts written in Unix scripts, such as Ruby or Python, were decoded using the user-preferred file-encoding set in the Format preferences pane for normal documents, now they are always interpreted as UTF-8.</li>
+	<li>Avoid showing the &quot;edited&quot; indicator in the close button of document windows when the document content is empty and therefore can close the window without the confirmation dialog.</li>
+	<li>Update Swift, SVG, and Ruby syntax styles.</li>
+	<li>Update Shell Script syntax style (thanks to ansimita!).</li>
+	<li>Remove the toolbar button to toggle page guide visibility.</li>
+	<li>Remove feature to import legacy syntax style definition files of which format was used in CotEditor 1.x.</li>
+	<li><span class="trivial">trivial</span>: Improve tooltips of toolbar icons to reflect the current document state.</li>
+	<li><span class="trivial">trivial</span>: Optimize the line number calculation in vertical text orientation.</li>
+	<li><span class="trivial">trivial</span>: Always enable non-contiguous layout by the normal horizontal text orientation.</li>
+	<li><span class="trivial">dev</span>: Update the build environment to Xcode 12.2 (Swift 5.3, macOS 11 SDK).</li>
+	<li><span class="trivial">dev</span>: Replace DifferenceKit package with native CollectionDifference.</li>
+	<li><span class="trivial">dev</span>: Update Yams from 3.0.1 to 4.0.0.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li><span class="trivial">trivial</span>: Fix an issue in the sytnax style toolbar item that the menu selected blank if the current style was deleted.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Known Issues</h2>
+
+<ul>
+	<li>Some of help contents are not updated yet.</li>
+	<li>Document icons are not updated yet for Big Sur style.</li>
+</ul>
+</section>
+</article>
+
+<p><a href="3.9.6.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2020 CotEditor Project</p>
+</footer>
+</body>
+</html>
