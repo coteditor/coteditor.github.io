@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2020-03
+   lastMod : 2020-10
   ////////////////////////////////////// */
 
 body {
@@ -107,7 +107,7 @@ a#beta strong {
 /* download */
 #latest {
 	position: relative;
-	margin-top: 28px;
+	margin-top: 22px;
 }
 #latest .handwriting {
 	font: 17px/1.0 'HanziPen SC', 'Noteworthy', sans-serif;
@@ -117,18 +117,17 @@ a#beta strong {
 	margin: 0.5em 1em 0.9em;
 }
 a.download {
-	background: hsla(198,65%,50%,0.06);
-	border: 2px solid hsl(198,65%,50%);
-	border-radius: 6px;
 	display: inline-block;
 	line-height: 0;
-	transition: background 0.3s;
 }
 a.download:hover {
-	background: hsla(198,65%,50%,0.2);
+	background: transparent;
+	position: relative;
+	top: 1px;
+	left: 1px;
 }
 a.download img {
-	width: 200px;
+	height: 50px;
 	margin: 0;
 }
 
