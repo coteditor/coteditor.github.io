@@ -6,16 +6,30 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 3.9.7</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.9.7.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.9.7.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Sun, 18 Oct 2020 21:00:00 +0900</pubDate>
+            <title>CotEditor 4.0.0</title>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.0.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.0.ja.html</sparkle:releaseNotesLink>
+            <pubDate>Wed, 11 Nov 2020 02:16:39 +0900</pubDate>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.0/CotEditor_4.0.0.dmg"
+                       sparkle:shortVersionString="4.0.0"
+                       sparkle:version="453"
+                       sparkle:dsaSignature="MC0CFQDUVQSOjpxE0bjYtzfNbr+WxihegQIUahdmH1c9kFfZLfQQumtEf251XLc="
+                       length="17528005"
+                       type="application/octet-stream"/>
+        </item>
+
+        <item>
+            <title>CotEditor 3.9.6</title>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.9.6.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.9.6.ja.html</sparkle:releaseNotesLink>
+            <pubDate>Sun, 13 Sep 2020 09:00:00 +0900</pubDate>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.9.7/CotEditor_3.9.7.dmg"
-                       sparkle:shortVersionString="3.9.7"
-                       sparkle:version="437"
-                       sparkle:dsaSignature="MC0CFHHss3aAD+mQt+6WpNIo4eeoRzXTAhUA5quqtgiKTgGQrggWk2UCwaD8TwY="
-                       length="17754227"
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.9.6/CotEditor_3.9.6.dmg"
+                       sparkle:shortVersionString="3.9.6"
+                       sparkle:version="435"
+                       sparkle:dsaSignature="MCwCFAbx9Hy96IxULH1xHjWP5pFwgib6AhQdG2qKbUF9WXhIfAXjLpLa7mThcw=="
+                       length="17752126"
                        type="application/octet-stream"/>
         </item>
 

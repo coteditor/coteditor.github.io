@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8"/>
 	<meta name="description" content="Text Editor for macOS"/>
 
@@ -14,7 +14,6 @@
 	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
 	<meta property="og:locale"       content="en_US"/>
 	<meta property="og:locale:alternate" content="ja_JP"/>
-	<meta property="fb:app_id"       content="372238259620880"/>
 	<meta property="twitter:card"    content="summary"/>
 	<meta property="twitter:creator" content="@CotEditor"/>
 
@@ -29,15 +28,13 @@
 			window.location = 'index.ja';
 		}
 	</script>
-	<script defer="defer" src="js/top.js"></script>
 	<script async="async" src="js/common.js"></script>
 </head>
 
 
 <body>
-<div id="fb-root"></div>
 
-<a id="beta" href="beta">try <strong>beta</strong></a>
+<!-- <a id="beta" href="beta">try <strong>beta</strong></a> -->
 
 <header>
 	<nav><ul>
@@ -59,7 +56,7 @@
 			<p class="handwriting">It's free!</p>
 			<a href="https://itunes.apple.com/app/coteditor/id1024640650?ls=1" class="download"
 			   onclick="ga('send', 'event', 'Downloads', 'click', 'CotEditor');">
-				<img src="img/MacAppStore.svg" alt="Available on the Mac App Store"/>
+				<img src="img/MacAppStore.svg" alt="Download on the Mac App Store"/>
 			</a>
 		</section>
 	</section>
@@ -214,7 +211,6 @@
 	<aside class="sns">
 		<ul>
 			<li><iframe src="https://ghbtns.com/github-btn.html?user=coteditor&amp;repo=CotEditor&amp;type=star&amp;count=true" style="border:none" width="165" height="20"></iframe></li>
-			<li><div class="fb-like" data-href="https://coteditor.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
 		</ul>
 	</aside>
 
