@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 4.0.4 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 4.0.4"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.0.4.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.0.4"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.0.4.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<article>
+<header>
+	<h1>CotEditor 4.0.4</h1>
+	<p>release: <time>2021-06-02</time></p>
+</header>
+
+
+<section>
+<h2>Improvements</h2>
+
+<ul>
+	<li>Update Lua syntax style.</li>
+	<li>Update Swift syntax style for more accurate outline extraction and literal number highlight.</li>
+	<li>Update JavaScript, PHP, and CoffeeScript syntax styles for more accurate literal number highlight.</li>
+	<li>Avoid escaping non-ASCII characters to Unicode code points when exporting syntax styles to YAML files.</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Fixes</h2>
+
+<ul>
+	<li>Fix an issue that the application did not terminate when all windows are closed.</li>
+	<li>Fix an issue in the script menu that a script bundle (.scptd) was handled not as a script but as a folder.</li>
+	<li>Fix an issue in the snippet key bindings that shortcuts with only Shift key for modifier keys were accepted though does not work correctly.</li>
+	<li>Fix an issue that the application rarely showed the open dialog on launch even when the user setting for the startup behavior is not “show open dialog.”</li>
+	<li>Fix literal number highlight with Ruby syntax style.</li>
+	<li>Address an issue that annoying dialog that alerts saving was failed could be shown while typing when autosaving is disabled.</li>
+</ul>
+</section>
+
+<p><a href="4.0.3.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2021 CotEditor Project</p>
+</footer>
+</body>
+</html>
