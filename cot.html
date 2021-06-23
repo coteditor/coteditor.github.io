@@ -70,21 +70,22 @@ $ brew install cot
 <p>Run <code>cot</code> with <code>--help</code> to learn how to use it.</p>
 
 <pre><code>$ cot --help
-usage: cot [-h] [-v] [-g] [-n] [-l LINE] [-c COLUMN] [FILE]
+usage: cot [-h] [-v] [-w] [-g] [-n] [-l LINE] [-c COLUMN] [FILE [FILE ...]]
 
 command-line utility for CotEditor.
 
 positional arguments:
-  FILE                  Path to file to open.
+  FILE                  path to file to open
 
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -g, --background      Do not bring the application to the foreground.
-  -n, --new             Create a new blank document.
-  -l LINE, --line LINE  Jump to specific line in opened document.
+  -w, --wait            wait for opened file to be closed
+  -g, --background      do not bring the application to the foreground
+  -n, --new             create a new blank document
+  -l LINE, --line LINE  jump to specific line in opened document
   -c COLUMN, --column COLUMN
-                        Jump to specific column in opened document.
+                        jump to specific column in opened document
 </code></pre>
 </section>
 
