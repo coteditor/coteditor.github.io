@@ -1,99 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>CotEditor's Changelog</title>
         <link>https://coteditor.com/appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.0.5</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.5.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.5.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Sun, 06 Jun 2021 20:20:00 +0900</pubDate>
+            <title>CotEditor 4.0.6</title>
+            <pubDate>Sat, 28 Aug 2021 16:57:34 +0900</pubDate>
+            <sparkle:version>465</sparkle:version>
+            <sparkle:shortVersionString>4.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.5/CotEditor_4.0.5.dmg"
-                       sparkle:shortVersionString="4.0.5"
-                       sparkle:version="463"
-                       sparkle:dsaSignature="MC0CFQC2EsOEDmknwfQXe3HuC+tuoiMRQgIUCQMsrGAfUUCh3dV28UZutp3XLSQ="
-                       length="17024948"
-                       type="application/octet-stream"/>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.6.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.6.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.6/CotEditor_4.0.6.dmg"
+                       length="17039133"
+                       type="application/octet-stream" sparkle:edSignature="9lWDF4KGilXNP7ky8V2bWqlS6A73YMbLneB8TE9mR96fiyG33ivkNNv++I13SYscvBt0x5YwF4WUO6ISg6qGBg==" 
+                       sparkle:dsaSignature="MC0CFB5H6h8I0zW+y8w2UfvWjMqVxcT1AhUAj+xdfwbmyNyU4ids+EuTBRZJ7xs="/>
         </item>
 
         <item>
             <title>CotEditor 3.9.7</title>
+            <pubDate>Sun, 13 Sep 2020 09:00:00 +0900</pubDate>
+            <sparkle:version>437</sparkle:version>
+            <sparkle:shortVersionString>3.9.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.9.7.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.9.7.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Sun, 13 Sep 2020 09:00:00 +0900</pubDate>
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.9.7/CotEditor_3.9.7.dmg"
-                       sparkle:shortVersionString="3.9.7"
-                       sparkle:version="437"
-                       sparkle:dsaSignature="MC0CFHHss3aAD+mQt+6WpNIo4eeoRzXTAhUA5quqtgiKTgGQrggWk2UCwaD8TwY="
                        length="17754227"
-                       type="application/octet-stream"/>
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MC0CFHHss3aAD+mQt+6WpNIo4eeoRzXTAhUA5quqtgiKTgGQrggWk2UCwaD8TwY="/>
         </item>
 
         <item>
             <title>CotEditor 3.7.8</title>
+            <pubDate>Sun, 30 Jun 2019 09:00:00 +0900</pubDate>
+            <sparkle:version>361</sparkle:version>
+            <sparkle:shortVersionString>3.7.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.12.2</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.7.8.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.7.8.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Sun, 30 Jun 2019 09:00:00 +0900</pubDate>
-            <sparkle:minimumSystemVersion>10.12.2</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.7.8/CotEditor_3.7.8.dmg"
-                       sparkle:shortVersionString="3.7.8"
-                       sparkle:version="361"
-                       sparkle:dsaSignature="MCwCFAp+pAerdlhUi7Q1kZEC5EFfYi7BAhR3gpKPSChopOw6Q0YLYGzNlCG6Mg=="
                        length="27904059"
-                       type="application/octet-stream"/>
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MCwCFAp+pAerdlhUi7Q1kZEC5EFfYi7BAhR3gpKPSChopOw6Q0YLYGzNlCG6Mg=="/>
         </item>
 
         <item>
             <title>CotEditor 3.5.4</title>
+            <pubDate>Tue, 18 Sep 2018 00:09:00 +0900</pubDate>
+            <sparkle:version>276</sparkle:version>
+            <sparkle:shortVersionString>3.5.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.5.4.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.5.4.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Tue, 18 Sep 2018 00:09:00 +0900</pubDate>
-            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/3.5.4/CotEditor_3.5.4.dmg"
-                       sparkle:shortVersionString="3.5.4"
-                       sparkle:version="276"
-                       sparkle:dsaSignature="MC4CFQCtpPFG6yUr7HP9Oe5nDZqy56CulQIVAJcIC7HXjHCenlmeQ+iAsizXULCG"
                        length="26928852"
-                       type="application/octet-stream"/>
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MC4CFQCtpPFG6yUr7HP9Oe5nDZqy56CulQIVAJcIC7HXjHCenlmeQ+iAsizXULCG"/>
         </item>
 
         <item>
             <title>CotEditor 3.2.8</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.2.8.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.2.8.ja.html</sparkle:releaseNotesLink>
             <pubDate>Mon, 22 Jan 2018 08:00:00 +0900</pubDate>
-            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
             <sparkle:shortVersionString>3.2.8</sparkle:shortVersionString>
             <sparkle:version>213</sparkle:version>
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/3.2.8.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/3.2.8.ja.html</sparkle:releaseNotesLink>
             <link>https://coteditor.com/</link>
         </item>
 
         <item>
             <title>CotEditor 2.5.7</title>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.5.7.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.5.7.ja.html</sparkle:releaseNotesLink>
             <pubDate>Mon, 22 Aug 2016 20:37:38 +0900</pubDate>
-            <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
             <sparkle:shortVersionString>2.5.7</sparkle:shortVersionString>
             <sparkle:version>138</sparkle:version>
+            <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.5.7.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.5.7.ja.html</sparkle:releaseNotesLink>
             <link>https://coteditor.com/</link>
         </item>
 
         <item>
             <title>CotEditor 2.0.3</title>
+            <pubDate>Sun, 14 Dec 2014 21:19:19 +0900</pubDate>
+            <sparkle:version>2.0.3</sparkle:version>
+            <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/2.0.3.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/2.0.3.ja.html</sparkle:releaseNotesLink>
-            <pubDate>Sun, 14 Dec 2014 21:19:19 +0900</pubDate>
-            <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/2.0.3/CotEditor_2.0.3.dmg"
-                       sparkle:version="2.0.3"
-                       sparkle:dsaSignature="MC0CFQC/u3nS+yqNHrr1+EghgQksnBlF2AIUfJ5SyL10uO1jSK01ZQgXM3xBE5s="
                        length="14414610"
-                       type="application/octet-stream" />
+                       type="application/octet-stream"
+                       sparkle:dsaSignature="MC0CFQC/u3nS+yqNHrr1+EghgQksnBlF2AIUfJ5SyL10uO1jSK01ZQgXM3xBE5s="/>
         </item>
     </channel>
 </rss>
