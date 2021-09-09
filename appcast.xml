@@ -6,17 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.0.6</title>
-            <pubDate>Sat, 28 Aug 2021 16:57:34 +0900</pubDate>
-            <sparkle:version>465</sparkle:version>
-            <sparkle:shortVersionString>4.0.6</sparkle:shortVersionString>
+            <title>CotEditor 4.0.7</title>
+            <pubDate>Thu, 09 Sep 2021 10:23:52 +0900</pubDate>
+            <sparkle:version>467</sparkle:version>
+            <sparkle:shortVersionString>4.0.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.6.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.6.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.6/CotEditor_4.0.6.dmg"
-                       length="17039133"
-                       type="application/octet-stream" sparkle:edSignature="9lWDF4KGilXNP7ky8V2bWqlS6A73YMbLneB8TE9mR96fiyG33ivkNNv++I13SYscvBt0x5YwF4WUO6ISg6qGBg==" 
-                       sparkle:dsaSignature="MC0CFB5H6h8I0zW+y8w2UfvWjMqVxcT1AhUAj+xdfwbmyNyU4ids+EuTBRZJ7xs="/>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.7.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.7.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.7/CotEditor_4.0.7.dmg"
+                       length="17449987"
+                       type="application/octet-stream"
+                       sparkle:edSignature="u5xzlJWZJk7Ypq5Q/Q+yM/wEyRB7L5ZeG7/er5Mdyax8ZzI7Jwe+5oYg0wEoi38ZcoP7ynGwLFJfPf1INtxVBA=="
+                       sparkle:dsaSignature="MC0CFGIfxoLtzsM+/Gu/aEiuIVEF7QzmAhUArwws+Nj9Wh/Zn1Zv2ngUl0y6qQU="/>
         </item>
 
         <item>
