@@ -6,18 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.0.8</title>
-            <pubDate>Sun, 19 Sep 2021 10:36:04 +0900</pubDate>
-            <sparkle:version>471</sparkle:version>
-            <sparkle:shortVersionString>4.0.8</sparkle:shortVersionString>
+            <title>CotEditor 4.0.9</title>
+            <pubDate>Sun, 28 Nov 2021 09:00:00 +0900</pubDate>
+            <sparkle:version>472</sparkle:version>
+            <sparkle:shortVersionString>4.0.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.8.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.8.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.8/CotEditor_4.0.8.dmg"
-                       length="17455488"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.0.9.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.0.9.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.0.9/CotEditor_4.0.9.dmg"
+                       length="17449399"
                        type="application/octet-stream"
-                       sparkle:edSignature="V8fejII4K7vhie9GPIRTfSQyWM7IMTJ1tJsxTgjnkFXlous/VNxvBjCcrhLRN1CyvLCptr+SVhxHU/ooUAH7Bg==" 
-                       sparkle:dsaSignature="MC0CFQDObfXexQe7J9Wnkic4Joc/glrF0wIULc3e8KuktgKxvYKUZDpfPcIVYFY="/>
+                       sparkle:edSignature="5ZhGDiG05GdhpnXVfUIaBLFzXxSOBlLSbYKfAZECWHcnxsRabG/JsNh8E5D/dmL29xxRuwop+ggXAyhh8VpaBQ=="
+                       sparkle:dsaSignature="MC0CFCY/9FdyF9D9J6zelVVvb47ROh1qAhUAz6bkEBWsybWDqebVil0ezjertRg="/>
         </item>
 
         <item>
