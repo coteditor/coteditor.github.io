@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2020-03
+   lastMod : 2022-02
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -228,7 +228,7 @@ aside.sns li+li {
 
 [role=tooltip]  { position:absolute; z-index:20; padding:0.3em 0.6em;
                   box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:left;
-                  background-color:hsla(0,0%,20%,0.96); border-radius:3px;
+                  background-color:hsla(0,0%,20%,0.96); border-radius:8px;
                   opacity:0; transition: opacity 0.3s;
                   font-family: -apple-system-font, sans-serif }
 [role=tooltip]::after { content: ''; height:0; width:0;
