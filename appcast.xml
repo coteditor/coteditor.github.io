@@ -13,7 +13,7 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.1.1.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.1.1.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="CotEditor_4.1.1.dmg"
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.1.1/CotEditor_4.1.1.dmg"
                        length="16246018"
                        type="application/octet-stream"
                        sparkle:edSignature="86bOgj31JrGNitdo9VSubFb6ToZZD0wShvtXZxicRSBDg44r27fHPHGSXsG7Fn3RogluDODg+4Q0dmp5ZQZyDw=="
