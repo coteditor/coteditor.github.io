@@ -6,18 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>4.1.0</title>
-            <pubDate>Tue, 15 Feb 2022 07:00:00 +0900</pubDate>
+            <title>4.1.1</title>
+            <pubDate>Wed, 16 Feb 2022 11:00:00 +0900</pubDate>
             <sparkle:version>477</sparkle:version>
-            <sparkle:shortVersionString>4.1.0</sparkle:shortVersionString>
+            <sparkle:shortVersionString>4.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.1.0.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.1.0.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="CotEditor_4.1.0.dmg"
-                       length="16247237"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.1.1.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.1.1.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="CotEditor_4.1.1.dmg"
+                       length="16246018"
                        type="application/octet-stream"
-                       sparkle:edSignature="m+pBMHnQS10X46OXIPYRMlHfUYYf700ChRbERb/Ok8dGRadBHTU76f2tXIoie2RjdvkUnvm0UUteS91nWYB/Aw=="
-                       sparkle:dsaSignature="MC0CFHnxc/oR+pU46OcgeQfO4ynGyhsTAhUAk6PTBdZU9aPARL/X3xw+O+y4f6Q="/>
+                       sparkle:edSignature="86bOgj31JrGNitdo9VSubFb6ToZZD0wShvtXZxicRSBDg44r27fHPHGSXsG7Fn3RogluDODg+4Q0dmp5ZQZyDw=="
+                       sparkle:dsaSignature="MCwCFDZbxdKIOETRkaIkUU/9uZ6Onp3cAhRx/BNIqeyrwhw57d8XBatnHQzJBQ=="/>
         </item>
 
         <item>
