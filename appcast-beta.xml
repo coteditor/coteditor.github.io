@@ -6,18 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>4.1.2</title>
-            <pubDate>Sun, 20 Feb 2022 20:50:00 +0900</pubDate>
-            <sparkle:version>481</sparkle:version>
-            <sparkle:shortVersionString>4.1.2</sparkle:shortVersionString>
+            <title>CotEditor 4.1.3</title>
+            <pubDate>Sat, 05 Mar 2022 10:00:00 +0900</pubDate>
+            <sparkle:version>483</sparkle:version>
+            <sparkle:shortVersionString>4.1.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.1.2.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.1.2.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.1.2/CotEditor_4.1.2.dmg"
-                       length="16295823"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.1.3.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.1.3.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.1.3/CotEditor_4.1.3.dmg"
+                       length="16326604"
                        type="application/octet-stream"
-                       sparkle:edSignature="YNvQi3+ffMNhwn1iNQ8ZmVT0GwAu/ZXOVC2hKl9GhCGQOxWEKSZ3eod50zqNECRwpNWn8UwZPTUfBGxzG/ynDQ=="
-                       sparkle:dsaSignature="MC0CFAnXjCKPpKFTCEqJ3HZbPtaeuPveAhUAkRtj/CWZwi6umgoqGWEDgv2DAfU="/>
+                       sparkle:edSignature="hgPjtjzIWW9tCY9rsIqt6ws1VrnXEa4hTMJn5gdEt/1GE1z0MQtuBKcv36BknTCfs/lIb6xy6A6ynHrXwg0xAw=="
+                       sparkle:dsaSignature="MCwCFFaPa4P6WzmSnjtUzoc67vvfpaWnAhQgCSDrq4CKczmaSkFJZeR50NjaYA=="/>
         </item>
 
         <item>
