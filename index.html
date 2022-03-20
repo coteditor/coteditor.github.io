@@ -14,6 +14,7 @@
 	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
 	<meta property="og:locale"       content="en_US"/>
 	<meta property="og:locale:alternate" content="ja_JP"/>
+	<meta property="og:locale:alternate" content="tr_TR"/>
 	<meta property="twitter:card"    content="summary"/>
 	<meta property="twitter:creator" content="@CotEditor"/>
 
@@ -24,8 +25,13 @@
 	<link rel="stylesheet"    href="css/top.css"/>
 
 	<script>
-		if (navigator.language.substr(0,2) == 'ja') {
-			window.location = 'index.ja';
+		switch (navigator.language.substr(0,2)) {
+			case 'ja':
+				window.location = 'index.ja';
+				break;
+			case 'tr':
+				window.location = 'index.tr';
+				break;
 		}
 	</script>
 	<script async="async" src="js/common.js"></script>
