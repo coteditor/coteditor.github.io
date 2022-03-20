@@ -292,11 +292,9 @@ dl.fqa > dd::before {
 }
 dl.fqa > dt:lang(tr)::before {
 	content: 'S.';
-	color: hsl(200,60%,45%);
 }
 dl.fqa > dd:lang(tr)::before {
 	content: 'Y.';
-	color: hsl(30,75%,45%);
 }
 dl.fqa > dd > ul,
 dl.fqa > dd > ol,
