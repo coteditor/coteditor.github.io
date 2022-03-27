@@ -44,12 +44,10 @@
 		<h2>Improvements</h2>
 		
 		<ul>
-			<li>Use <code>python3</code> instead of <code>python</code> for running the <code>cot</code> command so that macOS 12.3 and later can use the Python installed via the Apple's developer tools (From macOS 12.3 on, cot command requires an additional install of python3).</li>
-			<li>Optimize the performance of syntax highlighting.</li>
-			<li>Update CSS and SQL syntax styles to add more coloring keywords.</li>
-			<li>Update Python syntax style to add keywords added in Python 3.10</li>
-			<li>Update Markdown and SVG syntax styles for faster syntax parsing.</li>
-			<li>Update JSON syntax style to fix coloring.</li>
+			<li>Update Swift syntax style to add keywords added in Swift 5.6.</li>
+			<li>Update YAML syntax style for better coloring.</li>
+			<li><span class="trivial">trivial</span>: Improve progress message for the Find/Replace All.</li>
+			<li><span class="trivial">dev</span>: Update the build environment to Xcode 13.3 (Swift 5.6).</li>
 		</ul>
 	</section>
 	
@@ -58,8 +56,9 @@
 		<h2>Fixes</h2>
 		
 		<ul>
-			<li>Fix an issue that the text copied from the editor has always LF line endings regardless of the actual document's line ending setting.</li>
-			<li>Fix an issue that when the option swapping ¥ and \ keys is enabled, those characters are swapped even when inputting them with Unicode code point.</li>
+			<li>Fix an issue that the file extension proposed in the save dialog for untitled document did not reflect the latest syntax style.</li>
+			<li>Fix an issue that the application could not open Haskell files.</li>
+			<li>Fix a potential crash when opening files via Services.</li>
 		</ul>
 	</section>
 
