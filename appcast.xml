@@ -6,6 +6,21 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
+            <title>CotEditor 4.2.0-beta</title>
+            <pubDate>Wed, 27 Apr 2022 19:28:52 +0900</pubDate>
+            <sparkle:version>491</sparkle:version>
+            <sparkle:shortVersionString>4.2.0-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.0-beta.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.0-beta.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.0-beta/CotEditor_4.2.0-beta.dmg"
+                       length="10586232"
+                       type="application/octet-stream"
+                       sparkle:edSignature="mxqt8u0YtzylzdmaEJovRWlctkw4jaNdjur5Y4dTC2pbwXtK7CjEohQa56tTM6uilS3flTsZyaK+72sjBaFzDw==" 
+                       sparkle:dsaSignature="MC0CFA3h0wUUBuZJEjC5mNcuf6cVmCnlAhUAv+rdyMUuPusir4tu2wIWbpgsFx4="/>
+        </item>
+
+        <item>
             <title>CotEditor 4.1.5</title>
             <pubDate>Sat, 09 Apr 2022 09:00:00 +0900</pubDate>
             <sparkle:version>487</sparkle:version>

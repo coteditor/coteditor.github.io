@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+	<meta name="description" content="CotEitor 4.2.0での改行に関する仕様変更に伴うユーザが注意すべき事項"/>
+	
+	<title>CotEditor 4.2での重要な変更 - CotEditor</title>
+	
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/news/2022/CotEditor_4.2.0.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEitor 4.2.0での改行に関する仕様変更に伴うユーザが注意すべき事項"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="og:locale:alternate" content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+	
+	<link rel="shortcut icon" href="../../favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="../../favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="CotEditor_4.2.0" hreflang="en"/>
+	<link rel="stylesheet"    href="../../css/common.css"/>
+	
+	<script async="async" src="../../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+	
+	<nav><ul>
+		<li><a href="/archives.ja">アーカイブ</a></li>
+		<li><a href="/contact.ja">コンタクト</a></li>
+		<li><a href="https://twitter.com/CotEditor" rel="external">Twitter</a></li>
+	</ul></nav>
+</header>
+
+<main>
+<h1>CotEditor 4.2での重要な変更</h1>
+
+<p>CotEditorはバージョン4.2.0から改行コードの扱いが変更されました。バージョン4.2.0以前では内部的には改行コードはすべてLF (<code>U+000A</code>)として扱っていましたが、バージョン4.2.0以降は書類ファイルの実際の改行コードをそのまま扱います。そのため、とくに以前のバージョンを使っていたユーザはこの変更を意識し、いくつかの設定で変更が必要になる場合があります。</p>
+
+<p>本ページは、この仕様変更に伴いユーザが注意すべき事項をまとめています。同様の内容はCotEditor 4.2.0にバンドルされているヘルプからも参照できます。</p>
+
+<p><a href="/releasenotes/4.2.0-beta.ja">CotEditor 4.2.0 のリリースノート</a></p>
+
+
+
+<section>
+<h2>正規表現パターンでの改行コード</h2>
+
+<p>従来のCotEditorは内部的にすべて改行コードをLFで処理していたため、書類の実際の改行コードに関わらず<code>\n</code>を改行を認識する正規表現パターンとして利用できました。CotEditor 4.2.0以降では<code>\n</code>は改行コードにLFを用いる書類でしか改行に一致しなくなります。従来のように書類に改行コードの如何に関わらず改行に一致させたい場合は<code>\n</code>でなく<code>\R</code>を用いてください。</p>
+
+<p class="addition"><code>\R</code>は、CotEditorが使用しているICU正規表現エンジンにおいて、改行を表現する文字全般に一致するメタ文字です。<code>U+000A</code> (LF), <code>U+000B</code>, <code>U+000C</code>, <code>U+000D</code> (CR), <code>U+0085</code>, <code>U+2028</code>, <code>U+2029</code>, および<code>U+000D</code> <code>U+000A</code>の組み合わせ (CRLF)を改行コードとして認識します。</p>
+
+<p>一方で、実際の書類で使われている改行コードに一致するようになるため、「CRを改行コードとして使用している書類に紛れているLFを検索する」といった使い方ができるようになります。</p>
+</section>
+
+
+<section>
+<h2>保存している設定での改行の取り扱い</h2>
+<p>改行コードとしてLFのみを想定したスクリプト処理や正規表現パターンは、CotEditor 4.2.0以降LF以外の改行コードを持つ書類で意図した挙動をしなくなる可能性があります。これらユーザ設定はユーザ自身が設定を変更する必要があります。</p>
+
+<p>CotEidtorで改行が関わるユーザ設定としては、以下の設定項目が該当します:</p>
+<ul>
+	<li>複数置換設定の置換定義</li>
+	<li>シンタックススタイルのカスタム定義</li>
+	<li>スクリプトメニューに保存しているスクリプト内での書類の改行コードの取り扱い</li>
+</ul>
+</section>
+
+
+<section>
+<h2>検索と置換での改行</h2>
+
+<p>正規表現を用いない通常の文字列での検索と置換では、検索/置換文字列内に改行が含まれる場合、その改行は検索対象の書類で用いられている改行コードと同一の改行コードであると想定して使用されます。</p>
+
+<p>これは、たとえば、改行コードCRを含む文字列を（正規表現でない）検索文字列として使用して改行コードLFの書類を検索した場合、検索文字列の改行はすべてLFとして使用される、ということです。検索で改行コードを厳密に扱いたい場合は、正規表現を利用してください。</p>
+
+<p>一方、置換においては、置換文字列に含まれる（<code>\n</code>のようなメタ文字での指定も含む）すべての改行コードは書類の改行コードと同一の改行コードに差し替えられます。現状は書類の改行コード以外の改行コードで置換する方法は提供されておらず、これは以前のCotEditorと同じ仕様となります。</p>
+</section>
+
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>
