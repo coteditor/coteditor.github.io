@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+	<meta name="description" content="CotEditor 4.2.0 ile birlikte gelen, kullanıcıların dikkat etmesi gereken değişiklikler"/>
+	
+	<title>CotEditor 4.2'deki önemli değişiklikler - CotEditor</title>
+	
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/news/2022/CotEditor_4.2.0"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.2.0 ile birlikte gelen, kullanıcıların dikkat etmesi gereken değişiklikler"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="tr_TR"/>
+	<meta property="og:locale:alternate" content="ja_JP"/>
+	<meta property="og:locale:alternate" content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+	
+	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="CotEditor_4.2.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../../css/common.css"/>
+	
+	<script async="async" src="../../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+	
+	<nav><ul>
+		<li><a href="/archives.tr">Arşiv</a></li>
+		<li><a href="/contact.tr">İletişim</a></li>
+		<li><a href="https://twitter.com/CotEditor" rel="external">Twitter</a></li>
+	</ul></nav>
+</header>
+
+
+<main>
+<h1>CotEditor 4.2'deki önemli değişiklikler</h1>
+
+<p>4.2.0 sürümüne dek, tüm satır sonları LF olarak işleniyordu (<code>U+000A</code>). 4.2.0 sürümüyle birlikte, dosyalardaki satır sonu kodları olduğu gibi bırakılır ve öylece işlenir. Bu nedenden dolayı, eski sürümleri kullanmış olan kullanıcıların bazı ayarları ve kodları el ile düzeltmesi gerekebilir.</p>
+
+<p>Bu sayfa, bu belirtim değişikliği nedeniyle kullanıcıların bilgisi olması gereken noktaları özetler. Aynı bilgiyi CotEditor 4.2.0 ile birlikte gelen Yardım bilgisinde de bulabilirsiniz.</p>
+
+<p><a href="/releasenotes/4.2.0-beta.en">CotEditor 4.2.0 Sürüm Notları</a></p>
+
+
+<section>
+<h2>Düzenli ifade dizgisindeki satır sonu kodu</h2>
+
+<p>Daha önceki CotEditor sürümleri, satır sonu kodlarını dahili olarak LF olarak işlediğinden dolayı, <code>\n</code>, düzenli ifadelerde satır sonlarını belirtmek için kullanılabiliyordu. CotEditor 4.2.0 ve sonrasında, <code>\n</code> yalnızca satır sonu olarak LF kullanan belgeleri tanıyabilir. Belgenizin satır sonu türü ayrımı gözetmeksiniz tüm satır sonlarını tanımasını istiyorsanız düzenli ifadelerde <code>\n</code> yerine <code>\R</code> kullanın.</p>
+
+<p class="addition"><code>\R</code>, CotEditor'un da kullandığı CUI düzenli ifade işletkesinde kullanılan genel satır sonu karakteridir ve her yenisatır karakterini tanır; örneğin <code>U+000A</code> (LF), <code>U+000B</code>, <code>U+000C</code>, <code>U+000D</code> (CR), <code>U+0085</code>, <code>U+2028</code>, <code>U+2029</code>, or the sequence of <code>U+000D</code> <code>U+000A</code> (CRLF).</p>
+
+<p>Diğer yanda, yeni düzen gerçek belgede kullanılan yeni satır kodları ile eşleştiğinden; örneğin satır sonu olarak CR kullanan bir belgenin içine sızmış LF satır sonunu da aramasına ve eşleşmesine izin verir.</p>
+</section>
+
+<section>
+<h2>Kullanıcı ayarlarında satır sonu işlemesi</h2>
+
+<p>Satır sonu olarak LF varsayan betikler ve düzenli ifadeler, CotEditor 4.2.0 ve sonrasında LF'den başka satır sonu kullanan belgelerde istendiği gibi davranmayabilir. Bu kullanıcı ayarlarının el ile değiştirilmesi gerekmektedir.</p>
+
+<p>Aşağıdaki kullanıcı ayarlarının satır sonu işlemesi için özel ayarlanması gerekmektedir:</p>
+<ul>
+	<li>Çoklu değiştirmelerin değiştirme tanımları</li>
+	<li>Sözdizim biçemi tanımlarındaki özel tanımlar</li>
+	<li>Betik menüsündeku kullanıcı betiklerindeki satır sonlarının işlenmesi</li>
+</ul>
+</section>
+
+<section>
+<h2>Bul ve Değiştir içindeki satır sonları</h2>
+
+<p>Normal metin bul ve değiştirde, arama veya değiştirme dizisindeki satır sonları, aranan belgedeki satır sonları ile aynı kabul edilir.</p>
+
+<p>Örneğin, içinde CR satır sonu içeren bir metin araması (düzenli ifade değil), satır sonları LF olan bir belgede yapıldığında, arama dizisindeki tüm satır sonları LF olarak işlenecektir. Arama sırasında satır sonlarını olduğu gibi kullanmak isterseniz düzenli ifade aramasını kullanın.</p>
+
+<p>Öte yandan, ile değiştirilen metinle ilgili olarak, <code>\r</code> gibi bir meta karakter olarak tanımlananlar da dahil olmak üzere tüm satır sonları belge satırı sonu olarak kabul edilir. Şu anda, belge satır sonu dışında satır sonları ile değiştirmenin bir yolu yoktur ve bu, önceki CotEditor ile aynı davranıştır.</p>
+</section>
+
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>
