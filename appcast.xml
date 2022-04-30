@@ -8,7 +8,7 @@
         <item>
             <title>CotEditor 4.2.0-beta.2</title>
             <pubDate>Sat, 30 Apr 2022 15:10:21 +0900</pubDate>
-            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:channel>prerelease</sparkle:channel>
             <sparkle:version>493</sparkle:version>
             <sparkle:shortVersionString>4.2.0-beta.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
