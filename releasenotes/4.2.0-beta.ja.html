@@ -43,9 +43,57 @@
 	<dd>CotEditorが真の意味で複数の改行コードが混在する書類を扱えるようになりました。書類内で改行コードが混在した場合は自動で検出し、ちゃんとそれがどこにあるかを伝えます。</dd>
 	
 	<dt>必要なところをプリント</dt>
-	<dd>プリントダイアログにオプション「選択部分」が現れるようになりました。選択したテキストのみをプリントしたりPDFに書き出すことができます。</dd>
+	<dd>プリントダイアログにオプション「選択部分」が現れるようになりました。選択したテキストのみをプリントしたりPDFに書き出したりできます。</dd>
+	
+	<dt>複数のマシンをまたいで</dt>
+	<dd>Handoffサポートにより、iCloud上の書類を簡単に別のマシンで引き継いで作業できるようになりました。また、シンタックス定義などのユーザ設定をユニバーサルコントロールを使って別のマシンのCotEditorにドロップして移行できます。</dd>
 </dl>
 </section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.2.0-rc</h1>
+		<p>release: <time>2022-05-03</time></p>
+	</header>
+	
+	
+	<section>
+		<h2>New Features</h2>
+		
+		<ul>
+			<li>Handoffをサポート</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Improvements</h2>
+		
+		<ul>
+			<li>HTMLシンタックススタイルを更新して<code>hr</code>要素をアウトラインで区切り線として表示</li>
+			<li>前回のセッションでユーザが明示的にエンコーディングを変更したときは、そのエンコーディングに復帰するように</li>
+			<li>安定性を向上</li>
+			<li><span class="trivial">trivial</span>: macOS 12のsecure state restorationを有効化</li>
+			<li><span class="trivial">開発</span>: Yamsを5.0.0から5.0.1に更新</li>
+			<li><span class="label">beta</span>: 改行の仕様変更に関する通知パネルを追加</li>
+			<li><span class="label">beta</span>: 警告ペインですでに選択されている項目を再度クリックしたときもエディタの当該箇所へ飛ぶように</li>
+			<li><span class="label">beta</span> <span class="trivial">trivial</span>: 改行の名称Unicode Next LineをNext Lineに変更</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Fixes</h2>
+		
+		<ul>
+			<li><span class="label">beta</span>: 「フォーマット」メニューの「改行コード」でOptionキーを押してもマイナーな改行コードが表示されなかった不具合を修正</li>
+			<li><span class="label">beta</span>: アウトラインインスペクタの項目のサイズが正しく広がらなかった不具合を修正</li>
+			<li><span class="label">beta</span>: 非互換文字リストの初期メッセージが実際の結果を反映していないことがありうる不具合を修正</li>
+		</ul>
+	</section>
+</article>
 
 
 
@@ -61,7 +109,7 @@
 		
 		<ul>
 			<li><span class="label">beta</span>: ヘルプを更新</li>
-			<li><span class="label">beta</span><span class="trivial">trivial</span>: 警告ペインのパフォーマンスを最適化</li>
+			<li><span class="label">beta</span> <span class="trivial">trivial</span>: 警告ペインのパフォーマンスを最適化</li>
 		</ul>
 	</section>
 	
