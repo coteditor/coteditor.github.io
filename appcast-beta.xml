@@ -14,7 +14,7 @@
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.0-beta.ja.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="tr">https://coteditor.com/releasenotes/4.2.0-beta.tr.html</sparkle:releaseNotesLink>
-            <enclosure url="CotEditor_4.2.0-rc.dmg" length="10863195" type="application/octet-stream" sparkle:edSignature="24xTOhHqa+cq/+okO9iaSjU9KkzzCcOMCl7PZTyaIVUTbT/DTHthUHOGgF5tZpw+SJXqvDLFFxFpbp6V+eezCQ==" sparkle:dsaSignature="MC0CFQDgxYtumK4HJRct4MJsWomIaZIO5QIUfeqD76vCjRHkAOXjevWXIZRFjr8="/>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.0-beta.2/CotEditor_4.2.0-beta.2.dmg" length="10863195" type="application/octet-stream" sparkle:edSignature="24xTOhHqa+cq/+okO9iaSjU9KkzzCcOMCl7PZTyaIVUTbT/DTHthUHOGgF5tZpw+SJXqvDLFFxFpbp6V+eezCQ==" sparkle:dsaSignature="MC0CFQDgxYtumK4HJRct4MJsWomIaZIO5QIUfeqD76vCjRHkAOXjevWXIZRFjr8="/>
         </item>
 
         <item>
