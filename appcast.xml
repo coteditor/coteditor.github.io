@@ -6,16 +6,16 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.2.0-rc</title>
-            <pubDate>Tue, 03 May 2022 11:23:01 +0900</pubDate>
+            <title>CotEditor 4.2.0-rc.2</title>
+            <pubDate>Tue, 03 May 2022 12:02:58 +0900</pubDate>
             <sparkle:channel>prerelease</sparkle:channel>
-            <sparkle:version>495</sparkle:version>
-            <sparkle:shortVersionString>4.2.0-rc</sparkle:shortVersionString>
+            <sparkle:version>496</sparkle:version>
+            <sparkle:shortVersionString>4.2.0-rc.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.0-beta.ja.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="tr">https://coteditor.com/releasenotes/4.2.0-beta.tr.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.0-beta.2/CotEditor_4.2.0-beta.2.dmg" length="10863195" type="application/octet-stream" sparkle:edSignature="24xTOhHqa+cq/+okO9iaSjU9KkzzCcOMCl7PZTyaIVUTbT/DTHthUHOGgF5tZpw+SJXqvDLFFxFpbp6V+eezCQ==" sparkle:dsaSignature="MC0CFQDgxYtumK4HJRct4MJsWomIaZIO5QIUfeqD76vCjRHkAOXjevWXIZRFjr8="/>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.0-rc.2/CotEditor_4.2.0-rc.2.dmg" length="10779378" type="application/octet-stream" sparkle:edSignature="gXltuZCXX0LBiBONDeUiUwgJXExrOq0dsdBRtTmFCb0zlgcGdoQzDC22kV18Uu/AWmTVN7taNWVHTuZBaug1BQ==" sparkle:dsaSignature="MC0CFEojRDhLFtCmRvzdZ/0zvIRMoTf1AhUA600OjhHU1q3QOEL0LZH2DCwlJAU="/>
         </item>
 
         <item>
