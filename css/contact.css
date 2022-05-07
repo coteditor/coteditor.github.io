@@ -6,12 +6,11 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : contact page
-   lastMod : 2014-11
+   lastMod : 2022-05
   ////////////////////////////////////// */
 
 figure img {
-	box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
-	            0 0 0 1px hsla(0,0%,0%,.2);
+	border-radius: 6px;
 }
 
 #team ul li {

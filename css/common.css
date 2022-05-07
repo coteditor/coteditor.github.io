@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2022-02
+   lastMod : 2022-05
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -142,6 +142,7 @@ body {
 /* header */
 body > header {
 	font: 200 18px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
+	letter-spacing: 0.05em;
 	color: hsl(0,0%,33%);
 	min-height: 16px;
 }
@@ -187,12 +188,12 @@ body > header > nav li {
 	margin: 0 0.4em;
 }
 body > header > nav a[href*=twitter] {
-	color: hsl(198,40%,45%) !important;
+	color: hsl(203,80%,50%) !important;
 }
 body > header > nav a[href*=twitter]::before {
 	content: url('parts/twitter_large.svg');
-	margin-right: 3px;
-	vertical-align: -1px;
+	margin-right: 4px;
+	vertical-align: -2px;
 }
 body > header > nav a:lang(ja):not([rel=external]) {
 	font-size: 90%;  /* adjust Japanese font size */
