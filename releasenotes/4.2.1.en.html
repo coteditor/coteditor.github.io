@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 4.2.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 4.2.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.2.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.2.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.2.0-beta.ja" hreflang="ja"/>
+	<link rel="alternate"     href="4.2.0-beta.tr" hreflang="tr"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="highlights">
+<h1>Highlights on CotEditor 4.2</h1>
+
+<dl>
+	<dt>Treat line endings with every courtesy</dt>
+	<dd>Now, CotEditor can handle documents with multiple types of line endings in the true sense. When line endings are inconsistent in a document, CotEditor lets you know and marks them where they are.</dd>
+	
+	<dt>Print where you need</dt>
+	<dd>The print dialog got the option Selection to the Pages section. It enables printing only the selected text in the document.</dd>
+	
+	<dt>Work among multiple machines</dt>
+	<dd>CotEditor now supports Handoff to continue working on iCloud documents with a different machine easier. You can also transfer user settings such as syntax definitions to CotEditor on another machine by dropping via Universal Control.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.2.1</h1>
+		<p>release: <time>2022-05-11</time></p>
+	</header>
+	
+	
+	<section>
+		<h2>New Features</h2>
+		
+		<ul>
+			<li>Add Chinese (Traditional) localization (thanks to Shiki Suen!).</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Fixes</h2>
+		
+		<ul>
+			<li>Fix an issue on CotEditor 4.2.0 that restoring documents on macOS 11.x made the application unstable.</li>
+			<li>Fix an issue on CotEditor 4.2.0 that some snippet settings could not be inserted in a specific condition.</li>
+			<li>Fix the help content style in Dark Mode.</li>
+			<li>Fix the description of “Important change in CotEditor 4.2.0” in the Simplified Chinese localization.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.2.1</h1>
+		<p>release: <time>2022-05-11</time></p>
+	</header>
+	
+	
+	<section>
+		<h2>New Features</h2>
+		
+		<ul>
+			<li>Add Chinese (Traditional) localization (thanks to Shiki Suen!).</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Fixes</h2>
+		
+		<ul>
+			<li>Fix an issue on CotEditor 4.2.0 that restoring documents on macOS 11.x made the application unstable.</li>
+			<li>Fix an issue on CotEditor 4.2.0 that some snippet settings could not be inserted in a specific condition.</li>
+			<li>Fix the help content style in Dark Mode.</li>
+			<li>Fix the description of “Important change in CotEditor 4.2.0” in the Simplified Chinese localization.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.2.0</h1>
+		<p>release: <time>2022-05-09</time></p>
+	</header>
+	
+	<p class="important">This version contains some specific changes that may require manual migration by users. See <a href="../news/2022/CotEditor_4.2.0">Important changes on CotEditor 4.2</a> for details.</p>
+	
+	
+	<section>
+		<h2>New Features</h2>
+		
+		<ul>
+			<li>Ability to handle documents holding multiple types of line endings.</li>
+			<li>Alert inconsistent line endings in the document when opening or reloading.</li>
+			<li>List up the inconsistent line endings in the Warnings pane in the inspector.</li>
+			<li>Minor line endings, namely NEL (New Line), LS (Line Separator), and PS (Paragraph Separator), are added to the line endings options (These items are visible only either when pressing the <kbd>Option</kbd> key or when the document's line ending is one of these).</li>
+			<li>Add the hidden Paste Exactly command (<kbd>Command</kbd>-<kbd>Option</kbd>-<kbd>V</kbd>) that pastes text in the clipboard without any modification, such as adjusting line endings to the document setting.</li>
+			<li>Add an option Selection to the Pages section in the Print dialog to print only the selected text in the document.</li>
+			<li>Add history to the Unicode code point input.</li>
+			<li>Support Handoff.</li>
+			<li>Export setting files, such as themes or multiple replacements, to the Finder just by dropping the setting name from the Preferences.</li>
+			<li>Transfer settings among CotEditors in different machines via Universal Control by dragging the setting name and dropping it to the setting list area in another CotEditor.</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Improvements</h2>
+		
+		<ul>
+			<li>Update document icons.</li>
+			<li>Detect the line ending in documents more intelligently.</li>
+			<li>Indent snippet text with multiple lines to the indention level where will be inserted.</li>
+			<li>Improve the scrolling behavior by normal size documents by enabling the non-contiguous text layout mode only with large documents.</li>
+			<li>Optimize syntax parsing.</li>
+			<li>Rename the Incompatible Characters pane to the Warnings pane to share the pane with the inconsistent line ending list.</li>
+			<li>Locate the vertical scroller for the editor on the left side when the writing direction is right-to-left.</li>
+			<li>Print the line numbers on the right side on printing if the writing direction is right-to-left.</li>
+			<li>Adjust the vertical position of line numbers on printing.</li>
+			<li>Restore the characters even incompatible with the document encoding when restoring documents from the last session.</li>
+			<li>Display code points instead of being left blank in the incompatible character list for whitespaces.</li>
+			<li>Update HTML syntax style to display <code>hr</code> elements as separators in the Outline.</li>
+			<li>Add steppers to the font setting controls.</li>
+			<li>Restore the file encoding to one the user explicitly set in the last session.</li>
+			<li>Prefer using .yml for syntax definition files over .yaml.</li>
+			<li>Deprecate the feature to replace <code>$LN</code> in the outline menu template with the line number of the occurrence.</li>
+			<li>Remove original document icons for CoffeeScript and Tcl.</li>
+			<li>Revise text for more Mac-like expression.</li>
+			<li>Update the help contents.</li>
+			<li>Improve stability.</li>
+			<li><span class="trivial">trivial</span>: Accept script files for the Script menu with an uppercased file extension.</li>
+			<li><span class="trivial">trivial</span>: Replace <code>\n</code> with <code>\R</code> for the newline metacharacter in the Basic Regular Expression Syntax reference.</li>
+			<li><span class="trivial">trivial</span>: Tweak Anura theme.</li>
+			<li><span class="trivial">trivial</span>: Enable the secure state restoration introduced in macOS 12.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 5.0.0 to 5.0.1.</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Fixes</h2>
+		
+		<ul>
+            <li>Fix an issue that the changes of syntax styles after the launch were not applied to the file mapping.</li>
+			<li><span class="trivial">trivial</span>: Fix an issue that the Script menu appeared in the shortcut menu even when no script exists.</li>
+		</ul>
+	</section>
+	
+	<p><a href="4.1.5.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>

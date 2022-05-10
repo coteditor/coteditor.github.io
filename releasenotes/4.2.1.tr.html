@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 4.2.0'de neler yeni - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 4.2.0'de neler yeni"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.2.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.2.0'de neler yeni"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="tr_TR"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.2.0-beta.en" hreflang="en"/>
+	<link rel="alternate"     href="4.2.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="highlights">
+<h1>CotEditor 4.2'de öne çıkanlar</h1>
+
+<dl>
+	<dt>Satır sonlarına hak ettiği değeri verir</dt>
+	<dd>CotEditor artık birden çok satır sonu içeren belgeleri olması gerektiği gibi işleyebiliyor. Bir belgedeki satır sonları tutarsızsa CotEditor bunları size bildirir.</dd>
+	
+	<dt>İstediğiniz kısımları yazdırın</dt>
+	<dd>Yazdırma penceresi, seçilen kısmı yazdırabileceğiniz bir seçenek kazandı. Bununla yalnızca belgenin seçtiğiniz kısmını yazdırabilirsiniz.</dd>
+	
+	<dt>Birden çok makinede çalışın</dt>
+	<dd>CotEditor artık başka bir makinede iCloud belgeleri ile çalışmayı kolaylaştırmak için Handoff'u destekliyor. Kullanıcı ayarlarını (örn. sözdizim tanımları), başka bir makine ile paylaşmak için Universal Control ile sürükleyip bırakın.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.2.1</h1>
+		<p>release: <time>2022-05-11</time></p>
+	</header>
+	
+	
+	<section>
+		<h2>New Features</h2>
+		
+		<ul>
+			<li>Add Chinese (Traditional) localization (thanks to Shiki Suen!).</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Fixes</h2>
+		
+		<ul>
+			<li>Fix an issue on CotEditor 4.2.0 that restoring documents on macOS 11.x made the application unstable.</li>
+			<li>Fix an issue on CotEditor 4.2.0 that some snippet settings could not be inserted in a specific condition.</li>
+			<li>Fix the help content style in Dark Mode.</li>
+			<li>Fix the description of “Important change in CotEditor 4.2.0” in the Simplified Chinese localization.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.2.0</h1>
+		<p>yayım: <time>2022-05-09</time></p>
+	</header>
+	
+	<p class="important">Bu sürüm, kullanıcılar tarafından bazı belgelerde el ile ayar yapılmasını gerektirebilir. Ayrıntılar için <a href="../news/2022/CotEditor_4.2.0.tr">CotEditor 4.2'deki önemli değişiklikler</a> sayfasına bakın.</p>
+	
+	
+	<section>
+		<h2>Yeni Özellikler</h2>
+		
+		<ul>
+			<li>Birden çok satır sonu içeren belgeleri işleyebilme.</li>
+			<li>Belgeyi açarken tutarsız satır sonlarını bildir.</li>
+			<li>Tutarsız satır sonlarını Denetçi'nin Uyarılar bölümünde listele.</li>
+			<li>Satır sonu seçeneklerine, az kullanılan satır sonları (NEL (New Line), LS (Line Separator) ve PS (Paragraph Separator)) eklendi. Bu seçenekler yalnızca <kbd>Option</kbd> düğmesine basıldığında veya belgenin satır sonu bunlardan biriyse görüntülenir.</li>
+			<li>Panoda bulunan metni olduğu gibi yapıştıran ve satır sonlarını belge ayarına göre değiştiren Olduğu Gibi Yapıştır (<kbd>Command</kbd>-<kbd>Option</kbd>-<kbd>V</kbd>) seçeneği eklendi.</li>
+			<li>Yalnızca belgedeki seçili metni yazdırmak için bir seçenek eklendi.</li>
+			<li>Unicode kod noktası girişine geçmiş eklendi.</li>
+			<li>Handoff desteği.</li>
+			<li>Tercihlerde, tema adı veya çoklu değiştirmeler gibi ayarları dışa aktarmak için ayar adını sürükleyip bırakın.</li>
+			<li>CotEditor'lar arasında ayarları aktarmak için Universal Control ile bir ayar adını sürükleyip başka bir CotEditor'a bırakabilirsiniz.</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>İyileştirmeler</h2>
+		
+		<ul>
+			<li>Belge simgeleri güncellendi.</li>
+			<li>Belgelerdeki satır sonları daha kesin bir biçimde algılanır.</li>
+			<li>Birden çok satırlı kırpılmış metni eklediğiniz yerde girintileme düzeni korunur.</li>
+			<li>Yalnızca büyük belgelerde bitişik olmayan metin kipini etkinleştirerek kaydırma davranışını iyileştirir.</li>
+			<li>Sözdizim ayrıştırma iyileştirildi.</li>
+			<li>Uyumsuz Karakterler panelinin adı, tutarsız satır sonlarının da listelenebilmesi için Uyarılar olarak değiştirildi.</li>
+			<li>Yazım yönü sağdan sola iken dikey kaydırıcıyı sol tarafa alır.</li>
+			<li>Yazım yönü sağdan sola iken satır numaralarını sağ tarafa alır.</li>
+			<li>Yazdırırken satır numaralarının dikey konumu iyileştirildi.</li>
+			<li>Son oturum kurtarılırken, belge kodlaması ile uyumlu olmayan karakterleri de kurtar.</li>
+			<li>Uyumsuz karakter listesinde boşlukları boş bırakmak yerine koduyla gösterir.</li>
+			<li>Update HTML syntax style to display <code>hr</code> elements as separators in the Outline.</li>
+			<li>Font ayarı denetimlerine artı/eksi eklendi.</li>
+			<li>Kullanıcının son oturumda açıkca belirttiği dosya kodlamasını geri yükle.</li>
+			<li>Sözdizim tanım dosyaları için .yaml yerine .yml uzantıları kullanılır.</li>
+			<li>Ana hat menü şablonundaki <code>$LN</code>'yi oluşun satır numarası ile değiştirmek için olan özellik artık kullanılmayacak.</li>
+			<li>CoffeeScript ve Tcl özgün belge simgeleri kaldırıldı.</li>
+			<li>Metin daha bir Mac tarzı ifade için gözden geçirildi.</li>
+			<li>Yardım içeriği güncellendi.</li>
+			<li>Kararlılık iyileştirildi.</li>
+			<li><span class="trivial">Önemsiz</span>: Betik menüsü için uzantısında büyük harf olan betikler kabul edilir.</li>
+			<li><span class="trivial">Önemsiz</span>: Basit Düzenli İfade sözdizim başvurusunda <code>\n</code>, <code>\R</code> ile değiştirildi.</li>
+			<li><span class="trivial">Önemsiz</span>: Anura teması güncellendi.</li>
+			<li><span class="trivial">Önemsiz</span>: macOS 12 ile birlikte gelen güvenli durum geri yüklemesi etkinleştirildimacOS 12 ile birlikte gelen güvenli durum geri yüklemesi etkinleştirildi.</li>
+			<li><span class="trivial">Geliştirme</span>: Yams, 5.0.0'dan 5.0.1 sürümüne güncellendi.</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>Hata Düzeltmeleri</h2>
+		
+		<ul>
+            <li>Fix an issue that the changes of syntax styles after the launch were not applied to the file mapping.</li>
+			<li><span class="trivial">Önemsiz</span>: Bir betik yokken bile Betik menüsünün kestirme menüsünde görünmesine neden olan bir hata düzeltildi.</li>
+		</ul>
+	</section>
+
+<p><a href="4.1.5.en">bir önceki sürüm notları</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>

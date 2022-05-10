@@ -6,20 +6,20 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.2.0</title>
-            <pubDate>Mon, 09 May 2022 07:00:00 +0900</pubDate>
+            <title>CotEditor 4.2.1</title>
+            <pubDate>Wed, 11 May 2022 00:40:00 +0900</pubDate>
             
-            <sparkle:version>502</sparkle:version>
-            <sparkle:shortVersionString>4.2.0</sparkle:shortVersionString>
+            <sparkle:version>505</sparkle:version>
+            <sparkle:shortVersionString>4.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.0.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.0.ja.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="tr">https://coteditor.com/releasenotes/4.2.0.tr.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.0/CotEditor_4.2.0.dmg"
-                       length="12592914"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.1.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.1.ja.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="tr">https://coteditor.com/releasenotes/4.2.1.tr.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.1/CotEditor_4.2.1.dmg"
+                       length="12669839"
                        type="application/octet-stream"
-                       sparkle:edSignature="qdEW+KlIEpOezXELXunmdhaGG4zHPXiSksyyTzABa/DGnEK4QDJd+BJkpt7LsuVbkjfAIY2dCpQsHTfHdV7rAQ=="
-                       sparkle:dsaSignature="MC0CFA5jny+Ux4Cpea8qQWEn10KPGZb3AhUAqfZhgTa9TwGwLbKsxMCNN1S9g9o="/>
+                       sparkle:edSignature="K7Y5DfOvxfGQ2EDrSefUfvnOt9JmXarZC/VsxF751imXZF39RLvaL0grkkHYU7Ec30z7GmsO/23Ke8P2tEbdAw==" 
+                       sparkle:dsaSignature="MC0CFEUx5y93pVT+dUQGOBP5VGpCkPLeAhUA504e2cYGhN2Vg/BAc6e6ra0Yb04="/>
         </item>
 
         <item>
