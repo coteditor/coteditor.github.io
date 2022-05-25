@@ -6,20 +6,19 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.2.1</title>
-            <pubDate>Wed, 11 May 2022 00:40:00 +0900</pubDate>
+            <title>CotEditor 4.2.2</title>
+            <pubDate>Wed, 26 Thu 2022 7:00:00 +0900</pubDate>
             
-            <sparkle:version>505</sparkle:version>
-            <sparkle:shortVersionString>4.2.1</sparkle:shortVersionString>
+            <sparkle:version>508</sparkle:version>
+            <sparkle:shortVersionString>4.2.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.1.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.1.ja.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="tr">https://coteditor.com/releasenotes/4.2.1.tr.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.1/CotEditor_4.2.1.dmg"
-                       length="12669839"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.2.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.2.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.2/CotEditor_4.2.2.dmg"
+                       length="12701201"
                        type="application/octet-stream"
-                       sparkle:edSignature="K7Y5DfOvxfGQ2EDrSefUfvnOt9JmXarZC/VsxF751imXZF39RLvaL0grkkHYU7Ec30z7GmsO/23Ke8P2tEbdAw==" 
-                       sparkle:dsaSignature="MC0CFEUx5y93pVT+dUQGOBP5VGpCkPLeAhUA504e2cYGhN2Vg/BAc6e6ra0Yb04="/>
+                       sparkle:edSignature="Rrd2GfaJirSJ+Mn3Aqny9QRI22JqPGfdPO0SxrxQ16Axpe1wnMlFJjNtnysSL75vP8/1SmE2lkvCzlwMH077Cg==" 
+                       sparkle:dsaSignature="MCwCFAuzxs+kyv3P6DgZUkjN5uwp+i9xAhReUF4tjzv7V52/jIsevbQrxIxAaw=="/>
         </item>
 
         <item>
