@@ -6,19 +6,19 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.2.2</title>
-            <pubDate>Wed, 26 Thu 2022 7:00:00 +0900</pubDate>
+            <title>CotEditor 4.2.3</title>
+            <pubDate>Sun, 05 Jun 2022 16:00:00 +0900</pubDate>
             
-            <sparkle:version>508</sparkle:version>
-            <sparkle:shortVersionString>4.2.2</sparkle:shortVersionString>
+            <sparkle:version>510</sparkle:version>
+            <sparkle:shortVersionString>4.2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.2.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.2.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.2/CotEditor_4.2.2.dmg"
-                       length="12701201"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.2.3.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.2.3.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.2.3/CotEditor_4.2.3.dmg"
+                       length="12711774"
                        type="application/octet-stream"
-                       sparkle:edSignature="Rrd2GfaJirSJ+Mn3Aqny9QRI22JqPGfdPO0SxrxQ16Axpe1wnMlFJjNtnysSL75vP8/1SmE2lkvCzlwMH077Cg==" 
-                       sparkle:dsaSignature="MCwCFAuzxs+kyv3P6DgZUkjN5uwp+i9xAhReUF4tjzv7V52/jIsevbQrxIxAaw=="/>
+                       sparkle:edSignature="THpuGMQmC76XjjwMaqRkgAlO0RTpQ8SeuiUjuIHLBeNUnhjRCdnc7xAXIPY4QDgecrbAbdDlR3wtZM88nI8DAA=="
+                       sparkle:dsaSignature="MC0CFQCnwTY2msMb3AaxmHJnMvdGDVZs1wIUEQsxApD7FbYUOgtNjipANtwGp5E="/>
         </item>
 
         <item>
