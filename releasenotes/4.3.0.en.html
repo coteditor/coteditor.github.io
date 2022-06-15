@@ -4,14 +4,14 @@
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8"/>
 
-	<title>What's new on CotEditor 4.3.0β - CotEditor</title>
+	<title>What's new on CotEditor 4.3.0 - CotEditor</title>
 
-	<meta name="description"  content="What's new on CotEditor 4.3.0β"/>
+	<meta name="description"  content="What's new on CotEditor 4.3.0"/>
 
 	<meta property="og:type"         content="article"/>
-	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.3.0-beta.en"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.3.0.en"/>
 	<meta property="og:title"        content="CotEditor"/>
-	<meta property="og:description"  content="What's new on CotEditor 4.3.0β"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.3.0"/>
 	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
 	<meta property="og:site_name"    content="CotEditor"/>
 	<meta property="og:locale"       content="en_US"/>
@@ -20,7 +20,7 @@
 
 	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
 	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
-	<link rel="alternate"     href="4.3.0-beta.ja" hreflang="ja"/>
+	<link rel="alternate"     href="4.3.0.ja" hreflang="ja"/>
 	<link rel="stylesheet"    href="../css/common.css"/>
 	<link rel="stylesheet"    href="../css/releasenotes.css"/>
 
@@ -33,8 +33,6 @@
 </header>
 
 <main>
-<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
-
 <section class="highlights">
 <h1>Highlights on CotEditor 4.3</h1>
 
@@ -50,61 +48,12 @@
 
 
 <article>
-<header>
-	<h1>What's New on CotEditor 4.3.0 from 4.3.0-rc</h1>
-</header>
-	
-	
-	<section>
-		<h2>Improvements</h2>
-		
-		<ul>
-			<li>Avoid re-parsing syntax on printing.</li>
-			<li>Update the style of the search progress dialog.</li>
-			<li><span class="trivial">trivial</span>: Suppress the inconsistent line ending alert in the Versions browsing.</li>
-			<li><span class="label">beta</span>: Add the option to disable incremental search.</li>
-			<li><span class="label">beta</span>: Optimize the performance of the incremental search.</li>
-		</ul>
-	</section>
-</article>
-
-
-
-<article>
 	<header>
-		<h1>CotEditor 4.3.0-rc</h1>
-		<p>release: <time>2022-06-14</time></p>
+		<h1>CotEditor 4.3.0</h1>
+		<p>release: <time>2022-06-18</time></p>
 	</header>
-	
-	
-	<section>
-		<h2>Improvements</h2>
-		
-		<ul>
-			<li><span class="label">beta</span>: Suppress the “not found” beep sound on incremental search.</li>
-			<li><span class="label">beta</span>: Update Swift syntax style to add <code>swift</code> interpreter.</li>
-			<li><span class="label">beta</span> <span class="trivial">trivial</span>: Change the threshold to display a large document alert.</li>
-			<li><span class="label">beta</span> <span class="trivial">trivial</span>: Tweak parsing syntax highlight.</li>
-		</ul>
-	</section>
-	
-	
-	<section>
-		<h2>Fixes</h2>
-		
-		<ul>
-			<li>Fix an issue that the application could become unresponsive when trying to show the file mapping conflicts.</li>
-		</ul>
-	</section>
-</article>
 
-
-
-<article>
-	<header>
-		<h1>CotEditor 4.3.0-beta</h1>
-		<p>release: <time>2022-06-11</time></p>
-	</header>
+<p class="note">cf. <a href="4.3.0-beta.en">Changes from 4.3.0-beta</a>.</p>
 	
 	
 	<section>
@@ -123,8 +72,11 @@
 			<li>Drastically improved the performance of syntax highlighting on large documents so that no rainbow cursor appears.</li>
 			<li>Stop displaying the progress indicator for syntax highlight on large documents and apply the highlight asynchronously instead.</li>
 			<li>Optimize the time to open large documents.</li>
+			<li>Avoid re-parsing syntax on printing.</li>
+			<li>Update the style of the search progress dialog.</li>
 			<li>Remove the preference option to disable syntax highlighting.</li>
 			<li>Update Swift syntax style to support Swift 5.7.</li>
+			<li><span class="trivial">trivial</span>: Suppress the inconsistent line ending alert in the Versions browsing.</li>
 		</ul>
 	</section>
 	
@@ -135,6 +87,7 @@
 		<ul>
 			<li>Fix an issue that the application crashed with very specific fonts.</li>
 			<li>Fix an issue that the highlights of Find All in the editor remained even when closing the Find window.</li>
+			<li>Fix an issue that the application could become unresponsive when trying to show the file mapping conflicts.</li>
 		</ul>
 	</section>
 

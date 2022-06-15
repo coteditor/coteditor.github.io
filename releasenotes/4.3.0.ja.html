@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=ja>
+
+<head prefix=og: http://ogp.me/ns#>
+	<meta charset=UTF-8/>
+
+	<title>CotEditor 4.3.0の変更点 - CotEditor</title>
+
+	<meta name=description  content=CotEditor 4.3.0の変更点/>
+
+	<meta property=og:type         content=article/>
+	<meta property=og:url          content=https://coteditor.com/releasenotes/4.3.0.ja/>
+	<meta property=og:title        content=CotEditor/>
+	<meta property=og:description  content=CotEditor 4.3.0の変更点/>
+	<meta property=og:image        content=https://coteditor.com/img/appicon/512@2x.png/>
+	<meta property=og:site_name    content=CotEditor/>
+	<meta property=og:locale       content=ja_JP/>
+	<meta property=twitter:card    content=summary/>
+	<meta property=twitter:creator content=@CotEditor/>
+
+	<link rel=shortcut icon href=/favicon.png    type=image/png sizes=16x16/>
+	<link rel=shortcut icon href=/favicon@2x.png type=image/png sizes=32x32/>
+	<link rel=alternate     href=4.3.0.en hreflang=en/>
+	<link rel=stylesheet    href=../css/common.css/>
+	<link rel=stylesheet    href=../css/releasenotes.css/>
+
+	<script async=async src=../js/common.js></script>
+</head>
+
+<body class=prerelease>
+<header>
+	<a href=/>CotEditor</a>
+</header>
+
+<main>
+<section class=highlights>
+<h1>CotEditor 4.3のハイライト</h1>
+
+<dl>
+	<dt>レインボーカーソルにさよならを</dt>
+	<dd>CotEditor 4.3はシンタックスハイライトと書類オープンのパフォーマンスを劇的に改善しました。例えば、今まで2分間のレインボーカーソルに苛まれていた処理が1秒に。CotEditorで100 MBのファイルを開くことも可能になります。</dd>
+	
+	<dt>インクリメンタルに検索</dt>
+	<dd>インクリメンタルサーチが実装されました。検索ウインドウへの入力と共に最前面の書類を自動で検索をしてハイライトで絞り込んでいきます。</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.3.0</h1>
+		<p>リリース: <time>2022-06-18</time></p>
+	</header>
+
+<p class=note><strong>4.3.0-beta からの変更点は<a href=4.3.0-beta.ja>こちら</a></strong></p>
+	
+	
+	<section>
+		<h2>新機能</h2>
+		
+		<ul>
+			<li>検索ウインドウへの入力でインクリメンタルサーチ</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>改良</h2>
+		
+		<ul>
+			<li>シンタックスハイライトのパフォーマンスを劇的に改善し大きい書類でのレインボーカーソルも抑止</li>
+			<li>大きい書類のシンタックスハイライトでのプログレスバー表示を廃止し、非同期のシンタックス解析が終わり次第ハイライト</li>
+			<li>大きい書類を開くときの時間を短縮</li>
+			<li>プリント時にシンタックスの再パースをしないように改良</li>
+			<li>検索の進行状況表示スタイルを更新</li>
+			<li>シンタックスハイライトを無効にする設定オプションを廃止</li>
+			<li>Swiftシンタックススタイルを更新してSwift 5.7で追加されたキーワードを追加</li>
+			<li><span class=trivial>trivial</span>: バージョンの閲覧のときにも混在する改行コードのアラートが表示されるのを抑止</li>
+		</ul>
+	</section>
+	
+	
+	<section>
+		<h2>修正</h2>
+		
+		<ul>
+			<li>非常に特定のフォントでアプリケーションがクラッシュすることがあった不具合を修正</li>
+			<li>検索ウインドウを閉じても「すべて検索」のハイライトがエディタに残ることがあった不具合を修正</li>
+			<li>ファイル関連付けのコンフリクトを表示しようとするとアプリケーションが反応しなくなることがあった不具合を修正</li>
+		</ul>
+	</section>
+
+	<p><a href=4.2.3.ja>以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class=copyright>© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>
