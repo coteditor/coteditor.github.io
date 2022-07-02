@@ -6,19 +6,19 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.3.0</title>
-            <pubDate>Sat, 18 Jun 2022 00:00:00 +0900</pubDate>
+            <title>CotEditor 4.3.1</title>
+            <pubDate>Sun, 03 Jul 2022 01:00:51 +0900</pubDate>
             
-            <sparkle:version>516</sparkle:version>
-            <sparkle:shortVersionString>4.3.0</sparkle:shortVersionString>
+            <sparkle:version>519</sparkle:version>
+            <sparkle:shortVersionString>4.3.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.3.0.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.3.0.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.3.0/CotEditor_4.3.0.dmg"
-                       length="12469581"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.3.1.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.3.1.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.3.1/CotEditor_4.3.1.dmg"
+                       length="12486494"
                        type="application/octet-stream"
-                       sparkle:edSignature="JCurxnaWlUIlU0GLML++unaFDf2xl9OTw3Nqcd3b0S7BnpQqrmuFMfybPWJbw7b6xf8GeIuH33Glsnn9r/xwCQ=="
-                       sparkle:dsaSignature="MC0CFBvKLHsPPY9s/FiLbudRoj63T8URAhUAhspJxfEe5oxupi4wDqca5Bqax8Q="/>
+                       sparkle:edSignature="g32qUhs9jZpkCor+RjdY3/Al96xVoBJOVujOsqzbbnP8H34SG/3St3gGU4cej9M9hXxbYhWEr2cIFtIGUN88Ag==" 
+                       sparkle:dsaSignature="MC0CFQCkUyoMfPppXSaBiGNtVZnVA+5SMQIUBtLKKDxbwzyussl3sDia3atnfVI="/>
         </item>
 
         <item>
