@@ -111,14 +111,14 @@ a#beta strong {
 }
 #latest .handwriting {
 	font: 17px/1.0 'HanziPen SC', 'Bradley Hand', 'Noteworthy', sans-serif;
-	color: hsl(198,10%,60%);
+	color: hsl(0,0%,0%);
+	opacity: 0.4;
 	display: block;
 	transform: rotate(-3deg);
 	margin: 0.5em 1em 0.9em;
 }
 a.download {
 	display: inline-block;
-	line-height: 0;
 }
 a.download:hover {
 	background: transparent;
@@ -177,9 +177,9 @@ a.download img {
 
 /* lead */
 #lead {
-	font: italic 200 32px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
+	font: italic 300 32px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
 	letter-spacing: 1px;
-	color: hsl(198,20%,40%);
+	color: hsl(198,40%,40%);
 }
 
 
@@ -245,8 +245,7 @@ a.download img {
 #features section {
 	break-inside: avoid;
 	margin: 0;
-	padding-top: 1px;  /* hack for firefox */
-	padding-bottom: 1.2em;
+	padding-bottom: 1.5em;
 }
 #features section img {
 	width: 48px;
@@ -283,7 +282,7 @@ a.download img {
 #develop a.github {
 	display: inline-block;
 	color: hsl(0,0%,33%);
-	border: 2px solid hsl(0,0%,33%);
+	border: 2px solid hsla(0,0%,33%,0.5);
 	border-radius: 4px;
 	letter-spacing: 1px;
 	padding: 5px 10px;
@@ -291,7 +290,7 @@ a.download img {
 #develop a.github:hover {
 	background: transparent;
 	color: hsl(90,45%,45%);
-	border-color: hsl(90,45%,45%);
+	border-color: hsla(90,45%,45%,0.5);
 }
 
 
