@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 4.4.0β sürümündeki yenilikler - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 4.4.0β sürümündeki yenilikler"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.4.0-beta.tr"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.4.0β sürümündeki yenilikler"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="tr_TR"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.4.0-beta.tr" hreflang="tr"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>Bu bir sınama sürümüdür.</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 4.4 sürümünde göze çarpanlar</h1>
+
+<dl>
+	<dt>Karakterleri istediğiniz gibi sayın</dt>
+	<dd>Bilgisayar dünyasında karakterleri saymak özünde kolay değildir. Değişik durumlar için çeşitli birimler ve sayım kuralları vardır. Yeni Gelişmiş Karakter Sayımı özelliği, size tümüyle özelleştirilmiş bir karakter sayımı deneyimi sunar.</dd>
+	
+	<dt>Sözdizim için betik kısayolları</dt>
+	<dd>Değişik sözdizim biçemleri için CotEditor betiklerine klavye kısayolları atayabilirsiniz.</dd>
+	
+	<dt>macOS 13 Ventura için destek</dt>
+	<dd>Güncel sistemle düzgün çalışmak için düzeltmeler ve yeni sistem özellikleri için destek.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.4.0-beta</h1>
+		<p>yayım: <time>2022-09-08</time></p>
+	</header>
+
+
+	<section>
+		<h2>Yeni Özellikler</h2>
+
+		<ul>
+			<li>Metin menüsüne, Gelişmiş Karakter Sayımı eklendi.</li>
+			<li>Birden çok CotEditor komut dosyasında aynı klavye kısayolu belirlendiğinde, adı en öndeki belgenin sözdizim biçemiyle aynı olan alt klasördeki komut dosyalarına devingen olarak öncelik verin.</li>
+			<li>Metin &gt; Dönüşümler alt menüsüne URL Kodla/Kodunu Çöz eklendi.</li>
+			<li>Geçerli belgede kaydedilmemiş değişiklikler varsa pencere sekmesinde bir nokta görüntülenir.</li>
+			<li>Satır numarası ve düzenleyici arasına bir ayırıcı çizme seçeneği eklendi.</li>
+			<li>TypeScript için sözdizim biçemi eklendi.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>İyileştirmeler</h2>
+
+		<ul>
+			<li><strong>macOS 13 Ventura</strong> için destek.</li>
+			<li>Sistem gereksinimlerini <strong>macOS 12 Monterey ve sonrasına</strong> yükselt.</li>
+			<li>"Bu belge için bir daha sorma" seçeneğinin duruunu tutarsız satır sonları için depola ve gelecekteki kullanımlarda anımsa.<ul>
+				<li><strong>gelişmiş kullanıcılar için</strong>: Bu özelliği, aşağıdaki komutu Terminal'de çalıştırarak tümüyle devre dışı bırakabilirsiniz; ancak bu önerilmez.:<br/>
+					<code>defaults write com.coteditor.CotEditor suppressesInconsistentLineEndingAlert -bool YES</code></li>
+    		</ul></li>
+			<li>AppleScript'teki <code>length</code> özelliğini gelecekte kaldırılacak olarak imle (Yerine <code>number of characters of contents</code> kullanın).</li>
+			<li>Çoklu imleç düzenlemede, iki yönlü diller için ayrılmış imleci destekle.</li>
+			<li>Yazdırma panelinde, CotEditor'ün ayar görünümünü güncelle.</li>
+			<li>Konum ve sütun sayısını sıfır ile başlat.</li>
+			<li>Düzenli ifade dizgisi geçersizse dizgi sıralama penceresinde hata iletisi görüntüle.</li>
+			<li>Dizgiye Göre Sırala komutunda sayı ayrıştırma algoritmasını iyileştir.</li>
+			<li>Yorum kaldırma algoritmasını iyileştir.</li>
+			<li>Kodlama algılama algoritmasını iyileştir.</li>
+			<li>VoiceOver desteğini iyileştir.</li>
+			<li>"Karakterleri sayarken satır sonlarını yok say" seçeneğini kullanımdan kaldırılacak olarak imle.</li>
+			<li>Durum çubuğunda dosya boyutunu gösterme seçeneğini kullanımdan kaldırılacak olarak imle.</li>
+			<li>Belge denetçisindeki metin uzunluğu görünümünü kaldır.</li>
+			<li><span class="trivial">önemsiz</span>: Dikey yöneliş için satır numarası görünümündeki tikleri ince ayarla.</li>
+			<li><span class="trivial">önemsiz</span>: Belgeleri eşzamansız olarak kaydet.</li>
+			<li><span class="trivial">önemsiz</span>: Düzenleyici bağlam menüsünü organize et.</li>
+			<li><span class="trivial">önemsiz</span>: Yalın düzenli ifade sözdizim başvurusunu iyileştir.</li>
+			<li><span class="trivial">önemsiz</span>: Durum çubuğu görünümünü iyileştir.</li>
+			<li><span class="trivial">geliştirme</span>: Yapı ortamını Xcode 14.0 olaak güncelle.</li>
+			<li><span class="label">AppStore olmayan sürüm</span>: Sparkle sürümünü 2.2.2 olarak güncelle.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Düzeltmeler</h2>
+
+		<ul>
+			<li>Matlık araç çubuğu ögesi kullanıldığında bellek sızdırabilen bir sorun giderildi.</li>
+		</ul>
+	</section>
+
+<p><a href="4.3.4.en">önceki sürüm notları</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>
