@@ -14,6 +14,7 @@
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.4.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.4.0-beta.ja.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="tr">https://coteditor.com/releasenotes/4.4.0-beta.tr.html</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.4.0-beta/CotEditor_4.4.0-beta.dmg"
                        length="15649497"
                        type="application/octet-stream"
