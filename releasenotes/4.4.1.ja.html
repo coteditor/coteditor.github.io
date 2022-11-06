@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 4.4.1の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 4.4.1の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.4.1.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.4.1の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.4.1.en" hreflang="en"/>
+	<link rel="alternate"     href="4.4.1.tr" hreflang="tr"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<article>
+	<header>
+		<h1>CotEditor 4.4.1</h1>
+		<p>リリース: <time>2022-11-06</time></p>
+	</header>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>「ハイライト」コマンドを「すべてハイライト」に改名</li>
+			<li>プリントダイアログのCotEditor設定ビューを調整</li>
+			<li>シンタックススタイルを更新しインデントでのコードブロックハイライトに対応（Rafael Viottiさんに感謝!）</li>
+			<li><span class="trivial">trivial</span>: キーバインディングでのテキスト選択の挙動を改良</li>
+			<li><span class="trivial">trivial</span>: 書類が開かれていないときは「すべて選択」コマンドを無効に</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>macOS 13で「すべて選択」ボタンが一部ローカライズされていなかったCotEditor 4.4.0の不具合を修正</li>
+			<li>スクリプティングでdocumentオブジェクトの<code>contents of selection</code>が書類の内容全体を返していたCotEditor 4.4.0の不具合を修正</li>
+			<li>Control+Shift+矢印キーで選択範囲を変更したときに選択範囲が不可視文字をを跨ぐとアプリケーションがハングすることがあった不具合を修正.</li>
+			<li>マルチカーソルの一つが書類の最後に位置したときにそれが描画されなかった不具合を修正</li>
+			<li>スマート引用符が有効だと自動的に閉じる引用符が挿入されるとカーソルがすぐに引用符の外に移動してしまった不具合を修正</li>
+			<li>開いたウインドウの高さがユーザ設定値からズレることがあった不具合を修正</li>
+		</ul>
+	</section>
+
+	<p><a href="4.0.0.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>
