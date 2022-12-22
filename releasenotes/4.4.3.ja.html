@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 4.4.3の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 4.4.3の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.4.3.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.4.3の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.4.3.en" hreflang="en"/>
+	<link rel="alternate"     href="4.4.3.tr" hreflang="tr"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<article>
+	<header>
+		<h1>CotEditor 4.4.3</h1>
+		<p>リリース: <time>2022-12-23</time></p>
+	</header>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>大きい書類での検索/置換パフォーマンスを最適化</li>
+			<li>検索/置換の進捗ダイアログに進捗度を表示するように改良</li>
+			<li>縦書きのときにリンクの下線を行の左側に描画するように改良</li>
+			<li>文字インスペクタに表示されるUnicodeブロック名のリストをUnicode 14.0.0からUnicode 15.0.0に更新</li>
+			<li>検索/置換の進捗ダイアログを完了後に自動で閉じない設定オプションを廃止</li>
+			<li>「検索」ウインドウの「置換」ボタンをクリックしたときに次の一致した文字列に移動しない設定オプションを廃止</li>
+			<li><span class="trivial">trivial</span>: 検索結果ビューの行をクリックしたときに対象となる書類をキーウインドウに</li>
+			<li><span class="trivial">trivial</span>: メニュー内の見出し表示を調整</li>
+			<li><span class="trivial">trivial</span>: 「プリント」ダイアログの概要表示を調整</li>
+			<li><span class="trivial">開発</span>: 大半のシートとポップオーバーをSwiftUIに移行</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>「プリント」ダイアログで「CotEditorでの選択範囲」オプションを変更してもプレビューの総ページ数が更新されなかったmacOS 13での不具合を修正</li>
+			<li>コンソールウインドウのタイムスタンプがローカルのタイムゾーンになっていなかった不具合を修正</li>
+			<li>文章の方向の「右から左」設定が新規書類に反映されていなかった不具合を修正</li>
+			<li>特定の条件下で正規表現のハイライトが崩れた不具合を修正</li>
+			<li>書類が空のときに正規表現の検索/置換が実行されなかった不具合を修正</li>
+			<li>検索ウインドウの詳細オプションビューがボタンを連打すると多重に表示された不具合を修正</li>
+			<li>折り畳まれたときのエディタの不透明度ツールバー項目の描画を修正</li>
+		</ul>
+	</section>
+
+	<p><a href="4.4.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2022 CotEditor Project</p>
+</footer>
+</body>
+</html>
