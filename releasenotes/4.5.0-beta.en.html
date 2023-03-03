@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 4.5.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 4.5.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.5.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.5.0β"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.5.0-beta.ja" hreflang="ja"/>
+	<link rel="alternate"     href="4.5.0-beta.tr" hreflang="tr"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 4.5</h1>
+
+<dl>
+	<dt>More convinient snippet feature</dt>
+	<dd>The snippet feature has been reworked to handle more snippets more easily.</dd>
+
+	<dt>Inspect scalar by scalar</dt>
+	<dd>The character inspector provides more information for characters consist of multiple Unicode scalars.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.5.0-beta</h1>
+		<p>release: <time>2023-03-03</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Renew the snippets feature to enable naming it, changing the order, and performing from the menu.</li>
+			<li>Add the Insert Snippet submenu to the Text menu.</li>
+			<li>Enable the character inspector to inspect more information about each Unicode scalar that makes up a character.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Reconstruct the Snippets (ex. File Drop) and Key Bindings panes in the Settings window.</li>
+			<li>Allow single function key stroke for a keyboard shortcut.</li>
+			<li>Optimize the performance of text editing while URL linking is enabled.</li>
+			<li>Update item order of the Edit menu.</li>
+			<li>Make filter highlights of the outline list more legible in the Dark Mode.</li>
+			<li>Update Swift syntax style to add keywords for Swift 5.8.</li>
+			<li>Deprecate the Insert Encoding Name command (use AppleScript instead).</li>
+			<li>Update the help contents.</li>
+			<li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.3.1 to 2.3.2.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 5.0.4 to 5.0.5.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue that the Replace button in the Find window did not select the next match.</li>
+			<li>Fix an issue that all URL links were removed when an external process updated the document.</li>
+			<li>Fix the redo action label for the line endings conversion and file encoding change.</li>
+		</ul>
+	</section>
+
+<p><a href="4.4.5.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2023 CotEditor Project</p>
+</footer>
+</body>
+</html>
