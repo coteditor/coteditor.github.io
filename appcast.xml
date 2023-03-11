@@ -6,18 +6,18 @@
         <description>Most recent changes with links to updates.</description>
         
         <item>
-            <title>CotEditor 4.5.0-beta</title>
-            <pubDate>Fri, 03 Mar 2023 12:00:00 +0900</pubDate>
+            <title>CotEditor 4.5.0-beta.2</title>
+            <pubDate>Sat, 11 Mar 2023 13:10:17 +0900</pubDate>
             <sparkle:channel>prerelease</sparkle:channel>
-            <sparkle:version>553</sparkle:version>
-            <sparkle:shortVersionString>4.5.0-beta</sparkle:shortVersionString>
+            <sparkle:version>555</sparkle:version>
+            <sparkle:shortVersionString>4.5.0-beta.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.5.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.5.0-beta.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.5.0-beta/CotEditor_4.5.0-beta.dmg"
-                       length="14275578"
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.5.0-beta.2/CotEditor_4.5.0-beta.2.dmg"
+                       length="14218737"
                        type="application/octet-stream"
-                        sparkle:edSignature= "4DdQ9IJfhDgq8B1nlGxP56D824XnOWar1eEn8VXG52xDbPKg62uzGV5DHkSd73Ic1voaIBHsVb1PKKkfVcF9Cg=="/>
+                        sparkle:edSignature= "M1P0gt+UZGHQUzs6H1ybRFnwzEX4eBQvXU4lV0gf+SlUCN9kwWC1iWJGb2FK8hhW0ziMeKJLrN+euMptE9TsBg=="/>
         </item>
         
         <item>
