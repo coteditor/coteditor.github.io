@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 4.5.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 4.5.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.5.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.5.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.5.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+
+	<script async="async" src="../js/common.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 4.5</h1>
+
+<dl>
+	<dt>More convinient snippet feature</dt>
+	<dd>The snippet feature has been reworked to handle more snippets more easily.</dd>
+
+	<dt>Inspect scalar by scalar</dt>
+	<dd>The character inspector provides more information for characters consist of multiple Unicode scalars.</dd>
+</dl>
+</section>
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.5.1</h1>
+		<p>release: <time>2023-03-18</time></p>
+	</header>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Scroll the editor to make the remaining cursor visible when canceling the multi-cursor editing mode.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix the application could crash when the Invisibles toolbar item is displayed.</li>
+			<li><span class="trivial">trivial</span>: Fix the shortcut key display for the mic key in the Key Bindings pane.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.5.0</h1>
+		<p>release: <time>2023-03-18</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Renew the snippets feature to enable naming it, changing the order, and performing from the menu.</li>
+			<li>Add the Insert Snippet submenu to the Text menu.</li>
+			<li>Add a new scope “syntax style” to the snippet feature to perform snippets only in a specific syntax style.</li>
+			<li>Add a new variable “selection” to the snippet feature to place the currently selected text to the inserted text.</li>
+			<li>Enable the character inspector to inspect more information about each Unicode scalar that makes up a character.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Reconstruct the Snippets (ex. File Drop) and Key Bindings panes in the Settings window.</li>
+			<li>Allow single function key stroke for a keyboard shortcut.</li>
+			<li>Update item order of the Edit menu.</li>
+			<li>Change counting characters/lines/words to count all elements in multiple selections.</li>
+			<li>Change the threshold to trigger the automatic completion to 3 letters to optimize calculation time by large documents.</li>
+			<li>Allow <code>_</code> as a character for completion candidates.</li>
+			<li>Synchronize the visibility of all navigation/status bars in the application.</li>
+			<li>Optimize the performance of text editing while URL linking is enabled.</li>
+			<li>Make filter highlights of the outline list more legible in the Dark Mode.</li>
+			<li>Update Swift syntax style to add keywords for Swift 5.8.</li>
+			<li>Deprecate the Insert Encoding Name command (use AppleScript instead).</li>
+			<li>Update the help contents.</li>
+			<li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.3.1 to 2.3.2.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 5.0.4 to 5.0.5.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue in the search window that an error dialog for invalid regular expression appeared even on incremental search.</li>
+			<li>Fix an issue that the application did not terminate when no documents exist and the application goes background.</li>
+			<li>Fix an issue that the Replace button in the Find window did not select the next match.</li>
+			<li>Fix an issue on macOS 12 that the buttons at the bottom were not aligned.</li>
+			<li>Fix an issue that all URL links were removed when an external process updated the document.</li>
+			<li>Fix the redo action label for the line endings conversion and file encoding change.</li>
+		</ul>
+	</section>
+
+<p><a href="4.4.5.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2023 CotEditor Project</p>
+</footer>
+</body>
+</html>
