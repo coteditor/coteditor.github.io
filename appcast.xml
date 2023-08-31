@@ -4,6 +4,21 @@
         <title>CotEditor's Changelog</title>
         <link>https://coteditor.com/appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
+
+        <item>
+            <title>CotEditor 4.6.0-beta</title>
+            <pubDate>Thu, 31 Aug 2023 09:47:27 +0900</pubDate>
+            <sparkle:channel>prerelease</sparkle:channel>
+            <sparkle:version>581</sparkle:version>
+            <sparkle:shortVersionString>4.6.0-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.6.0-beta.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.6.0-beta.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.6.0-beta/CotEditor_4.6.0-beta.dmg"
+                       length="13825629"
+                       type="application/octet-stream"
+                        sparkle:edSignature="ZWKf5NoFoiuI9uD19zkRuRyzqc61SlBv9Aa++EEmAX88Xk8kOK3a6EIR5BUhUb5XkPe2BtR+39uDbH3gT603Dg=="/>
+        </item>
         
         <item>
             <title>CotEditor 4.5.8</title>
