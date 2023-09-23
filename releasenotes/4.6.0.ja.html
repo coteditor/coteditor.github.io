@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 4.6.0の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 4.6.0の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.6.0.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 4.6.0の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.6.0.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>CotEditor 4.6のハイライト</h1>
+
+<dl>
+	<dt>macOS 14 Sonoma対応</dt>
+	<dd>macOS 14 Sonomaに早速対応しました。Sonomaのあたらしいカーソルの能力も引き出して、今まで以上に執筆に打ち込めます。</dd>
+
+	<dt>等幅/プロポーショナルフォントを使い分け</dt>
+	<dd>書類のタイプに合わせて、エディタの表示フォントを等幅とプロポーショナルで切り替えられるようになりました。コーディングから日常の文書まで、CotEditor一本で執筆できます。</dd>
+
+	<dt>モダンなインスペクタ</dt>
+	<dd>書類インスペクタの振る舞いと見た目が、よりすっきりとモダンになりました。</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.6.0</h1>
+		<p>リリース: <time>2023-09-25</time></p>
+	</header>
+
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li><strong>macOS 14 Sonoma</strong>に対応</li>
+			<li>シンタックス定義に「種類」という項目を追加し、各シンタックスが一般用途かコード用途を選べるように</li>
+			<li>エディタのフォントをシンタックスの種類に応じて切り替える機能を追加</li>
+			<li>「表示」設定ペインに等幅フォントの設定欄を追加</li>
+			<li>ツールバーの「フォント」項目に表示フォントをプロポーショナルか等幅かを切り替えられる機能を追加</li>
+			<li>検索結果ビューで行を選択してコピーすることで一致した行をコピー可能に</li>
+			<li>改行コードの混在警告ダイアログを全面的に抑止するオプションを追加（利用は非推奨）</li>
+			<li>スペイン語のローカリゼーションを追加（Agustin Borregoさんに感謝!）</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>システム要件を<strong>macOS 13 Ventura以降</strong>に変更</li>
+			<li>インスペクタの振る舞いと見た目をアップデート</li>
+			<li>テーマのカーソルカラーに「システムカラーを使用」オプションを追加</li>
+			<li>文字インスペクタの各情報の頭に項目ラベルを追加し、文字のUnicodeバージョンも表示するよう改良</li>
+			<li>ユーザが明示的に書類を保存したときに、末尾空白の自動削除機能が必ず実行されるように変更</li>
+			<li>共有インターフェイスを最新のものに移行</li>
+			<li>設定ウインドウを整理</li>
+			<li>設定ウインドウの「プリント」設定を削除（代わりに、プリントダイアログで直接設定してください）</li>
+			<li>「プリント」ダイアログにフォントサイズ欄を追加</li>
+			<li>起動したとき何も開かれていない場合になにもしないオプションを廃止</li>
+			<li>カーソルのスタイルを選べる機能を廃止</li>
+			<li><kbd>¥</kbd>と<kbd>\</kbd>のキーを入れ替えるオプションを廃止</li>
+			<li>常に行頭からコメントアウトするオプションを廃止（この振る舞いは常に有効になりました）</li>
+			<li>「カラーコード」ツールバーボタンを廃止</li>
+			<li>文字インスペクタに表示されるUnicodeブロック名のリストをUnicode 15.1.0に更新</li>
+			<li>Swiftシンタックススタイルを更新してSwift 5.9のキーワードを追加</li>
+			<li><span class="trivial">trivial</span>: macOS 14（以降）で不透明度ツールバー項目の表示方法を変更</li>
+			<li><span class="trivial">trivial</span>: 検索ウインドウのズームボタンを無効に</li>
+			<li><span class="trivial">trivial</span>: ショートカット入力フィールドで無効なコンテキストメニューが出ないように抑制</li>
+			<li><span class="trivial">trivial</span>: エディタを分割できる回数を制限</li>
+			<li><span class="trivial">trivial</span>: シンタックス定義を複製したときにシンタックスエディタを開くのではなく直ちに複製したシンタックスを作成するように変更</li>
+			<li><span class="trivial">trivial</span>: 「シンタックススタイル」を「シンタックス」に名称変更</li>
+			<li><span class="label">非AppStore版</span>: Sparkleを2.4.2から2.5.0に更新</li>
+			<li><span class="trivial">開発</span>: ビルド環境をXcode 15 (Swift 5.9)に更新</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>開いている設定ウインドウが「ウインドウ」メニューに含まれていなかった不具合を修正</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>その他</h2>
+
+		<ul>
+			<li>ツールバーカスタマイズはCotEditor 4.6.0の初回起動時にリセットされます</li>
+		</ul>
+	</section>
+
+	<p><a href="4.5.9.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2023 CotEditor Project</p>
+</footer>
+</body>
+</html>
