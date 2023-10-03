@@ -48,6 +48,7 @@ function setupTooltip(el, options) {
 		document.body.insertAdjacentHTML('beforeend',
 			'<dialog role="tooltip"></dialog>');
 		tooltip = document.querySelector('body > dialog[role=tooltip]');
+		tooltip.open = true
 		
 		// title
 		title = title.replace(/ \(([^()]+?)\)$/gi, ' <span>($1)</span>')
@@ -93,9 +94,6 @@ function setupTooltip(el, options) {
 		
 		tooltip.style.top = (e.pageY - tooltip.clientHeight - 30) + 'px';
 		tooltip.style.left = (leftPos - 8) + 'px';
-		
-		// fukidashi position
-		tooltip.querySelector('div').style.left = (e.pageX - leftPos) + 'px';
 	});
 }
 
