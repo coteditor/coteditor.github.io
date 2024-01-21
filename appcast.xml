@@ -7,17 +7,17 @@
 
         <item>
             <title>CotEditor 4.7.3</title>
-            <pubDate>Sun, 21 Jan 2024 10:11:01 +0900</pubDate>
+            <pubDate>Sun, 21 Jan 2024 22:32:07 +0900</pubDate>
             
-            <sparkle:version>627</sparkle:version>
+            <sparkle:version>628</sparkle:version>
             <sparkle:shortVersionString>4.7.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.7.3.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.7.3.ja.html</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.7.3/CotEditor_4.7.3.dmg"
-                       length="12510113"
+                       length="14363016"
                        type="application/octet-stream"
-                        sparkle:edSignature="IsTy005JPWIiT//P2jKIcYLA6MFh97LhcyD195kT2NyKMYGyYbptEuImCTeuAa302i8RIBmQhOG3nfWCQ/ooBA=="/>
+                        sparkle:edSignature="4NkUlLYuB9JVlLIYsZRJGnT1QSvMFz1Bcvz8jYQzpCEUpEYKdo6cv3lL2xz1yWHQGa30UeVq8SePArjY4/LfAg=="/>
         </item>
         
         <item>
