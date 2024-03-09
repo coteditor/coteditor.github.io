@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 4.8.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 4.8.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/4.8.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 4.8.0β"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="4.8.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 4.8</h1>
+
+<dl>
+	<dt>Different behavior for different document</dt>
+	<dd>The concept of modes is introduced in CotEditor. Depending on the type of document, you can customize the font and typing behavior of the editor.</dd>
+	
+	<dt>Completely rewritten syntax editor</dt>
+	<dd>The functionality remains the same, but the syntax editor for the Format setting has been 100% rewritten in SwiftUI and looks a bit more modern.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 4.8.0-beta</h1>
+		<p>release: <time>2024-03-09</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Add the Mode feature that enables altering the editor's behavior depending on the document’s syntax (Go Settings > Mode settings pane to set).</li>
+			<li>Add the Restore Defaults button to the File Drop settings.</li>
+
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Improve the look and feel of the syntax editor.</li>
+			<li>Make the encoding priority view undoable.</li>
+			<li>Disable the pane transition animation in the Settings window when the user sets to reduce motion in the system Accessibility settings.</li>
+			<li>Deprecate “Append a space to comment delimiter” option</li>
+			<li><span class="trivial">trivial</span>: Enable delete selected separators in the encoding priority view with the Delete key.</li>
+			<li><span class="trivial">trivial</span>: Avoid users using reserved syntax names.</li>
+			<li><span class="trivial">dev</span>: Migrate the settings window and syntax editor to SwiftUI.</li>
+			<li><span class="trivial">dev</span>: Migrate all localizable strings to String Catalog.</li>
+			<li><span class="trivial">dev</span>: Update the build environment to Xcode 15.3 (Swift 5.10).</li>
+
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue that the application crashed when trying to share a custom syntax.</li>
+			<li>Fix an issue on macOS 14 that multiple cursors in editors remained when they are inactive.</li>
+			<li>Fix missing localizations.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Known Issues</h2>
+
+		<ul>
+			<li>Some new strings in the syntax editor and Mode settings are not localized yet in Czech.</li>
+		</ul>
+	</section>
+
+<p><a href="4.7.4.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2024 CotEditor Project</p>
+</footer>
+</body>
+</html>
