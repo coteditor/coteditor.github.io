@@ -49,6 +49,50 @@
 
 <article>
 	<header>
+		<h1>CotEditor 4.8.0-rc</h1>
+		<p>release: <time>2024-04-14</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Add Dutch localization (thanks to Yasin Gunaydin!).</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Change the line count behavior to ignore the new line character at the end of the last line.</li>
+			<li>Improve selected line number emphasis in the line number view by the vertical text orientation.</li>
+			<li>Change the filter field for the outline inspector to apply the selection of the filter history immediately.</li>
+			<li>Remove wrapped line marks in the line number view.</li>
+			<li>Update the Makefile syntax to add “GNUmakefile” to the filename mapping.</li>
+			<li><span class="trivial">trivial</span>: Remove the dialog urging to restart the application by changing the “Reopen windows from last session” option in the General settings pane.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 5.1.0 to 5.1.2.</li>
+			<li><span class="label">beta</span> <span class="trivial">trivial</span>: Fix the text size of the syntax editor’s sidebar.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue on the filter field for the outline inspector that the filter history was initially empty.</li>
+			<li><span class="label">beta</span>: Fix an issue in the syntax editor that the latter part of regular expression patterns can be invisible when they have regular expression syntax errors.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
 		<h1>CotEditor 4.8.0-beta.3</h1>
 		<p>release: <time>2024-03-31</time></p>
 	</header>
