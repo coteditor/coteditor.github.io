@@ -6,18 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 4.8.3</title>
-            <pubDate>Sun, 12 May 2024 10:00:00 +0900</pubDate>
+            <title>CotEditor 4.8.4</title>
+            <pubDate>Thu, 23 May 2024 19:02:01 +0900</pubDate>
             
-            <sparkle:version>649</sparkle:version>
-            <sparkle:shortVersionString>4.8.3</sparkle:shortVersionString>
+            <sparkle:version>651</sparkle:version>
+            <sparkle:shortVersionString>4.8.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.8.3.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.8.3.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.8.3/CotEditor_4.8.3.dmg"
-                       length="15498290"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/4.8.4.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/4.8.4.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/4.8.4/CotEditor_4.8.4.dmg"
+                       length="15499083"
                        type="application/octet-stream"
-                        sparkle:edSignature="FuTtWxUuja0MFyEorfqI9pQRdDtQswKtxNTWRxzOYPqIOlZHQQwkWYXTSh9g6nPYIcIyFaS1dccqbmmzsmMeCA=="/>
+                        sparkle:edSignature="dFnhqE+tdXvNfCYSJDyJz+poINfkEfAD/gwTpJsniqK9aZFQLARsVJJu6IhWFmHT6pQ6dDeOtS0ojIuZhaq4BQ=="/>
         </item>
         
         <item>
