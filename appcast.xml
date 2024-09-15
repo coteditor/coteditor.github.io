@@ -15,9 +15,9 @@
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/5.0.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/5.0.0-beta.ja.html</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/5.0.0-rc/CotEditor_5.0.0-rc.dmg"
-                       length="16351526"
+                       length="16351533"
                        type="application/octet-stream"
-                        sparkle:edSignature="u8wDJvFeRMVKuLcpGukbBaoI561KKoMY4pCQ5Z5a9OnFDtxHSNgQcPNvC7C62GdMwjFE8INaxLt0ZJ/1KMivAQ=="/>
+                        sparkle:edSignature="Rs73/5eitCihG22K1bw6Oh1ouVzpHgVgIBV+qY5uJcZ25lPJ+NZ8X6J6H3bvqxP2OyBtYAALiqvXRX5CRLe4Cw=="/>
         </item>
 
         <item>
