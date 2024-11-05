@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2022-05
+   lastMod : 2024-11
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -187,12 +187,9 @@ body > header > nav li {
 	display: inline;
 	margin: 0 0.4em;
 }
-body > header > nav a[href*=twitter] {
-	color: hsl(203,80%,50%) !important;
-}
-body > header > nav a[href*=twitter]::before {
-	content: url('parts/twitter_large.svg');
-	margin-right: 4px;
+body > header > nav a[href*='x.com'] {
+	content: url('parts/x_large.svg');
+	height: 16px;
 	vertical-align: -2px;
 }
 body > header > nav a:lang(ja):not([rel=external]) {
@@ -246,8 +243,8 @@ aside.sns li+li {
 [role=tooltip].github p:first-child::before {
 	content: url('parts/w_sns_github.svg');
 }
-[role=tooltip].twitter p:first-child::before {
-	content: url('parts/w_sns_twitter.svg');
+[role=tooltip].x p:first-child::before {
+	content: url('parts/w_sns_x.svg');
 }
 [role=tooltip].note p {
 	font-size: 90%;
