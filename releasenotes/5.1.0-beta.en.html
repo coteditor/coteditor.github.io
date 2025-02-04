@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 5.1.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 5.1.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/5.1.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 5.1.0β"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="5.1.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 5.1</h1>
+
+<dl>
+	<dt>Easier to distinguish documents</dt>
+	<dd>A parent folder name appears in the window title for documents with the same filename.</dd>
+	
+	<dt>Read-Only Mode</dt>
+	<dd>Prevent accidental editing by making documents read-only from the Format &gt; Prevent Editing command or the cot command-line tool.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 5.1.0</h1>
+		<p>release: <time>2025-02-05</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Append the nearest unique ancestor folder name to the document title if multiple documents with the same name are opened.</li>
+			<li>The new <a href="howto_readonly.html">“prevent editing” option</a> that prevents documents from being unintentionally edited.</li>
+			<li>Introduce the new AppleScript parameter <code>editable</code> to document objects.</li>
+			<li>Introduce the <code>--readonly</code> (<code>-r</code>) option to the <code>cot</code> command-line tool to open documents as read-only.</li>
+			<li>Read input from the standard input when the <code>cot</code> command-line tool is used with the <code>-</code> option.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Improve the VoiceOver support.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fixed an issue in CotEditor 5.0.8 where the file path argument passed to CotEditor scripts is percent-encoded.</li>
+		</ul>
+	</section>
+
+	<p><a href="5.0.8.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>
