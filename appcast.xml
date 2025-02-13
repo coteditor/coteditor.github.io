@@ -21,6 +21,21 @@
         </item>
 
         <item>
+            <title>CotEditor 5.0.8</title>
+            <pubDate>Sun, 19 Jan 2025 09:00:00 +0900</pubDate>
+            
+            <sparkle:version>692</sparkle:version>
+            <sparkle:shortVersionString>5.0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/5.0.8.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/5.0.8.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/5.0.8/CotEditor_5.0.8.dmg"
+                       length="16568345"
+                       type="application/octet-stream"
+                        sparkle:edSignature="K51wcGBXsvc7Fm8jmrBOe/ZYorq1jhOEk3VT+qctVMXg4mA7Sd0Ro4AYsq++GMYLxUu6L4QNtOxOLmC45mGDDw=="/>
+        </item>
+
+        <item>
             <title>CotEditor 4.8.7</title>
             <pubDate>Sun, 07 Jul 2024 09:00:00 +0900</pubDate>
             
