@@ -58,7 +58,7 @@
 <p>Run <code>cot</code> with <code>--help</code> to learn how to use it.</p>
 
 <pre><code>$ cot --help
-usage: cot [-h] [-v] [-w] [-g] [-n] [-s SYNTAX] [-l LINE] [-c COLUMN]
+usage: cot [-h] [-v] [-w] [-g] [-r] [-n] [-s SYNTAX] [-l LINE] [-c COLUMN]
            [FILE ...]
 
 command-line utility for CotEditor.
@@ -71,6 +71,7 @@ optional arguments:
   -v, --version         show program's version number and exit
   -w, --wait            wait for opened file to be closed
   -g, --background      do not bring the application to the foreground
+  -r, --readonly        open the document as read-only
   -n, --new             create a new blank document
   -s SYNTAX, --syntax SYNTAX
                         set specific syntax to opened document
