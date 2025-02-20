@@ -4,7 +4,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2021-01
+   lastMod : 2025-02
   /////////////////////////////////////// */
 
 
@@ -106,8 +106,6 @@ function initTooltips() {
 		var opt = {};
 		if (el.matches('nav a')) {
 			opt = {displaysUrl: false};
-		} else if (el.matches('[href*="//x.com/"]')) {
-			opt = {'class': 'x'};
 		} else if (el.matches('[href*="//github.com/"]')) {
 			opt = {'class': 'github'};
 		}
