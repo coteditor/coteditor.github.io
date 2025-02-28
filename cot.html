@@ -3,24 +3,22 @@
 
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8"/>
-	<meta name="description" content="Distribution page of cot command-line tool for CotEditor"/>
+	<meta name="description" content="Introduction page of cot command-line tool for CotEditor"/>
 	
 	<title>cot command-line tool - CotEditor</title>
 	
 	<meta property="og:type"         content="article"/>
 	<meta property="og:url"          content="https://coteditor.com/cot"/>
 	<meta property="og:title"        content="CotEditor"/>
-	<meta property="og:description"  content="Distribution page of cot command-line tool for CotEditor"/>
+	<meta property="og:description"  content="Introduction page of cot command-line tool for CotEditor"/>
 	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
 	<meta property="og:site_name"    content="CotEditor"/>
 	<meta property="og:locale"       content="en_US"/>
-	<meta property="og:locale:alternate" content="ja_JP"/>
 	<meta property="twitter:card"    content="summary"/>
 	<meta property="twitter:creator" content="@CotEditor"/>
 	
 	<link rel="shortcut icon" href="favicon.png"    type="image/png" sizes="16x16"/>
 	<link rel="shortcut icon" href="favicon@2x.png" type="image/png" sizes="32x32"/>
-<!-- 	<link rel="alternate"     href="cot.ja" hreflang="ja"/> -->
 	<link rel="stylesheet"    href="css/common.css"/>
 	<link rel="stylesheet"    href="css/cot.css"/>
 </head>
@@ -60,7 +58,8 @@
 <p>Run <code>cot</code> with <code>--help</code> to learn how to use it.</p>
 
 <pre><code>$ cot --help
-usage: cot [-h] [-v] [-w] [-g] [-n] [-l LINE] [-c COLUMN] [FILE [FILE ...]]
+usage: cot [-h] [-v] [-w] [-g] [-n] [-s SYNTAX] [-l LINE] [-c COLUMN]
+           [FILE ...]
 
 command-line utility for CotEditor.
 
@@ -73,21 +72,18 @@ optional arguments:
   -w, --wait            wait for opened file to be closed
   -g, --background      do not bring the application to the foreground
   -n, --new             create a new blank document
+  -s SYNTAX, --syntax SYNTAX
+                        set specific syntax to opened document
   -l LINE, --line LINE  jump to specific line in opened document
   -c COLUMN, --column COLUMN
                         jump to specific column in opened document
 </code></pre>
 </section>
-
-
-<section>
-<a href="https://github.com/coteditor/cot">cot's repo on GitHub</a>
-</section>
 </main>
 
 
 <footer>
-	<p class="copyright">© 2015-2022 CotEditor Project</p>
+	<p class="copyright">© 2015-2025 CotEditor Project</p>
 </footer>
 </body>
 </html>
