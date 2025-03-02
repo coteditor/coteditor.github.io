@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 5.1.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 5.1.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/5.1.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 5.1.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="5.1.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="highlights">
+<h1>Highlights on CotEditor 5.1</h1>
+
+<dl>
+	<dt>Easier to distinguish documents</dt>
+	<dd>A parent folder name appears in the window title for documents with the same filename.</dd>
+	
+	<dt>Read-Only Mode</dt>
+	<dd>Prevent accidental editing by making documents read-only from the Format &gt; Prevent Editing command or the cot command-line tool.</dd>
+	
+	<dt>Display Finder Tags</dt>
+	<dd>Displaying Finder tags to the document inspector and the file browser ensures consistent document organization.</dd>
+</dl>
+</section>
+
+
+<article>
+	<header>
+		<h1>CotEditor 5.1.1</h1>
+		<p>release: <time>2025-03-03</time></p>
+	</header>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Just move the insertion point instead of inserting a new one when typing a quotation mark just before a quotation mark automatically inserted by the “Automatically insert closing brackets and quotes” option.</li>
+			<li>Update the Unicode block name list.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue in the What’s New window where an unwanted beta label would appear even in stable versions.</li>
+		</ul>
+	</section>
+</article>
+
+
+<article>
+	<header>
+		<h1>CotEditor 5.1.0</h1>
+		<p>release: <time>2025-03-02</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Append the nearest unique ancestor folder name to the document title if multiple documents with the same name are opened.</li>
+			<li>The new “prevent editing” option that prevents documents from being unintentionally edited.</li>
+			<li>Introduce the new AppleScript parameter <code>editable</code> to document objects.</li>
+			<li>Introduce the <code>--readonly</code> (<code>-r</code>) option to the <code>cot</code> command-line tool to open documents as read-only.</li>
+			<li>Read input from the standard input when the <code>cot</code> command-line tool is used with the <code>-</code> option.</li>
+			<li>Display Finder tags in the document inspector and the file browser.</li>
+			<li>Add the “text replacement” option to the Mode settings to disable the future in the editor.</li>
+			<li>Add the PowerShell syntax.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Show an alert and abort the import of setting files if they are not in a valid format.</li>
+			<li>Declare CotEditor can handle folders.</li>
+			<li>Update the JSON syntax to include the .jsonl file extension.</li>
+			<li>Update the Fortran syntax to include the .cuf file extension.</li>
+			<li>Update the PHP syntax</li>
+			<li>Improve the VoiceOver support.</li>
+			<li>Improve the stability.</li>
+			<li><span class="trivial">experimental</span>: Improve the syntax highlighting algorithm for inline comments.</li>
+            <li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.6.3 to 2.7.0.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 5.1.3 to 5.3.1.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue in the AppleScript support where the `print` command is ignored.</li>
+			<li>Fixed an issue in CotEditor 5.0.8 where the file path argument passed to CotEditor scripts is percent-encoded.</li>
+			<li>Fix an issue in the Appearance settings pane where the alert about potential non-monospace fonts keeps appearing even after changing only the font size.</li>
+			<li>Fix an issue where the Settings window is not accessible from the Window menu.</li>
+			<li>Fix an issue on macOS 15 where newly created documents are mispositioned when the frontmost document is tiled.</li>
+		</ul>
+	</section>
+
+<p><a href="5.0.8.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>
