@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2022-05
+   lastMod : 2025-04
   ////////////////////////////////////// */
 
 body {
@@ -156,11 +156,13 @@ a.download img {
 .slider .controls label:hover {
 	opacity: 1.0;
 }
-#item1:checked ~ .controls label:nth-child(5),
+#item1:checked ~ .controls label:nth-child(7),
 #item2:checked ~ .controls label:nth-child(1),
 #item3:checked ~ .controls label:nth-child(2),
 #item4:checked ~ .controls label:nth-child(3),
-#item5:checked ~ .controls label:nth-child(4) {
+#item5:checked ~ .controls label:nth-child(4),
+#item6:checked ~ .controls label:nth-child(5),
+#item7:checked ~ .controls label:nth-child(6) {
 	left: 48px;
 }
 
@@ -168,7 +170,9 @@ a.download img {
 #item2:checked ~ .controls label:nth-child(3),
 #item3:checked ~ .controls label:nth-child(4),
 #item4:checked ~ .controls label:nth-child(5),
-#item5:checked ~ .controls label:nth-child(1) {
+#item5:checked ~ .controls label:nth-child(6),
+#item6:checked ~ .controls label:nth-child(7),
+#item7:checked ~ .controls label:nth-child(1) {
 	right: 48px;
 	transform: rotate(180deg);
 }
