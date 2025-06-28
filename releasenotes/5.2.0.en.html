@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 5.2.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 5.2.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/5.2.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 5.2.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="5.2.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="highlights">
+<h1>Highlights on CotEditor 5.2</h1>
+
+<dl>
+	<dt>More Various Encodings</dt>
+	<dd>You can now add any text encoding that macOS supports to the encoding candidate list.</dd>
+</dl>
+</section>
+
+
+<article>
+	<header>
+		<h1>CotEditor 5.2.0</h1>
+		<p>release: <time>2025-07-01</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Allow adding and removing text encodings from the text encoding list, and enabling the handling of a wider range of encodings.</li>
+			<li>Add the Xcode Project syntax (.pbxproj).</li>
+			<li>Add the Metal syntax (thanks to Aybars Nazlica!)</li>
+		</ul>
+	</section>
+	</header>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Improve differentiation without color.</li>
+			<li>Update the CSS syntax to highlight more keywords (thanks to Karam!).</li>
+			<li>Update the HTML syntax to highlight more keywords (thanks to Karam!).</li>
+			<li><span class="trivial">trivial</span>: Adjust the layout of the multiple replacement definition editor.</li>
+			<li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.7.0 to 2.7.1.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 6.0.1 to 6.0.2.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue where opening a document with mixed line endings incorrectly unifies them to the dominant line ending when it is not LF.</li>
+			<li>Fix an issue where a document containing incompatible characters cannot be closed without lossy saving.</li>
+			<li>Fix an issue where the text encoding of restored documents could be incorrectly set to Unicode (UTF-8).</li>
+			<li>Fix an issue where the <kbd>Option</kbd>-<kbd>Delete Forward</kbd> shortcut deletes the previous word instead of the next word by the multi-cursor editing mode.</li>
+			<li>Fix an issue in the file browser where the order of renamed items remains unchanged.</li>
+			<li>Fix an issue where the cached settings remain unchanged after executing the “Reload All Theme,” “Reload All Syntax,” or “Reload All Definitions” commands.</li>
+		</ul>
+	</section>
+
+<p><a href="5.1.8.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>
