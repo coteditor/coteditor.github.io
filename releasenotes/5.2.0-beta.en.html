@@ -46,6 +46,37 @@
 
 <article>
 	<header>
+		<h1>CotEditor 5.2.0-rc</h1>
+		<p>release: <time>2025-06-28</time></p>
+	</header>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li><span class="trivial">trivial</span>: Adjust the layout of the multiple replacement definition editor.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 6.0.1 to 6.0.2.</li>
+			<li><span class="label">beta</span>: Update Korean, Polish, and Portuguese localizations.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue where opening a document with mixed line endings incorrectly unifies them to the dominant line ending when it is not LF.</li>
+			<li>Fix an issue where a document containing incompatible characters cannot be closed without lossy saving.</li>
+			<li>Fix an issue where the text encoding of restored documents could be incorrectly set to Unicode (UTF-8).</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
 		<h1>CotEditor 5.2.0-beta</h1>
 		<p>release: <time>2025-06-22</time></p>
 	</header>
@@ -71,16 +102,6 @@
 			<li>Update the CSS syntax to highlight more keywords (thanks to Karam!).</li>
 			<li>Update the HTML syntax to highlight more keywords (thanks to Karam!).</li>
 			<li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.7.0 to 2.7.1.</li>
-		</ul>
-	</section>
-
-
-	<section>
-		<h2>Fixes</h2>
-
-		<ul>
-			<li>Fix an issue where the <kbd>Option</kbd>-<kbd>Delete Forward</kbd> shortcut deletes the previous word instead of the next word by the multi-cursor editing mode.</li>
-			<li>Fix an issue in the file browser where the order of renamed items remains unchanged.</li>
 		</ul>
 	</section>
 
