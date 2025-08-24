@@ -6,6 +6,21 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
+            <title>CotEditor 6.0.0-beta</title>
+            <pubDate>Sun, 24 Aug 2025 21:47:35 +0900</pubDate>
+            <sparkle:channel>prerelease</sparkle:channel>
+            <sparkle:version>731</sparkle:version>
+            <sparkle:shortVersionString>6.0.0-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.0.0-beta.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.0.0-beta.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.0.0-beta/CotEditor_6.0.0-beta.dmg"
+                       length="19770284"
+                       type="application/octet-stream"
+                        sparkle:edSignature="lvQpwQr4jSR/gOU3UtVJw7jCL7tji9EPVlJUROALdqNLtkzy4aThySc1tU0h4sNrQIV/kzLLXRMCykyB4zDVCg=="/>
+        </item>
+
+        <item>
             <title>CotEditor 5.2.3</title>
             <pubDate>Sat, 23 Aug 2025 17:28:00 +0900</pubDate>
             

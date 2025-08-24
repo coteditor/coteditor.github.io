@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2020-03
+   lastMod : 2025-08
   ////////////////////////////////////// */
 
 body {
@@ -48,6 +48,9 @@ body > header {
 }
 body > header::before {
 	display: none;
+}
+body > header > img {
+	padding: 8px;
 }
 body > header h1 {
 	font: 64px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
