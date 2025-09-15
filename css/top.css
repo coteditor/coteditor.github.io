@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2025-04
+   lastMod : 2025-09
   ////////////////////////////////////// */
 
 body {
@@ -90,10 +90,11 @@ a#beta strong {
 	left: 0;
 }
 #top h1 {
-	font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+	font-family: ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
 	font-size: 64px;
 	font-weight: 400;
 	line-height: 1.0;
+	letter-spacing: 0.02em;
 }
 #top p {
 	font-size: 16px;
@@ -178,18 +179,23 @@ a.download img {
 }
 
 
-
 /* lead */
 #lead {
-	font: italic 300 32px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
-	letter-spacing: 1px;
+	font: italic 250 34px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
+	letter-spacing: 1.5px;
+	word-break: auto-phrase;
 	color: hsl(198,40%,40%);
+	
+	background: linear-gradient(180deg, hsl(200,40%,40%), hsl(190,50%,45%));
+	-webkit-background-clip: text;
+	        background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 
 /* highlights */
 #highlights {
-	max-width: 800px;
+	max-width: 880px;
 	
 	background: url('parts/to_features.svg') no-repeat center bottom;
 	padding-bottom: 130px;
@@ -206,7 +212,7 @@ a.download img {
 	padding-top: 104px;
 }
 #highlights section+section {
-	margin-left: 2%;
+	margin-left: 3%;
 }
 #highlights section img {
 	width: 96px;
@@ -224,10 +230,9 @@ a.download img {
 }
 #highlights section p {
 	font-size: 96%;
-	line-height: 1.4;
+	line-height: 1.6;
 	margin: 0;
 }
-
 
 
 /* features */
@@ -258,14 +263,14 @@ a.download img {
 }
 #features section h3 {
 	font-size: 110%;
+	letter-spacing: 0.5px;
 	margin: 0 0 4px;
 }
 #features section p {
 	font-size: 90%;
-	line-height: 1.6;
+	line-height: 1.7;
 	margin: 0 0 0 60px;
 }
-
 
 
 /* develop */
@@ -286,13 +291,14 @@ a.download img {
 #develop a.github {
 	display: inline-block;
 	color: hsl(0,0%,33%);
-	border: 2px solid hsla(0,0%,33%,0.5);
-	border-radius: 4px;
+	background: hsl(198,20%,98%);
+	border: 0.5px solid hsla(0,0%,33%,0.2);
+	box-shadow: 0 2px 5px hsla(0,0%,0%,0.3);
+	border-radius: 0.8em;
 	letter-spacing: 1px;
-	padding: 5px 10px;
+	padding: 0.5em 1em;
 }
 #develop a.github:hover {
-	background: transparent;
 	color: hsl(90,45%,45%);
 	border-color: hsla(90,45%,45%,0.5);
 }

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2025-02
+   lastMod : 2025-09
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -17,7 +17,9 @@
 	line-height: 1.0;
 	font-weight: inherit;
 	font-style: inherit;
-	text-spacing: ideograph-alpha;  /* https://drafts.csswg.org/css-text-4/#text-spacing */
+	font-size-adjust: from-font;
+	text-autospace: normal;
+	text-spacing-trim: trim-start;
 }
 img {
 	border: none;
@@ -131,7 +133,8 @@ dfn {
 
 /* body */
 body {
-	font: 14px 'Helvetica Neue', sans-serif;
+	font: 15px 'Helvetica Neue', sans-serif;
+	letter-spacing: 0.01em;
 	color: hsl(0,0%,10%);
 	
 	background: white;
@@ -165,7 +168,7 @@ body > header > a:first-child::before {
 	content: '';
 	width: 48px;
 	height: 48px;
-	background: url('../img/appicon/64@2x.png');
+	background: url('../img/appicon/128@2x.png');
 	background-size: 48px;
 	vertical-align: -14px;
 	margin-right: 4px;
@@ -192,9 +195,6 @@ body > header > nav a[href*='x.com'] {
 	height: 16px;
 	vertical-align: -2px;
 }
-body > header > nav a:lang(ja):not([rel=external]) {
-	font-size: 90%;  /* adjust Japanese font size */
-}
 
 
 /* main */
@@ -207,8 +207,12 @@ main {
 /* footer */
 body > footer {
 	font-size: 13px;
+	letter-spacing: 0.03em;
 	text-align: center;
 	margin-top: 40px;
+}
+body > footer p {
+	opacity: 0.4;
 }
 
 /* sns */
