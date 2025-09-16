@@ -6,11 +6,10 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	:root { stroke:hsl(90,50%,50%); fill:transparent;
-	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	*     { stroke-linejoin:round; stroke-linecap:round; }
+	:root { stroke-width:2; stroke:hsl(90,50%,50%); fill:transparent; }
 	.thin { stroke-width:1 }
-	
-	.fill { fill:hsl(90,50%,50%); stroke:transparent }
+	.fill { fill:hsl(90,50%,50%); stroke:none }
 ]]></style>
 
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 6.0.0の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 6.0.0の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/6.0.0.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 6.0.0の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="6.0.0.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<section class="highlights">
+<h1>CotEditor 6.0のハイライト</h1>
+
+<dl>
+	<dt>Liquid Glassのよそおい</dt>
+	<dd>macOS Tahoe 26の新しいLiquid Glassスタイルで、刷新されたインターフェイスを体験できます。</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 6.0.0</h1>
+		<p>リリース: <time>2025-09-16</time></p>
+	</header>
+
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li><strong>macOS Tahoe 26</strong>に対応</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>システム要件を<strong>macOS Sequoia 15以降</strong>に変更</li>
+			<li>macOS 26でのユーザインターフェースをLiquid Glassスタイルに更新</li>
+			<li>アプリケーションアイコンをLiquid Glassスタイルに更新</li>
+			<li>対応する括弧をハイライトするオプションを削除しつねににハイライトされるように変更</li>
+			<li>テキスト検索のハイライトをすべての分割エディタに適用</li>
+			<li>ファイルブラウザの削除アクションで選択したアイテムをゴミ箱に移動</li>
+			<li>プレビュー中の文書のファイルサイズをステータスバーに表示</li>
+			<li>シンタックスエディタのリストの下に登録している項目数を表示</li>
+			<li>ウインドウごとにエディタの不透明度を変更する機能を廃止</li>
+			<li>CotEditorでファイルを開くだけでカスタムテーマをインストールする機能を廃止</li>
+			<li>「テキスト」＞「変換」メニューの「スネークケースにする」「キャメルケースにする」「パスカルケースにする」「ひらがなをカタカナにする」と「カタカナをひらがなにする」コマンドを廃止</li>
+			<li>macOS 26における行番号表示の「区切り線を表示」オプションを廃止</li>
+			<li><span class="trivial">trivial</span>: 「全角にする」と「半角にする」コマンドをそれぞれ「全角に変換」と「半角に変換」に改名</li>
+			<li><span class="trivial">trivial</span>: 追加/削除ボタンの動作を改善</li>
+			<li><span class="trivial">trivial</span>: 「新機能」ウインドウのレイアウトを更新</li>
+			<li><span class="trivial">開発</span>: 設定内のテーマリストとシンタックスリスト、検索ウインドウの入力欄をSwiftUIに移行</li>
+			<li><span class="trivial">開発</span>: ビルド環境をXcode 26.0（Swift 6.2、macOS 26 SDK）に更新</li>
+			<li><span class="label">非AppStore版</span>: アップデートが利用可能なとき「アップデートを確認」メニュー項目にアップデートバッジを表示</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>「インデントを変換」コマンドがデフォルトではないインデントスタイルには変換しない不具合を修正</li>
+			<li>ツールバーを後から表示したときに「シンタックス」ツールバー項目が無効になる不具合を修正</li>
+			<li>複数置換ウインドウのサイズが保存されなかった不具合を修正</li>
+			<li>検索ウインドウにマッチした項目の数が表示されなかったオランダ語ローカリゼーションの不具合を修正</li>
+		</ul>
+	</section>
+
+	<p><a href="5.2.3.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>

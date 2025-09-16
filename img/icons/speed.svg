@@ -7,12 +7,10 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	:root { stroke:hsl(90,50%,50%); fill:transparent;
-	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	*     { stroke-linejoin:round; stroke-linecap:round; }
+	:root { stroke-width:2; stroke:hsl(90,50%,50%); fill:transparent; }
 	.thin { stroke-width:1 }
-	
-	*     { stroke-linecap:butt }
-	.fill { fill:hsl(90,50%,50%); stroke:transparent }
+	.fill { fill:hsl(90,50%,50%); stroke:none }
 ]]></style>
 
 
@@ -20,12 +18,13 @@
 	5.4-11C30,10.3,23.7,4,16,4z"/>
 
 <g class="thin" transform="translate(16,18)">
-	<g class="fill">
+	<g class="fill" transform="rotate(60)">
 		<circle r="1.5"/>
-		<polygon points="-1.5,0 -0.3,-9 0.3,-9 1.5,0" transform="rotate(60)"/>
+		<circle r="0.5" cy="-8.5"/>
+		<polygon points="-1.5,0 -0.5,-8.5 0.5,-8.5 1.5,0"/>
 	</g>
 	
-	<line y1="-11" y2="-8.5" id="tic"/>
+	<line y1="-10.5" y2="-9" id="tic"/>
 	<use xlink:href="#tic" transform="rotate(-135)"/>
 	<use xlink:href="#tic" transform="rotate(-45)"/>
 	<use xlink:href="#tic" transform="rotate(-90)"/>

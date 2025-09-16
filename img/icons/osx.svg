@@ -6,18 +6,17 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	:root { stroke:hsl(90,50%,50%); fill:transparent;
-	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
-	.thin { stroke-width:1; }
-	
-	.eye  { fill:hsl(90,50%,50%); stroke:none; }
+	*     { stroke-linejoin:round; stroke-linecap:round; }
+	:root { stroke-width:2; stroke:hsl(90,50%,50%); fill:transparent; }
+	.thin { stroke-width:1 }
+	.fill { fill:hsl(90,50%,50%); stroke:none }
 ]]></style>
 
 
-<rect x="3" y="4" width="26" height="24" rx="4"/>
-<rect class="eye" x="8"  y="11" width="2" height="4" rx="0.5"/>
-<rect class="eye" x="21" y="11" width="2" height="4" rx="0.5"/>
-<path class="thin" d="M8,20.5 c0,0, 2.7,2.5, 8,2.5 s8 -2.5,8-2.5"/>
-<path class="thin" d="M16,5c0,0-2,6-2,12.5h4c0,4,1,9.5,1,9.5"/>
+<rect x="3" y="3" width="26" height="25" rx="5"/>
+<rect class="fill" x="9"  y="10" width="1.5" height="3.5" rx="0.75"/>
+<rect class="fill" x="21.5" y="10" width="1.5" height="3.5" rx="0.75"/>
+<path class="thin" d="M8,20 c0,0, 2.7,3, 8,3 s8 -3,8-3"/>
+<path class="thin" d="M16.5,4c0,0-2.5,5-3,13.5h4c-0.5,4,1,9,2,11"/>
 
 </svg>

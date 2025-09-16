@@ -6,19 +6,18 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	:root { stroke:hsl(90,50%,50%); fill:transparent;
-	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
-	.sub  { stroke-width:1 }
+	*     { stroke-linejoin:round; stroke-linecap:round; }
+	:root { stroke-width:2; stroke:hsl(90,50%,50%); fill:transparent; }
+	.thin { stroke-width:1 }
 	
-	text  { fill:hsl(90,50%,50%); stroke:transparent; font-family:sans-serif }
+	text  { fill:hsl(90,50%,50%); stroke:none; font-family:sans-serif; }
 ]]></style>
 
 
-<path d="M28,4H4C2.9,4,2,4.9,2,6v16c0,1.1,0.9,2,2,2h5.2l3.8,5l3.8-5H28c1.1,0,
-	2-0.9,2-2V6C30,4.9,29.1,4,28,4z"/>
+<path d="M26,24c2.2,0,4-1.8,4-4V8c0-2.2-1.8-4-4-4H6c-2.2,0-4,1.8-4,4v12c0,2.2,1.8,4,4,4h3.2s3.8,5,3.8,5l3.8-5h9.2Z"/>
 <text x="6" y="19" font-size="14">C</text>
 
-<line class="sub" x2="6" transform="translate(19,11.5)"/>
-<line class="sub" x2="6" transform="translate(19,15.5)"/>
+<line class="thin" x2="6" transform="translate(19,11.5)"/>
+<line class="thin" x2="6" transform="translate(19,15.5)"/>
 
 </svg>

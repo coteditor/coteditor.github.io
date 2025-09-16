@@ -6,15 +6,14 @@
      viewBox="0 0 32 32">
 
 <style type="text/css"><![CDATA[
-	:root { stroke:hsl(90,50%,50%); fill:transparent;
-	        stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
+	*     { stroke-linejoin:round; stroke-linecap:round; }
+	:root { stroke-width:2; stroke:hsl(90,50%,50%); fill:transparent; }
 	.thin { stroke-width:1 }
 ]]></style>
 
 
 <g transform="translate(1,8)">
-	<path d="M3.5,20c-1.6,0-2.3-1.2-1.5-2.6l8.5-14.8c0.8-1.4,2.2-1.4,3,0L22,17.4
-		c0.8,1.4,0.2,2.6-1.5,2.6H3.5z"/>
+	<path d="M3.5,20c-1.6,0-2.3-1.2-1.5-2.6l8.5-14.8c0.8-1.4,2.2-1.4,3,0L22,17.4c0.8,1.4,0.2,2.6-1.5,2.6H3.5z"/>
 	
 	<line x1="12" x2="12" y1="7" y2="13"/>
 	<line x1="12" x2="12" y1="16.5" y2="16.5"/>
