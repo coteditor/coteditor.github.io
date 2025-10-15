@@ -9,7 +9,7 @@
             <title>CotEditor 6.0.4</title>
             <pubDate>Thu, 16 Oct 2025 8:00:00 +0900</pubDate>
             
-            <sparkle:version>754</sparkle:version>
+            <sparkle:version>756</sparkle:version>
             <sparkle:shortVersionString>6.0.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.0.4.en.html</sparkle:releaseNotesLink>
