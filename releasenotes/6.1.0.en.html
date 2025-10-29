@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 6.1.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 6.1.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/6.1.0.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 6.1.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="6.1.0.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 6.1</h1>
+
+<dl>
+	<dt>Find documents in the file browser</dt>
+	<dd>The file browser now allows filtering of items by filenames.</dd>
+	<dt>More smart comment out</dt>
+	<dd>The behavior of comments can now be customized, making the editor feel more natural to use.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 6.1.0</h1>
+		<p>release: <time>2025-11-03</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Introduce the filter feature in the file browser.</li>
+			<li>Introduce the “Insert comment delimiters after indent” option to the Edit settings pane.</li>
+			<li>Revert the “Append a space to comment delimiter” option to the Edit settings pane.</li>
+			<li>Add Russian localization (Thanks to Andrey!).</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Improve the algorithm to comment out block comments.</li>
+			<li>Ignore .git folders in the file browser.</li>
+			<li>Prevent moving focus to the editor when selecting a document in the file browser.</li>
+			<li>Update the Verilog syntax to support SystemVerilog.</li>
+			<li>Update the Swift syntax.</li>
+			<li><span class="trivial">trivial</span>: Adjust the layout of the Settings window.</li>
+			<li><span class="trivial">trivial</span>: Update the Unicode block name list.</li>
+			<li><span class="trivial">dev</span>: Update the build environment to Xcode 26.1.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue where the counts in the status bar are occasionally unavailable when the document is opened.</li>
+			<li>Fix an issue where the text fields in sheet dialogs don’t get focus when they appear.</li>
+		</ul>
+	</section>
+
+	<p><a href="6.0.4.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>
