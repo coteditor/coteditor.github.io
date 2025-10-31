@@ -6,18 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 6.1.0-rc</title>
-            <pubDate>Wed, 29 Oct 2025 23:05:01 +0900</pubDate>
+            <title>CotEditor 6.1.0-rc.2</title>
+            <pubDate>Sat, 01 Nov 2025 00:18:55 +0900</pubDate>
             <sparkle:channel>prerelease</sparkle:channel>
-            <sparkle:version>763</sparkle:version>
-            <sparkle:shortVersionString>6.1.0-rc</sparkle:shortVersionString>
+            <sparkle:version>765</sparkle:version>
+            <sparkle:shortVersionString>6.1.0-rc.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.1.0-beta.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.1.0-beta.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.1.0-rc/CotEditor_6.1.0-rc.dmg"
-                       length="16157878"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.1.0-rc.2.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.1.0-rc.2.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.1.0-rc.2/CotEditor_6.1.0-rc.2.dmg"
+                       length="17806996"
                        type="application/octet-stream"
-                        sparkle:edSignature="vekjHWP7B0ZIH1DXZS/ATqq+ZbuR8O3qevd9bYscIWGrBJqn+WAAcbaxy021W8AOsJ8qwmO9DwDf+Ca2upHUDA=="/>
+                        sparkle:edSignature="xgrU+9GALcnvnoemcd6PGvWKNdaw2mlixPzwkf0Pn4iEJ9ICiefZJXtgPFgAndCXTMk7VcLTAtxi2jvO8XCIDw=="/>
         </item>
 
         <item>
