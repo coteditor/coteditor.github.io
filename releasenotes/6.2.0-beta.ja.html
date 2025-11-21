@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 6.2.0βの変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 6.2.0βの変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/6.2.0-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 6.2.0βの変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="6.2.0-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>これはプレリリース版です。</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 6.2のハイライト</h1>
+
+<dl>
+	<dt>引越しをサポート</dt>
+	<dd>「ファイル」メニューからCotEditorの設定、カスタムシンタックス、テーマ、複数置換の定義をまとめて書き出し・読み込みできるようになりました。環境の引っ越しがこれまでより簡単になります。</dd>
+	
+	<dt>エイリアスへ簡単にアクセス</dt>
+	<dd>エイリアスやシンボリックリンクのオリジナル書類を、ファイルブラウザから現在のウインドウに直接開けるようになりました。<br/>
+	<small>*オリジナルがフォルダの場合は新規ウインドウで開きます。</small></dd>
+	
+	<dt>ユーザガイド、ちょっと良くなりました</dt>
+	<dd>内蔵しているユーザガイドを見直して内容を充実させました。最新のmacOSデザインに合わせてレイアウトも刷新しています。</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 6.2.0-beta</h1>
+		<p>リリース: <time>2025-11-21</time></p>
+	</header>
+
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li>設定を一括して書き出し、別のコンピュータで読み込み</li>
+			<li>ファイルブラウザからエイリアスやシンボリックリンクの書類を開く</li>
+			<li>「新規ウインドウで開く」コマンドで、CotEditorにアクセス権がない場合に単にエラーを表示するのではなくユーザにファイルアクセス権を求める</li>
+			<li>ファイルプレビューで、エイリアスやシンボリックリンクのオリジナルのパスを表示</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>記号ペアのハイライトが入れ子構造を考慮</li>
+			<li>Luaシンタックスを更新し、入れ子の文字列区切りに対応</li>
+			<li>ユーザガイドの内容とレイアウトを更新</li>
+			<li><span class="trivial">開発</span>: ビルド環境をXcode 26.2に更新</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>既知の問題</h2>
+
+		<ul>
+			<li>新たに追加された一部の文字列はまだチェコ語とポルトガル語にはローカライズされていません</li>
+		</ul>
+	</section>
+
+	<p><a href="6.1.2.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>
