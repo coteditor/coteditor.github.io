@@ -12,8 +12,8 @@
             <sparkle:version>778</sparkle:version>
             <sparkle:shortVersionString>6.2.0-beta.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.2.0-beta.3.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.2.0-beta.3.ja.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.2.0-beta.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.2.0-beta.ja.html</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.2.0-beta.3/CotEditor_6.2.0-beta.3.dmg"
                        length="20486475"
                        type="application/octet-stream"
