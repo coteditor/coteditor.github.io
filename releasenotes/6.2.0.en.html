@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 6.2.0 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 6.2.0"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/6.2.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 6.2.0"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="6.2.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 6.2</h1>
+
+<dl>
+	<dt>Assist your migration</dt>
+	<dd>Export and import all your CotEditor settings, custom syntaxes, themes, and Multiple Replace definitions from the File menu to easily move your environment to another Mac.</dd>
+	
+	<dt>Easier access to aliases</dt>
+	<dd>The original documents behind aliases and symlinks can now be opened directly in the current window from the file browser.<br/>
+	<small>*If the original is a folder, it will open in a new window.</small></dd>
+	
+	<dt>Build replace rules in bulk from TSV</dt>
+	<dd>Import tab-separated pairs of search and replacement texts to create a replace definition. Ideal for large glossaries.</dd>
+	
+	<dt>Your built-in guide, newly polished</dt>
+	<dd>The built-in user guide now offers clearer explanations, richer content, and a refreshed layout aligned with the latest macOS.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 6.2.0</h1>
+		<p>release: <time>2025-12-14</time></p>
+	</header>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Add a feature to export and import settings to transfer them to another Mac.</li>
+			<li>Allow opening alias and symlink documents from the file browser.</li>
+			<li>Request file access permission from the user by the “Open in New Window” command instead of simply presenting an error when CotEditor doesn’t have permission.</li>
+			<li>Display the original path for alias and symlink files in file preview views.</li>
+			<li>Support for importing multiple replace definitions from tab-separated values.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Syntax highlighting now takes nesting into account when highlighting symbol pairs.</li>
+			<li>Update the Lua syntax to support nested string delimiters.</li>
+			<li>Update the contents and layout of the user guide.</li>
+			<li><span class="trivial">trivial</span>: Select the newly added settings after importing a settings file.</li>
+			<li><span class="trivial">dev</span>: Update the build environment to Xcode 26.2.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue in CotEditor 6.1.2 where the text entered in a split editor didn’t match the theme's text color.</li>
+			<li>Fix an issue where the default syntax setting reverted to Plain Text after a short time when set to None.</li>
+			<li>Fix an issue where scroll bars in the editor became invisible under certain theme and appearance combinations.</li>
+			<li>Fix an issue in the Donation settings pane where the purchase button for the one-time donation didn’t work on subsequent attempts.</li>
+			<li>Address an issue where scrolling the editor with arrow keys caused unexpected jumps.</li>
+			<li><span class="trivial">trivial</span>: Fix the vertical scroller drawing with the RTL writing mode on macOS 26.</li>
+		</ul>
+	</section>
+
+	<p><a href="6.2.0-beta.ja.html">release notes for prerelease versions</a></p>
+
+	<p><a href="6.1.2.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2025 CotEditor Project</p>
+</footer>
+</body>
+</html>

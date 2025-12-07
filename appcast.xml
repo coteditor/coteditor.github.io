@@ -6,33 +6,18 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 6.2.0-rc</title>
-            <pubDate>Sun, 07 Dec 2025 14:06:29 +0900</pubDate>
-            <sparkle:channel>prerelease</sparkle:channel>
-            <sparkle:version>782</sparkle:version>
-            <sparkle:shortVersionString>6.2.0-rc</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.2.0-beta.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.2.0-beta.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.2.0-rc/CotEditor_6.2.0-rc.dmg"
-                       length="20530100"
-                       type="application/octet-stream"
-                        sparkle:edSignature="1LE6Z08/rx19Cb4x5MVm0ppkBPbNgvMdQ6kZKORBxpsLX8g+Cf0s/HVILwTVCu7OMEy+I/PK+bV1ukxvgKxyDA=="/>
-        </item>
-
-        <item>
-            <title>CotEditor 6.1.2</title>
-            <pubDate>Fri, 21 Nov 2025 10:00:00 +0900</pubDate>
+            <title>CotEditor 6.2.0</title>
+            <pubDate>Sat, 13 Dec 2025 11:36:11 +0900</pubDate>
             
-            <sparkle:version>771</sparkle:version>
-            <sparkle:shortVersionString>6.1.2</sparkle:shortVersionString>
+            <sparkle:version>785</sparkle:version>
+            <sparkle:shortVersionString>6.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.1.2.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.1.2.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.1.2/CotEditor_6.1.2.dmg"
-                       length="18180233"
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/6.2.0.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/6.2.0.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/6.2.0/CotEditor_6.2.0.dmg"
+                       length="20531625"
                        type="application/octet-stream"
-                        sparkle:edSignature="W1HdBivM4ERVqvacrtUN99LoIHn8ZLvs/t+GMj5v0x8eORJ3hZS+cxyMMWM2LEvulR1edkek2aMe9NIpLTQPAg=="/>
+                        sparkle:edSignature="q5D0r95s24yicRnjra4KLgtBFsbEr0s3X9+iaMPqQT55l+bf4gGQsl8M00+/jru6s8Yk31eGHQKrBAEIJusPDg=="/>
         </item>
 
         <item>
