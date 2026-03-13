@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 6.2.5の変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 6.2.5の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/6.2.5-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 6.2.5の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="6.2.5-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article>
+	<header>
+		<h1>CotEditor 6.2.5</h1>
+		<p>リリース: <time>2026-03-14</time></p>
+	</header>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li><code>%%%{CotEditorXOutput=NewDocument}%%%</code>オプションを使ったUNIXスクリプトで、実際に出力があるときだけ新規書類を作成するよう改良</li>
+			<li>安定性を向上</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>Markdown書類の初期拡張子が.mdではなく.txtになる不具合を修正</li>
+			<li>設定の書き出しにスニペットが含まれていなかった不具合を修正</li>
+			<li>設定アーカイブから読み込んだ設定にファイル名拡張子が含まれてしまう不具合を修正</li>
+			<li>プリントオプションで「不可視文字をプリント」を有効にしても不可視文字がプリントされなかった不具合を修正</li>
+			<li>ユーザガイドのUNIXスクリプトの説明を修正</li>
+			<li>ファイルの作成・複製・移動中にアプリが予期せずクラッシュする可能性があるファイルブラウザの不具合に対処</li>
+			<li>書類がほかのプロセスから更新されたときに予期せずクラッシュする可能性がある不具合に対処</li>
+			<li><span class="trivial">trivial</span>: Escキーで「CotEditorの新機能」ウインドウを閉じられないことがある不具合を修正</li>
+		</ul>
+	</section>
+
+	<p><a href="6.2.4.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>

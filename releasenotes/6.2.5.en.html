@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 6.2.5 - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 6.2.5"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/6.2.5-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 6.2.5"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="6.2.5-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article>
+	<header>
+		<h1>CotEditor 6.2.5</h1>
+		<p>release: <time>2026-03-14</time></p>
+	</header>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Create a new document from a UNIX script only when output is available, using the <code>%%%{CotEditorXOutput=NewDocument}%%%</code> option.</li>
+			<li>Improve overall stability.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue where the default file extension for Markdown documents was .txt instead of .md.</li>
+			<li>Fix an issue where snippets were not included in the settings export.</li>
+			<li>Fix an issue where settings imported from a settings archive incorrectly included filename extensions.</li>
+			<li>Fix an issue where invisible characters were not printed even if the “Print Invisible” option in the print settings was enabled.</li>
+			<li>Fix descriptions in the user guide for UNIX scripting.</li>
+			<li>Address a potential crash in the file browser when creating, duplicating, or moving files.</li>
+			<li>Address a potential crash when a document was modified by another process.</li>
+			<li><span class="trivial">trivial</span>: Fix an issue where the What’s New window could not be closed with the Esc key.</li>
+		</ul>
+	</section>
+
+	<p><a href="6.2.4.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>
