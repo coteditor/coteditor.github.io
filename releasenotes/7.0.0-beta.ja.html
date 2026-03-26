@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 7.0.0βの変更点 - CotEditor</title>
+
+	<meta name="description"  content="CotEditor 7.0.0βの変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/7.0.0-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 7.0.0βの変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="7.0.0-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>これはプレリリース版です。</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 7.0のハイライト</h1>
+
+<dl>
+	<dt>よりスマートなシンタックスでより快適な編集</dt>
+	<dd>刷新されたシンタックスエンジンと定義フォーマットにより、より正確なハイライト、よりスマートなコメント機能、そして改善されたエディタ動作を実現しました。</dd>
+
+	<dt>tree-sitterで、もっと深く</dt>
+	<dd>主要な組み込みシンタックスが、構造ベースのモダンなパーサであるtree-sitterを採用。より深く確かな言語認識を可能にします。</dd>
+
+	<dt>奥行きのあるアウトライン</dt>
+	<dd>アイコンが構造の把握を容易にし、tree-sitterベースのシンタックスでは階層を反映した折りたためるアウトラインをサポートします。</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 7.0.0-beta</h1>
+		<p>リリース: <time>2026-03-28</time></p>
+	</header>
+
+	<p class="important">このバージョンは、ユーザによる移行処理が必要な仕様変更を含んでいます。詳細は<a href="../news/2026/CotEditor_7.0.0">CotEditor 7.0での重要な変更</a>を参照してください。</p>
+
+
+	<section>
+		<h2>互換性の変更</h2>
+
+		<ul>
+			<li>新しいシンタックス定義フォーマット「CotEditorシンタックス」を導入（従来のYAMLベースのシンタックス定義フォーマットは非推奨になりました。カスタムシンタックスは初回起動時に自動で移行されます。）</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li>複数の内蔵シンタックスで、tree-sitterによるよりスマートなシンタックス解析を採用し、シンタックスハイライトとアウトライン抽出を改良、対応シンタックスはC、C#、C++、CSS、Go、HTML、Java、JavaScript、LaTeX、Kotlin、Lua、Makefile、Markdown（アウトライン抽出のみ）、PHP、Python、Ruby、Rust、Scala、Shell Script、SQL、Swift、TypeScript</li>
+			<li>アウトライン項目の横に種類を表すアイコンを表示</li>
+			<li>tree-sitterベースおよび構造化文書向けシンタックスで、「アウトライン」インスペクタの項目を折りたたみ可能に</li>
+			<li>「アウトライン」インスペクタに「行を折り返し」オプションを追加</li>
+			<li>現在のシンタックスに応じたスマートインデント</li>
+			<li>シンタックス定義のコメント記号設定を拡張し、複数のコメント記号と関連オプションに対応</li>
+			<li>シンタックス定義に、文字列・文字・インデント用の詳細な区切り文字設定を追加</li>
+			<li>シンタックス定義で、ハイライトルールに「複数行」オプションを追加し、複数行にまたがる一致に対応</li>
+			<li>検索結果間の移動中、検索フィールドに現在位置を「2/5」のように表示</li>
+			<li>UNIXスクリプトのインプット/アウトプットキーワードに、エディタの現在行を編集する<code>CurrentLine</code>と<code>ReplaceCurrentLine</code>を追加</li>
+			<li>ブルガリア語ローカリゼーションを追加（Miroslav Dragoevさんに感謝!）</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>従来の正規表現ベースの解析方式でのシンタックスハイライトのアルゴリズムを改良</li>
+			<li>内蔵シンタックスを更新</li>
+			<li>ウインドウサイズが設定されているときは、「拡大/縮小」アクションでそれを使用</li>
+			<li>全体的なテキスト編集パフォーマンスを向上</li>
+			<li>macOS 26 Tahoeでナビゲーションバーを非表示にしているときに、タイトルバーエリアでは行番号を描画しない</li>
+			<li><span class="trivial">trivial</span>: 「CotEditorについて」ウインドウを調整</li>
+			<li><span class="trivial">trivial</span>: 「再カラーリング」コマンドの名称を「シンタックス解析をリセット」に変更し、「フォーマット」メニューに移動</li>
+			<li><span class="trivial">trivial</span>: シンタックスエディタの「デフォルトに戻す」ボタンを削除</li>
+			<li><span class="trivial">trivial</span>: デフォルトテーマAnuraの色味を調整</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>一部の内蔵シンタックスで誤ったシンタックス解析が行われる不具合を修正</li>
+			<li>システムに登録されていないファイル拡張子を持つシンタックスで、保存ダイアログの初期拡張子が.txtになる不具合を修正</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>既知の問題</h2>
+
+		<ul>
+			<li>新たに追加された一部の文字列はまだチェコ語とポーランド語にはローカライズされていません</li>
+		</ul>
+	</section>
+
+	<p><a href="6.2.6.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>

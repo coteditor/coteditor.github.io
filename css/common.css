@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2025-12
+   lastMod : 2026-03
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -310,4 +310,22 @@ dl.fqa > dd > dl dt {
 }
 dl.fqa > dd > dl dd {
 	margin-bottom: 0.5em;
+}
+
+/* Addition */
+
+:root {
+	--accent-background: light-dark(hsl(206, 50%, 97%), hsl(206, 30%, 20%));
+}
+
+p.addition {
+	position: relative;
+	text-indent: 0;
+	padding-block: 0.8rem;
+	padding-inline: 1.2rem;
+	border-radius: 0.8rem;
+	background: var(--accent-background);
+}
+p.addition > span:first-child {
+	color: -apple-system-secondary-label;
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 7.0.0β - CotEditor</title>
+
+	<meta name="description"  content="What's new on CotEditor 7.0.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/7.0.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 7.0.0β"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="7.0.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 7.0</h1>
+
+<dl>
+	<dt>Smarter syntax, sharper editing</dt>
+	<dd>More accurate highlighting, smarter commenting, and improved editor behavior, all powered by a redesigned syntax engine and definition format.</dd>
+
+	<dt>Powered by tree-sitter, where it matters most</dt>
+	<dd>Many major built-in syntaxes now use tree-sitter, a modern structure-based parser that enables deeper and more reliable language awareness.</dd>
+
+	<dt>Outline with depth</dt>
+	<dd>Icons make structure easier to scan, and tree-sitter–based syntaxes now support collapsible outlines that reflect hierarchy.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 7.0.0-beta</h1>
+		<p>リリース: <time>2026-03-28</time></p>
+	</header>
+
+	<p class="important">This version contains some specific changes that may require manual migration by users. See <a href="../news/2026/CotEditor_7.0.0">Important changes on CotEditor 7.0</a> for details.</p>
+
+
+	<section>
+		<h2>Compatibility Changes</h2>
+
+		<ul>
+			<li>Introduce CotEditor Syntax, a new syntax definition format. The legacy YAML-based syntax definition format is now deprecated, and user-created syntaxes are automatically migrated on first launch.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Adopt smarter syntax parsing powered by tree-sitter for multiple built-in syntaxes, improving syntax highlighting and outline extraction in C, C#, C++, CSS, Go, HTML, Java, JavaScript, Kotlin, LaTeX, Lua, Makefile, Markdown (outline extraction only), PHP, Python, Ruby, Rust, Scala, Shell Script, SQL, Swift, and TypeScript.</li>
+			<li>Display symbolic icons next to outline items.</li>
+			<li>Allow collapsing outline items in the Outline inspector for tree-sitter-based and structured document syntaxes.</li>
+			<li>Add the “Wrap Lines” option to the Outline inspector.</li>
+			<li>Make smart indentation aware of the current syntax.</li>
+			<li>Expand comment delimiter settings in syntax definitions, allowing multiple delimiters and related options.</li>
+			<li>Add detailed delimiter settings for strings, characters, and indentation to syntax definitions.</li>
+			<li>Add the Multiline option to highlighting rules in syntax definitions so matches can span multiple lines.</li>
+			<li>Show the current position in search results in the Find field while navigating between matches, for example, “2/5”.</li>
+			<li>Add <code>CurrentLine</code> and <code>ReplaceCurrentLine</code> to the UNIX script input/output keywords for editing the current line in the editor.</li>
+			<li>Add Bulgarian localization (thanks to Miroslav Dragoev!).</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Improve the syntax-highlighting algorithm for legacy regex-based parsing.</li>
+			<li>Update built-in syntaxes.</li>
+			<li>Use the user’s window size setting for the Zoom action, if available.</li>
+			<li>Improve general text-editing performance.</li>
+			<li>Hide line numbers in the window titlebar area when the navigation bar is hidden on macOS Tahoe 26.</li>
+			<li><span class="trivial">trivial</span>: Adjust the About CotEditor window.</li>
+			<li><span class="trivial">trivial</span>: Rename the Recolor All command to “Reset Syntax Analysis” and move it to the Format menu.</li>
+			<li><span class="trivial">trivial</span>: Remove the Restore Defaults button in the syntax editor.</li>
+			<li><span class="trivial">trivial</span>: Tweak colors of the default Anura theme.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix incorrect syntax parsing in some built-in syntaxes.</li>
+			<li>Fix an issue where the default file extension in the Save dialog was .txt for syntaxes with a file extension not registered in the system.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Known Issues</h2>
+
+		<ul>
+			<li>The text added to CotEditor 7.0.0 are not yet localized to Czech and Polish.</li>
+		</ul>
+	</section>
+
+	<p><a href="6.2.6.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>
