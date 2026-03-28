@@ -6,14 +6,13 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2025-08
+   lastMod : 2026-03
   ////////////////////////////////////// */
 
 body {
 	color: hsla(0,0%,100%,.67);
 	background-color: hsl(203,3%,30%);
 	text-align: center;
-	font-size: 14px;
 }
 
 a[href] {
@@ -53,7 +52,7 @@ body > header > img {
 	padding: 8px;
 }
 body > header h1 {
-	font: 64px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
+	font: 64px/1.0 ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
 	color: hsla(0,0%,100%,.25);
 	margin: 10px;
 }
@@ -62,7 +61,7 @@ body > header h1 span {
 	line-height: 0.8;
 	font-weight: normal;
 	display: inline-block;
-	border-radius: 4px;
+	border-radius: 0.2em;
 	border: 2px solid hsla(0,0%,100%,.2);
 	padding: 0 0.14em;
 	margin-left: -0.1em;
@@ -71,9 +70,10 @@ body > header h1 span {
 
 /* download */
 a.download {
+	font-family: ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
 	font-size: 19px;
 	padding: 0.5em 1em;
-	margin:  1px;
+	margin: 0.2em 0;
 	
 	font-weight: 500;
 	line-height: 1.2;
@@ -85,9 +85,9 @@ a.download {
 	text-shadow: 0 1px 2px hsla(0,0%,0%,.16);
 	
 	display: inline-block;
-	border-radius: 4px;
+	border-radius: 12px;
 	border: none !important;
-	background: linear-gradient(hsla(0,0%,100%,.04), hsla(0,0%,0%,.04));
+	background: linear-gradient(hsla(0,0%,100%,.08), hsla(0,0%,0%,.08));
 	background-color: hsl(87,55%,55%);
 	box-shadow: 0 1px 3px hsla(0,0%,0%,.08);
 	transition: background 0.3s;
@@ -129,16 +129,4 @@ p strong {
 p#issues {
 	font-size: 120%;
 	margin: 2em;
-}
-
-
-/* sns buttons */
-aside.sns {
-	margin: 30px 0 -20px;
-}
-aside.sns li {
-	display: inline-block;
-	max-width: 80px;
-	vertical-align: top;
-	margin: 0 5px;
 }
