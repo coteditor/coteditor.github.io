@@ -24,11 +24,6 @@ a[href]:hover {
 	background: hsla(0,0%,100%,.2);
 }
 
-main > h2 {
-	font-size: 120%;
-	margin: 10px;
-}
-
 body::before {
 	content: '';
 	position: absolute;
@@ -53,8 +48,7 @@ body > header > img {
 }
 body > header h1 {
 	font: 64px/1.0 ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
-	color: hsla(0,0%,100%,.25);
-	margin: 10px;
+	color: hsla(0,0%,100%,.3);
 }
 body > header h1 span {
 	font-family: 'Noteworthy';
