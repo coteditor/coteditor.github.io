@@ -52,6 +52,53 @@
 
 <article>
 	<header>
+		<h1>CotEditor 7.0.0-rc</h1>
+		<p>release: <time>2026-04-15</time></p>
+	</header>
+
+
+	<section>
+		<h2>Compatibility Changes</h2>
+
+		<ul>
+			<li><span class="label">beta</span>: Change the location to save custom syntaxes.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Improve word selection and related editing actions to treat commas as word delimiters.</li>
+			<li><span class="trivial">trivial</span>: Improve stability when handling file change conflicts.</li>
+			<li><span class="label">beta</span>: Improve syntax highlighting for JavaScript, Ruby, and TypeScript.</li>
+			<li><span class="label">beta</span>: Update outline extraction algorithms for C, C#, C++, and JavaScript.</li>
+			<li><span class="label">beta</span>: Update tree-sitter-c-sharp to 0.23.5.</li>
+			<li><span class="label">beta</span> <span class="trivial">trivial</span>: Update the document icon for the CotEditor Syntax document.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix issues in the file browser where items could point to the wrong location after being moved or renamed.</li>
+			<li>Fix an issue in the file browser where replacing a file with a folder, or vice versa, could leave the displayed state outdated.</li>
+			<li>Fix an issue in the file browser where newly created or duplicated items could fail to become selected immediately in some folders.</li>
+			<li>Fix an issue where line reordering commands could insert extra blank lines in documents using CRLF line endings.</li>
+			<li>Fix an issue where TSV multiple replace definitions could not import empty replacement strings.</li>
+			<li><span class="trivial">trivial</span>: Fix some typos in localizations and user guides.</li>
+			<li><span class="label">beta</span>: Fix the outline extraction algorithms for Java, Kotlin, PHP, Python, and TypeScript.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
 		<h1>CotEditor 7.0.0-beta.3</h1>
 		<p>release: <time>2026-04-09</time></p>
 	</header>
