@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : contact page
-   lastMod : 2022-05
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 figure img {
@@ -29,4 +29,16 @@ figure img {
 	
 	display: block;
 	margin-bottom: 0.5em;
+}
+
+
+@media (max-width: 700px) {
+	#team ul li {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 1.5em;
+	}
+	#team .github-card {
+		width: min(100%, 280px);
+	}
 }

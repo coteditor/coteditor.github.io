@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2025-09
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 body {
@@ -316,4 +316,132 @@ aside.sns {
 }
 body > footer p {
 	margin: 1em;
+}
+
+
+@media (max-width: 700px) {
+	#top {
+		max-width: 560px;
+		min-height: 0;
+		margin: 1.5rem auto 2.5rem;
+		padding: 0;
+		text-align: center;
+	}
+	#top > img:first-child {
+		position: static;
+		display: block;
+		width: min(220px, 48vw);
+		margin: 0 auto 1.25rem;
+	}
+	#top h1 {
+		font-size: clamp(52px, 12vw, 64px);
+	}
+	#latest {
+		margin-top: 1.125rem;
+	}
+
+	#screenshots {
+		padding-top: 0.75rem;
+	}
+	.slider .controls label {
+		width: 40px;
+		height: 40px;
+		top: 38%;
+		background-size: contain;
+	}
+
+	#item1:checked ~ .controls label:nth-child(7),
+	#item2:checked ~ .controls label:nth-child(1),
+	#item3:checked ~ .controls label:nth-child(2),
+	#item4:checked ~ .controls label:nth-child(3),
+	#item5:checked ~ .controls label:nth-child(4),
+	#item6:checked ~ .controls label:nth-child(5),
+	#item7:checked ~ .controls label:nth-child(6) {
+		left: 12px;
+	}
+
+	#item1:checked ~ .controls label:nth-child(2),
+	#item2:checked ~ .controls label:nth-child(3),
+	#item3:checked ~ .controls label:nth-child(4),
+	#item4:checked ~ .controls label:nth-child(5),
+	#item5:checked ~ .controls label:nth-child(6),
+	#item6:checked ~ .controls label:nth-child(7),
+	#item7:checked ~ .controls label:nth-child(1) {
+		right: 12px;
+	}
+
+	#lead {
+		font-size: clamp(28px, 5vw, 34px);
+		padding-inline: 1rem;
+	}
+
+	#highlights {
+		background-size: 90%;
+		padding-inline: 1rem;
+	}
+	#highlights section {
+		display: block;
+		width: min(100%, 28rem);
+		margin: 0 auto 2rem;
+	}
+	#highlights section+section {
+		margin-left: auto;
+	}
+
+	#features {
+		max-width: 640px;
+		padding-inline: 1rem;
+	}
+	#features div {
+		columns: 1;
+	}
+}
+
+@media (max-width: 520px) {
+	#top {
+		margin-top: 0.75rem;
+	}
+	#top p {
+		letter-spacing: 0.04em;
+	}
+	#latest .handwriting {
+		margin-bottom: 0.6em;
+	}
+	a.download img {
+		height: 44px;
+	}
+
+	#lead {
+		font-size: 24px;
+		letter-spacing: 0.04em;
+	}
+
+	#highlights {
+		background: none;
+		padding-bottom: 0;
+	}
+	#highlights section {
+		padding-top: 5.5rem;
+	}
+	#highlights section img {
+		width: 80px;
+		margin-left: -40px;
+	}
+
+	#features h2 {
+		font-size: 28px;
+	}
+	#features section img {
+		width: 40px;
+	}
+	#features section p {
+		margin-left: 52px;
+	}
+	#develop::before {
+		margin-top: 1.5rem;
+	}
+
+	aside.sns {
+		margin-inline: 1rem;
+	}
 }

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2026-03
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -21,9 +21,12 @@
 	text-rendering: optimizeLegibility;
 	text-autospace: normal;
 	text-spacing-trim: trim-start;
+	box-sizing: border-box;
 }
 img {
 	border: none;
+	max-width: 100%;
+	height: auto;
 }
 a {
 	text-decoration-line: unset;
@@ -59,7 +62,7 @@ a > sup {
 main p,
 main dd,
 main li {
-	line-height: 1.6;
+	line-height: 1.7;
 }
 main h1,
 main h2,
@@ -116,9 +119,13 @@ code {
 }
 pre code {
 	display: block;
-	width: 80%;
+	width: auto;
+	min-width: 100%;
 	padding: 0.3em 1em;
 	line-height: 1.6;
+}
+pre {
+	overflow-x: auto;
 }
 
 /* other styles */
@@ -149,6 +156,7 @@ body > header {
 	letter-spacing: 0.05em;
 	color: hsl(0,0%,33%);
 	min-height: 16px;
+	position: relative;
 }
 body > header a {
 	color: inherit !important;
@@ -328,4 +336,81 @@ p.addition {
 }
 p.addition > span:first-child {
 	color: -apple-system-secondary-label;
+}
+
+
+/*___5.responsive____________________________________________________________*/
+
+@media (max-width: 700px) {
+	body {
+		padding: 0.75rem 1rem;
+	}
+
+	body > header {
+		text-align: center;
+		padding-top: 0.5em;
+	}
+	body > header > a:first-child {
+		display: inline-block;
+	}
+	body > header > nav {
+		position: static;
+		padding: 1em 0 0;
+		text-align: center;
+	}
+	body > header > nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.45em 1em;
+	}
+	body > header > nav li {
+		display: block;
+		margin: 0;
+	}
+
+	main {
+		width: 100%;
+		max-width: 100%;
+		margin: 1.5rem auto;
+	}
+
+	pre code {
+		padding-inline: 0.8em;
+	}
+
+	table {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	[role=tooltip].note p {
+		width: min(280px, calc(100vw - 48px));
+	}
+}
+
+@media (max-width: 520px) {
+	body {
+		font-size: 14px;
+		padding-inline: 0.75rem;
+	}
+
+	body > header {
+		font-size: 16px;
+	}
+	body > header > a:first-child {
+		font-size: 22px;
+	}
+	body > header > a:first-child::before {
+		width: 40px;
+		height: 40px;
+		background-size: 40px;
+		vertical-align: -11px;
+	}
+
+	main {
+		margin: 1.25rem auto;
+	}
 }

@@ -58,3 +58,26 @@ table.download img {
 	vertical-align: middle;
 	margin-right: 4px;
 }
+
+
+@media (max-width: 700px) {
+	#non-AppStore > a {
+		float: none;
+		display: block;
+		border-right: none;
+		border-bottom: 1px solid hsla(0,0%,0%,.1);
+		padding-right: 0;
+		padding-bottom: 16px;
+		margin-right: 0;
+		margin-bottom: 16px;
+	}
+
+	#non-AppStore dl:not(.fqa) > * {
+		display: inline;
+	}
+
+	table.download tbody tr > * {
+		height: auto;
+		white-space: nowrap;
+	}
+}

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2026-03
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 body {
@@ -123,4 +123,11 @@ p strong {
 p#issues {
 	font-size: 120%;
 	margin: 2em;
+}
+
+
+@media (max-width: 700px) {
+	body > header h1 {
+		font-size: clamp(48px, 13vw, 64px);
+	}
 }
