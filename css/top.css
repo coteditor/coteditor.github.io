@@ -161,13 +161,12 @@ a.download img {
 .slider .controls label:hover {
 	opacity: 1.0;
 }
-#item1:checked ~ .controls label:nth-child(7),
+#item1:checked ~ .controls label:nth-child(6),
 #item2:checked ~ .controls label:nth-child(1),
 #item3:checked ~ .controls label:nth-child(2),
 #item4:checked ~ .controls label:nth-child(3),
 #item5:checked ~ .controls label:nth-child(4),
-#item6:checked ~ .controls label:nth-child(5),
-#item7:checked ~ .controls label:nth-child(6) {
+#item6:checked ~ .controls label:nth-child(5) {
 	inset-inline-start: 48px;
 }
 
@@ -176,8 +175,7 @@ a.download img {
 #item3:checked ~ .controls label:nth-child(4),
 #item4:checked ~ .controls label:nth-child(5),
 #item5:checked ~ .controls label:nth-child(6),
-#item6:checked ~ .controls label:nth-child(7),
-#item7:checked ~ .controls label:nth-child(1) {
+#item6:checked ~ .controls label:nth-child(1) {
 	inset-inline-end: 48px;
 	transform: rotate(180deg);
 }
@@ -361,13 +359,12 @@ body > footer p {
 		background-size: contain;
 	}
 
-	#item1:checked ~ .controls label:nth-child(7),
+	#item1:checked ~ .controls label:nth-child(6),
 	#item2:checked ~ .controls label:nth-child(1),
 	#item3:checked ~ .controls label:nth-child(2),
 	#item4:checked ~ .controls label:nth-child(3),
 	#item5:checked ~ .controls label:nth-child(4),
-	#item6:checked ~ .controls label:nth-child(5),
-	#item7:checked ~ .controls label:nth-child(6) {
+	#item6:checked ~ .controls label:nth-child(5) {
 		inset-inline-start: 12px;
 	}
 
@@ -376,8 +373,7 @@ body > footer p {
 	#item3:checked ~ .controls label:nth-child(4),
 	#item4:checked ~ .controls label:nth-child(5),
 	#item5:checked ~ .controls label:nth-child(6),
-	#item6:checked ~ .controls label:nth-child(7),
-	#item7:checked ~ .controls label:nth-child(1) {
+	#item6:checked ~ .controls label:nth-child(1) {
 		inset-inline-end: 12px;
 	}
 
