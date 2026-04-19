@@ -38,13 +38,13 @@ a#beta {
 	color: white;
 	font: 36px 'Noteworthy';
 	text-transform: capitalize;
-	text-align: right;
+	text-align: end;
 	transform: rotate(-3deg);
 	
 	display: block;
 	position: absolute;
-	top: -64px;
-	left: -28px;
+	inset-block-start: -64px;
+	inset-inline-start: -28px;
 	z-index: 5;
 	width: 160px;
 	height: 160px;
@@ -62,8 +62,8 @@ a#beta::before {
 	
 	display: block;
 	position: absolute;
-	top: 0;
-	left: -40px;
+	inset-block-start: 0;
+	inset-inline-start: -40px;
 	width: 500px;
 	height: 120px;
 	z-index: -1;
@@ -80,15 +80,15 @@ a#beta strong {
 	min-height: 256px;
 	margin-block: 30px 50px;
 	margin-inline: auto;
-	text-align: left;
+	text-align: start;
 	padding-block: 24px 0;
 	padding-inline: 288px 0;
 	position: relative;
 }
 #top > img:first-child {
 	position: absolute;
-	top: 0;
-	left: 0;
+	inset-block-start: 0;
+	inset-inline-start: 0;
 }
 #top h1 {
 	font-family: ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
@@ -127,7 +127,7 @@ a.download {
 a.download:hover {
 	background: transparent;
 	position: relative;
-	top: 1px;
+	inset-block-start: 1px;
 }
 a.download img {
 	height: 50px;
@@ -138,8 +138,8 @@ a.download img {
 /* screen shots */
 #screenshots {
 	background: linear-gradient(hsl(70,70%,75%), hsl(90,50%,55%));
-	border-top: 1px solid hsl(70,20%,80%);
-	border-bottom: 1px solid hsl(90,30%,50%);
+	border-block-start: 1px solid hsl(70,20%,80%);
+	border-block-end: 1px solid hsl(90,30%,50%);
 	padding-block: 20px 0;
 	padding-inline: 0;
 }
@@ -155,7 +155,7 @@ a.download img {
 	height: 48px;
 	
 	position: absolute;
-	top: 300px;
+	inset-block-start: 300px;
 	z-index: 2;
 }
 .slider .controls label:hover {
@@ -168,7 +168,7 @@ a.download img {
 #item5:checked ~ .controls label:nth-child(4),
 #item6:checked ~ .controls label:nth-child(5),
 #item7:checked ~ .controls label:nth-child(6) {
-	left: 48px;
+	inset-inline-start: 48px;
 }
 
 #item1:checked ~ .controls label:nth-child(2),
@@ -178,7 +178,7 @@ a.download img {
 #item5:checked ~ .controls label:nth-child(6),
 #item6:checked ~ .controls label:nth-child(7),
 #item7:checked ~ .controls label:nth-child(1) {
-	right: 48px;
+	inset-inline-end: 48px;
 	transform: rotate(180deg);
 }
 
@@ -223,8 +223,8 @@ a.download img {
 	margin-inline-start: -48px;  /* 1/2 width */
 	text-align: center;
 	position: absolute;
-	top: 0;
-	left: 50%;
+	inset-block-start: 0;
+	inset-inline-start: 50%;
 }
 #highlights section h3 {
 	font-size: 120%;
@@ -250,7 +250,7 @@ a.download img {
 	letter-spacing: 2px;
 }
 #features div {
-	text-align: left;
+	text-align: start;
 	columns: 2;
 	column-gap: 2em;
 	overflow: hidden;
@@ -287,7 +287,7 @@ a.download img {
 	max-width: 680px;
 	margin-block: 40px 25px;
 	margin-inline: auto;
-	border-bottom: 1px solid hsla(0,0%,0%,.1);
+	border-block-end: 1px solid hsla(0,0%,0%,.1);
 }
 #develop section h3 {
 	font-size: 105%;
@@ -317,7 +317,7 @@ a.download img {
 body > footer {
 	color: hsl(198,20%,40%);
 	background: hsl(198,20%,96%);
-	border-top: hsl(198,20%,90%) 1px solid;
+	border-block-start: hsl(198,20%,90%) 1px solid;
 	padding-block-end: 1em;
 }
 aside.sns {
@@ -357,7 +357,7 @@ body > footer p {
 	.slider .controls label {
 		width: 40px;
 		height: 40px;
-		top: 38%;
+		inset-block-start: 38%;
 		background-size: contain;
 	}
 
@@ -368,7 +368,7 @@ body > footer p {
 	#item5:checked ~ .controls label:nth-child(4),
 	#item6:checked ~ .controls label:nth-child(5),
 	#item7:checked ~ .controls label:nth-child(6) {
-		left: 12px;
+		inset-inline-start: 12px;
 	}
 
 	#item1:checked ~ .controls label:nth-child(2),
@@ -378,7 +378,7 @@ body > footer p {
 	#item5:checked ~ .controls label:nth-child(6),
 	#item6:checked ~ .controls label:nth-child(7),
 	#item7:checked ~ .controls label:nth-child(1) {
-		right: 12px;
+		inset-inline-end: 12px;
 	}
 
 	#lead {

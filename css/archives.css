@@ -14,7 +14,7 @@
 #non-AppStore > a {
 	font-size: 160%;
 	
-	float: left;
+	float: inline-start;
 	border-radius: 22px;
 	padding-inline-end: 20px;
 	margin-inline-end: 10px;
@@ -65,8 +65,8 @@ table.download img {
 	#non-AppStore > a {
 		float: none;
 		display: block;
-		border-right: none;
-		border-bottom: 1px solid hsla(0,0%,0%,.1);
+		border-inline-end: none;
+		border-block-end: 1px solid hsla(0,0%,0%,.1);
 		padding-inline-end: 0;
 		padding-block-end: 16px;
 		margin-inline-end: 0;

@@ -27,9 +27,8 @@ a[href]:hover {
 body::before {
 	content: '';
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+	inset-block-start: 0;
+	inset-inline: 0;
 	height: 8px;
 	background: url('parts/safaty_stripes.svg');
 	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
@@ -120,7 +119,7 @@ span.note {
 	color: hsla(0,0%,0%,.2);
 }
 p strong {
-	border-bottom: 3px double;
+	border-block-end: 3px double;
 }
 
 p#issues {

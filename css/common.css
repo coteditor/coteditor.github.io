@@ -106,10 +106,10 @@ table tr > * {
 }
 table thead tr > * {
 	font-weight: 500;
-	border-bottom: 0.5px solid hsla(0,0%,0%,.8);
+	border-block-end: 0.5px solid hsla(0,0%,0%,.8);
 }
 table tbody tr > * {
-	border-bottom: 0.5px solid hsla(0,0%,0%,.08);
+	border-block-end: 0.5px solid hsla(0,0%,0%,.08);
 }
 
 /* code */
@@ -195,8 +195,8 @@ body > header > a:first-child:hover::before {
 }
 body > header > nav {
 	position: absolute;
-	top: 8px;
-	right: 0;
+	inset-block-start: 8px;
+	inset-inline-end: 0;
 	padding-block: 1em;
 	padding-inline: 2em;
 }
@@ -248,15 +248,15 @@ aside.sns li {
 
 [role=tooltip]  { position:absolute; z-index:20;
                   padding-block:0.3em; padding-inline:0.6em;
-                  box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:left;
+                  box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:start;
                   background-color:hsla(0,0%,20%,0.9); border-radius:8px;
                   border:none;
                   opacity:0; transition: opacity 0.3s;
                   font-family: -apple-system, sans-serif }
 [role=tooltip]::after { content: ''; height:0; width:0;
-                        position:absolute; left:40px; bottom:-17px;
+                        position:absolute; inset-inline-start:40px; inset-block-end:-17px;
                         border:9px solid transparent;
-                        border-top-color:hsl(0,0%,30%);
+                        border-block-start-color:hsl(0,0%,30%);
                         filter:drop-shadow(0px 2px 3px hsla(0,0%,0%,.2)) }
 [role=tooltip] p    { color:hsl(0,0%,92%); line-height:1.2 }
 [role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
