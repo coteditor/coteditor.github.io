@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : release notes
-   lastMod : 2020-03
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 /* header for smaller logo */
@@ -162,34 +162,4 @@ body.prerelease::before {
 	position: absolute;
 	top: 0.2em;
 	left: 0.4em;
-}
-
-
-
-/* App Store migration */
-
-.appstore {
-    margin-top: -28px;
-    margin: -28px -10px 3em;
-    
-	background: linear-gradient(hsl(70,60%,70%), hsl(90,60%,45%));
-	border: 1px solid hsl(70,20%,75%);
-	border-radius: 4px;
-	padding: 28px 0;
-	
-	color: white;
-	font-size: 21px;
-	letter-spacing: 1px;
-	text-align: center;
-	text-shadow: 0 1px 3px hsl(70,50%,20%);
-}
-.appstore a {
-	color: inherit;
-	border: 1px solid hsla(0,0%,100%,.8);
-	padding: 0 0.2em;
-	border-radius: 3px;
-}
-.appstore.s {
-	font-size: 18px;
-	padding: 4px 0;
 }
