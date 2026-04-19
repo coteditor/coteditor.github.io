@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2026-03
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 body {
@@ -27,9 +27,8 @@ a[href]:hover {
 body::before {
 	content: '';
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+	inset-block-start: 0;
+	inset-inline: 0;
 	height: 8px;
 	background: url('parts/safaty_stripes.svg');
 	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
@@ -57,8 +56,9 @@ body > header h1 span {
 	display: inline-block;
 	border-radius: 0.2em;
 	border: 2px solid hsla(0,0%,100%,.2);
-	padding: 0 0.14em;
-	margin-left: -0.1em;
+	padding-block: 0;
+	padding-inline: 0.14em;
+	margin-inline-start: -0.1em;
 }
 
 
@@ -66,8 +66,10 @@ body > header h1 span {
 a.download {
 	font-family: ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
 	font-size: 19px;
-	padding: 0.5em 1em;
-	margin: 0.2em 0;
+	padding-block: 0.5em;
+	padding-inline: 1em;
+	margin-block: 0.2em;
+	margin-inline: 0;
 	
 	font-weight: 500;
 	line-height: 1.2;
@@ -117,10 +119,17 @@ span.note {
 	color: hsla(0,0%,0%,.2);
 }
 p strong {
-	border-bottom: 3px double;
+	border-block-end: 3px double;
 }
 
 p#issues {
 	font-size: 120%;
 	margin: 2em;
+}
+
+
+@media (max-width: 700px) {
+	body > header h1 {
+		font-size: clamp(48px, 13vw, 64px);
+	}
 }

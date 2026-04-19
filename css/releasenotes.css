@@ -6,20 +6,13 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : release notes
-   lastMod : 2020-03
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 /* header for smaller logo */
 
 body > header {
 	display: none;
-	font-size: 20px;
-}
-body > header::before {
-	width: 32px;
-	height: 32px;
-	background-size: 32px;
-	vertical-align: -8px;
 }
 main {
 	width: 100%;
@@ -29,31 +22,23 @@ main {
 
 /* general */
 
-p.attention strong {
-    font-size: 116%;
-    background-color: hsl(50,100%,75%);
-    padding: 0 0.3em;
-}
-p.note strong {
-	text-decoration: underline;
-}
 .trivial,
 .label {
 	color: hsl(198,40%,45%);
 	border: 1px solid;
 	border-radius: 2px;
-	padding: 0 0.2em;
+	padding-block: 0;
+	padding-inline: 0.2em;
 }
 .trivial {
 	color: hsl(0, 0%, 60%);
 }
 p.important {
-	display: inline-block;
-	color: hsl(203,30%,30%);
-	background: hsl(203,50%,98%);
-	border: 1px solid hsl(203,20%,70%);
-	border-radius: 3px;
-	padding: 0.1em 0.5em;
+	color: hsl(203,30%,25%);
+	background: hsl(203,50%,97%);
+	border-radius: 0.8em;
+	padding-block: 0.5em;
+	padding-inline: 1em;
 }
 
 article {
@@ -62,9 +47,9 @@ article {
 
 article+section,
 article+article {
-	margin-top: 4em;
-	border-top: 1px solid hsla(0,0%,0%,.1);
-	padding-top: 1em;
+	margin-block-start: 4em;
+	border-block-start: 1px solid hsla(0,0%,0%,.1);
+	padding-block-start: 1em;
 }
 
 article > header h1 {
@@ -77,14 +62,16 @@ article > header p {
 article h2 {
 	font-size: 110%;
 	font-weight: bold;
-	margin: 0.4em 0;
+	margin-block: 0.4em;
+	margin-inline: 0;
 }
-
 
 kbd {
 	font-family: -apple-system, sans-serif;
-	padding: 0 0.2em;
-	margin: 0 0.1em;
+	padding-block: 0;
+	padding-inline: 0.2em;
+	margin-block: 0;
+	margin-inline: 0.1em;
 	border-radius: 0.2em;
 	border: 1px solid -apple-system-tertiary-label;
 	box-shadow: 0 1px 0 hsla(0, 0%, 0%, .05);
@@ -93,13 +80,16 @@ kbd {
 	color: hsl(0,0%,50%);
 }
 
+
 /* highlights */
+
 .highlights {
-	border-bottom: 1px solid hsl(203,20%,90%);
-	padding-bottom: 1em;
+	border-block-end: 1px solid hsl(203,20%,90%);
+	padding-block-end: 1em;
 }
 .highlights h1 {
-	margin-bottom: 0.5em;
+	font-size: 1.5rem;
+	margin-block-end: 0.2em;
 }
 .highlights dt::before {
 	content: '✔︎';
@@ -107,22 +97,24 @@ kbd {
 	font-size: 140%;
 	font-weight: normal;
 	vertical-align: -0.05em;
-	margin-right: 0.3em;
+	margin-inline-end: 0.3em;
 }
 .highlights dt {
-	font-weight: bold;
+	font-size: 110%;
+	font-weight: 600;
 }
 .highlights dd {
-	margin-bottom: 1em;
+	margin-block-end: 1em;
 }
 
 
 /* footnote */
+
 section > footer > ol,
 article > footer > ol,
 main > footer > ol {
 	font-size: 90%;
-	margin-left: 20px;
+	margin-inline-start: 20px;
 }
 
 footer ol li:target {
@@ -133,63 +125,19 @@ footer ol li:target {
 
 /* pre-release */
 
+body.prerelease p.attention strong {
+    font-size: 116%;
+    background-color: hsl(50,100%,75%);
+    padding-block: 0;
+    padding-inline: 0.3em;
+}
+
 body.prerelease::before {
 	content: '';
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+	inset-block-start: 0;
+	inset-inline: 0;
 	height: 8px;
 	background: url('parts/safaty_stripes.svg');
 	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
-}
-
-
-/* warning */
-
-.block-info {
-	font-weight: 400;
-	border-radius: 0.3em;
-	border: 1px solid hsl(0, 0%, 80%);
-	padding: 0.5em 1em 0.5em 4em;
-	background: linear-gradient(hsl(0, 0%, 99%), hsl(0, 0%, 97%));
-	position: relative;
-}
-.block-info::before {
-	content: "💬";
-	font-size: 32px;
-	display: block;
-	position: absolute;
-	top: 0.2em;
-	left: 0.4em;
-}
-
-
-
-/* App Store migration */
-
-.appstore {
-    margin-top: -28px;
-    margin: -28px -10px 3em;
-    
-	background: linear-gradient(hsl(70,60%,70%), hsl(90,60%,45%));
-	border: 1px solid hsl(70,20%,75%);
-	border-radius: 4px;
-	padding: 28px 0;
-	
-	color: white;
-	font-size: 21px;
-	letter-spacing: 1px;
-	text-align: center;
-	text-shadow: 0 1px 3px hsl(70,50%,20%);
-}
-.appstore a {
-	color: inherit;
-	border: 1px solid hsla(0,0%,100%,.8);
-	padding: 0 0.2em;
-	border-radius: 3px;
-}
-.appstore.s {
-	font-size: 18px;
-	padding: 4px 0;
 }

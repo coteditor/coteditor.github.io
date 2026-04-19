@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2025-09
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 body {
@@ -14,9 +14,8 @@ body {
 	font-size: 16px;
 	text-align: center;
 	
-	padding-left: 0;
-	padding-right: 0;
-	padding-bottom: 0;
+	padding-inline: 0;
+	padding-block-end: 0;
 }
 main {
 	margin: 0;
@@ -24,7 +23,8 @@ main {
 	max-width: 100%;
 }
 main > section {
-	margin: 2em auto;
+	margin-block: 2em;
+	margin-inline: auto;
 }
 main > section > h2 {
 	font-weight: 500;
@@ -38,18 +38,18 @@ a#beta {
 	color: white;
 	font: 36px 'Noteworthy';
 	text-transform: capitalize;
-	text-align: right;
+	text-align: end;
 	transform: rotate(-3deg);
 	
-	box-sizing: border-box;
 	display: block;
 	position: absolute;
-	top: -64px;
-	left: -28px;
+	inset-block-start: -64px;
+	inset-inline-start: -28px;
 	z-index: 5;
 	width: 160px;
 	height: 160px;
-	padding: 72px 0 32px;
+	padding-block: 72px 32px;
+	padding-inline: 0;
 }
 a#beta:hover {
 	background: transparent;
@@ -62,8 +62,8 @@ a#beta::before {
 	
 	display: block;
 	position: absolute;
-	top: 0;
-	left: -40px;
+	inset-block-start: 0;
+	inset-inline-start: -40px;
 	width: 500px;
 	height: 120px;
 	z-index: -1;
@@ -78,16 +78,17 @@ a#beta strong {
 #top {
 	max-width: 680px;
 	min-height: 256px;
-	margin: 30px auto 50px;
-	text-align: left;
-	padding: 24px 0 0 288px;
-	box-sizing: border-box;
+	margin-block: 30px 50px;
+	margin-inline: auto;
+	text-align: start;
+	padding-block: 24px 0;
+	padding-inline: 288px 0;
 	position: relative;
 }
 #top > img:first-child {
 	position: absolute;
-	top: 0;
-	left: 0;
+	inset-block-start: 0;
+	inset-inline-start: 0;
 }
 #top h1 {
 	font-family: ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
@@ -101,14 +102,15 @@ a#beta strong {
 	font-weight: 300;
 	letter-spacing: 1px;
 	
-	margin: 0 4px;
+	margin-block: 0;
+	margin-inline: 4px;
 }
 
 
 /* download */
 #latest {
 	position: relative;
-	margin-top: 22px;
+	margin-block-start: 22px;
 }
 #latest .handwriting {
 	font: 17px/1.0 'HanziPen SC', 'Bradley Hand', 'Noteworthy', sans-serif;
@@ -116,7 +118,8 @@ a#beta strong {
 	opacity: 0.4;
 	display: block;
 	transform: rotate(-3deg);
-	margin: 0.5em 1em 0.9em;
+	margin-block: 0.5em 0.9em;
+	margin-inline: 1em;
 }
 a.download {
 	display: inline-block;
@@ -124,7 +127,7 @@ a.download {
 a.download:hover {
 	background: transparent;
 	position: relative;
-	top: 1px;
+	inset-block-start: 1px;
 }
 a.download img {
 	height: 50px;
@@ -135,9 +138,10 @@ a.download img {
 /* screen shots */
 #screenshots {
 	background: linear-gradient(hsl(70,70%,75%), hsl(90,50%,55%));
-	border-top: 1px solid hsl(70,20%,80%);
-	border-bottom: 1px solid hsl(90,30%,50%);
-	padding: 20px 0 0;
+	border-block-start: 1px solid hsl(70,20%,80%);
+	border-block-end: 1px solid hsl(90,30%,50%);
+	padding-block: 20px 0;
+	padding-inline: 0;
 }
 .slider {
 	position: relative;
@@ -151,20 +155,19 @@ a.download img {
 	height: 48px;
 	
 	position: absolute;
-	top: 300px;
+	inset-block-start: 300px;
 	z-index: 2;
 }
 .slider .controls label:hover {
 	opacity: 1.0;
 }
-#item1:checked ~ .controls label:nth-child(7),
+#item1:checked ~ .controls label:nth-child(6),
 #item2:checked ~ .controls label:nth-child(1),
 #item3:checked ~ .controls label:nth-child(2),
 #item4:checked ~ .controls label:nth-child(3),
 #item5:checked ~ .controls label:nth-child(4),
-#item6:checked ~ .controls label:nth-child(5),
-#item7:checked ~ .controls label:nth-child(6) {
-	left: 48px;
+#item6:checked ~ .controls label:nth-child(5) {
+	inset-inline-start: 48px;
 }
 
 #item1:checked ~ .controls label:nth-child(2),
@@ -172,9 +175,8 @@ a.download img {
 #item3:checked ~ .controls label:nth-child(4),
 #item4:checked ~ .controls label:nth-child(5),
 #item5:checked ~ .controls label:nth-child(6),
-#item6:checked ~ .controls label:nth-child(7),
-#item7:checked ~ .controls label:nth-child(1) {
-	right: 48px;
+#item6:checked ~ .controls label:nth-child(1) {
+	inset-inline-end: 48px;
 	transform: rotate(180deg);
 }
 
@@ -198,8 +200,8 @@ a.download img {
 	max-width: 880px;
 	
 	background: url('parts/to_features.svg') no-repeat center bottom;
-	padding-bottom: 130px;
-	margin-bottom: -1em;
+	padding-block-end: 130px;
+	margin-block-end: -1em;
 }
 #highlights h2 {
 	display: none;
@@ -209,24 +211,25 @@ a.download img {
 	vertical-align: top;
 	width: 30%;
 	position: relative;
-	padding-top: 104px;
+	padding-block-start: 104px;
 }
 #highlights section+section {
-	margin-left: 3%;
+	margin-inline-start: 3%;
 }
 #highlights section img {
 	width: 96px;
-	margin-left: -48px;  /* 1/2 width */
+	margin-inline-start: -48px;  /* 1/2 width */
 	text-align: center;
 	position: absolute;
-	top: 0;
-	left: 50%;
+	inset-block-start: 0;
+	inset-inline-start: 50%;
 }
 #highlights section h3 {
 	font-size: 120%;
 	font-weight: 400;
 	
-	margin: 0 0 0.2em;
+	margin-block: 0 0.2em;
+	margin-inline: 0;
 }
 #highlights section p {
 	font-size: 96%;
@@ -245,31 +248,33 @@ a.download img {
 	letter-spacing: 2px;
 }
 #features div {
-	text-align: left;
+	text-align: start;
 	columns: 2;
-	-webkit-column-gap: 2em;
 	column-gap: 2em;
 	overflow: hidden;
 }
 #features section {
+	display: flow-root;
 	break-inside: avoid;
 	margin: 0;
-	padding-bottom: 1.5em;
+	padding-block-end: 1.5em;
 }
 #features section img {
 	width: 48px;
 	float: left;
-	padding-top: 4px;
+	padding-block-start: 4px;
 }
 #features section h3 {
 	font-size: 110%;
 	letter-spacing: 0.5px;
-	margin: 0 0 4px;
+	margin-block: 0 4px;
+	margin-inline: 0;
 }
 #features section p {
 	font-size: 90%;
 	line-height: 1.7;
-	margin: 0 0 0 60px;
+	margin-block: 0;
+	margin-inline: 60px 0;
 }
 
 
@@ -278,8 +283,9 @@ a.download img {
 	content: '';
 	display: block;
 	max-width: 680px;
-	margin: 40px auto 25px;
-	border-bottom: 1px solid hsla(0,0%,0%,.1);
+	margin-block: 40px 25px;
+	margin-inline: auto;
+	border-block-end: 1px solid hsla(0,0%,0%,.1);
 }
 #develop section h3 {
 	font-size: 105%;
@@ -296,7 +302,8 @@ a.download img {
 	box-shadow: 0 2px 5px hsla(0,0%,0%,0.3);
 	border-radius: 0.8em;
 	letter-spacing: 1px;
-	padding: 0.5em 1em;
+	padding-block: 0.5em;
+	padding-inline: 1em;
 }
 #develop a.github:hover {
 	color: hsl(90,45%,45%);
@@ -308,12 +315,141 @@ a.download img {
 body > footer {
 	color: hsl(198,20%,40%);
 	background: hsl(198,20%,96%);
-	border-top: hsl(198,20%,90%) 1px solid;
-	padding-bottom: 1em;
+	border-block-start: hsl(198,20%,90%) 1px solid;
+	padding-block-end: 1em;
 }
 aside.sns {
 	margin: 2em;
 }
 body > footer p {
 	margin: 1em;
+}
+
+
+@media (max-width: 700px) {
+	#top {
+		max-width: 560px;
+		min-height: 0;
+		margin-block: 1.5rem 2.5rem;
+		margin-inline: auto;
+		padding: 0;
+		text-align: center;
+	}
+	#top > img:first-child {
+		position: static;
+		display: block;
+		width: min(220px, 48vw);
+		margin-block: 0 1.25rem;
+		margin-inline: auto;
+	}
+	#top h1 {
+		font-size: clamp(52px, 12vw, 64px);
+	}
+	#latest {
+		margin-block-start: 1.125rem;
+	}
+
+	#screenshots {
+		padding-block-start: 0.75rem;
+	}
+	.slider .controls label {
+		width: 40px;
+		height: 40px;
+		inset-block-start: 38%;
+		background-size: contain;
+	}
+
+	#item1:checked ~ .controls label:nth-child(6),
+	#item2:checked ~ .controls label:nth-child(1),
+	#item3:checked ~ .controls label:nth-child(2),
+	#item4:checked ~ .controls label:nth-child(3),
+	#item5:checked ~ .controls label:nth-child(4),
+	#item6:checked ~ .controls label:nth-child(5) {
+		inset-inline-start: 12px;
+	}
+
+	#item1:checked ~ .controls label:nth-child(2),
+	#item2:checked ~ .controls label:nth-child(3),
+	#item3:checked ~ .controls label:nth-child(4),
+	#item4:checked ~ .controls label:nth-child(5),
+	#item5:checked ~ .controls label:nth-child(6),
+	#item6:checked ~ .controls label:nth-child(1) {
+		inset-inline-end: 12px;
+	}
+
+	#lead {
+		font-size: clamp(28px, 5vw, 34px);
+		padding-inline: 1rem;
+	}
+
+	#highlights {
+		background-size: 90%;
+		padding-inline: 1rem;
+	}
+	#highlights section {
+		display: block;
+		width: min(100%, 28rem);
+		margin-block: 0 2rem;
+		margin-inline: auto;
+	}
+	#highlights section+section {
+		margin-inline-start: auto;
+	}
+
+	#features {
+		max-width: 640px;
+		padding-inline: 1rem;
+	}
+	#features div {
+		columns: 1;
+	}
+}
+
+@media (max-width: 520px) {
+	#top {
+		margin-block-start: 0.75rem;
+	}
+	#top p {
+		letter-spacing: 0.04em;
+	}
+	#latest .handwriting {
+		margin-block-end: 0.6em;
+	}
+	a.download img {
+		height: 44px;
+	}
+
+	#lead {
+		font-size: 24px;
+		letter-spacing: 0.04em;
+	}
+
+	#highlights {
+		background: none;
+		padding-block-end: 0;
+	}
+	#highlights section {
+		padding-block-start: 5.5rem;
+	}
+	#highlights section img {
+		width: 80px;
+		margin-inline-start: -40px;
+	}
+
+	#features h2 {
+		font-size: 28px;
+	}
+	#features section img {
+		width: 40px;
+	}
+	#features section p {
+		margin-inline: 52px 0;
+	}
+	#develop::before {
+		margin-block-start: 1.5rem;
+	}
+
+	aside.sns {
+		margin-inline: 1rem;
+	}
 }

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : -
-   lastMod : 2025-04
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 .slider {
@@ -22,20 +22,36 @@
 	cursor: pointer;
 }
 
-.slider #item1:checked ~ .slides { margin-left: 0; }
-.slider #item2:checked ~ .slides { margin-left: -100%; }
-.slider #item3:checked ~ .slides { margin-left: -200%; }
-.slider #item4:checked ~ .slides { margin-left: -300%; }
-.slider #item5:checked ~ .slides { margin-left: -400%; }
-.slider #item6:checked ~ .slides { margin-left: -500%; }
+@property --manual-offset {
+	syntax: "<length-percentage>";
+	inherits: false;
+	initial-value: 0%;
+}
+
+@property --autoplay-offset {
+	syntax: "<length-percentage>";
+	inherits: false;
+	initial-value: 0%;
+}
+
+.slider #item1:checked ~ .slides { --manual-offset: 0%; }
+.slider #item2:checked ~ .slides { --manual-offset: -100%; }
+.slider #item3:checked ~ .slides { --manual-offset: -200%; }
+.slider #item4:checked ~ .slides { --manual-offset: -300%; }
+.slider #item5:checked ~ .slides { --manual-offset: -400%; }
+.slider #item6:checked ~ .slides { --manual-offset: -500%; }
 
 .slides {
+	--manual-offset: 0%;
+	--autoplay-offset: 0%;
+	display: flex;
 	width: 600%;
 	line-height: 0;
+	margin-inline-start: calc(var(--manual-offset) + var(--autoplay-offset));
+	transition: margin-inline-start 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
 }
 .slides figure {
-	width: 16.666%;
-	float: left;
+	flex: 0 0 calc(100% / 6);
 	margin: 0;
 }
 
@@ -47,13 +63,12 @@
 	z-index: 2;
 }
 
-#item1:checked ~ .controls label:nth-child(7),
+#item1:checked ~ .controls label:nth-child(6),
 #item2:checked ~ .controls label:nth-child(1),
 #item3:checked ~ .controls label:nth-child(2),
 #item4:checked ~ .controls label:nth-child(3),
 #item5:checked ~ .controls label:nth-child(4),
-#item6:checked ~ .controls label:nth-child(5),
-#item7:checked ~ .controls label:nth-child(6) {
+#item6:checked ~ .controls label:nth-child(5) {
 	display: block;
 }
 #item1:checked ~ .controls label:nth-child(2),
@@ -61,20 +76,13 @@
 #item3:checked ~ .controls label:nth-child(4),
 #item4:checked ~ .controls label:nth-child(5),
 #item5:checked ~ .controls label:nth-child(6),
-#item6:checked ~ .controls label:nth-child(7),
-#item7:checked ~ .controls label:nth-child(1) {
+#item6:checked ~ .controls label:nth-child(1) {
 	display: block;
 }
 
 
 /* Animation */
 
-.slides {
-	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
-}
-.slider {
-	transition: all 0.5s ease-out;
-}
 .slider .controls label {
 	transition: opacity 0.2s ease-out;
 }
@@ -83,13 +91,13 @@
 /* Autoplay */
 
 @keyframes slide {
-   0%, 20%  { margin-left: 0; }
-  25%, 35%  { margin-left: -100%; }
-  40%, 50%  { margin-left: -200%; }
-  55%, 65%  { margin-left: -300%; }
-  70%, 80%  { margin-left: -400%; }
-  85%, 95%  { margin-left: -500%; }
+   0%, 20%  { --autoplay-offset: 0%; }
+  25%, 35%  { --autoplay-offset: -100%; }
+  40%, 50%  { --autoplay-offset: -200%; }
+  55%, 65%  { --autoplay-offset: -300%; }
+  70%, 80%  { --autoplay-offset: -400%; }
+  85%, 95%  { --autoplay-offset: -500%; }
 }
-.slider > #item1:checked ~ .slides {
+.slider.is-autoplay > #item1:checked ~ .slides {
   animation: slide 25s infinite;
 }
