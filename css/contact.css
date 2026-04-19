@@ -13,13 +13,17 @@ figure img {
 	border-radius: 6px;
 }
 
+#team ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5em 1.25rem;
+}
 #team ul li {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 20px;
+	margin: 0;
+	list-style: none;
 }
 #team .github-card {
-	width: 280px;
+	width: min(100%, 280px);
 	height: 150px;
 }
 #team .position {
@@ -29,16 +33,4 @@ figure img {
 	
 	display: block;
 	margin-bottom: 0.5em;
-}
-
-
-@media (max-width: 700px) {
-	#team ul li {
-		display: block;
-		margin-right: 0;
-		margin-bottom: 1.5em;
-	}
-	#team .github-card {
-		width: min(100%, 280px);
-	}
 }

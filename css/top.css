@@ -41,7 +41,6 @@ a#beta {
 	text-align: right;
 	transform: rotate(-3deg);
 	
-	box-sizing: border-box;
 	display: block;
 	position: absolute;
 	top: -64px;
@@ -81,7 +80,6 @@ a#beta strong {
 	margin: 30px auto 50px;
 	text-align: left;
 	padding: 24px 0 0 288px;
-	box-sizing: border-box;
 	position: relative;
 }
 #top > img:first-child {
@@ -247,11 +245,11 @@ a.download img {
 #features div {
 	text-align: left;
 	columns: 2;
-	-webkit-column-gap: 2em;
 	column-gap: 2em;
 	overflow: hidden;
 }
 #features section {
+	display: flow-root;
 	break-inside: avoid;
 	margin: 0;
 	padding-bottom: 1.5em;

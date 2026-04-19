@@ -29,8 +29,8 @@ img {
 	height: auto;
 }
 a {
-	text-decoration-line: unset;
-	transition: -webkit-filter 0.3s;
+	text-decoration: none;
+	transition: background-color 0.3s;
 }
 ul li {
 	list-style: none;
@@ -41,11 +41,10 @@ ul li {
 /*___1.common rule___________________________________________________________*/
 
 /* anchors */
-a:link,
-a:visited {
+a:any-link {
 	color: hsl(90,45%,45%);
 }
-a:link:hover {
+a:any-link:hover {
 	background: hsla(90,45%,45%,.2);
 }
 a:not([href]) {
@@ -163,10 +162,10 @@ body > header a {
 	background: transparent !important;
 	
 	position: relative;
-	transition: all 0.3s ease;
+	transition: transform 0.3s ease;
 	display: inline-block;
 }
-body > header a:link:hover {
+body > header a:any-link:hover {
 	transform: translateY(-3px);
 }
 body > header > a:first-child {
@@ -187,17 +186,16 @@ body > header > a:first-child:hover::before {
 	transform: rotate(-360deg);
 }
 body > header > nav {
-	text-align: right;
-	
 	position: absolute;
 	top: 8px;
 	right: 0;
-	text-align: right;
 	padding: 1em 2em;
 }
-body > header > nav li {
-	display: inline;
-	margin: 0 0.4em;
+body > header > nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0 0.8em;
 }
 body > header > nav a[href*='x.com'] {
 	content: url('parts/x_large.svg');
@@ -225,13 +223,14 @@ body > footer p {
 }
 
 /* sns */
-aside.sns li {
-	display: inline-block;
-	max-width: 90px;
-	vertical-align: top;
+aside.sns ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
 }
-aside.sns li+li {
-	margin-left: 10px;
+aside.sns li {
+	max-width: 90px;
 }
 
 
@@ -242,7 +241,7 @@ aside.sns li+li {
                   background-color:hsla(0,0%,20%,0.9); border-radius:8px;
                   border:none;
                   opacity:0; transition: opacity 0.3s;
-                  font-family: -apple-system-font, sans-serif }
+                  font-family: -apple-system, sans-serif }
 [role=tooltip]::after { content: ''; height:0; width:0;
                         position:absolute; left:40px; bottom:-17px;
                         border:9px solid transparent;
@@ -251,7 +250,7 @@ aside.sns li+li {
 [role=tooltip] p    { color:hsl(0,0%,92%); line-height:1.2 }
 [role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
 [role=tooltip] p+p  { color:hsl(0,0%,75%); font-size:80%;
-                      word-wrap:break-word; margin-top:1px }
+                      overflow-wrap:anywhere; margin-top:1px }
 [role=tooltip] p::before  { opacity:0.9; margin-right:5px; vertical-align:-1px; }
 
 [role=tooltip].github p:first-child::before {
@@ -359,14 +358,8 @@ p.addition > span:first-child {
 		text-align: center;
 	}
 	body > header > nav ul {
-		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
 		gap: 0.45em 1em;
-	}
-	body > header > nav li {
-		display: block;
-		margin: 0;
 	}
 
 	main {

@@ -13,13 +13,6 @@
 
 body > header {
 	display: none;
-	font-size: 20px;
-}
-body > header::before {
-	width: 32px;
-	height: 32px;
-	background-size: 32px;
-	vertical-align: -8px;
 }
 main {
 	width: 100%;

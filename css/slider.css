@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : -
-   lastMod : 2025-04
+   lastMod : 2026-04
   ////////////////////////////////////// */
 
 .slider {
@@ -30,12 +30,13 @@
 .slider #item6:checked ~ .slides { margin-left: -500%; }
 
 .slides {
+	display: flex;
 	width: 600%;
 	line-height: 0;
+	transition: margin-left 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
 }
 .slides figure {
-	width: 16.666%;
-	float: left;
+	flex: 0 0 calc(100% / 6);
 	margin: 0;
 }
 
@@ -69,12 +70,6 @@
 
 /* Animation */
 
-.slides {
-	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
-}
-.slider {
-	transition: all 0.5s ease-out;
-}
 .slider .controls label {
 	transition: opacity 0.2s ease-out;
 }
