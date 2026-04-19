@@ -29,11 +29,6 @@ main {
 
 /* general */
 
-p.attention strong {
-    font-size: 116%;
-    background-color: hsl(50,100%,75%);
-    padding: 0 0.3em;
-}
 .trivial,
 .label {
 	color: hsl(198,40%,45%);
@@ -45,12 +40,10 @@ p.attention strong {
 	color: hsl(0, 0%, 60%);
 }
 p.important {
-	display: inline-block;
-	color: hsl(203,30%,30%);
-	background: hsl(203,50%,98%);
-	border: 1px solid hsl(203,20%,70%);
-	border-radius: 3px;
-	padding: 0.1em 0.5em;
+	color: hsl(203,30%,25%);
+	background: hsl(203,50%,97%);
+	border-radius: 0.8em;
+	padding: 0.5em 1em;
 }
 
 article {
@@ -77,7 +70,6 @@ article h2 {
 	margin: 0.4em 0;
 }
 
-
 kbd {
 	font-family: -apple-system, sans-serif;
 	padding: 0 0.2em;
@@ -90,13 +82,16 @@ kbd {
 	color: hsl(0,0%,50%);
 }
 
+
 /* highlights */
+
 .highlights {
 	border-bottom: 1px solid hsl(203,20%,90%);
 	padding-bottom: 1em;
 }
 .highlights h1 {
-	margin-bottom: 0.5em;
+	font-size: 1.5rem;
+	margin-bottom: 0.2em;
 }
 .highlights dt::before {
 	content: '✔︎';
@@ -107,7 +102,8 @@ kbd {
 	margin-right: 0.3em;
 }
 .highlights dt {
-	font-weight: bold;
+	font-size: 110%;
+	font-weight: 600;
 }
 .highlights dd {
 	margin-bottom: 1em;
@@ -115,6 +111,7 @@ kbd {
 
 
 /* footnote */
+
 section > footer > ol,
 article > footer > ol,
 main > footer > ol {
@@ -129,6 +126,12 @@ footer ol li:target {
 
 
 /* pre-release */
+
+body.prerelease p.attention strong {
+    font-size: 116%;
+    background-color: hsl(50,100%,75%);
+    padding: 0 0.3em;
+}
 
 body.prerelease::before {
 	content: '';
