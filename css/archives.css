@@ -16,9 +16,9 @@
 	
 	float: left;
 	border-right: 1px solid hsla(0,0%,0%,.1);
-	padding-right: 20px;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	padding-inline-end: 20px;
+	margin-inline-end: 10px;
+	margin-block-end: 10px;
 }
 #non-AppStore > a span {
 	font-weight: 200;
@@ -33,7 +33,8 @@
 	content: ' | ';
 	font-size: 90%;
 	opacity: 0.3;
-	padding: 0 0.2em;
+	padding-block: 0;
+	padding-inline: 0.2em;
 }
 #non-AppStore dl:not(.fqa) dd+dt::before {
 	content: '\000A';  /* line break */
@@ -41,11 +42,11 @@
 }
 #non-AppStore dl:not(.fqa) dt:after {
 	content: ':';
-	margin-right: 0.5em;
+	margin-inline-end: 0.5em;
 }
 #non-AppStore dl.fqa {
 	clear: both;
-	margin-top: 2em;
+	margin-block-start: 2em;
 }
 
 
@@ -56,7 +57,7 @@ table.download tbody tr > * {
 }
 table.download img {
 	vertical-align: middle;
-	margin-right: 4px;
+	margin-inline-end: 4px;
 }
 
 
@@ -66,10 +67,10 @@ table.download img {
 		display: block;
 		border-right: none;
 		border-bottom: 1px solid hsla(0,0%,0%,.1);
-		padding-right: 0;
-		padding-bottom: 16px;
-		margin-right: 0;
-		margin-bottom: 16px;
+		padding-inline-end: 0;
+		padding-block-end: 16px;
+		margin-inline-end: 0;
+		margin-block-end: 16px;
 	}
 
 	#non-AppStore dl:not(.fqa) > * {

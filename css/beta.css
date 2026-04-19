@@ -57,8 +57,9 @@ body > header h1 span {
 	display: inline-block;
 	border-radius: 0.2em;
 	border: 2px solid hsla(0,0%,100%,.2);
-	padding: 0 0.14em;
-	margin-left: -0.1em;
+	padding-block: 0;
+	padding-inline: 0.14em;
+	margin-inline-start: -0.1em;
 }
 
 
@@ -66,8 +67,10 @@ body > header h1 span {
 a.download {
 	font-family: ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
 	font-size: 19px;
-	padding: 0.5em 1em;
-	margin: 0.2em 0;
+	padding-block: 0.5em;
+	padding-inline: 1em;
+	margin-block: 0.2em;
+	margin-inline: 0;
 	
 	font-weight: 500;
 	line-height: 1.2;

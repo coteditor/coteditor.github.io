@@ -22,18 +22,18 @@
 	cursor: pointer;
 }
 
-.slider #item1:checked ~ .slides { margin-left: 0; }
-.slider #item2:checked ~ .slides { margin-left: -100%; }
-.slider #item3:checked ~ .slides { margin-left: -200%; }
-.slider #item4:checked ~ .slides { margin-left: -300%; }
-.slider #item5:checked ~ .slides { margin-left: -400%; }
-.slider #item6:checked ~ .slides { margin-left: -500%; }
+.slider #item1:checked ~ .slides { margin-inline-start: 0; }
+.slider #item2:checked ~ .slides { margin-inline-start: -100%; }
+.slider #item3:checked ~ .slides { margin-inline-start: -200%; }
+.slider #item4:checked ~ .slides { margin-inline-start: -300%; }
+.slider #item5:checked ~ .slides { margin-inline-start: -400%; }
+.slider #item6:checked ~ .slides { margin-inline-start: -500%; }
 
 .slides {
 	display: flex;
 	width: 600%;
 	line-height: 0;
-	transition: margin-left 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
+	transition: margin-inline-start 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
 }
 .slides figure {
 	flex: 0 0 calc(100% / 6);
@@ -78,12 +78,12 @@
 /* Autoplay */
 
 @keyframes slide {
-   0%, 20%  { margin-left: 0; }
-  25%, 35%  { margin-left: -100%; }
-  40%, 50%  { margin-left: -200%; }
-  55%, 65%  { margin-left: -300%; }
-  70%, 80%  { margin-left: -400%; }
-  85%, 95%  { margin-left: -500%; }
+   0%, 20%  { margin-inline-start: 0; }
+  25%, 35%  { margin-inline-start: -100%; }
+  40%, 50%  { margin-inline-start: -200%; }
+  55%, 65%  { margin-inline-start: -300%; }
+  70%, 80%  { margin-inline-start: -400%; }
+  85%, 95%  { margin-inline-start: -500%; }
 }
 .slider > #item1:checked ~ .slides {
   animation: slide 25s infinite;

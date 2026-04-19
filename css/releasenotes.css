@@ -27,7 +27,8 @@ main {
 	color: hsl(198,40%,45%);
 	border: 1px solid;
 	border-radius: 2px;
-	padding: 0 0.2em;
+	padding-block: 0;
+	padding-inline: 0.2em;
 }
 .trivial {
 	color: hsl(0, 0%, 60%);
@@ -36,7 +37,8 @@ p.important {
 	color: hsl(203,30%,25%);
 	background: hsl(203,50%,97%);
 	border-radius: 0.8em;
-	padding: 0.5em 1em;
+	padding-block: 0.5em;
+	padding-inline: 1em;
 }
 
 article {
@@ -45,9 +47,9 @@ article {
 
 article+section,
 article+article {
-	margin-top: 4em;
+	margin-block-start: 4em;
 	border-top: 1px solid hsla(0,0%,0%,.1);
-	padding-top: 1em;
+	padding-block-start: 1em;
 }
 
 article > header h1 {
@@ -60,13 +62,16 @@ article > header p {
 article h2 {
 	font-size: 110%;
 	font-weight: bold;
-	margin: 0.4em 0;
+	margin-block: 0.4em;
+	margin-inline: 0;
 }
 
 kbd {
 	font-family: -apple-system, sans-serif;
-	padding: 0 0.2em;
-	margin: 0 0.1em;
+	padding-block: 0;
+	padding-inline: 0.2em;
+	margin-block: 0;
+	margin-inline: 0.1em;
 	border-radius: 0.2em;
 	border: 1px solid -apple-system-tertiary-label;
 	box-shadow: 0 1px 0 hsla(0, 0%, 0%, .05);
@@ -80,11 +85,11 @@ kbd {
 
 .highlights {
 	border-bottom: 1px solid hsl(203,20%,90%);
-	padding-bottom: 1em;
+	padding-block-end: 1em;
 }
 .highlights h1 {
 	font-size: 1.5rem;
-	margin-bottom: 0.2em;
+	margin-block-end: 0.2em;
 }
 .highlights dt::before {
 	content: '✔︎';
@@ -92,14 +97,14 @@ kbd {
 	font-size: 140%;
 	font-weight: normal;
 	vertical-align: -0.05em;
-	margin-right: 0.3em;
+	margin-inline-end: 0.3em;
 }
 .highlights dt {
 	font-size: 110%;
 	font-weight: 600;
 }
 .highlights dd {
-	margin-bottom: 1em;
+	margin-block-end: 1em;
 }
 
 
@@ -109,7 +114,7 @@ section > footer > ol,
 article > footer > ol,
 main > footer > ol {
 	font-size: 90%;
-	margin-left: 20px;
+	margin-inline-start: 20px;
 }
 
 footer ol li:target {
@@ -123,7 +128,8 @@ footer ol li:target {
 body.prerelease p.attention strong {
     font-size: 116%;
     background-color: hsl(50,100%,75%);
-    padding: 0 0.3em;
+    padding-block: 0;
+    padding-inline: 0.3em;
 }
 
 body.prerelease::before {

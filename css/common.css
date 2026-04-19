@@ -53,7 +53,8 @@ a:not([href]) {
 a > sup {
 	color: hsl(0,0%,50%);
 	font-size: 70%;
-	margin: 0 1px;
+	margin-block: 0;
+	margin-inline: 1px;
 }
 
 
@@ -72,22 +73,25 @@ main dt {
 }
 
 main p {
-	margin: 1em 0;
+	margin-block: 1em;
+	margin-inline: 0;
 }
 section {
-	margin: 2em 0 3em;
+	margin-block: 2em 3em;
+	margin-inline: 0;
 }
 section > section {
-	margin: 1em 0;
+	margin-block: 1em;
+	margin-inline: 0;
 }
 
 /* list marker */
 main ul li {
 	list-style-type: circle;
-	margin-left: 1.5em;
+	margin-inline-start: 1.5em;
 }
 main li+li {
-	margin-top: 0.2em;
+	margin-block-start: 0.2em;
 }
 
 /* table */
@@ -96,7 +100,8 @@ table {
 	border-collapse: collapse;
 }
 table tr > * {
-	padding: 0.2em 0.5em;
+	padding-block: 0.2em;
+	padding-inline: 0.5em;
 	line-height: 1.5;
 }
 table thead tr > * {
@@ -114,13 +119,15 @@ code {
 	background-color: hsl(0,0%,98%);
 	border: 1px solid hsl(0,0%,93%);
 	border-radius: 2px;
-	padding: 0.1em 0.3em;
+	padding-block: 0.1em;
+	padding-inline: 0.3em;
 }
 pre code {
 	display: block;
 	width: auto;
 	min-width: 100%;
-	padding: 0.3em 1em;
+	padding-block: 0.3em;
+	padding-inline: 1em;
 	line-height: 1.6;
 }
 pre {
@@ -145,7 +152,8 @@ body {
 	color: hsl(0,0%,10%);
 	
 	background: white;
-	padding: 15px 20px;
+	padding-block: 15px;
+	padding-inline: 20px;
 }
 
 
@@ -179,7 +187,7 @@ body > header > a:first-child::before {
 	background: url('../img/appicon/128@2x.png');
 	background-size: 48px;
 	vertical-align: -14px;
-	margin-right: 4px;
+	margin-inline-end: 4px;
 	transition: transform 0.67s ease;
 }
 body > header > a:first-child:hover::before {
@@ -189,7 +197,8 @@ body > header > nav {
 	position: absolute;
 	top: 8px;
 	right: 0;
-	padding: 1em 2em;
+	padding-block: 1em;
+	padding-inline: 2em;
 }
 body > header > nav ul {
 	display: flex;
@@ -206,7 +215,8 @@ body > header > nav a[href*='x.com'] {
 
 /* main */
 main {
-	margin: 30px auto;
+	margin-block: 30px;
+	margin-inline: auto;
 	width: 80%;
 	max-width: 1000px;
 }
@@ -216,7 +226,7 @@ body > footer {
 	font-size: 13px;
 	letter-spacing: 0.03em;
 	text-align: center;
-	margin-top: 40px;
+	margin-block-start: 40px;
 }
 body > footer p {
 	opacity: 0.4;
@@ -236,7 +246,8 @@ aside.sns li {
 
 /*___3.tooltip_______________________________________________________________*/
 
-[role=tooltip]  { position:absolute; z-index:20; padding:0.3em 0.6em;
+[role=tooltip]  { position:absolute; z-index:20;
+                  padding-block:0.3em; padding-inline:0.6em;
                   box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:left;
                   background-color:hsla(0,0%,20%,0.9); border-radius:8px;
                   border:none;
@@ -250,8 +261,8 @@ aside.sns li {
 [role=tooltip] p    { color:hsl(0,0%,92%); line-height:1.2 }
 [role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
 [role=tooltip] p+p  { color:hsl(0,0%,75%); font-size:80%;
-                      overflow-wrap:anywhere; margin-top:1px }
-[role=tooltip] p::before  { opacity:0.9; margin-right:5px; vertical-align:-1px; }
+                      overflow-wrap:anywhere; margin-block-start:1px }
+[role=tooltip] p::before  { opacity:0.9; margin-inline-end:5px; vertical-align:-1px; }
 
 [role=tooltip].github p:first-child::before {
 	content: url('parts/w_sns_github.svg');
@@ -263,7 +274,8 @@ aside.sns li {
 	text-shadow: none;
 	
 	width: 280px;
-	padding: 2px 2px 3px;
+	padding-block: 2px 3px;
+	padding-inline: 2px;
 }
 
 
@@ -273,22 +285,23 @@ aside.sns li {
 /* FQA */
 
 dl.fqa {
-	margin: 1em 0;
+	margin-block: 1em;
+	margin-inline: 0;
 }
 dl.fqa > dt {
 	font-size: 120%;
 }
 dl.fqa > * {
 	text-indent: -1.8em;
-	margin-left: 1.8em;
-	margin-bottom: 0.2em;
+	margin-inline-start: 1.8em;
+	margin-block-end: 0.2em;
 }
 dl.fqa > dd + dt {
-	margin-top: 1.5em;
+	margin-block-start: 1.5em;
 }
 dl.fqa > ::before {
 	font: 200 20px/1.0 'Helvetica Neue', sans-serif;
-	margin-right: 0.3em;
+	margin-inline-end: 0.3em;
 }
 dl.fqa > dt::before {
 	content: 'Q.';
@@ -307,16 +320,17 @@ dl.fqa > dd:lang(tr)::before {
 dl.fqa > dd > ul,
 dl.fqa > dd > ol,
 dl.fqa > dd > dl {
-	margin: 0.5em 3em;
+	margin-block: 0.5em;
+	margin-inline: 3em;
 }
 dl.fqa > dd > dl dt {
 	font-weight: 500;
 	display: list-item;
 	list-style: circle inside;
-	margin-left: -1em;
+	margin-inline-start: -1em;
 }
 dl.fqa > dd > dl dd {
-	margin-bottom: 0.5em;
+	margin-block-end: 0.5em;
 }
 
 /* Addition */
@@ -342,19 +356,21 @@ p.addition > span:first-child {
 
 @media (max-width: 700px) {
 	body {
-		padding: 0.75rem 1rem;
+		padding-block: 0.75rem;
+		padding-inline: 1rem;
 	}
 
 	body > header {
 		text-align: center;
-		padding-top: 0.5em;
+		padding-block-start: 0.5em;
 	}
 	body > header > a:first-child {
 		display: inline-block;
 	}
 	body > header > nav {
 		position: static;
-		padding: 1em 0 0;
+		padding-block: 1em 0;
+		padding-inline: 0;
 		text-align: center;
 	}
 	body > header > nav ul {
@@ -365,7 +381,8 @@ p.addition > span:first-child {
 	main {
 		width: 100%;
 		max-width: 100%;
-		margin: 1.5rem auto;
+		margin-block: 1.5rem;
+		margin-inline: auto;
 	}
 
 	pre code {
@@ -404,6 +421,7 @@ p.addition > span:first-child {
 	}
 
 	main {
-		margin: 1.25rem auto;
+		margin-block: 1.25rem;
+		margin-inline: auto;
 	}
 }
