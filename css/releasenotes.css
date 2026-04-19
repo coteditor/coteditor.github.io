@@ -34,9 +34,6 @@ p.attention strong {
     background-color: hsl(50,100%,75%);
     padding: 0 0.3em;
 }
-p.note strong {
-	text-decoration: underline;
-}
 .trivial,
 .label {
 	color: hsl(198,40%,45%);
