@@ -40,18 +40,36 @@ ul li {
 
 /*___1.common rule___________________________________________________________*/
 
+/* color scheme */
+:root {
+	--background: light-dark(white, hsl(0,0%,12%));
+	--text: light-dark(hsla(0,0%,0%,.75), hsla(0,0%,100%,.9));
+	--secondary-text: light-dark(hsla(0,0%,0%,.67), hsla(0,0%,100%,.67));
+	--tertiary-text: light-dark(hsla(0,0%,0%,.5), hsla(0,0%,100%,.5));
+	--separator: light-dark(hsla(0,0%,0%,.1), hsla(0,0%,100%,.14));
+	--code-background: light-dark(hsla(0,0%,0%,.02), hsla(0,0%,100%,.1));
+	
+	--accent: hsl(90,50%,50%);
+	--link: light-dark(hsl(90,45%,45%), hsl(90,55%,60%));
+	--link-background: light-dark(hsla(90,45%,45%,.2), hsla(90,55%,62%,.18));
+	
+	--information: light-dark(hsl(203,30%,25%), hsl(203,60%,85%));
+	--information-background: light-dark(hsl(203,50%,97%), hsl(203,20%,20%));
+}
+
+
 /* anchors */
 a:any-link {
-	color: hsl(90,45%,45%);
+	color: var(--link);
 }
 a:any-link:hover {
-	background: hsla(90,45%,45%,.2);
+	background: var(--link-background);
 }
 a:not([href]) {
 	color: inherit;
 }
 a > sup {
-	color: hsl(0,0%,50%);
+	color: var(--tertiary-text);
 	font-size: 70%;
 	margin-block: 0;
 	margin-inline: 1px;
@@ -106,19 +124,17 @@ table tr > * {
 }
 table thead tr > * {
 	font-weight: 500;
-	border-block-end: 0.5px solid hsla(0,0%,0%,.8);
+	border-block-end: 0.5px solid var(--text);
 }
 table tbody tr > * {
-	border-block-end: 0.5px solid hsla(0,0%,0%,.08);
+	border-block-end: 0.5px solid var(--separator);
 }
 
 /* code */
 code {
 	font: 94% Menlo, monospace;
-	color: hsla(0,0%,0%,.8);
-	background-color: hsl(0,0%,98%);
-	border: 1px solid hsl(0,0%,93%);
-	border-radius: 2px;
+	background-color: var(--code-background);
+	border-radius: 0.3em;
 	padding-block: 0.1em;
 	padding-inline: 0.3em;
 }
@@ -129,6 +145,7 @@ pre code {
 	padding-block: 0.3em;
 	padding-inline: 1em;
 	line-height: 1.6;
+	border: 1px solid var(--separator);
 }
 pre {
 	overflow-x: auto;
@@ -149,9 +166,9 @@ dfn {
 body {
 	font: 15px -apple-system, 'Helvetica Neue', sans-serif;
 	letter-spacing: 0.01em;
-	color: hsl(0,0%,10%);
+	color: var(--text);
 	
-	background: white;
+	background: var(--background);
 	padding-block: 15px;
 	padding-inline: 20px;
 }
@@ -161,7 +178,7 @@ body {
 body > header {
 	font: 200 18px/1.0 'Avenir', 'Helvetica Neue', sans-serif;
 	letter-spacing: 0.05em;
-	color: hsl(0,0%,33%);
+	color: var(--secondary-text);
 	min-height: 16px;
 	position: relative;
 }
@@ -211,6 +228,11 @@ body > header > nav a[href*='x.com'] {
 	height: 16px;
 	vertical-align: -2px;
 }
+/* @media (prefers-color-scheme: dark) {
+	body > header > nav a[href*='x.com'] {
+		content: url('parts/x_large-dark.svg');
+	}
+} */
 
 
 /* main */
@@ -335,17 +357,14 @@ dl.fqa > dd > dl dd {
 
 /* Addition */
 
-:root {
-	--accent-background: light-dark(hsl(206, 50%, 97%), hsl(206, 30%, 20%));
-}
-
 p.addition {
 	position: relative;
 	text-indent: 0;
 	padding-block: 0.8rem;
 	padding-inline: 1.2rem;
 	border-radius: 0.8rem;
-	background: var(--accent-background);
+	color: var(--information);
+	background: var(--information-background);
 }
 p.addition > span:first-child {
 	color: -apple-system-secondary-label;

@@ -28,7 +28,7 @@ figure img {
 }
 #team .position {
 	font-size: 120%;
-	color: hsl(0,0%,40%);
+	color: var(--secondary-text);
 	text-transform: capitalize;
 	
 	display: block;

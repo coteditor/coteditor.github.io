@@ -9,19 +9,21 @@
    lastMod : 2026-04
   ////////////////////////////////////// */
 
+:root {
+	color-scheme: dark;
+}
 body {
-	color: hsla(0,0%,100%,.67);
-	background-color: hsl(203,3%,30%);
 	text-align: center;
 }
 
 a[href] {
 	text-decoration: underline;
-	color: hsla(0,0%,100%,.9);
+	color: var(--text);
 }
 a[href]:hover {
 	text-decoration: none;
-	background: hsla(0,0%,100%,.2);
+	background: var(--separator);
+	border-radius: 0.2em;
 }
 
 body::before {
@@ -47,7 +49,8 @@ body > header > img {
 }
 body > header h1 {
 	font: 64px/1.0 ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
-	color: hsla(0,0%,100%,.3);
+	color: var(--secondary-text);
+	opacity: 0.5;
 }
 body > header h1 span {
 	font-family: 'Noteworthy';
@@ -55,7 +58,7 @@ body > header h1 span {
 	font-weight: normal;
 	display: inline-block;
 	border-radius: 0.2em;
-	border: 2px solid hsla(0,0%,100%,.2);
+	border: 2px solid var(--separator);
 	padding-block: 0;
 	padding-inline: 0.14em;
 	margin-inline-start: -0.1em;
@@ -84,12 +87,12 @@ a.download {
 	border-radius: 12px;
 	border: none !important;
 	background: linear-gradient(hsla(0,0%,100%,.08), hsla(0,0%,0%,.08));
-	background-color: hsl(87,55%,55%);
+	background-color: var(--accent);
 	box-shadow: 0 1px 3px hsla(0,0%,0%,.08);
 	transition: background 0.3s;
 }
 a.download:hover {
-	background-color: hsl(87,70%,40%);
+	background-color: hsl(from var(--accent) h s calc(l - 15));
 }
 a.download span {
 	font-size: 95%;
@@ -116,7 +119,7 @@ span.note {
 	color: #aaa;
 }
 [role="separator"] {
-	color: hsla(0,0%,0%,.2);
+	color: var(--separator);
 }
 p strong {
 	border-block-end: 3px double;

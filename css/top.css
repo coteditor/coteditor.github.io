@@ -10,7 +10,6 @@
   ////////////////////////////////////// */
 
 body {
-	color: hsl(0,0%,30%);
 	font-size: 16px;
 	text-align: center;
 	
@@ -114,8 +113,7 @@ a#beta strong {
 }
 #latest .handwriting {
 	font: 17px/1.0 'HanziPen SC', 'Bradley Hand', 'Noteworthy', sans-serif;
-	color: hsl(0,0%,0%);
-	opacity: 0.4;
+	color: var(--tertiary-text);
 	display: block;
 	transform: rotate(-3deg);
 	margin-block: 0.5em 0.9em;
@@ -285,7 +283,7 @@ a.download img {
 	max-width: 680px;
 	margin-block: 40px 25px;
 	margin-inline: auto;
-	border-block-end: 1px solid hsla(0,0%,0%,.1);
+	border-block-end: 1px solid var(--separator);
 }
 #develop section h3 {
 	font-size: 105%;
@@ -294,11 +292,11 @@ a.download img {
 	font-size: 90%;
 	margin: 0.2em;
 }
+
 #develop a.github {
 	display: inline-block;
-	color: hsl(0,0%,33%);
-	background: hsl(198,20%,98%);
-	border: 0.5px solid hsla(0,0%,33%,0.2);
+	color: var(--secondary-text);
+	background: light-dark(hsl(198,20%,98%), hsl(198,10%,25%));
 	box-shadow: 0 2px 5px hsla(0,0%,0%,0.3);
 	border-radius: 0.8em;
 	letter-spacing: 1px;
@@ -306,16 +304,15 @@ a.download img {
 	padding-inline: 1em;
 }
 #develop a.github:hover {
-	color: hsl(90,45%,45%);
-	border-color: hsla(90,45%,45%,0.5);
+	color: var(--link);
 }
 
 
 /* footer */
 body > footer {
-	color: hsl(198,20%,40%);
-	background: hsl(198,20%,96%);
-	border-block-start: hsl(198,20%,90%) 1px solid;
+	color: light-dark(hsl(198,20%,40%), hsl(198,20%,70%));
+	background: light-dark(hsl(198,20%,96%), hsl(198,10%,16%));
+	border-block-start: light-dark(hsla(198,20%,40%,.1), hsla(198,20%,70%,.1)) 1px solid;
 	padding-block-end: 1em;
 }
 aside.sns {

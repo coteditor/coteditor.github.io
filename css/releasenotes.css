@@ -12,20 +12,6 @@
 
 :root {
 	color-scheme: light dark;
-	
-	--background: light-dark(white, hsl(0,0%,12%));
-	--text: light-dark(hsla(0,0%,0%,.8), hsla(0,0%,100%,.9));
-	--secondary-text: light-dark(hsl(0,0%,40%), hsl(0,0%,60%));
-	--tertiary-text: light-dark(hsl(0,0%,50%), hsl(0,0%,62%));
-	--accent: hsl(90,50%,50%);
-	--link: light-dark(hsl(90,45%,45%), hsl(90,55%,60%));
-	--link-background: light-dark(hsla(90,45%,45%,.2), hsla(90,55%,62%,.18));
-	--separator: light-dark(hsla(0,0%,0%,.1), hsla(0,0%,100%,.14));
-}
-
-body {
-	color: var(--text);
-	background: var(--background);
 }
 
 body > header {
@@ -39,17 +25,6 @@ main {
 
 /* general */
 
-a:any-link {
-	color: var(--link);
-}
-a:any-link:hover {
-	background: var(--link-background);
-}
-code {
-	color: var(--text);
-	background-color: transparent;
-	border-color: light-dark(hsla(0,0%,0%,.1), hsla(0,0%,100%,.15));
-}
 .trivial,
 .label {
 	color: light-dark(hsl(198,40%,45%), hsl(198,40%,55%));
@@ -62,8 +37,8 @@ code {
 	color: light-dark(hsl(0,0%,60%), hsl(0,0%,60%));
 }
 p.important {
-	color: light-dark(hsl(203,30%,25%), hsl(203,60%,85%));
-	background: light-dark(hsl(203,50%,97%), hsl(203,20%,20%));
+	color: var(--information);
+	background: var(--information-background);
 	border-radius: 0.8em;
 	padding-block: 0.5em;
 	padding-inline: 1em;

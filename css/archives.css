@@ -64,11 +64,8 @@ table.download img {
 @media (max-width: 700px) {
 	#non-AppStore > a {
 		float: none;
-		display: block;
+		display: inline-block;
 		border-inline-end: none;
-		border-block-end: 1px solid hsla(0,0%,0%,.1);
-		padding-inline-end: 0;
-		padding-block-end: 16px;
 		margin-inline-end: 0;
 		margin-block-end: 16px;
 	}
