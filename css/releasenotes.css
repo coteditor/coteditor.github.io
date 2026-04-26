@@ -92,19 +92,19 @@ kbd {
 	padding-block-end: 1em;
 }
 .highlights h1 {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-block-end: 0.2em;
 }
 .highlights dt::before {
 	content: '✔︎';
 	color: var(--accent);
-	font-size: 140%;
+	font-size: 120%;
 	font-weight: normal;
 	vertical-align: -0.05em;
 	margin-inline-end: 0.3em;
 }
 .highlights dt {
-	font-size: 110%;
+	font-size: 108%;
 	font-weight: 600;
 }
 .highlights dd {
