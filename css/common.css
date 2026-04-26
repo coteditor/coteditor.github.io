@@ -43,7 +43,7 @@ ul li {
 /* color scheme */
 :root {
 	--background: light-dark(white, hsl(0,0%,12%));
-	--text: light-dark(hsla(0,0%,0%,.75), hsla(0,0%,100%,.9));
+	--text: light-dark(hsla(0,0%,0%,.8), hsla(0,0%,100%,.9));
 	--secondary-text: light-dark(hsla(0,0%,0%,.67), hsla(0,0%,100%,.67));
 	--tertiary-text: light-dark(hsla(0,0%,0%,.5), hsla(0,0%,100%,.5));
 	--separator: light-dark(hsla(0,0%,0%,.1), hsla(0,0%,100%,.14));
