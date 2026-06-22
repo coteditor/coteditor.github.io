@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 7.0.5 - CotEditor</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description"  content="What's new on CotEditor 7.0.5"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/7.0.5-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 7.0.5"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="7.0.5-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+<article headingoffset="1">
+	<header>
+		<h1>CotEditor 7.0.5</h1>
+		<p>release: <time>2026-06-23</time></p>
+	</header>
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Add the Services menu to the context menu of the file browser.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Avoid reopening the completion list automatically after typing an additional character during manual completion.</li>
+			<li>Update tree-sitter-swift to 0.7.3.</li>
+			<li>Fine-tune the layout for the new macOS.</li>
+			<li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.9.2 to 2.9.3.</li>
+			<li><span class="trivial">dev</span>: Update Yams from 6.2.1 to 6.2.2.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue where the <kbd>Command</kbd>-<kbd>Left Arrow</kbd> command could fail to move the cursor to the beginning of the current wrapped visual line.</li>
+			<li>Fix an issue on macOS 26.5.1 where the “Suggest completions while typing” option could unexpectedly commit text being composed.</li>
+			<li>Fix an issue where the text composing in a text field on the Find window could disappear while incremental search.</li>
+			<li>Fix an issue where regular-expression syntax highlighting in input fields could fail to update immediately when changing regular expression mode while editing.</li>
+			<li>Fix an issue where the Advanced Character Counter could sometimes be positioned incorrectly.</li>
+			<li>Address an issue where the external modification alert could appear after saving a document in a synced folder.</li>
+		</ul>
+	</section>
+
+	<p><a href="7.0.4.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>

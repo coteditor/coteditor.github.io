@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 7.0.5の変更点 - CotEditor</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description"  content="CotEditor 7.0.5の変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/7.0.5-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 7.0.5の変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="7.0.5-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body>
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+
+
+<article headingoffset="1">
+	<header>
+		<h1>CotEditor 7.0.5</h1>
+		<p>リリース: <time>2026-06-23</time></p>
+	</header>
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li>ファイルブラウザのコンテキストメニューにサービスメニューを追加</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>手動での入力補完の表示中に追加の文字を入力したとき、補完候補リストが自動的に再表示されないように変更</li>
+			<li>tree-sitter-swiftを0.7.3に更新</li>
+			<li>新しいmacOS向けにレイアウトを微調整</li>
+			<li><span class="label">非AppStore版</span>: Sparkleを2.9.2から2.9.3に更新</li>
+			<li><span class="trivial">開発</span>: Yamsを6.2.1から6.2.2に更新</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li><kbd>⌘←</kbd>コマンドで現在の折り返し表示行の行頭にカーソルを移動できないことがあった不具合を修正</li>
+			<li>macOS 26.5.1で、「入力中に補完候補を表示」オプションが入力中の変換テキストを予期せず確定することがあった不具合を修正</li>
+			<li>インクリメンタル検索中に、「検索」ウインドウのテキストフィールドで、入力中の変換テキストが消えることがあった不具合を修正</li>
+			<li>入力欄で編集中に正規表現モードを変更したとき、正規表現シンタックスハイライトがすぐに更新されないことがあった不具合を修正</li>
+			<li>高度な文字カウントが誤った位置に表示されることがあった不具合を修正</li>
+			<li>同期されたフォルダ内の書類を保存したあとに、外部変更の警告が表示されることがあった不具合を修正</li>
+		</ul>
+	</section>
+
+	<p><a href="7.0.4.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>
