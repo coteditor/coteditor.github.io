@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : archives page
-   lastMod : 2026-04
+   lastMod : 2026-07
   ////////////////////////////////////// */
 
 /* non-AppStore version */
@@ -58,6 +58,23 @@ table.download tbody tr > * {
 table.download img {
 	vertical-align: middle;
 	margin-inline-end: 4px;
+}
+
+
+/* download indicator */
+
+a[download]::after {
+	content: '↓';
+	font-weight: 500;
+	display: inline-block;
+	margin-inline-start: 0.35em;
+	opacity: 0;
+	translate: 0 -3px;
+	transition: opacity 0.2s, translate 0.2s;
+}
+a[download]:hover::after {
+	opacity: 0.65;
+	translate: 0 0;
 }
 
 
