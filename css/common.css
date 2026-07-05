@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2026-04
+   lastMod : 2026-07
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -42,6 +42,8 @@ ul li {
 
 /* color scheme */
 :root {
+	color-scheme: light dark;
+	
 	--background: light-dark(white, hsl(0,0%,12%));
 	--text: light-dark(hsla(0,0%,0%,.8), hsla(0,0%,100%,.9));
 	--secondary-text: light-dark(hsla(0,0%,0%,.67), hsla(0,0%,100%,.67));
@@ -228,11 +230,11 @@ body > header > nav a[href*='x.com'] {
 	height: 16px;
 	vertical-align: -2px;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	body > header > nav a[href*='x.com'] {
 		content: url('parts/x_large-dark.svg');
 	}
-} */
+}
 
 
 /* main */
@@ -263,6 +265,9 @@ aside.sns ul {
 }
 aside.sns li {
 	max-width: 90px;
+}
+aside.sns iframe {
+	color-scheme: light;  /* avoid the opaque backstop for the light-only embedded document */
 }
 
 
@@ -327,11 +332,11 @@ dl.fqa > ::before {
 }
 dl.fqa > dt::before {
 	content: 'Q.';
-	color: hsl(200,60%,45%);
+	color: light-dark(hsl(200,60%,45%), hsl(200,60%,60%));
 }
 dl.fqa > dd::before {
 	content: 'A.';
-	color: hsl(30,75%,45%);
+	color: light-dark(hsl(30,75%,45%), hsl(30,80%,58%));
 }
 dl.fqa > dt:lang(tr)::before {
 	content: 'S.';

@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2026-04
+   lastMod : 2026-07
   ////////////////////////////////////// */
 
 body {
@@ -184,9 +184,11 @@ a.download img {
 	font: italic 250 34px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
 	letter-spacing: 1.5px;
 	word-break: auto-phrase;
-	color: hsl(198,40%,40%);
-	
-	background: linear-gradient(180deg, hsl(200,40%,40%), hsl(190,50%,45%));
+	color: light-dark(hsl(198,40%,40%), hsl(198,45%,65%));
+
+	background: linear-gradient(180deg,
+		light-dark(hsl(200,40%,40%), hsl(200,45%,68%)),
+		light-dark(hsl(190,50%,45%), hsl(190,50%,62%)));
 	-webkit-background-clip: text;
 	        background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -200,6 +202,11 @@ a.download img {
 	background: url('parts/to_features.svg') no-repeat center bottom;
 	padding-block-end: 130px;
 	margin-block-end: -1em;
+}
+@media (prefers-color-scheme: dark) {
+	#highlights {
+		background-image: url('parts/to_features-dark.svg');
+	}
 }
 #highlights h2 {
 	display: none;
