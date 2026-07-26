@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>CotEditor 7.0.0βの変更点 - CotEditor</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description"  content="CotEditor 7.0.0βの変更点"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/7.0.0-beta.ja"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="CotEditor 7.0.0βの変更点"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="ja_JP"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="7.0.0-beta.en" hreflang="en"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>これはプレリリース版です。</strong></p>
+
+<section class="highlights">
+<h1>CotEditor 7.1のハイライト</h1>
+
+<dl>
+	<dt>フォルダの中から見つけよう</dt>
+	<dd>開いているフォルダ内のファイルを、サイドバーから全文検索できるようになりました。</dd>
+
+	<dt>フォルダでも戻る・進む</dt>
+	<dd>フォルダ書類で最近表示した書類を、ツールバーから戻る・進むで辿れるようになりました。</dd>
+
+	<dt>macOS 27に対応</dt>
+	<dd>CotEditorがmacOS 27 Golden Gateに対応しました。最新システムに合わせて外観も整えています。</dd>
+
+	<dt>書類名は書類におまかせ</dt>
+	<dd>macOS 27では、名称未設定の書類に内容から提案された書類名の草案が自動で付くようになりました。</dd>
+
+	<dt>シンタックスに合わせたインデント</dt>
+	<dd>お好みで、「モード」設定でシンタックスごとにインデントスタイルをカスタマイズできるようになりました。</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 7.0.0-beta</h1>
+		<p>リリース: <time>2026-07-26</time></p>
+	</header>
+
+	<section>
+		<h2>互換性の変更</h2>
+
+		<ul>
+			<li>システム要件を<strong>macOS Tahoe 26以降</strong>に変更</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li><strong>macOS 27 Golden Gate</strong>に対応</li>
+			<li>開いているフォルダ内のファイルからテキストを検索するフォルダ検索をサイドバーに追加</li>
+			<li>フォルダ書類のツールバーに書類履歴のナビゲーションを追加</li>
+			<li>macOS 27で、書類の内容から名称未設定書類の書類名の草案を自動で生成して適用</li>
+			<li>モードごとにインデントスタイル（スペースまたはタブ）と幅を設定できるように改善</li>
+			<li>「フォーマット」設定ペインの「利用可能なシンタックス」セクションのその他のメニューに「シンタックスメニューをカスタマイズ」コマンドを追加し、特定のシンタックスをシンタックスメニューから非表示にできるように改善</li>
+			<li>「外観」設定ペインに「ステータスバー」オプションを追加</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>一部の設定ダイアログをリサイズ可能に</li>
+			<li>カスタムシンタックスをゴミ箱にドラッグして削除できるように改善</li>
+			<li>CotEditorシンタックスファイルと複数の置換定義を、それぞれのリストへのドロップで読み込めるように改善</li>
+			<li>「モード」設定ペインのリストにコンテキストメニューを追加</li>
+			<li>シンタックスエディタのサイドバーに定義エラー数をバッジで表示</li>
+			<li>書類をファイルタイプからJSONの一種だと認識できる場合は自動的にJSONシンタックスを適用</li>
+			<li>JSONシンタックスを更新し、ファイルマップ設定を簡略化</li>
+			<li>全体的な安定性とパフォーマンスを改善</li>
+			<li><span class="trivial">開発</span>: アクセントカラーを調整</li>
+			<li><span class="trivial">開発</span>: ビルド環境をXcode 27 Beta 4（Swift 6.4、macOS 27 SDK）に更新</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>既知の問題</h2>
+
+		<ul>
+			<li>macOS 26では、特定のシステムの外観、ウインドウの外観、およびテーマの組み合わせにおいて、ステータスバーのテキストが読めない色で表示されることがあります（FB23611796）</li>
+			<li>フォルダ検索の結果を他のアプリにドラッグ＆ドロップした際に、場合によってサンドボックス化されたURLが渡されることがあります（FB23578716）</li>
+			<li>CotEditor 7.1.0に新たに追加されたテキストは、まだブルガリア語・チェコ語・ポーランド語にはローカライズされていません</li>
+		</ul>
+	</section>
+
+	<p class="important">このバージョンはリリース前の<a href="7.0.8.ja.html">CotEditor 7.0.8</a>の変更も一部含んでいます。</p>
+
+	<p><a href="7.0.7.ja">以前のリリースノート</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>

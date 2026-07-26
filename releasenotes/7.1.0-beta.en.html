@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>What's new on CotEditor 7.1.0β - CotEditor</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description"  content="What's new on CotEditor 7.1.0β"/>
+
+	<meta property="og:type"         content="article"/>
+	<meta property="og:url"          content="https://coteditor.com/releasenotes/7.1.0-beta.en"/>
+	<meta property="og:title"        content="CotEditor"/>
+	<meta property="og:description"  content="What's new on CotEditor 7.1.0β"/>
+	<meta property="og:image"        content="https://coteditor.com/img/appicon/512@2x.png"/>
+	<meta property="og:site_name"    content="CotEditor"/>
+	<meta property="og:locale"       content="en_US"/>
+	<meta property="twitter:card"    content="summary"/>
+	<meta property="twitter:creator" content="@CotEditor"/>
+
+	<link rel="shortcut icon" href="/favicon.png"    type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="alternate"     href="7.1.0-beta.ja" hreflang="ja"/>
+	<link rel="stylesheet"    href="../css/common.css"/>
+	<link rel="stylesheet"    href="../css/releasenotes.css"/>
+</head>
+
+<body class="prerelease">
+<header>
+	<a href="/">CotEditor</a>
+</header>
+
+<main>
+<p class="attention">⚠️ <strong>This is a pre-release version.</strong></p>
+
+<section class="highlights">
+<h1>Highlights on CotEditor 7.1</h1>
+
+<dl>
+	<dt>Find it in the folder</dt>
+	<dd>Search text across files in an opened folder right from the sidebar.</dd>
+
+	<dt>Back and forward in folders</dt>
+	<dd>Use the toolbar to move back and forward through recently viewed documents in a folder document.</dd>
+
+	<dt>Ready for macOS 27</dt>
+	<dd>CotEditor now supports macOS 27 Golden Gate, including refreshed appearance for the latest system.</dd>
+
+	<dt>Let the document name itself</dt>
+	<dd>On macOS 27, untitled documents automatically get a draft name suggested from their content.</dd>
+
+	<dt>Indentation that fits each syntax</dt>
+	<dd>Use Mode settings to customize the indentation style for individual syntaxes as you like.</dd>
+</dl>
+</section>
+
+
+
+<article>
+	<header>
+		<h1>CotEditor 7.1.0-beta</h1>
+		<p>release: <time>2026-07-26</time></p>
+	</header>
+
+	<section>
+		<h2>Compatibility Changes</h2>
+
+		<ul>
+			<li>Change the system requirement to <strong>macOS Tahoe 26 or later</strong>.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Support <strong>macOS 27 Golden Gate</strong>.</li>
+			<li>Add folder search to the sidebar for searching for text across files in an open folder.</li>
+			<li>Add document history navigation to the toolbar for folder documents.</li>
+			<li>Automatically generate and apply a draft document name from the document’s content on macOS 27.</li>
+			<li>Allow the indentation style (spaces or tabs) and width to be set for each Mode.</li>
+			<li>Add the Customize Syntax Menu command to the More menu in the “Available syntaxes” section of the Format settings pane, allowing specific syntaxes to be hidden from syntax menus.</li>
+			<li>Add the “Status bar” option to the Appearance settings pane.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Make some settings dialogs resizable.</li>
+			<li>Allow custom syntaxes to be deleted by dragging them to the Trash.</li>
+			<li>Allow CotEditor Syntax files and multiple replacement definitions to be imported by dropping them onto their respective lists.</li>
+			<li>Add a context menu to the list in the Mode settings pane.</li>
+			<li>Display the number of definition errors as a badge in the sidebar of the syntax editor.</li>
+			<li>Automatically apply the JSON syntax to documents whose file type is a kind of JSON, such as GeoJSON files.</li>
+			<li>Update the JSON syntax to simplify the file mapping settings.</li>
+			<li>Improve overall stability and performance.</li>
+			<li><span class="trivial">dev</span>: Tweak the accent color.</li>
+			<li><span class="trivial">dev</span>: Update the build environment to Xcode 27 Beta 4 (Swift 6.4, macOS 27 SDK).</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Known Issues</h2>
+
+		<ul>
+			<li>The status bar text can appear with an unreadable color with certain combinations of the system appearance, window appearance, and theme on macOS 26 (FB23611796).</li>
+			<li>In some cases, a sandboxed URL is passed when folder search results are dropped onto another app (FB23578716).</li>
+			<li>The text added in CotEditor 7.1.0 is not yet localized in Bulgarian, Czech, and Polish.</li>
+		</ul>
+	</section>
+
+	<p class="important">This version also includes some changes planned for the upcoming <a href="7.0.8.ja.html">CotEditor 7.0.8</a> release.</p>
+
+	<p><a href="7.0.7.en">previous release notes</a></p>
+</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 CotEditor Project</p>
+</footer>
+</body>
+</html>

@@ -2,11 +2,11 @@
 
 /* /////////////////////////////////////
    CotEditor Beta Distribution Page Style Sheet
-   
+
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2026-04
+   lastMod : 2026-07
   ////////////////////////////////////// */
 
 :root {
@@ -45,7 +45,7 @@ body > header::before {
 	display: none;
 }
 body > header > img {
-	padding: 8px;
+	padding: 24px;
 }
 body > header h1 {
 	font: 64px/1.0 ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
@@ -73,7 +73,7 @@ a.download {
 	padding-inline: 1em;
 	margin-block: 0.2em;
 	margin-inline: 0;
-	
+
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 1px;
@@ -82,7 +82,7 @@ a.download {
 	text-indent: 0;
 	white-space: nowrap;
 	text-shadow: 0 1px 2px hsla(0,0%,0%,.16);
-	
+
 	display: inline-block;
 	border-radius: 12px;
 	border: none !important;
