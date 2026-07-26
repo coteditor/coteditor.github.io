@@ -23,7 +23,6 @@ a[href] {
 a[href]:hover {
 	text-decoration: none;
 	background: var(--separator);
-	border-radius: 0.2em;
 }
 
 body::before {
