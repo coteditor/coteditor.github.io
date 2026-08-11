@@ -59,6 +59,49 @@
 
 <article>
 	<header>
+		<h1>CotEditor 7.1.0-beta.3</h1>
+		<p>release: <time>2026-08-11</time></p>
+	</header>
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Rename the Key Bindings feature to “Shortcuts.”</li>
+			<li>Update tree-sitter-scala to 0.26.2.</li>
+			<li><span class="label">beta</span>: Improve the drawing performance.</li>
+			<li><span class="label">beta</span>: Update Polish localization.</li>
+			<li><span class="label">beta</span><span class="trivial">dev</span>: Update the build environment to Xcode 27 Beta 5.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue in the regular expression replacement with the “Unescape replacement text” option where escaped backslashes in the replacement text were unexpectedly removed.</li>
+			<li><span class="label">beta</span>: Fix an issue where Bulgarian localizations were missing in the Window settings.</li>
+			<li><span class="label">beta</span>: Fix an issue where some labels in the Settings were truncated when they were too long.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Known Issues</h2>
+
+		<ul>
+			<li>The status bar text can appear with an unreadable color with certain combinations of the system appearance, window appearance, and theme on macOS 26 (FB23611796).</li>
+			<li>In some cases, a sandboxed URL is passed when folder search results are dropped onto another app (FB23578716).</li>
+			<li>The text added in CotEditor 7.1.0 is not yet localized in Bulgarian.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
 		<h1>CotEditor 7.1.0-beta.2</h1>
 		<p>release: <time>2026-08-02</time></p>
 	</header>
@@ -84,17 +127,6 @@
 			<li><span class="label">beta</span>: Fix an issue where the editor could slightly scroll on typing.</li>
 			<li><span class="label">beta</span>: Fix an issue where some labels in the Settings window were not localized properly.</li>
 			<li><span class="label">beta</span>: Fix an issue on macOS 27 where the app icons did not appear in the Open in External Editor button in the file preview view.</li>
-		</ul>
-	</section>
-
-
-	<section>
-		<h2>Known Issues</h2>
-
-		<ul>
-			<li>The status bar text can appear with an unreadable color with certain combinations of the system appearance, window appearance, and theme on macOS 26 (FB23611796).</li>
-			<li>In some cases, a sandboxed URL is passed when folder search results are dropped onto another app (FB23578716).</li>
-			<li>The text added in CotEditor 7.1.0 is not yet localized in Bulgarian and Polish.</li>
 		</ul>
 	</section>
 </article>
