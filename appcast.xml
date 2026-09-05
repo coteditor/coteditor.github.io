@@ -6,15 +6,15 @@
         <description>Most recent changes with links to updates.</description>
 
         <item>
-            <title>CotEditor 7.1.0-beta.5</title>
-            <pubDate>Sat, 29 Aug 2026 16:27:35 +0900</pubDate>
+            <title>CotEditor 7.1.0-beta.6</title>
+            <pubDate>Sat, 05 Sep 2026 10:26:56 +0900</pubDate>
             <sparkle:channel>prerelease</sparkle:channel>
-            <sparkle:version>840</sparkle:version>
-            <sparkle:shortVersionString>7.1.0-beta.5</sparkle:shortVersionString>
+            <sparkle:version>845</sparkle:version>
+            <sparkle:shortVersionString>7.1.0-beta.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/7.1.0-beta.en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/7.1.0-beta.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/7.1.0-beta.5/CotEditor_7.1.0-beta.5.dmg" length="26520576" type="application/octet-stream" sparkle:edSignature="7bF3I/Io+rPrFz9dHGttm/094YNtI8FMeXEgEHZ1Vt/TTxOHOITqcPIIcnqxAoscge0lqIUhvZkiQo1Dr6qjCw=="></enclosure>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/7.1.0-beta.6/CotEditor_7.1.0-beta.6.dmg" length="26458624" type="application/octet-stream" sparkle:edSignature="RbaJg/M9shdtcYkT0Z5gsd5OkZTTa1M8lVq2OAHoJuIHTWoKkxE8zcu0Qw10eRiuQ6Pq2SQdkpnnxvs9tlVuBA=="></enclosure>
         </item>
 
         <item>
