@@ -18,14 +18,14 @@
         </item>
 
         <item>
-            <title>CotEditor 7.0.8</title>
-            <pubDate>Fri, 07 Aug 2026 07:00:00 +0900</pubDate>
-            <sparkle:version>830</sparkle:version>
-            <sparkle:shortVersionString>7.0.8</sparkle:shortVersionString>
+            <title>CotEditor 7.0.9</title>
+            <pubDate>Sat, 05 Sep 2026 09:59:15 +0900</pubDate>
+            <sparkle:version>843</sparkle:version>
+            <sparkle:shortVersionString>7.0.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/7.0.8.en.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/7.0.8.ja.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/7.0.8/CotEditor_7.0.8.dmg" length="25913856" type="application/octet-stream" sparkle:edSignature="6FQwi5vP64GbL7/Xn2sscFZ1XzPn2WNhtJuWdtuP8ojYj/n0VP+GIUEmoZPZHQtTUJzEmLwKjOc7IZqTPulYAQ=="/>
+            <sparkle:releaseNotesLink xml:lang="en">https://coteditor.com/releasenotes/7.0.9.en.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ja">https://coteditor.com/releasenotes/7.0.9.ja.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/coteditor/CotEditor/releases/download/7.0.9/CotEditor_7.0.9.dmg" length="25609728" type="application/octet-stream" sparkle:edSignature="ck7WNGbpjxXaDls7GSePbZEFw6FIyPcHxk10HKKzU2a5OeUPVyJbO4v0tBd/Xv7ZnleRjd06wzVbYZAjN2sDAg=="/>
         </item>
 
         <item>
