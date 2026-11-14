@@ -6,31 +6,33 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : contact page
-   lastMod : 2026-04
+   lastMod : 2026-11
   ////////////////////////////////////// */
 
 figure img {
 	border-radius: 6px;
 }
 
-#team ul {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1.5em 1.25rem;
-}
-#team ul li {
-	margin: 0;
-	list-style: none;
-}
-#team .github-card {
-	width: min(100%, 280px);
-	height: 150px;
-}
-#team .position {
-	font-size: 120%;
-	color: var(--secondary-text);
-	text-transform: capitalize;
-	
-	display: block;
-	margin-block-end: 0.5em;
+#team {
+	& ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5em 1.25rem;
+	}
+	& ul li {
+		margin: 0;
+		list-style: none;
+	}
+	& .github-card {
+		width: min(100%, 280px);
+		height: 150px;
+	}
+	& .position {
+		font-size: 120%;
+		color: var(--secondary-text);
+		text-transform: capitalize;
+		
+		display: block;
+		margin-block-end: 0.5em;
+	}
 }

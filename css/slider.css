@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : -
-   lastMod : 2026-04
+   lastMod : 2026-11
   ////////////////////////////////////// */
 
 .slider {
@@ -14,12 +14,13 @@
 	overflow: hidden;
 	
 	text-align: center;
-}
-.slider input {
-	display: none;
-}
-.slider label {
-	cursor: pointer;
+	
+	& input {
+		display: none;
+	}
+	& label {
+		cursor: pointer;
+	}
 }
 
 @property --manual-offset {

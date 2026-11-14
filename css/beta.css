@@ -19,10 +19,11 @@ body {
 a[href] {
 	text-decoration: underline;
 	color: var(--text);
-}
-a[href]:hover {
-	text-decoration: none;
-	background: var(--separator);
+
+	&:hover {
+		text-decoration: none;
+		background: var(--separator);
+	}
 }
 
 body::before {
@@ -39,28 +40,30 @@ body::before {
 body > header {
 	margin: 20px;
 	position: relative;
-}
-body > header::before {
-	display: none;
-}
-body > header > img {
-	padding: 24px;
-}
-body > header h1 {
-	font: 64px/1.0 ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
-	color: var(--secondary-text);
-	opacity: 0.5;
-}
-body > header h1 span {
-	font-family: 'Noteworthy';
-	line-height: 0.8;
-	font-weight: normal;
-	display: inline-block;
-	border-radius: 0.2em;
-	border: 2px solid var(--separator);
-	padding-block: 0;
-	padding-inline: 0.14em;
-	margin-inline-start: -0.1em;
+
+	&::before {
+		display: none;
+	}
+	& > img {
+		padding: 24px;
+	}
+	& h1 {
+		font: 64px/1.0 ui-rounded, 'Avenir', 'Helvetica Neue', sans-serif;
+		color: var(--secondary-text);
+		opacity: 0.5;
+
+		& span {
+			font-family: 'Noteworthy';
+			line-height: 0.8;
+			font-weight: normal;
+			display: inline-block;
+			border-radius: 0.2em;
+			border: 2px solid var(--separator);
+			padding-block: 0;
+			padding-inline: 0.14em;
+			margin-inline-start: -0.1em;
+		}
+	}
 }
 
 
@@ -89,29 +92,31 @@ a.download {
 	background-color: var(--accent);
 	box-shadow: 0 1px 3px hsl(0 0% 0% / .08);
 	transition: background 0.3s;
-}
-a.download:hover {
-	background-color: hsl(from var(--accent) h s calc(l - 15));
-}
-a.download span {
-	font-size: 95%;
-	font-weight: normal;
-	text-transform: none;
-	text-shadow: 0 0 2px hsl(0 0% 0% / .3);
-}
 
-a.download + ul {
-	margin: 0.5em;
-}
-a.download + ul li {
-	display: inline;
-	padding: 0;
-	margin: 0;
-}
-a.download + ul li+li::before {
-	content: ' | ';
-	margin: 0;
-	opacity: 0.5;
+	&:hover {
+		background-color: hsl(from var(--accent) h s calc(l - 15));
+	}
+	& span {
+		font-size: 95%;
+		font-weight: normal;
+		text-transform: none;
+		text-shadow: 0 0 2px hsl(0 0% 0% / .3);
+	}
+
+	& + ul {
+		margin: 0.5em;
+
+		& li {
+			display: inline;
+			padding: 0;
+			margin: 0;
+		}
+		& li+li::before {
+			content: ' | ';
+			margin: 0;
+			opacity: 0.5;
+		}
+	}
 }
 
 span.note {

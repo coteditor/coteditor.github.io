@@ -11,42 +11,47 @@
 
 /* non-AppStore version */
 
-#non-AppStore > a {
-	font-size: 160%;
-	
-	float: inline-start;
-	border-radius: 22px;
-	padding-inline-end: 20px;
-	margin-inline-end: 10px;
-	margin-block-end: 10px;
-}
-#non-AppStore > a span {
-	font-weight: 200;
-}
-#non-AppStore > a img {
-	vertical-align: middle;
-}
-#non-AppStore dl:not(.fqa) > * {
-	display: inline;
-}
-#non-AppStore dl:not(.fqa) dd+dd::before {
-	content: ' | ';
-	font-size: 90%;
-	opacity: 0.3;
-	padding-block: 0;
-	padding-inline: 0.2em;
-}
-#non-AppStore dl:not(.fqa) dd+dt::before {
-	content: '\000A';  /* line break */
-	white-space: pre;
-}
-#non-AppStore dl:not(.fqa) dt::after {
-	content: ':';
-	margin-inline-end: 0.5em;
-}
-#non-AppStore dl.fqa {
-	clear: both;
-	margin-block-start: 2em;
+#non-AppStore {
+	& > a {
+		font-size: 160%;
+		
+		float: inline-start;
+		border-radius: 22px;
+		padding-inline-end: 20px;
+		margin-inline-end: 10px;
+		margin-block-end: 10px;
+		
+		& span {
+			font-weight: 200;
+		}
+		& img {
+			vertical-align: middle;
+		}
+	}
+	& dl:not(.fqa) {
+		& > * {
+			display: inline;
+		}
+		& dd+dd::before {
+			content: ' | ';
+			font-size: 90%;
+			opacity: 0.3;
+			padding-block: 0;
+			padding-inline: 0.2em;
+		}
+		& dd+dt::before {
+			content: '\000A';  /* line break */
+			white-space: pre;
+		}
+		& dt::after {
+			content: ':';
+			margin-inline-end: 0.5em;
+		}
+	}
+	& dl.fqa {
+		clear: both;
+		margin-block-start: 2em;
+	}
 }
 
 
@@ -79,16 +84,17 @@ a[download]:hover::after {
 
 
 @media (width <= 700px) {
-	#non-AppStore > a {
-		float: none;
-		display: inline-block;
-		border-inline-end: none;
-		margin-inline-end: 0;
-		margin-block-end: 16px;
-	}
-
-	#non-AppStore dl:not(.fqa) > * {
-		display: inline;
+	#non-AppStore {
+		& > a {
+			float: none;
+			display: inline-block;
+			border-inline-end: none;
+			margin-inline-end: 0;
+			margin-block-end: 16px;
+		}
+		& dl:not(.fqa) > * {
+			display: inline;
+		}
 	}
 
 	table.download tbody tr > * {
