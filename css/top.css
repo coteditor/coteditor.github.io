@@ -55,8 +55,8 @@ a#beta:hover {
 	text-shadow: 0 0 6px white;
 }
 a#beta::before {
-	background: hsl(0,0%,33%);
-	box-shadow: inset 0 0 18px hsla(0,0%,0%,.2);
+	background: hsl(0 0% 33%);
+	box-shadow: inset 0 0 18px hsl(0 0% 0% / .2);
 	content: '';
 	
 	display: block;
@@ -135,9 +135,9 @@ a.download img {
 
 /* screen shots */
 #screenshots {
-	background: linear-gradient(hsl(70,70%,75%), hsl(90,50%,55%));
-	border-block-start: 1px solid hsl(70,20%,80%);
-	border-block-end: 1px solid hsl(90,30%,50%);
+	background: linear-gradient(hsl(70 70% 75%), hsl(90 50% 55%));
+	border-block-start: 1px solid hsl(70 20% 80%);
+	border-block-end: 1px solid hsl(90 30% 50%);
 	padding-block: 20px 0;
 	padding-inline: 0;
 }
@@ -184,11 +184,11 @@ a.download img {
 	font: italic 250 34px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
 	letter-spacing: 1.5px;
 	word-break: auto-phrase;
-	color: light-dark(hsl(198,40%,40%), hsl(198,45%,65%));
+	color: light-dark(hsl(198 40% 40%), hsl(198 45% 65%));
 
 	background: linear-gradient(180deg,
-		light-dark(hsl(200,40%,40%), hsl(200,45%,68%)),
-		light-dark(hsl(190,50%,45%), hsl(190,50%,62%)));
+		light-dark(hsl(200 40% 40%), hsl(200 45% 68%)),
+		light-dark(hsl(190 50% 45%), hsl(190 50% 62%)));
 	-webkit-background-clip: text;
 	        background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -303,8 +303,8 @@ a.download img {
 #develop a.github {
 	display: inline-block;
 	color: var(--secondary-text);
-	background: light-dark(hsl(198,20%,98%), hsl(198,10%,25%));
-	box-shadow: 0 2px 5px hsla(0,0%,0%,0.3);
+	background: light-dark(hsl(198 20% 98%), hsl(198 10% 25%));
+	box-shadow: 0 2px 5px hsl(0 0% 0% / 0.3);
 	border-radius: 0.8em;
 	letter-spacing: 1px;
 	padding-block: 0.5em;
@@ -317,9 +317,9 @@ a.download img {
 
 /* footer */
 body > footer {
-	color: light-dark(hsl(198,20%,40%), hsl(198,20%,70%));
-	background: light-dark(hsl(198,20%,96%), hsl(198,10%,16%));
-	border-block-start: light-dark(hsla(198,20%,40%,.1), hsla(198,20%,70%,.1)) 1px solid;
+	color: light-dark(hsl(198 20% 40%), hsl(198 20% 70%));
+	background: light-dark(hsl(198 20% 96%), hsl(198 10% 16%));
+	border-block-start: light-dark(hsl(198 20% 40% / .1), hsl(198 20% 70% / .1)) 1px solid;
 	padding-block-end: 1em;
 }
 aside.sns {

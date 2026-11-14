@@ -32,7 +32,7 @@ body::before {
 	inset-inline: 0;
 	height: 8px;
 	background: url('parts/safaty_stripes.svg');
-	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
+	box-shadow: 0 1px 2px hsl(0 0% 0% / .16);
 }
 
 /* title */
@@ -80,14 +80,14 @@ a.download {
 	color: white;
 	text-indent: 0;
 	white-space: nowrap;
-	text-shadow: 0 1px 2px hsla(0,0%,0%,.16);
+	text-shadow: 0 1px 2px hsl(0 0% 0% / .16);
 
 	display: inline-block;
 	border-radius: 12px;
 	border: none !important;
-	background: linear-gradient(hsla(0,0%,100%,.08), hsla(0,0%,0%,.08));
+	background: linear-gradient(hsl(0 0% 100% / .08), hsl(0 0% 0% / .08));
 	background-color: var(--accent);
-	box-shadow: 0 1px 3px hsla(0,0%,0%,.08);
+	box-shadow: 0 1px 3px hsl(0 0% 0% / .08);
 	transition: background 0.3s;
 }
 a.download:hover {
@@ -97,7 +97,7 @@ a.download span {
 	font-size: 95%;
 	font-weight: normal;
 	text-transform: none;
-	text-shadow: 0 0 2px hsla(0,0%,0%,.3);
+	text-shadow: 0 0 2px hsl(0 0% 0% / .3);
 }
 
 a.download + ul {

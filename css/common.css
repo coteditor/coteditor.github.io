@@ -44,19 +44,19 @@ ul li {
 :root {
 	color-scheme: light dark;
 	
-	--background: light-dark(white, hsl(0,0%,12%));
-	--text: light-dark(hsla(0,0%,0%,.8), hsla(0,0%,100%,.9));
-	--secondary-text: light-dark(hsla(0,0%,0%,.67), hsla(0,0%,100%,.67));
-	--tertiary-text: light-dark(hsla(0,0%,0%,.5), hsla(0,0%,100%,.5));
-	--separator: light-dark(hsla(0,0%,0%,.1), hsla(0,0%,100%,.14));
-	--code-background: light-dark(hsla(0,0%,0%,.02), hsla(0,0%,100%,.1));
+	--background: light-dark(white, hsl(0 0% 12%));
+	--text: light-dark(hsl(0 0% 0% / .8), hsl(0 0% 100% / .9));
+	--secondary-text: light-dark(hsl(0 0% 0% / .67), hsl(0 0% 100% / .67));
+	--tertiary-text: light-dark(hsl(0 0% 0% / .5), hsl(0 0% 100% / .5));
+	--separator: light-dark(hsl(0 0% 0% / .1), hsl(0 0% 100% / .14));
+	--code-background: light-dark(hsl(0 0% 0% / .02), hsl(0 0% 100% / .1));
 	
-	--accent: hsl(90,50%,50%);
-	--link: light-dark(hsl(90,45%,45%), hsl(90,55%,60%));
-	--link-background: light-dark(hsla(90,45%,45%,.2), hsla(90,55%,62%,.18));
+	--accent: hsl(90 50% 50%);
+	--link: light-dark(hsl(90 45% 45%), hsl(90 55% 60%));
+	--link-background: light-dark(hsl(90 45% 45% / .2), hsl(90 55% 62% / .18));
 	
-	--information: light-dark(hsl(203,30%,25%), hsl(203,60%,85%));
-	--information-background: light-dark(hsl(203,50%,97%), hsl(203,20%,20%));
+	--information: light-dark(hsl(203 30% 25%), hsl(203 60% 85%));
+	--information-background: light-dark(hsl(203 50% 97%), hsl(203 20% 20%));
 }
 
 
@@ -269,19 +269,19 @@ aside.sns iframe {
 
 [role=tooltip]  { position:absolute; z-index:20;
                   padding-block:0.3em; padding-inline:0.6em;
-                  box-shadow:0 2px 5px hsla(0,0%,0%,.4); text-align:start;
-                  background-color:hsla(0,0%,20%,0.9); border-radius:8px;
+                  box-shadow:0 2px 5px hsl(0 0% 0% / .4); text-align:start;
+                  background-color:hsl(0 0% 20% / 0.9); border-radius:8px;
                   border:none;
                   opacity:0; transition: opacity 0.3s;
                   font-family: -apple-system, sans-serif }
 [role=tooltip]::after { content: ''; height:0; width:0;
                         position:absolute; inset-inline-start:40px; inset-block-end:-17px;
                         border:9px solid transparent;
-                        border-block-start-color:hsl(0,0%,30%);
-                        filter:drop-shadow(0px 2px 3px hsla(0,0%,0%,.2)) }
-[role=tooltip] p    { color:hsl(0,0%,92%); line-height:1.2 }
-[role=tooltip] span { color:hsl(0,0%,67%); font-size:92% }
-[role=tooltip] p+p  { color:hsl(0,0%,75%); font-size:80%;
+                        border-block-start-color:hsl(0 0% 30%);
+                        filter:drop-shadow(0px 2px 3px hsl(0 0% 0% / .2)) }
+[role=tooltip] p    { color:hsl(0 0% 92%); line-height:1.2 }
+[role=tooltip] span { color:hsl(0 0% 67%); font-size:92% }
+[role=tooltip] p+p  { color:hsl(0 0% 75%); font-size:80%;
                       overflow-wrap:anywhere; margin-block-start:1px }
 [role=tooltip] p::before  { opacity:0.9; margin-inline-end:5px; vertical-align:-1px; }
 
@@ -326,11 +326,11 @@ dl.fqa > ::before {
 }
 dl.fqa > dt::before {
 	content: 'Q.';
-	color: light-dark(hsl(200,60%,45%), hsl(200,60%,60%));
+	color: light-dark(hsl(200 60% 45%), hsl(200 60% 60%));
 }
 dl.fqa > dd::before {
 	content: 'A.';
-	color: light-dark(hsl(30,75%,45%), hsl(30,80%,58%));
+	color: light-dark(hsl(30 75% 45%), hsl(30 80% 58%));
 }
 dl.fqa > dt:lang(tr)::before {
 	content: 'S.';

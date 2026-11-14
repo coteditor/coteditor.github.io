@@ -27,14 +27,14 @@ main {
 
 .trivial,
 .label {
-	color: light-dark(hsl(198,40%,45%), hsl(198,40%,55%));
+	color: light-dark(hsl(198 40% 45%), hsl(198 40% 55%));
 	border: 1px solid;
 	border-radius: 0.3em;
 	padding-block: 0;
 	padding-inline: 0.2em;
 }
 .trivial {
-	color: light-dark(hsl(0,0%,60%), hsl(0,0%,60%));
+	color: light-dark(hsl(0 0% 60%), hsl(0 0% 60%));
 }
 p.important {
 	color: var(--information);
@@ -78,7 +78,7 @@ kbd {
 	border-radius: 0.2em;
 	border: 1px solid -apple-system-tertiary-label;
 	background-color: transparent;
-	box-shadow: 0 1px 0 hsla(0, 0%, 0%, .05);
+	box-shadow: 0 1px 0 hsl(0 0% 0% / .05);
 }
 .none {
 	color: var(--tertiary-text);
@@ -129,7 +129,7 @@ body.prerelease::before {
 	inset-inline: 0;
 	height: 8px;
 	background: url('parts/safaty_stripes.svg');
-	box-shadow: 0 1px 2px hsla(0,0%,0%,.16);
+	box-shadow: 0 1px 2px hsl(0 0% 0% / .16);
 }
 
 body.prerelease p.attention {
@@ -137,6 +137,6 @@ body.prerelease p.attention {
 	padding-block: 0;
 }
 body.prerelease p.attention strong {
-	background-color: light-dark(hsla(50,100%,50%,0.7), hsla(50,100%,50%,.3));
+	background-color: light-dark(hsl(50 100% 50% / 0.7), hsl(50 100% 50% / .3));
 	padding-inline: 0.2em;
 }
