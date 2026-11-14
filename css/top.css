@@ -264,7 +264,7 @@ a.download img {
 }
 #features section img {
 	width: 48px;
-	float: left;
+	float: inline-start;
 	padding-block-start: 4px;
 }
 #features section h3 {
