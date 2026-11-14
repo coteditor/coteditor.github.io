@@ -370,7 +370,7 @@ p.addition > span:first-child {
 
 /*___5.responsive____________________________________________________________*/
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
 	body {
 		padding-block: 0.75rem;
 		padding-inline: 1rem;
@@ -417,7 +417,7 @@ p.addition > span:first-child {
 	}
 }
 
-@media (max-width: 520px) {
+@media (width <= 520px) {
 	body {
 		font-size: 14px;
 		padding-inline: 0.75rem;

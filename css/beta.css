@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : beta page
-   lastMod : 2026-07
+   lastMod : 2026-11
   ////////////////////////////////////// */
 
 :root {
@@ -130,7 +130,7 @@ p#issues {
 }
 
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
 	body > header h1 {
 		font-size: clamp(48px, 13vw, 64px);
 	}

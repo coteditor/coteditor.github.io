@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : top page
-   lastMod : 2026-07
+   lastMod : 2026-11
   ////////////////////////////////////// */
 
 body {
@@ -330,7 +330,7 @@ body > footer p {
 }
 
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
 	#top {
 		max-width: 560px;
 		min-height: 0;
@@ -409,7 +409,7 @@ body > footer p {
 	}
 }
 
-@media (max-width: 520px) {
+@media (width <= 520px) {
 	#top {
 		margin-block-start: 0.75rem;
 	}

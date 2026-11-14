@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : archives page
-   lastMod : 2026-07
+   lastMod : 2026-11
   ////////////////////////////////////// */
 
 /* non-AppStore version */
@@ -78,7 +78,7 @@ a[download]:hover::after {
 }
 
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
 	#non-AppStore > a {
 		float: none;
 		display: inline-block;
