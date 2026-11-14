@@ -6,7 +6,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2026-07
+   lastMod : 2026-11
   ////////////////////////////////////// */
 
 /*___0.universal_reset_______________________________________________________*/
@@ -79,16 +79,10 @@ a > sup {
 
 
 /* basic spacing */
-main p,
-main dd,
-main li {
+main :is(p, dd, li) {
 	line-height: 1.7;
 }
-main h1,
-main h2,
-main h3,
-main h4,
-main dt {
+main :is(h1, h2, h3, h4, dt) {
 	line-height: 1.4;
 }
 
@@ -344,9 +338,7 @@ dl.fqa > dt:lang(tr)::before {
 dl.fqa > dd:lang(tr)::before {
 	content: 'Y.';
 }
-dl.fqa > dd > ul,
-dl.fqa > dd > ol,
-dl.fqa > dd > dl {
+dl.fqa > dd > :is(ul, ol, dl) {
 	margin-block: 0.5em;
 	margin-inline: 3em;
 }
