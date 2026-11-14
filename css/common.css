@@ -24,7 +24,6 @@
 	box-sizing: border-box;
 }
 img {
-	border: none;
 	max-width: 100%;
 	height: auto;
 }
@@ -110,7 +109,6 @@ main li+li {
 
 /* table */
 table {
-	border-spacing: 0;
 	border-collapse: collapse;
 }
 table tr > * {
@@ -409,7 +407,6 @@ p.addition > span:first-child {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
 	}
 
 	[role=tooltip].note p {

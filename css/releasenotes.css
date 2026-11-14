@@ -10,10 +10,6 @@
   ////////////////////////////////////// */
 
 
-:root {
-	color-scheme: light dark;
-}
-
 body > header {
 	display: none;
 }
@@ -34,7 +30,7 @@ main {
 	padding-inline: 0.2em;
 }
 .trivial {
-	color: light-dark(hsl(0 0% 60%), hsl(0 0% 60%));
+	color: hsl(0 0% 60%);
 }
 p.important {
 	color: var(--information);

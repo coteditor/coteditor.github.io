@@ -188,8 +188,7 @@ a.download img {
 	background: linear-gradient(180deg,
 		light-dark(hsl(200 40% 40%), hsl(200 45% 68%)),
 		light-dark(hsl(190 50% 45%), hsl(190 50% 62%)));
-	-webkit-background-clip: text;
-	        background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
