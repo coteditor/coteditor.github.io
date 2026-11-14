@@ -183,11 +183,11 @@ body > header a {
 	background: transparent !important;
 	
 	position: relative;
-	transition: transform 0.3s ease;
+	transition: translate 0.3s ease;
 	display: inline-block;
 }
 body > header a:any-link:hover {
-	transform: translateY(-3px);
+	translate: 0 -3px;
 }
 body > header > a:first-child {
 	font-size: 26px;
@@ -201,10 +201,10 @@ body > header > a:first-child::before {
 	background-size: 48px;
 	vertical-align: -14px;
 	margin-inline-end: 4px;
-	transition: transform 0.67s ease;
+	transition: rotate 0.67s ease;
 }
 body > header > a:first-child:hover::before {
-	transform: rotate(-360deg);
+	rotate: -360deg;
 }
 body > header > nav {
 	position: absolute;

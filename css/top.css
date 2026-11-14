@@ -38,7 +38,7 @@ a#beta {
 	font: 36px 'Noteworthy';
 	text-transform: capitalize;
 	text-align: end;
-	transform: rotate(-3deg);
+	rotate: -3deg;
 	
 	display: block;
 	position: absolute;
@@ -66,7 +66,7 @@ a#beta::before {
 	width: 500px;
 	height: 120px;
 	z-index: -1;
-	transform: rotate(-15deg);
+	rotate: -15deg;
 }
 a#beta strong {
 	font-weight: 500;
@@ -115,7 +115,7 @@ a#beta strong {
 	font: 17px/1.0 'HanziPen SC', 'Bradley Hand', 'Noteworthy', sans-serif;
 	color: var(--tertiary-text);
 	display: block;
-	transform: rotate(-3deg);
+	rotate: -3deg;
 	margin-block: 0.5em 0.9em;
 	margin-inline: 1em;
 }
@@ -124,8 +124,7 @@ a.download {
 }
 a.download:hover {
 	background: transparent;
-	position: relative;
-	inset-block-start: 1px;
+	translate: 0 1px;
 }
 a.download img {
 	height: 50px;
@@ -175,7 +174,7 @@ a.download img {
 #item5:checked ~ .controls label:nth-child(6),
 #item6:checked ~ .controls label:nth-child(1) {
 	inset-inline-end: 48px;
-	transform: rotate(180deg);
+	rotate: 180deg;
 }
 
 
