@@ -32,7 +32,7 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 	let tooltip;
 	
 	// hover
-	el.addEventListener('mouseover', () => {
+	el.addEventListener('mouseenter', () => {
 		const title = el.getAttribute('title');
 		const url = el.getAttribute('href');
 		
@@ -62,7 +62,7 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 	});
 	
 	// remove tooltip
-	el.addEventListener('mouseout', () => {
+	el.addEventListener('mouseleave', () => {
 		if (!tooltip) { return; }
 		
 		tooltip.remove();
