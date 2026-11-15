@@ -189,7 +189,9 @@ a.download {
 #lead {
 	font: italic 250 34px 'Helvetica Neue', 'Hiragino Sans', sans-serif;
 	letter-spacing: 1.5px;
+	word-break: keep-all;  /* fallback for auto-phrase */
 	word-break: auto-phrase;
+	text-wrap: balance;
 	color: light-dark(hsl(198 40% 40%), hsl(198 45% 65%));
 
 	background: linear-gradient(180deg,
@@ -233,6 +235,7 @@ a.download {
 		& h3 {
 			font-size: 120%;
 			font-weight: 400;
+			text-wrap: balance;
 			
 			margin-block: 0 0.2em;
 			margin-inline: 0;
