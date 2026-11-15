@@ -31,8 +31,7 @@ function setupTooltip(el) {
 		document.body.append(tooltip);
 		
 		// title
-		const html = title.replace(' | ', ' <span>|</span> ');
-		tooltip.innerHTML = `<p>${html}</p>`;
+		tooltip.innerHTML = `<p>${title}</p>`;
 		
 		// url
 		if (url) {
