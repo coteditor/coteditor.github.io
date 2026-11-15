@@ -8,8 +8,6 @@
   /////////////////////////////////////// */
 
 
-const canHover = window.matchMedia('(hover: hover)').matches;
-
 // fire functions on load
 // note: load this script with `defer` so that the document is parsed first
 initTooltips();
@@ -17,7 +15,7 @@ initTooltips();
 
 // Tooltip --------------------------------------------------------------------
 
-function setupTooltip(el, {displaysUrl = true, className} = {}) {
+function setupTooltip(el) {
 	let tooltip;
 	
 	// hover
@@ -34,19 +32,18 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 		document.body.append(tooltip);
 		
 		// title
-		const html = title.replace(/ \(([^()]+?)\)$/, ' <span>($1)</span>')
-		                  .replace(' | ', ' <span>|</span> ');
+		const html = title.replace(' | ', ' <span>|</span> ');
 		tooltip.innerHTML = `<p>${html}</p>`;
 		
 		// url
-		if (url && displaysUrl) {
+		if (url) {
 			tooltip.insertAdjacentHTML('beforeend',
 				`<p>${decodeURIComponent(url)}</p>`);
 		}
 		
 		// class
-		if (className) {
-			tooltip.className = className;
+		if (el.matches('[href*="//github.com/"]')) {
+			tooltip.className = 'github';
 		}
 	});
 	
@@ -68,7 +65,7 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 		let leftPos;
 		if (tooltipWidth < 80) {  // short tip
 			leftPos = e.pageX - (tooltipWidth / 2);
-		} else if (tooltipWidth + e.pageX > windowWidth - 5) {  // left edge
+		} else if (tooltipWidth + e.pageX > windowWidth - 5) {  // right edge
 			leftPos = windowWidth - tooltipWidth - 30;
 		} else {
 			leftPos = e.pageX - 30;
@@ -81,16 +78,9 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 
 // init tooltip
 function initTooltips() {
-	if (!canHover) { return; }
+	if (!window.matchMedia('(hover: hover)').matches) { return; }
 	
 	for (const el of document.querySelectorAll('[title]')) {
-		let opt = {};
-		if (el.matches('nav a')) {
-			opt = {displaysUrl: false};
-		} else if (el.matches('[href*="//github.com/"]')) {
-			opt = {className: 'github'};
-		}
-		
-		setupTooltip(el, opt);
+		setupTooltip(el);
 	}
 }

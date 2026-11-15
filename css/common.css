@@ -324,16 +324,6 @@ aside.sns {
 	&.github p:first-child::before {
 		content: url('parts/w_sns_github.svg');
 	}
-	&.note p {
-		font-size: 90%;
-		line-height: 1.4;
-		text-align: justify;
-		text-shadow: none;
-		
-		width: 280px;
-		padding-block: 2px 3px;
-		padding-inline: 2px;
-	}
 }
 
 
@@ -449,10 +439,6 @@ p.addition > span:first-child {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
-	}
-
-	[role=tooltip].note p {
-		width: min(280px, calc(100vw - 48px));
 	}
 }
 
