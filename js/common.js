@@ -59,11 +59,6 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 		if (className) {
 			tooltip.className = className;
 		}
-		
-		// fade-in (on the next loop)
-		setTimeout(() => {
-			tooltip.style.opacity = '1';
-		}, 0);
 	});
 	
 	// remove tooltip

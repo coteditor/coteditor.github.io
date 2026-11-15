@@ -284,10 +284,12 @@ aside.sns {
 	background-color: hsl(0 0% 20% / 0.9);
 	border-radius: 8px;
 	border: none;
-	opacity: 0;
 	transition: opacity 0.3s;
 	font-family: -apple-system, sans-serif;
 	
+	@starting-style {
+		opacity: 0;
+	}
 	&::after {
 		content: '';
 		height: 0;
