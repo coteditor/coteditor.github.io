@@ -68,12 +68,16 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 	
 	// remove tooltip
 	el.addEventListener('mouseout', () => {
+		if (!tooltip) { return; }
+		
 		tooltip.remove();
 		el.setAttribute('title', el.dataset.tooltip);
 	});
 	
 	// set tooltip position
 	el.addEventListener('mousemove', (e) => {
+		if (!tooltip) { return; }
+		
 		const windowWidth = window.innerWidth;
 		const tooltipWidth = tooltip.clientWidth;
 		
