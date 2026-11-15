@@ -262,17 +262,20 @@ a.download {
 		overflow: hidden;
 	}
 	& section {
-		display: flow-root;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		column-gap: 12px;
+		align-items: start;
 		break-inside: avoid;
 		margin: 0;
 		padding-block-end: 1.5em;
 		
 		& img {
 			width: 48px;
-			float: inline-start;
 			padding-block-start: 4px;
 		}
 		& h3 {
+			grid-column: 1 / -1;
 			font-size: 110%;
 			letter-spacing: 0.5px;
 			margin-block: 0 4px;
@@ -281,8 +284,7 @@ a.download {
 		& p {
 			font-size: 90%;
 			line-height: 1.7;
-			margin-block: 0;
-			margin-inline: 60px 0;
+			margin: 0;
 		}
 	}
 }
@@ -436,9 +438,6 @@ body > footer p {
 		}
 		& section img {
 			width: 40px;
-		}
-		& section p {
-			margin-inline: 52px 0;
 		}
 	}
 	#develop::before {
