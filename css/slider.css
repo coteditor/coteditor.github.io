@@ -50,6 +50,10 @@
 	line-height: 0;
 	margin-inline-start: calc(var(--manual-offset) + var(--autoplay-offset));
 	transition: margin-inline-start 0.8s cubic-bezier(0.77, 0, 0.175, 1);  /* ease-in-out */
+	
+	@media (prefers-reduced-motion: reduce) {
+		transition: none;
+	}
 }
 .slides figure {
 	flex: 0 0 calc(100% / 6);
@@ -93,4 +97,8 @@
 }
 .slider.is-autoplay > #item1:checked ~ .slides {
   animation: slide 25s infinite;
+  
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }

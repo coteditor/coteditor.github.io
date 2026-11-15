@@ -204,6 +204,10 @@ body > header {
 		}
 		&:hover::before {
 			rotate: -360deg;
+			
+			@media (prefers-reduced-motion: reduce) {
+				rotate: none;
+			}
 		}
 	}
 	& > nav {
