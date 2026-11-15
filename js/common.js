@@ -4,7 +4,7 @@
    author  : 1024jp <wolfrosch.com>
    site    : coteditor.com
    target  : all pages
-   lastMod : 2025-02
+   lastMod : 2026-11
   /////////////////////////////////////// */
 
 
@@ -15,9 +15,9 @@ const isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints);
 if (document.readyState === 'interactive' ||
     document.readyState === 'complete')
 {
-  didLoadPage();
+	didLoadPage();
 } else {
-    document.addEventListener('DOMContentLoaded', didLoadPage);
+	document.addEventListener('DOMContentLoaded', didLoadPage);
 }
 
 function didLoadPage() {
@@ -28,62 +28,56 @@ function didLoadPage() {
 // Tooltip --------------------------------------------------------------------
 //     version: v3.2.0 2020-03
 
-function setupTooltip(el, options) {
-	const defaults = {
-		displaysUrl: true,
-		class: false
-	};
-	const setting = Object.assign(defaults, options);
-	
-	var tooltip;
+function setupTooltip(el, {displaysUrl = true, className} = {}) {
+	let tooltip;
 	
 	// hover
-	el.addEventListener('mouseover', function() {
-		var title = el.getAttribute('title');
-		var url = el.getAttribute('href');
+	el.addEventListener('mouseover', () => {
+		const title = el.getAttribute('title');
+		const url = el.getAttribute('href');
 		
-		el.setAttribute('data-tooltip', title);
+		el.dataset.tooltip = title;
 		el.removeAttribute('title');
 		
-		document.body.insertAdjacentHTML('beforeend',
-			'<dialog role="tooltip"></dialog>');
-		tooltip = document.querySelector('body > dialog[role=tooltip]');
-		tooltip.open = true
+		tooltip = document.createElement('dialog');
+		tooltip.setAttribute('role', 'tooltip');
+		tooltip.open = true;
+		document.body.append(tooltip);
 		
 		// title
-		title = title.replace(/ \(([^()]+?)\)$/gi, ' <span>($1)</span>')
-		             .replace(' | ', ' <span>|</span> ');
-		tooltip.innerHTML = '<p>' + title + '</p>';
+		const html = title.replace(/ \(([^()]+?)\)$/, ' <span>($1)</span>')
+		                  .replace(' | ', ' <span>|</span> ');
+		tooltip.innerHTML = `<p>${html}</p>`;
 		
 		// url
-		if (url && setting['displaysUrl']) {
+		if (url && displaysUrl) {
 			tooltip.insertAdjacentHTML('beforeend',
-				'<p>' + decodeURIComponent(url) + '</p>');
+				`<p>${decodeURIComponent(url)}</p>`);
 		}
 		
 		// class
-		if (setting['class']) {
-			tooltip.setAttribute('class', setting['class']);
+		if (className) {
+			tooltip.className = className;
 		}
 		
 		// fade-in (on the next loop)
-		setTimeout(function() {
+		setTimeout(() => {
 			tooltip.style.opacity = '1';
-		}, 0)
+		}, 0);
 	});
 	
 	// remove tooltip
-	el.addEventListener('mouseout', function() {
-		tooltip.parentNode.removeChild(tooltip);
-		el.setAttribute('title', el.getAttribute('data-tooltip'));
+	el.addEventListener('mouseout', () => {
+		tooltip.remove();
+		el.setAttribute('title', el.dataset.tooltip);
 	});
 	
 	// set tooltip position
-	el.addEventListener('mousemove', function(e) {
+	el.addEventListener('mousemove', (e) => {
 		const windowWidth = window.innerWidth;
 		const tooltipWidth = tooltip.clientWidth;
 		
-		var leftPos;
+		let leftPos;
 		if (tooltipWidth < 80) {  // short tip
 			leftPos = e.pageX - (tooltipWidth / 2);
 		} else if (tooltipWidth + e.pageX > windowWidth - 5) {  // left edge
@@ -92,8 +86,8 @@ function setupTooltip(el, options) {
 			leftPos = e.pageX - 30;
 		}
 		
-		tooltip.style.top = (e.pageY - tooltip.clientHeight - 30) + 'px';
-		tooltip.style.left = (leftPos - 8) + 'px';
+		tooltip.style.top = `${e.pageY - tooltip.clientHeight - 30}px`;
+		tooltip.style.left = `${leftPos - 8}px`;
 	});
 }
 
@@ -101,15 +95,14 @@ function setupTooltip(el, options) {
 function initTooltips() {
 	if (isTouchDevice) { return; }
 	
-	Array.prototype.forEach.call(document.querySelectorAll('[title]'), function(el)
-	{
-		var opt = {};
+	for (const el of document.querySelectorAll('[title]')) {
+		let opt = {};
 		if (el.matches('nav a')) {
 			opt = {displaysUrl: false};
 		} else if (el.matches('[href*="//github.com/"]')) {
-			opt = {'class': 'github'};
+			opt = {className: 'github'};
 		}
 		
 		setupTooltip(el, opt);
-	});
+	}
 }
