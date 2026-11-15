@@ -60,10 +60,10 @@ ul li {
 
 
 /* anchors */
-a:any-link {
+a:where(:any-link) {
 	color: var(--link);
 }
-a:any-link:hover {
+a:where(:any-link:hover) {
 	background: var(--link-background);
 }
 a:not([href]) {
@@ -177,8 +177,8 @@ body > header {
 	position: relative;
 	
 	& a {
-		color: inherit !important;
-		background: transparent !important;
+		color: inherit;
+		background: transparent;
 		
 		position: relative;
 		transition: translate 0.3s ease;
