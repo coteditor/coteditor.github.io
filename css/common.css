@@ -396,7 +396,7 @@ p.addition {
 	background: var(--information-background);
 }
 p.addition > span:first-child {
-	color: -apple-system-secondary-label;
+	color: var(--secondary-text);
 }
 
 
