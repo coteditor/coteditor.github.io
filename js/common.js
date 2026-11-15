@@ -16,14 +16,13 @@ initTooltips();
 // Tooltip --------------------------------------------------------------------
 
 function setupTooltip(el) {
+	const title = el.getAttribute('title');
 	let tooltip;
 	
 	// hover
 	el.addEventListener('mouseenter', () => {
-		const title = el.getAttribute('title');
 		const url = el.getAttribute('href');
 		
-		el.dataset.tooltip = title;
 		el.removeAttribute('title');
 		
 		tooltip = document.createElement('dialog');
@@ -52,7 +51,7 @@ function setupTooltip(el) {
 		if (!tooltip) { return; }
 		
 		tooltip.remove();
-		el.setAttribute('title', el.dataset.tooltip);
+		el.setAttribute('title', title);
 	});
 	
 	// set tooltip position
