@@ -60,9 +60,17 @@
 table.download tbody tr > * {
 	height: 3em;
 }
+table.download tr > :not(:nth-child(2)) {
+	white-space: nowrap;  /* only the systems column may wrap */
+}
 table.download img {
+	max-width: none;  /* count the icon in the column's minimum width */
 	vertical-align: middle;
 	margin-inline-end: 4px;
+}
+table.download td:last-child {
+	text-align: end;
+	font-variant-numeric: tabular-nums;
 }
 
 
