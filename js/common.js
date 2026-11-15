@@ -8,7 +8,7 @@
   /////////////////////////////////////// */
 
 
-const isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints);
+const canHover = window.matchMedia('(hover: hover)').matches;
 
 
 // fire functions on load
@@ -97,7 +97,7 @@ function setupTooltip(el, {displaysUrl = true, className} = {}) {
 
 // init tooltip
 function initTooltips() {
-	if (isTouchDevice) { return; }
+	if (!canHover) { return; }
 	
 	for (const el of document.querySelectorAll('[title]')) {
 		let opt = {};
