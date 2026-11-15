@@ -10,23 +10,12 @@
 
 const canHover = window.matchMedia('(hover: hover)').matches;
 
-
 // fire functions on load
-if (document.readyState === 'interactive' ||
-    document.readyState === 'complete')
-{
-	didLoadPage();
-} else {
-	document.addEventListener('DOMContentLoaded', didLoadPage);
-}
-
-function didLoadPage() {
-	initTooltips();
-}
+// note: load this script with `defer` so that the document is parsed first
+initTooltips();
 
 
 // Tooltip --------------------------------------------------------------------
-//     version: v3.2.0 2020-03
 
 function setupTooltip(el, {displaysUrl = true, className} = {}) {
 	let tooltip;
