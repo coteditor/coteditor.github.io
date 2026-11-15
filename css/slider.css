@@ -64,20 +64,12 @@
 	z-index: 2;
 }
 
-#item1:checked ~ .controls label:nth-child(6),
-#item2:checked ~ .controls label:nth-child(1),
-#item3:checked ~ .controls label:nth-child(2),
-#item4:checked ~ .controls label:nth-child(3),
-#item5:checked ~ .controls label:nth-child(4),
-#item6:checked ~ .controls label:nth-child(5) {
-	display: block;
-}
-#item1:checked ~ .controls label:nth-child(2),
-#item2:checked ~ .controls label:nth-child(3),
-#item3:checked ~ .controls label:nth-child(4),
-#item4:checked ~ .controls label:nth-child(5),
-#item5:checked ~ .controls label:nth-child(6),
-#item6:checked ~ .controls label:nth-child(1) {
+#item1:checked ~ .controls label:is(:nth-child(6), :nth-child(2)),
+#item2:checked ~ .controls label:is(:nth-child(1), :nth-child(3)),
+#item3:checked ~ .controls label:is(:nth-child(2), :nth-child(4)),
+#item4:checked ~ .controls label:is(:nth-child(3), :nth-child(5)),
+#item5:checked ~ .controls label:is(:nth-child(4), :nth-child(6)),
+#item6:checked ~ .controls label:is(:nth-child(5), :nth-child(1)) {
 	display: block;
 }
 

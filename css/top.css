@@ -149,6 +149,8 @@ a.download {
 	overflow: auto;
 	
 	& .controls label {
+		--arrow-inset: 48px;
+		
 		opacity: 0.6;
 		background: url('parts/arrow_left.svg');
 		width: 48px;
@@ -169,7 +171,7 @@ a.download {
 #item4:checked ~ .controls label:nth-child(3),
 #item5:checked ~ .controls label:nth-child(4),
 #item6:checked ~ .controls label:nth-child(5) {
-	inset-inline-start: 48px;
+	inset-inline-start: var(--arrow-inset);
 }
 
 #item1:checked ~ .controls label:nth-child(2),
@@ -178,7 +180,7 @@ a.download {
 #item4:checked ~ .controls label:nth-child(5),
 #item5:checked ~ .controls label:nth-child(6),
 #item6:checked ~ .controls label:nth-child(1) {
-	inset-inline-end: 48px;
+	inset-inline-end: var(--arrow-inset);
 	rotate: 180deg;
 }
 
@@ -367,28 +369,12 @@ body > footer p {
 		padding-block-start: 0.75rem;
 	}
 	.slider .controls label {
+		--arrow-inset: 12px;
+		
 		width: 40px;
 		height: 40px;
 		inset-block-start: 38%;
 		background-size: contain;
-	}
-
-	#item1:checked ~ .controls label:nth-child(6),
-	#item2:checked ~ .controls label:nth-child(1),
-	#item3:checked ~ .controls label:nth-child(2),
-	#item4:checked ~ .controls label:nth-child(3),
-	#item5:checked ~ .controls label:nth-child(4),
-	#item6:checked ~ .controls label:nth-child(5) {
-		inset-inline-start: 12px;
-	}
-
-	#item1:checked ~ .controls label:nth-child(2),
-	#item2:checked ~ .controls label:nth-child(3),
-	#item3:checked ~ .controls label:nth-child(4),
-	#item4:checked ~ .controls label:nth-child(5),
-	#item5:checked ~ .controls label:nth-child(6),
-	#item6:checked ~ .controls label:nth-child(1) {
-		inset-inline-end: 12px;
 	}
 
 	#lead {
