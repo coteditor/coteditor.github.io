@@ -110,19 +110,21 @@ main li+li {
 /* table */
 table {
 	border-collapse: collapse;
+	
+	& tr > * {
+		padding-block: 0.2em;
+		padding-inline: 0.5em;
+		line-height: 1.5;
+	}
+	& thead tr > * {
+		font-weight: 500;
+		border-block-end: 0.5px solid var(--text);
+	}
+	& tbody tr > * {
+		border-block-end: 0.5px solid var(--separator);
+	}
 }
-table tr > * {
-	padding-block: 0.2em;
-	padding-inline: 0.5em;
-	line-height: 1.5;
-}
-table thead tr > * {
-	font-weight: 500;
-	border-block-end: 0.5px solid var(--text);
-}
-table tbody tr > * {
-	border-block-end: 0.5px solid var(--separator);
-}
+
 
 /* code */
 code {
@@ -250,10 +252,12 @@ body > footer {
 	letter-spacing: 0.03em;
 	text-align: center;
 	margin-block-start: 40px;
+
+	& p {
+		opacity: 0.4;
+	}
 }
-body > footer p {
-	opacity: 0.4;
-}
+
 
 /* sns */
 aside.sns {
@@ -386,9 +390,10 @@ p.addition {
 	border-radius: 0.8rem;
 	color: var(--information);
 	background: var(--information-background);
-}
-p.addition > span:first-child {
-	color: var(--secondary-text);
+	
+	& > span:first-child {
+		color: var(--secondary-text);
+	}
 }
 
 
