@@ -53,6 +53,63 @@
 
 <article>
 	<header>
+		<h1>CotEditor 7.2.0-rc</h1>
+		<p>リリース: <time>2026-11-21</time></p>
+	</header>
+
+	<section>
+		<h2>新機能</h2>
+
+		<ul>
+			<li>ハンガリー語のローカリゼーションを追加（Torma Zsoltさんに感謝!）</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>改良</h2>
+
+		<ul>
+			<li>AppleScript, BBCode, CoffeeScript, Dart, Erlang, Fortran, Git Config, INI, jq, JSON, Markdown, Perl, R, reStructuredText, SVG, Tcl, Verilog, XML, DTD, YAMLシンタックスを更新して、パフォーマンスとハイライトの精度を改善</li>
+			<li>大きな書類での取り消しとやり直しのパフォーマンスを改善</li>
+			<li>開いているフォルダ内の多数のファイルが一度に変更されたときのファイルブラウザのパフォーマンスを改善</li>
+			<li>VoiceOverサポートを改善（Torma Zsoltさんに感謝!）</li>
+			<li>tree-sitter-c-sharpを0.24.0に更新</li>
+			<li>tree-sitter-phpを0.25.2に更新</li>
+			<li><span class="trivial">trivial</span>: 設定の読み込みに失敗したときのエラーメッセージに設定名を表示</li>
+			<li><span class="trivial">trivial</span>: <code>cot</code>コマンドのエラーを、Pythonのトレースバックではなく簡潔なメッセージで表示</li>
+			<li><span class="label">beta</span>: 大きな書類での正規表現ベースのシンタックスハイライトを最適化</li>
+			<li><span class="label">beta</span>: チェコ語、ポーランド語、ポルトガル語のローカリゼーションを更新</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>修正</h2>
+
+		<ul>
+			<li>名前の大文字と小文字だけを変更すると、古い名前の項目が残っていたファイルブラウザの不具合を修正</li>
+			<li>開いているフォルダやそのサブフォルダの名前を変更するか移動すると、変更が反映されなくなっていたファイルブラウザの不具合を修正</li>
+			<li>ファイルが同じ名前のフォルダに置き換わったあと（またはその逆）、両方が表示されていたファイルブラウザの不具合を修正</li>
+			<li>読み込めないサブフォルダを含むフォルダで、フィルタが機能しなかったファイルブラウザの不具合を修正</li>
+			<li>アプリの外でファイルが変更されたあと、フィルタの結果が正しく更新されなかったファイルブラウザの不具合を修正</li>
+			<li>「書類を開くときにインデントスタイルを判定」オプションを有効にして書類を開いたときや、エディタを分割したとき、アプリを再起動したときなどに、エディタのフォントとインデントがリセットされていた複数の不具合を修正</li>
+			<li><code>--new</code>オプションで既存のファイルが空になることがある、ウインドウをしまうと<code>--wait</code>オプションが待機をやめるなど、<code>cot</code>コマンドに関する複数の不具合を修正</li>
+			<li>Keyboard Maestroなどのアクセシビリティツールが「テキスト」メニューを見つけられなかった不具合を修正</li>
+			<li><code>--new</code>オプションで既存のファイルが空になることがある、ウインドウをしまうと<code>--wait</code>オプションが待機をやめるなど、<code>cot</code>コマンドに関する複数の不具合を修正</li>
+			<li>Keyboard Maestroなどのアクセシビリティツールが「テキスト」メニューを見つけられなかった不具合を修正</li>
+			<li><span class="trivial">trivial</span>: 特定の結合文字だけでフィルタすると、すべての項目が表示されていたファイルブラウザの不具合を修正</li>
+			<li><span class="trivial">trivial</span>: .DS_Storeなどの隠しファイルが含まれていると、設定アーカイブの読み込みに失敗していた不具合を修正</li>
+			<li><span class="trivial">trivial</span>: 名前の大文字と小文字だけが異なるカスタム設定が既にあるときに設定を読み込むと、同じ設定が一覧に2つ表示されていた不具合を修正</li>
+			<li><span class="trivial">trivial</span>: アプリの外での変更を反映して書類を再読み込みしたあと、ステータスバーの挿入ポイントの行と列が古いままになることがあった不具合を修正</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
 		<h1>CotEditor 7.2.0-beta</h1>
 		<p>リリース: <time>2026-11-14</time></p>
 	</header>

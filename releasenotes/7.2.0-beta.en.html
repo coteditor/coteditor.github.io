@@ -53,6 +53,63 @@
 
 <article>
 	<header>
+		<h1>CotEditor 7.2.0-rc</h1>
+		<p>release: <time>2026-11-21</time></p>
+	</header>
+
+	<section>
+		<h2>New Features</h2>
+
+		<ul>
+			<li>Add the Hungarian localization (thanks to Torma Zsolt!).</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Improvements</h2>
+
+		<ul>
+			<li>Update the AppleScript, BBCode, CoffeeScript, Dart, Erlang, Fortran, Git Config, INI, jq, JSON, Markdown, Perl, R, reStructuredText, SVG, Tcl, Verilog, XML, DTD, and YAML syntaxes to improve performance and highlighting accuracy.</li>
+			<li>Improve the performance of undo and redo in large documents.</li>
+			<li>Improve the performance of the file browser when many files in the opened folder change at once.</li>
+			<li>Improve VoiceOver support (thanks to Torma Zsolt!).</li>
+			<li>Update tree-sitter-c-sharp to 0.24.0.</li>
+			<li>Update tree-sitter-php to 0.25.2.</li>
+			<li><span class="trivial">trivial</span>: Display the setting name in the error message when importing a setting fails.</li>
+			<li><span class="trivial">trivial</span>: Display errors in the <code>cot</code> command as a brief message instead of a Python traceback.</li>
+			<li><span class="label">beta</span>: Optimize regular-expression-based syntax highlighting in large documents.</li>
+			<li><span class="label">beta</span>: Update Czech, Polish, and Portuguese localizations.</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Fixes</h2>
+
+		<ul>
+			<li>Fix an issue in the file browser where the item with the old name remained after changing only the capitalization of its name.</li>
+			<li>Fix an issue in the file browser where changes were no longer reflected after renaming or moving the opened folder or its subfolders.</li>
+			<li>Fix an issue in the file browser where both a file and a folder with the same name appeared after one replaced the other.</li>
+			<li>Fix an issue in the file browser where filtering did not work when the folder contained a subfolder that could not be read.</li>
+			<li>Fix an issue in the file browser where the filter results were not updated correctly after files were changed outside the app.</li>
+			<li>Fix several issues where the editor’s font and indentation were reset, such as when opening documents with the “Detect indent style on document opening” option, splitting the editor, or relaunching the app.</li>
+			<li>Fix several issues in the <code>cot</code> command, such as where the <code>--new</code> option could empty existing files or the <code>--wait</code> option stopped waiting when the window was minimized.</li>
+			<li>Fix an issue where Keyboard Maestro and other accessibility tools could not find the Text menu.</li>
+			<li>Fix an issue where the AppleScript <code>replace</code> command could fail to replace a single match when the regular expression used lookahead.</li>
+			<li>Fix an issue where importing a settings archive exported from CotEditor 6.2 failed if it included custom syntaxes.</li>
+			<li><span class="trivial">trivial</span>: Fix an issue in the file browser where filtering with only certain combining marks showed all items.</li>
+			<li><span class="trivial">trivial</span>: Fix an issue where importing a settings archive failed if it contained hidden files, such as .DS_Store.</li>
+			<li><span class="trivial">trivial</span>: Fix an issue where importing a setting listed it twice if a custom setting with the same name but different capitalization already existed.</li>
+			<li><span class="trivial">trivial</span>: Fix an issue where the line and column of the insertion point in the status bar could remain outdated after the document was reloaded with changes made outside the app.</li>
+		</ul>
+	</section>
+</article>
+
+
+
+<article>
+	<header>
 		<h1>CotEditor 7.2.0-beta</h1>
 		<p>release: <time>2026-11-14</time></p>
 	</header>
